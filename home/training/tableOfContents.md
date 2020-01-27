@@ -2,7 +2,7 @@
 title: Training table of contents
 description: List of training course arguments and useful liks 
 published: true
-date: 2020-01-27T14:56:34.736Z
+date: 2020-01-27T15:29:57.801Z
 tags: Training, training, contents, getting started
 ---
 
@@ -48,7 +48,9 @@ tags: Training, training, contents, getting started
     22. NULL functions
     23. DATA types (RDBS dependant)
 
-### Usefull links
+<p>&nbsp;</p>
+
+### Useful links
 
 [w3school SQL reference](http://www.w3schools.com/sql/default.asp)
 [html.it guida al linguaggio SQL](http://www.html.it/guide/guida-linguaggio-sql/)
@@ -60,5 +62,62 @@ tags: Training, training, contents, getting started
 
 <p>&nbsp;</p>
 
-## XML
+## XML: fundamentals
+
+
+1. XML:Definition
+2. Use cases 
+3. hierarchical structure of an XML 
+4. Sintax
+5. XML tags 
+6. XML attributes
+7. Namespaces
+8. Encoding
+9. XML Doctypes
+10. XML Schema (XSD): Definition
+
+<p>&nbsp;</p>
+
+### Useful links
+
+[w3School XML Reference](http://www.w3schools.com/xml/)
+
+### Tools&Lab
+
+[Tool: Online XML - XSD formatter](http://www.freeformatter.com/)
+
+<p>&nbsp;</p>
+
+# Section 2 
+
+<p>&nbsp;</p>
+
+## XSD: fundamentals 
+
+1. XML Schema document: definition
+2. Why using an XSD document
+3. How to reference a XSD document from within a XML document
+4. <xs:schema> tag's attributes
+5. Simple types 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Elements
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Attributes
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Constrains
+6. Complex Types 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Elements
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Empty elements
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Types with only elements 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Types with only text
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Indicators (choice, sequence, all)
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> f. &lt;any> e &lt;anyAttribute> tags 
+
+### Useful links
+
+[w3School XSD Schema Reference](https://www.w3schools.com/xml/schema_intro.asp)
+
+### Tools&Lab
+
+[Tool: Online XML - XSD formatter](http://www.freeformatter.com/)
+[Lab: KP xsd exercises folder](https://drive.google.com/open?id=1zvR13vRWc9inaJFZVE1w-2tAmVhhTWcimHn9NB2UmJA)
+
+
 
