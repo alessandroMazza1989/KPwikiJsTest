@@ -2,7 +2,7 @@
 title: Training table of contents
 description: List of training course arguments and useful liks 
 published: true
-date: 2020-01-27T15:29:57.801Z
+date: 2020-01-27T15:46:02.711Z
 tags: Training, training, contents, getting started
 ---
 
@@ -118,6 +118,29 @@ tags: Training, training, contents, getting started
 
 [Tool: Online XML - XSD formatter](http://www.freeformatter.com/)
 [Lab: KP xsd exercises folder](https://drive.google.com/open?id=1zvR13vRWc9inaJFZVE1w-2tAmVhhTWcimHn9NB2UmJA)
+
+<p>&nbsp;</p>
+
+## XPath: fundamentals
+
+1. XPath Terminology  (Nodes, Atomic values, Items)
+2. Relationships between the nodes (Parent, Children, Sibling, Ancestors, Descendants)
+3. XPath Syntax 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Selecting nodes 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Predicates
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Wildcards 
+4. XPath Axes concept
+5. XPath operators 
+
+
+### Useful links
+
+[W3 school Xpath reference](https://www.w3schools.com/xml/xpath_intro.asp)
+
+### Tools&Lab
+
+[Tool: Online XML - XSD formatter XPath tester](http://www.freeformatter.com/xpath-tester.html)
+[Lab: KP Xpath exercises folder](https://drive.google.com/open?id=0B3Sto5wbsC5dQWZ6TmdUY3padVU)
 
 
 
