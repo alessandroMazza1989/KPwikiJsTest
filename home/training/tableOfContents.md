@@ -2,12 +2,17 @@
 title: Training table of contents
 description: List of training course arguments and useful liks 
 published: true
-date: 2020-01-27T15:54:30.840Z
+date: 2020-01-27T16:29:17.962Z
 tags: Training, training, contents, getting started
 ---
 
 
 # System Integration: Getting Started
+
+In this section a table of contents for the system integration training course is presented. 
+While going trough the arguments someone who is undergoing training should also 
+**solve the exercises** that can be accessed by clicking on the links that are marked 
+with the "lab" prefix.
 
 <p>&nbsp;</p>
 
@@ -58,7 +63,7 @@ tags: Training, training, contents, getting started
 
 ### Tools&Lab
 [Tool: PostgreSQL](http://www.postgresql.org/download/)
-[Lab: KP drive SQL exercises](https://drive.google.com/open?id=0BydghG4Au4Hfd1E0b3pQQlhvNk0)
+[**Lab**: KP drive SQL exercises](https://drive.google.com/open?id=0BydghG4Au4Hfd1E0b3pQQlhvNk0)
 
 <p>&nbsp;</p>
 
@@ -110,6 +115,9 @@ tags: Training, training, contents, getting started
 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Indicators (choice, sequence, all)
 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> f. &lt;any> e &lt;anyAttribute> tags 
 
+<p>&nbsp;</p>
+
+
 ### Useful links
 
 [w3School XSD Schema Reference](https://www.w3schools.com/xml/schema_intro.asp)
@@ -117,7 +125,7 @@ tags: Training, training, contents, getting started
 ### Tools&Lab
 
 [Tool: Online XML - XSD formatter](http://www.freeformatter.com/)
-[Lab: KP xsd exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfaEJXMktIQW5ROFE)
+[**Lab**: KP xsd exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfaEJXMktIQW5ROFE)
 
 <p>&nbsp;</p>
 
@@ -132,6 +140,8 @@ tags: Training, training, contents, getting started
 4. XPath Axes concept
 5. XPath operators 
 
+<p>&nbsp;</p>
+
 
 ### Useful links
 
@@ -140,7 +150,7 @@ tags: Training, training, contents, getting started
 ### Tools&Lab
 
 [Tool: Online XML - XSD formatter XPath tester](http://www.freeformatter.com/xpath-tester.html)
-[Lab: KP Xpath exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfRG5iN0ctV0VLbXM)
+[**Lab**: KP Xpath exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfRG5iN0ctV0VLbXM)
 
 <p>&nbsp;</p>
 
@@ -154,7 +164,9 @@ tags: Training, training, contents, getting started
 6. &lt;sort> element
 7. &lt;if> element
 8. &lt;choose> element
-9. &lt;apply-templates>
+9. &lt;apply-templates> element
+
+<p>&nbsp;</p>
 
 ### Useful links
 
@@ -163,23 +175,79 @@ tags: Training, training, contents, getting started
 ### Tools&Lab
 
 [Tool: Online XML - XSD formatter xsl tranformer](http://www.freeformatter.com/xsl-transformer.html)
-[Lab: KP Xsl exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfWkpkNk1wTmNlRkE)
+[**Lab**: KP Xsl exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfWkpkNk1wTmNlRkE)
 
 <p>&nbsp;</p>
 
 # Section 3 
-Networking
-Argomenti base da conoscere
-Stack ISO/OSI
-LAN/WAN/MAN
-Subnet
-Bridge/NAT
-Gateway
-Routing table
-Firewall
-Cloud
-SaaS
-iPaas
+
+<p>&nbsp;</p>
+
+## Networking: fundamentals 
+
+1.Stack ISO/OSI
+2.LAN/WAN/MAN
+3.Subnet
+4.ridge/NAT
+5.ateway
+6.Routing table
+7.Firewall
+8.Cloud
+9.SaaS
+10.iPaas
+
+<p>&nbsp;</p>
+
+## Unix: fundamentals
+
+1. What is unix
+2. Files and processes
+3. Unix file system, directories
+4. Unix shell/command line 
+5. List files and directories (ls)
+6. Create directories (mkdir)
+7. Change directory (cd)
+8. The . and .. directories
+9. Show current directory (pwd)
+10. Copy a file or directory (cp)
+11. Move a file or directory (mv)
+12. Remove file or directory (rm)
+13. Show the content of a text file (less, cat, head, more, tail)
+14. Navigate or search inside the content of a file (more, grep, less,)
+15. wc command
+16. Rerouting (output, input, pipes)
+17. Wildcards (*)
+18. Modify the permissions on a file (chmod)
+19. Show the list of the processes (ps)
+20. Start processes in background ( nohup , & )
+21. Kill/Terminate a process (kill,  kill -9)
+22. Other useful commands
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> a. netstat (netcat) 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Telnet
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Ping
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Wget
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Curl
+23. Shell scripting (see link below)
+24. Finding your own IP 
+
+<p>&nbsp;</p>
+
+### Useful links 
+
+[Unix guide (required content extends till tutorial number 6)](http://www.ee.surrey.ac.uk/Teaching/Unix/)
+[Unix shell scripting (sections from 1 to 10)](https://www.html.it/guide/shell-scripting-la-guida/)
+
+### Tools&Lab
+
+[Tool: Online XML - XSD formatter xsl tranformer](http://www.freeformatter.com/xsl-transformer.html)
+[**Lab**: KP Xsl exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfWkpkNk1wTmNlRkE)
+
+<p>&nbsp;</p>
+
+
+Shell Scripting (https://www.html.it/guide/shell-scripting-la-guida/ da 1 a 10)
+Recuperare il proprio IP
+
 
 
 
