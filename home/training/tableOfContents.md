@@ -2,7 +2,7 @@
 title: Training table of contents
 description: List of training course arguments and useful liks 
 published: true
-date: 2020-01-27T16:54:38.949Z
+date: 2020-01-27T17:43:43.361Z
 tags: Training, training, contents, getting started
 ---
 
@@ -315,6 +315,165 @@ with the "lab" prefix.
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Durable Subscriber
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Idempotent Receiver
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Service Activator
+
+<p>&nbsp;</p>
+
+### Useful links 
+
+[Integration theory guide](http://www.enterpriseintegrationpatterns.com/Introduction.html)
+
+<p>&nbsp;</p>
+
+## JMS: fundamentals
+
+1. What is a Messaging system?
+2. JMS API and related Concepts
+3. JMS API Programming Model
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Connection Factories
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Destinations
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Connections
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Sessions
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Message Producers
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Message Consumers
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> g. Message Listeners
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> h. Message Selectors
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> i. Messages
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> j. Message Headers
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> k. Message Properties
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> l. Message Bodies
+
+<p>&nbsp;</p>
+
+### Useful links 
+
+[JMS Guide (relevat topics up to chapter 3 included)](http://docs.oracle.com/javaee/1.3/jms/tutorial/1_3_1-fcs/doc/jms_tutorialTOC.html)
+
+Lab: Installation of a EMS server on the previously created Centos 6.5 VM.
+
+Lab: Creation of a centos VM using vagrant. [Link to vagrant guide](https://docs.google.com/document/d/1kypDQ33wxUAE1-_Cm94UNwGtmWy0_UGw5SePVHutzws/edit?usp=sharing )
+
+[Lab: KP linux exercises](https://drive.google.com/open?id=0BydghG4Au4HfUzFobUxTU0wtV1E)
+
+<p>&nbsp;</p>
+
+## SOA:fundamentals
+
+1. Service Oriented Architecture paradigm concept 
+2. Service design principles
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Standardized service contract
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Service loose coupling
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. service abstraction
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. service reusability
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. service autonomy
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. service statelessness
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> g. service discoverability
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> h. service composability
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> i. interoperability
+3. Service orientation and the concept of applicazione soa
+4. Service orientation e il concept of integrazione inside soa
+5. Service models
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. service layers
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. entity services
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. task services
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. utility services
+6. Undertanding the difference between the  top down and the bottom up delivery strategies
+
+<p>&nbsp;</p>
+
+ ### Useful links 
+
+[SOA theory guide](http://serviceorientation.com/serviceorientation/index)
+[SOA review blogspot](http://savedev.blogspot.it/2013/09/spaghetti-integration-to-soa.html)
+[SOA tutorial](http://soaschools.com/)
+
+<p>&nbsp;</p>
+
+# Section 5
+
+<p>&nbsp;</p>
+
+## API, Web Services: fundamentals 
+
+1. Difference between API and Web Services
+2. Inner workings of web services
+3. Why use web services?
+
+ ### Useful links 
+
+[Difference between API and web services explained 0](https://www.linkedin.com/pulse/difference-between-api-web-service-chitrakannan-balasubramanian/)
+[Difference between API and web services explained 1](https://testautomationresources.com/api-testing/differences-web-services-api/)
+
+<p>&nbsp;</p>
+
+## SOAP, WSDL: fundamentals
+
+1. wsdl elements (types, message, operation, portType, binding)
+2. Definition of data types using xml schema
+3. Definition of messagges
+4. Definition of operations
+5. Definition of portType
+6. Definition of binding
+7. abstract wsdl vs concrete wsdl
+8. The usage of SOAP as an applicative protocol 
+9. SOAP syntax
+10. SOAP Envelope
+11. SOAP Header
+12. SOAP Body
+13. SOAP Fault
+
+<p>&nbsp;</p>
+
+### Useful links 
+
+[w3 school xml_services](https://www.w3schools.com/xml/xml_services.asp)
+[guide to web services](http://www.html.it/guide/guida-web-service/)
+
+### Tools&Lab
+
+[Tool: Download SoapUi](https://www.soapui.org/downloads/soapui.html)
+[Tool: Soap UI Mock]( https://www.soapui.org/soap-mocking/working-with-mockservices.htm)
+
+<p>&nbsp;</p>
+
+## RESTful: Fundamentals
+
+1. Web service definition
+2. Elements of a wsdl (types, message, operation, portType, binding)
+3. Definition of data types using xml schema
+4. Definition of messagges
+5. Definition of operations
+6. Definition of portType
+7. Definition of binding
+8. abstract wsdl vs concrete wsdl
+9. The usage of SOAP as an applicative protocol 
+10. SOAP syntax
+11. SOAP Envelope
+12. SOAP Header
+13. SOAP Body
+14. SOAP Fault
+
+### Useful links 
+
+[w3 school xml_services](https://www.w3schools.com/xml/xml_services.asp)
+[guide to restful web services](https://www.html.it/guide/restful-web-services-la-guida/)
+[rest vs soap](https://www.html.it/pag/19612/differenze-tra-web-service-rest-e-soap/)
+
+### Tools&Lab
+
+[Tool: Download Postman](https://www.getpostman.com/downloads/)
+[Tool: Download Swagger]( https://swagger.io/tools/swagger-editor/download/)
+
+<p>&nbsp;</p>
+
+## BW: fundamentals 
+
+1. Official BW6 Tibco Doc. [link](https://docs.tibco.com/products/tibco-activematrix-businessworks-6-6-0)
+2. Official BW6 Tibco Doc concepts 0. [link](https://docs.tibco.com/pub/activematrix_businessworks/6.6.0/doc/html/GUID-D6ACB1C4-33F0-4786-AC28-687C036050D2.html) 
+3. Official BW6 Tibco Doc concepts 1. [link](https://docs.tibco.com/pub/activematrix_businessworks/6.6.0/doc/pdf/TIB_BW_6.6_concepts.pdf?id=1) 
+
+
+
+
 
 
 
