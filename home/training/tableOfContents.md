@@ -2,7 +2,7 @@
 title: Training table of contents
 description: List of training course arguments and useful liks 
 published: true
-date: 2020-01-27T16:44:47.196Z
+date: 2020-01-27T16:54:38.949Z
 tags: Training, training, contents, getting started
 ---
 
@@ -104,16 +104,16 @@ with the "lab" prefix.
 3. How to reference a XSD document from within a XML document
 4. &lt;xs:schema> tag's attributes
 5. Simple types 
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Elements
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Attributes
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Constrains
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Elements
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Attributes
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Constrains
 6. Complex Types 
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Elements
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Empty elements
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Types with only elements 
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Types with only text
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Indicators (choice, sequence, all)
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> f. &lt;any> e &lt;anyAttribute> tags 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Elements
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Empty elements
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Types with only elements 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Types with only text
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Indicators (choice, sequence, all)
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. &lt;any> e &lt;anyAttribute> tags 
 
 <p>&nbsp;</p>
 
@@ -134,9 +134,9 @@ with the "lab" prefix.
 1. XPath Terminology  (Nodes, Atomic values, Items)
 2. Relationships between the nodes (Parent, Children, Sibling, Ancestors, Descendants)
 3. XPath Syntax 
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Selecting nodes 
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Predicates
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Wildcards 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Selecting nodes 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Predicates
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Wildcards 
 4. XPath Axes concept
 5. XPath operators 
 
@@ -222,11 +222,11 @@ with the "lab" prefix.
 20. Start processes in background ( nohup , & )
 21. Kill/Terminate a process (kill,  kill -9)
 22. Other useful commands
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> a. netstat (netcat) 
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Telnet
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Ping
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Wget
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Curl
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. netstat (netcat) 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Telnet
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Ping
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Wget
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Curl
 23. Shell scripting (see link below)
 24. Finding your own IP 
 
@@ -244,7 +244,7 @@ with the "lab" prefix.
 
 <p>&nbsp;</p>
 
-# Sezione 4
+# Section 4
 
 <p>&nbsp;</p>
 
@@ -252,35 +252,109 @@ with the "lab" prefix.
 
 1. General concepts pertaining system integration
 2. Integration Styles
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> a. File Transfer
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Shared Database
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Remote Procedure Invocation
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Messaging 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. File Transfer
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Shared Database
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Remote Procedure Invocation
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Messaging 
 3. Messaging Systems
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Message Channel
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Message
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Pipes and Filters
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Message Router
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Message Translator
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Message Endpoint
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Message Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Message
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Pipes and Filters
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Message Router
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Message Translator
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Message Endpoint
 4. Messaging Channels
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Point-to-Point Channel
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Publish-Subscribe Channel
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Datatype Channel
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Invalid Message Channel
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Dead Letter Channel
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Guaranteed Delivery
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Channel Adapter
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Messaging Bridge
-<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Message Bus
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Point-to-Point Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Publish-Subscribe Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Datatype Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Invalid Message Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Dead Letter Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Guaranteed Delivery
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> g. Channel Adapter
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> h. Messaging Bridge
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> i. Message Bus
+5. Message Construction
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Command Message
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Document Message
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Event Message
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Request-Reply
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Return Address
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Correlation Identifier
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> g. Message Sequence
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> h. Message Expiration
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> i. Format Indicator
+6. Message Routing
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Content-Based Router
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Message Filter
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Dynamic Router
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Recipient List
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Splitter
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Aggregator
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> g. Resequencer
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> h. Composed Msg. Processor
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> i. Scatter-Gather
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> j. Routing Slip
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> k. Process Manager
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> l. Message Broker
+7. Message Transformation
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Envelope Wrapper
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Content Enricher
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Content Filter
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Claim Check
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Normalizer
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Canonical Data Model
+8. Message Endpoints
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Messaging Gateway
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Messaging Mapper
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Transactional Client
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Polling Consumer
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Event-Driven Consumer
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Competing Consumers
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b  Message Dispatcher
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Selective Consumer
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Durable Subscriber
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Idempotent Receiver
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Service Activator
 
 
-24. Message Construction
-25. Command Message
-26. Document Message
-27. Event Message
-28. Request-Reply
-29. Return Address
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
