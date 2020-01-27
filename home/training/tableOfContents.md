@@ -2,7 +2,7 @@
 title: Training table of contents
 description: List of training course arguments and useful liks 
 published: true
-date: 2020-01-27T15:48:36.565Z
+date: 2020-01-27T15:53:37.821Z
 tags: Training, training, contents, getting started
 ---
 
@@ -97,7 +97,7 @@ tags: Training, training, contents, getting started
 1. XML Schema document: definition
 2. Why using an XSD document
 3. How to reference a XSD document from within a XML document
-4. <xs:schema> tag's attributes
+4. &lt;xs:schema> tag's attributes
 5. Simple types 
 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Elements
 <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Attributes
@@ -141,6 +141,33 @@ tags: Training, training, contents, getting started
 
 [Tool: Online XML - XSD formatter XPath tester](http://www.freeformatter.com/xpath-tester.html)
 [Lab: KP Xpath exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfRG5iN0ctV0VLbXM)
+
+<p>&nbsp;</p>
+
+## XSLT: fundamentals 
+
+1. XSLT document definition
+2. &lt;stylesheet> and &lt;transform> elements
+3. &lt;template> element
+4. &lt;value-of> element
+5. &lt;for-each> element
+6. &lt;sort> element
+7. &lt;if> element
+8. &lt;choose> element
+9. &lt;apply-templates>
+
+### Useful links
+
+[W3 school Xsl reference](https://www.w3schools.com/xml/xsl_intro.asp)
+
+### Tools&Lab
+
+[Tool: Online XML - XSD formatter xsl tranformer](http://www.freeformatter.com/xsl-transformer.html)
+[Lab: KP Xsl exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfWkpkNk1wTmNlRkE)
+
+
+
+
 
 
 
