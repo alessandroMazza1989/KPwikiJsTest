@@ -2,7 +2,7 @@
 title: Training table of contents
 description: List of training course arguments and useful liks 
 published: true
-date: 2020-01-27T14:52:18.220Z
+date: 2020-01-27T14:53:51.183Z
 tags: Training, training, contents, getting started
 ---
 
@@ -14,10 +14,10 @@ tags: Training, training, contents, getting started
 ## SQL: fundamentals
 
 - **General concepts and definitions:**
-   1. RDBMS definition 
-   2. Table definition 
-   3. Primary key (PK) definition and usage
-   4. Foreign key (FK) definition and usage 
+   1. RDBMS: definition 
+   2. Table: definition 
+   3. Primary key (PK): definition and usage
+   4. Foreign key (FK): definition and usage 
    5. How to define relationships between tables
 - **SQL**
     1. SQL (Standard Query Language) definition 
