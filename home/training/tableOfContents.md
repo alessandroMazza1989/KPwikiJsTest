@@ -2,7 +2,7 @@
 title: Training table of contents
 description: List of training course arguments and useful liks 
 published: true
-date: 2020-01-27T15:53:37.821Z
+date: 2020-01-27T15:54:30.840Z
 tags: Training, training, contents, getting started
 ---
 
@@ -165,7 +165,21 @@ tags: Training, training, contents, getting started
 [Tool: Online XML - XSD formatter xsl tranformer](http://www.freeformatter.com/xsl-transformer.html)
 [Lab: KP Xsl exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfWkpkNk1wTmNlRkE)
 
+<p>&nbsp;</p>
 
+# Section 3 
+Networking
+Argomenti base da conoscere
+Stack ISO/OSI
+LAN/WAN/MAN
+Subnet
+Bridge/NAT
+Gateway
+Routing table
+Firewall
+Cloud
+SaaS
+iPaas
 
 
 
