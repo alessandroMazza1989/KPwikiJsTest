@@ -2,7 +2,7 @@
 title: Training table of contents
 description: List of training course arguments and useful liks 
 published: true
-date: 2020-01-27T17:43:43.361Z
+date: 2020-01-27T17:45:32.128Z
 tags: Training, training, contents, getting started
 ---
 
@@ -471,6 +471,12 @@ Lab: Creation of a centos VM using vagrant. [Link to vagrant guide](https://docs
 2. Official BW6 Tibco Doc concepts 0. [link](https://docs.tibco.com/pub/activematrix_businessworks/6.6.0/doc/html/GUID-D6ACB1C4-33F0-4786-AC28-687C036050D2.html) 
 3. Official BW6 Tibco Doc concepts 1. [link](https://docs.tibco.com/pub/activematrix_businessworks/6.6.0/doc/pdf/TIB_BW_6.6_concepts.pdf?id=1) 
 
+<p>&nbsp;</p>
+
+### Tools&Lab
+
+[Tool: BW6 installation guide](https://docs.tibco.com/pub/activematrix_businessworks/6.6.0/doc/html/GUID-EEA7497C-E1BB-432D-92C7-966831F188C1.html)
+[Tool: BW6 Getting started](https://docs.tibco.com/pub/activematrix_businessworks/6.6.0/doc/html/GUID-913F840A-BFE8-4E08-A73C-D1B3FA402361.html)
 
 
 
