@@ -2,7 +2,7 @@
 title: Training table of contents
 description: List of training course arguments and useful liks 
 published: true
-date: 2020-01-27T15:46:09.432Z
+date: 2020-01-27T15:48:36.565Z
 tags: Training, training, contents, getting started
 ---
 
@@ -117,7 +117,7 @@ tags: Training, training, contents, getting started
 ### Tools&Lab
 
 [Tool: Online XML - XSD formatter](http://www.freeformatter.com/)
-[Lab: KP xsd exercises folder](https://drive.google.com/open?id=1zvR13vRWc9inaJFZVE1w-2tAmVhhTWcimHn9NB2UmJA)
+[Lab: KP xsd exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfaEJXMktIQW5ROFE)
 
 <p>&nbsp;</p>
 
@@ -140,7 +140,7 @@ tags: Training, training, contents, getting started
 ### Tools&Lab
 
 [Tool: Online XML - XSD formatter XPath tester](http://www.freeformatter.com/xpath-tester.html)
-[Lab: KP Xpath exercises folder](https://drive.google.com/open?id=0B3Sto5wbsC5dQWZ6TmdUY3padVU)
+[Lab: KP Xpath exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfRG5iN0ctV0VLbXM)
 
 
 
