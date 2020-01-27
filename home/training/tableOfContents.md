@@ -2,12 +2,16 @@
 title: Training table of contents
 description: List of training course arguments and useful liks 
 published: true
-date: 2020-01-27T14:53:51.183Z
+date: 2020-01-27T14:56:34.736Z
 tags: Training, training, contents, getting started
 ---
 
 
-# System Integration Getting Started
+# System Integration: Getting Started
+
+<p>&nbsp;</p>
+
+# Section 1 
 
 <p>&nbsp;</p>
 
@@ -54,4 +58,7 @@ tags: Training, training, contents, getting started
 [Tool: PostgreSQL](http://www.postgresql.org/download/)
 [Lab: KP drive SQL exercises](https://drive.google.com/open?id=0BydghG4Au4Hfd1E0b3pQQlhvNk0)
 
+<p>&nbsp;</p>
+
+## XML
 
