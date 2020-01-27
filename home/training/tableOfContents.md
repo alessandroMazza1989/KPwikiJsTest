@@ -2,7 +2,7 @@
 title: Training table of contents
 description: List of training course arguments and useful liks 
 published: true
-date: 2020-01-27T17:45:32.128Z
+date: 2020-01-27T17:47:05.717Z
 tags: Training, training, contents, getting started
 ---
 
@@ -20,7 +20,7 @@ with the "lab" prefix.
 
 <p>&nbsp;</p>
 
-## SQL: fundamentals
+## SQL
 
 - **General concepts and definitions:**
    1. RDBMS: definition 
@@ -67,7 +67,7 @@ with the "lab" prefix.
 
 <p>&nbsp;</p>
 
-## XML: fundamentals
+## XML
 
 
 1. XML:Definition
@@ -97,7 +97,7 @@ with the "lab" prefix.
 
 <p>&nbsp;</p>
 
-## XSD: fundamentals 
+## XSD 
 
 1. XML Schema document: definition
 2. Why using an XSD document
@@ -129,7 +129,7 @@ with the "lab" prefix.
 
 <p>&nbsp;</p>
 
-## XPath: fundamentals
+## XPath 
 
 1. XPath Terminology  (Nodes, Atomic values, Items)
 2. Relationships between the nodes (Parent, Children, Sibling, Ancestors, Descendants)
@@ -154,7 +154,7 @@ with the "lab" prefix.
 
 <p>&nbsp;</p>
 
-## XSLT: fundamentals 
+## XSLT
 
 1. XSLT document definition
 2. &lt;stylesheet> and &lt;transform> elements
@@ -183,7 +183,7 @@ with the "lab" prefix.
 
 <p>&nbsp;</p>
 
-## Networking: fundamentals 
+## Networking:
 
 1.Stack ISO/OSI
 2.LAN/WAN/MAN
@@ -198,7 +198,7 @@ with the "lab" prefix.
 
 <p>&nbsp;</p>
 
-## Unix: fundamentals
+## Unix 
 
 1. What is unix
 2. Files and processes
@@ -248,7 +248,7 @@ with the "lab" prefix.
 
 <p>&nbsp;</p>
 
-## Integration (EAI): fundamentals
+## Integration (EAI) 
 
 1. General concepts pertaining system integration
 2. Integration Styles
@@ -324,7 +324,7 @@ with the "lab" prefix.
 
 <p>&nbsp;</p>
 
-## JMS: fundamentals
+## JMS
 
 1. What is a Messaging system?
 2. JMS API and related Concepts
@@ -356,7 +356,7 @@ Lab: Creation of a centos VM using vagrant. [Link to vagrant guide](https://docs
 
 <p>&nbsp;</p>
 
-## SOA:fundamentals
+## SOA
 
 1. Service Oriented Architecture paradigm concept 
 2. Service design principles
@@ -405,7 +405,7 @@ Lab: Creation of a centos VM using vagrant. [Link to vagrant guide](https://docs
 
 <p>&nbsp;</p>
 
-## SOAP, WSDL: fundamentals
+## SOAP, WSDL
 
 1. wsdl elements (types, message, operation, portType, binding)
 2. Definition of data types using xml schema
@@ -435,7 +435,7 @@ Lab: Creation of a centos VM using vagrant. [Link to vagrant guide](https://docs
 
 <p>&nbsp;</p>
 
-## RESTful: Fundamentals
+## RESTful
 
 1. Web service definition
 2. Elements of a wsdl (types, message, operation, portType, binding)
@@ -465,7 +465,7 @@ Lab: Creation of a centos VM using vagrant. [Link to vagrant guide](https://docs
 
 <p>&nbsp;</p>
 
-## BW: fundamentals 
+## BW
 
 1. Official BW6 Tibco Doc. [link](https://docs.tibco.com/products/tibco-activematrix-businessworks-6-6-0)
 2. Official BW6 Tibco Doc concepts 0. [link](https://docs.tibco.com/pub/activematrix_businessworks/6.6.0/doc/html/GUID-D6ACB1C4-33F0-4786-AC28-687C036050D2.html) 
