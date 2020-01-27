@@ -2,7 +2,7 @@
 title: Training table of contents
 description: List of training course arguments and useful liks 
 published: true
-date: 2020-01-27T17:47:55.060Z
+date: 2020-01-27T17:48:27.908Z
 tags: Training, training, contents, getting started
 ---
 
@@ -183,7 +183,7 @@ with the "lab" prefix.
 
 <p>&nbsp;</p>
 
-## Networking:
+## Networking
 
 1.Stack ISO/OSI
 2.LAN/WAN/MAN
