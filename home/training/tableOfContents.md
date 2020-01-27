@@ -2,7 +2,7 @@
 title: Training table of contents
 description: List of training course arguments and useful liks 
 published: true
-date: 2020-01-27T16:29:17.962Z
+date: 2020-01-27T16:32:39.079Z
 tags: Training, training, contents, getting started
 ---
 
@@ -239,14 +239,12 @@ with the "lab" prefix.
 
 ### Tools&Lab
 
-[Tool: Online XML - XSD formatter xsl tranformer](http://www.freeformatter.com/xsl-transformer.html)
-[**Lab**: KP Xsl exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfWkpkNk1wTmNlRkE)
+[Tool: Virtual box VM guide and references](https://docs.google.com/document/d/1OSbQtX0NoG31UhdtxFlawpnaja8KeDzXd8wushVZzdk/edit?usp=sharing)
+[**Lab**: KP Unix/Linux exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfUzFobUxTU0wtV1E)
 
 <p>&nbsp;</p>
 
 
-Shell Scripting (https://www.html.it/guide/shell-scripting-la-guida/ da 1 a 10)
-Recuperare il proprio IP
 
 
 
