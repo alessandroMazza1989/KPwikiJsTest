@@ -2,7 +2,7 @@
 title: KP WIKI
 description: KP WIKI home page 
 published: true
-date: 2020-01-27T18:11:21.926Z
+date: 2020-01-27T18:12:53.807Z
 tags: home
 ---
 
@@ -12,5 +12,5 @@ tags: home
 
 ## TRAINING 
 
-- [Getting started *System integration training topics and resources*](/home/Training)
+- [Getting started *System integration training topics and resources*](/home/training/tableOfContents)
 {.links-list}
