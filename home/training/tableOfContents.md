@@ -2,7 +2,7 @@
 title: Training table of contents
 description: List of training course arguments and useful liks 
 published: true
-date: 2020-01-27T16:32:39.079Z
+date: 2020-01-27T16:44:47.196Z
 tags: Training, training, contents, getting started
 ---
 
@@ -243,6 +243,44 @@ with the "lab" prefix.
 [**Lab**: KP Unix/Linux exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfUzFobUxTU0wtV1E)
 
 <p>&nbsp;</p>
+
+# Sezione 4
+
+<p>&nbsp;</p>
+
+## Integration (EAI): fundamentals
+
+1. General concepts pertaining system integration
+2. Integration Styles
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> a. File Transfer
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Shared Database
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Remote Procedure Invocation
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Messaging 
+3. Messaging Systems
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Message Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Message
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Pipes and Filters
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Message Router
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Message Translator
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Message Endpoint
+4. Messaging Channels
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Point-to-Point Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Publish-Subscribe Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Datatype Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Invalid Message Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Dead Letter Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Guaranteed Delivery
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Channel Adapter
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Messaging Bridge
+<span>&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Message Bus
+
+
+24. Message Construction
+25. Command Message
+26. Document Message
+27. Event Message
+28. Request-Reply
+29. Return Address
 
 
 
