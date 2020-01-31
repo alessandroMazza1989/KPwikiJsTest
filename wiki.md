@@ -2,7 +2,7 @@
 title: wiki
 description: howto wiki
 published: true
-date: 2020-01-31T14:25:13.944Z
+date: 2020-01-31T14:31:12.617Z
 tags: 
 ---
 
@@ -17,3 +17,5 @@ Le wiki sono organizzate in categorie generiche per area tematica (Training, Clo
 Le wiki sono aperte a tutti i gruppi. Fanno eccezione alcuni contenuti che sono profilati.
 E' possibile, quindi, che utenti Consumer non abbiamo visibilità di determinati contenuti.
 E' necessario richiedere al gruppo Administrator l'accesso al contenuto profilato.
+## Tagging
+E' buona pratica taggare le wiki per facilitare la ricerca dei contenuti.
