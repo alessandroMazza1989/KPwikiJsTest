@@ -2,7 +2,7 @@
 title: wiki
 description: howto wiki
 published: true
-date: 2020-01-31T14:31:12.617Z
+date: 2020-01-31T14:51:32.774Z
 tags: 
 ---
 
@@ -19,3 +19,7 @@ E' possibile, quindi, che utenti Consumer non abbiamo visibilità di determinati
 E' necessario richiedere al gruppo Administrator l'accesso al contenuto profilato.
 ## Tagging
 E' buona pratica taggare le wiki per facilitare la ricerca dei contenuti.
+## Contenuti
+E' importante che i contenuti della wiki aderiscano ad un set minimo di requisiti. La struttura deve rispettare, dove possibile, il template suggerito
+- [Wiki Template *Template suggerito per la stesura dei contenuti*](/home/training/tableOfContents)
+{.links-list}
