@@ -2,7 +2,7 @@
 title: Scribe
 description: Scribe introduction
 published: true
-date: 2020-02-25T15:09:29.295Z
+date: 2020-02-25T15:10:01.568Z
 tags: 
 ---
 
@@ -10,7 +10,7 @@ tags:
 
 ## Introduzione
 
-Link utili: https://integration.cloud.tibco.com/docs/scribe/
+**Risorse**: https://integration.cloud.tibco.com/docs/scribe/
 
 TIBCO Scribe® Online è una funzionalità di TIBCO Cloud ™ che consente agli sviluppatori di creare integrazioni tra qualsiasi combinazione di applicazioni basate su cloud e on-premise. 
 E' costituito da un motore di integrazione di base e dai seguenti componenti:
