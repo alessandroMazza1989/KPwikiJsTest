@@ -2,7 +2,7 @@
 title: Scribe
 description: Scribe introduction
 published: true
-date: 2020-02-25T15:38:53.380Z
+date: 2020-02-25T15:42:11.391Z
 tags: 
 ---
 
@@ -116,9 +116,6 @@ All'interno della sezione di configurazione della nuova Connection:
 - nel tab _Specification_, inserire i seguenti parametri:
     * Base URI: https://venchi.api.mashery.com
     * Specification: inserire lo swagger del serizio Rest
-- nel tab _Authorization_ fornire le specifiche di autenticazione dell'API Rest
-![restconn_auth.png](/scribe/restconn_auth.png)
-
 <div style="overflow-y: scroll; height: 400px;">
 <pre>
 { "swagger": "2.0",
@@ -433,6 +430,9 @@ All'interno della sezione di configurazione della nuova Connection:
     }
 }
 </pre></div>
+- nel tab _Authorization_ fornire le specifiche di autenticazione dell'API Rest
+![restconn_auth.png](/scribe/restconn_auth.png)
+
 #### Creazione di una Solution
 **Prerequisiti**
 Aver precedentemente configurato una o più Connections.
