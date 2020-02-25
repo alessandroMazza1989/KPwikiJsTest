@@ -2,7 +2,7 @@
 title: Scribe
 description: Scribe introduction
 published: true
-date: 2020-02-25T14:06:27.024Z
+date: 2020-02-25T14:31:36.418Z
 tags: 
 ---
 
@@ -25,11 +25,10 @@ Una Connection è la configurazione dei parametri richiesti dal connettore per c
 TIBCO Scribe® Online mette a disposizione una lista di connettori da poter installare. Per installare un connettore è sufficiente recarsi nella sezione _Maketplace_, scegliere il connettore dalla lista di quelli disponibili e cliccare su _Install_.
 ![marketplace.png.png](/scribe/marketplace.png.png)
 Una volta installato, il connettore sarà disponibile nella sezione _Dashboard_ > _Connection_.
-![alt-text](url/dash_connection.png "Connection")
+![dash_connection.png](/scribe/scribe/dash_connection.png)
 La pagina delle connessioni visualizza lo stato delle Connections utilizzate dall'organizzazione corrente.
 Per creare una Connection, sfruttando il Connector precedentemente installato, è necessario selezionare il tasto **+** della sezione Connection e infine scegliere il _Connector Type_.
-![alt-text](url/add_connection.png "Connection")
-
+![add_connection.png](/scribe/scribe/add_connection.png)
 ### Solution
 Una Solution è un insieme di opzioni di configurazione specificate dall'utente che TIBCO Scribe® Online utilizza per eseguire un'attività specifica.
 
