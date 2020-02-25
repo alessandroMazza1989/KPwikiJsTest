@@ -2,12 +2,13 @@
 title: wiki
 description: howto wiki
 published: true
-date: 2020-01-31T14:51:32.774Z
+date: 2020-02-25T14:21:54.976Z
 tags: 
 ---
 
+In questa sezione sono disponibili i concetti generali alla base della wiki, nonchè alcune indicazioni per contribuire al mantenitmento di questo asset aziendale nella maniera corretta.
 ## Gruppi
-Gli utenti della wiki KP possono appartenere ad uno  
+Gli utenti della wiki KP possono appartenere ad uno dei seguenti gruppi  
 - **Admnistrator** (wikiadmin@keypartner.com) - utenti che si occupano della gestione tecnica della wiki. Aggiunta di nuove categorie, assegnazione degli utenti ad un gruppo, controllo degli store git su cui sono storicizzate le wiki, ecc
 - **Contributor** - utenti che contribuiscono all'arricchimento della wiki. Creazione di nuovi contenuti, aggiornamento e validazione dei contenuti
 - **Consumer** - utente base che può consultare i contenuti
