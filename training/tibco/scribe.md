@@ -2,7 +2,7 @@
 title: Scribe
 description: Scribe introduction
 published: true
-date: 2020-02-25T15:24:55.493Z
+date: 2020-02-25T15:25:47.950Z
 tags: 
 ---
 
