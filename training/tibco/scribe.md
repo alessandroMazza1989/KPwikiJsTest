@@ -2,7 +2,7 @@
 title: Scribe
 description: Scribe introduction
 published: true
-date: 2020-02-25T15:07:34.059Z
+date: 2020-02-25T15:09:29.295Z
 tags: 
 ---
 
@@ -55,7 +55,7 @@ TIBCO Scribe® Online Agent facilita la comunicazione tra le fonti di dati utili
 
 Sono disponibili due tipi di agenti:
 
-- **On-Premise Agent**: è installato su un computer nel sito. È possibile installare più agenti agenti locali su un singolo computer.
+- **On-Premise Agent**: è installabile su un computer direttamente dal sito web. È possibile installare più agenti locali su un singolo computer.
 - **Cloud Agent**: risiede nel cloud nel data center associato alla tua organizzazione. È possibile eseguire il provisioning di un solo agente cloud per organizzazione.
 
 La determinazione del tipo di agente da selezionare varia in base al connettore utilizzato e alla posizione dei dati a cui si accede, sia in locale che in cloud.
