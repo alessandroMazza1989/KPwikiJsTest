@@ -2,7 +2,7 @@
 title: Scribe
 description: Scribe introduction
 published: true
-date: 2020-02-25T15:10:01.568Z
+date: 2020-02-25T15:14:34.450Z
 tags: 
 ---
 
@@ -71,7 +71,7 @@ TIBCO Scribe® Online offre la possibilità di creare mappe per eseguire attivit
 
 1. **Integration Map**: integra i dati da una sorgente a uno o più datastores.
 2. **Message Map**: elabora le modifiche in tempo reale da un messaggio in uscita di Salesforce a uno o più datastores di destinazione.
-3. **Request/Reply Map** - Un'interfaccia aperta utilizzata per integrare TIBCO Scribe® Online Maps nel tuo prodotto software. E' necessario definire un servizio Web che funge da fonte. Il codice sviluppato può utilizzare la richiesta del Web service per integrare i dati in uno o più datastores di destinazione.
+3. **Request/Reply Map**: Un'interfaccia aperta utilizzata per integrare TIBCO Scribe® Online Maps nel tuo prodotto software. E' necessario definire un servizio Web che funge da fonte. Il codice sviluppato può utilizzare la richiesta del Web service per integrare i dati in uno o più datastores di destinazione.
 
 Quando si creano mappe, la pagina _Create Map_ si apre nello spazio di lavoro vuoto. 
 Utilizzando il pannello _Add Connection_ si può selezionare una o più connessioni. Per ogni connessione, esistono una serie di blocchi operativi che è possibile utilizzare per elaborare i dati per quella connessione.
