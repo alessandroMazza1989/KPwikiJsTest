@@ -2,7 +2,7 @@
 title: tibco
 description: training and information about tibco product
 published: true
-date: 2020-02-25T13:50:52.039Z
+date: 2020-02-25T14:23:43.806Z
 tags: 
 ---
 
