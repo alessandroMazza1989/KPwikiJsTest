@@ -2,7 +2,7 @@
 title: Scribe
 description: Scribe introduction
 published: true
-date: 2020-02-25T15:05:00.789Z
+date: 2020-02-25T15:07:34.059Z
 tags: 
 ---
 
@@ -47,9 +47,8 @@ Un'organization supporta 3 tippologie di Solutions:
 Esistono due tipi di soluzioni di integrazione, dette soluzioni pianificate ed eventi;
 - **Migration Services (MS) Solutions**: utilizzati per migrare i dati da un archivio dati a un altro.
 
-![solution.png](/scribe/solution.png)
-
 Per creare una nuova Solution, selezionare il tasto **+** e il tipo _Solution Service_ desiderato.
+![solution.png](/scribe/solution.png)
 
 ### TIBCO Scribe® Online Agent
 TIBCO Scribe® Online Agent facilita la comunicazione tra le fonti di dati utilizzate da una soluzione. È necessario un agente per comunicare con i dati di origine e di destinazione e con TIBCO Scribe® Online nel cloud.
