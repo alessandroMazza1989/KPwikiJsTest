@@ -2,7 +2,7 @@
 title: Scribe
 description: Scribe introduction
 published: true
-date: 2020-02-25T15:47:51.441Z
+date: 2020-02-25T16:03:22.711Z
 tags: 
 ---
 
@@ -458,7 +458,9 @@ Riprendendo l'obiettivo del IS, i passi da seguire per lo sviluppo sono:
     ![general_rest.png](/scribe/general_rest.png)
     * Nel tab _Include_ è possibile selezionare gli elementi della request definiti nello swagger, che si vogliono utilizzare e valorizzare. In questo caso sceglieremo _productFilters_ e _productRouting_
     ![include_rest.png](/scribe/include_rest.png)
-    * Nel tab _Fields_ è possibile eseguire il mapping tra i parametri di input presenti nel file Dropbox e la request dell'API Rest. In questo caso il mapping è molto intuitivo in quanto i parametri presentano la stessa naming sia sul file di input che nella request dell'API
+    * Nel tab _Fields_ è possibile eseguire il mapping tra i parametri di input presenti nel file Dropbox e la request dell'API Rest. 
+	Per mappare i campi è necessario selezionare il parametro dalla sezione _Source Connection_ e trascinarlo all'interno della sezione _Target Connection_, in corrispondeza del campo che si vuole valorizzare. 
+    In questo caso il mapping è molto intuitivo in quanto i parametri presentano la stessa naming sia sul file di input che nella request dell'API
     ![fields_rest.png](/scribe/fields_rest.png)
 
 ##### Run Solution
