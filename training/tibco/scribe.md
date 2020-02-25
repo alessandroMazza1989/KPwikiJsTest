@@ -2,7 +2,7 @@
 title: Scribe
 description: Scribe introduction
 published: true
-date: 2020-02-25T15:21:21.545Z
+date: 2020-02-25T15:24:55.493Z
 tags: 
 ---
 
@@ -456,7 +456,7 @@ Riprendendo l'obiettivo del IS, i passi da seguire per lo sviluppo sono:
 3. Configurazione del servizio Rest: 
     * Nel tab _General_ configurare il campo _Entity_ con l'endpoint da invocare (e.g. post_productserptopim)
     ![general_rest.png](/scribe/general_rest.png)
-    * Nel tab _Include_ è possibile selezionare gli elementi della request definiti nello swagger, che si vogliono utilizzare e valorizzare. In questo caso sceglieremo _productFiltes_ e _productRouting_
+    * Nel tab _Include_ è possibile selezionare gli elementi della request definiti nello swagger, che si vogliono utilizzare e valorizzare. In questo caso sceglieremo _productFilters_ e _productRouting_
     ![include_rest.png](/scribe/include_rest.png)
     * Nel tab _Fields_ è possibile eseguire il mapping tra i parametri di input presenti nel file Dropbox e la request dell'API Rest. In questo caso il mapping è molto intuitivo in quanto i parametri presentano la stessa naming sia sul file di input che nella request dell'API
     ![fields_rest.png](/scribe/fields_rest.png)
