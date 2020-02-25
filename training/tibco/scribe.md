@@ -2,7 +2,7 @@
 title: Scribe
 description: Scribe introduction
 published: true
-date: 2020-02-25T15:14:34.450Z
+date: 2020-02-25T15:21:21.545Z
 tags: 
 ---
 
@@ -442,7 +442,7 @@ Come detto in precedenza, una Solution è caratterizzata da una _Map_, ovvero la
 
 ##### Configurazione di una Map
 All'interno della sezione _Map_ della nuova Solution creata, selezionare il simbolo in alto a destra e selezionare _Create Integration Map_.
-![alt-text](url/add_map_sol.png "add_map_sol")
+![add_map_sol.png](/scribe/add_map_sol.png)
 Per poter sviluppare graficamente il servizio di integrazione, è necessario aggiungere le Connenctions precedentemente configurate, in quanto le operazioni permesse (_Map Blocks_) dipendono strettamente dal tipo di connection impostata. 
 Per aggiungere una Connection ad una Map selezionare la voce _Add Connection_ e scegliere dal menù a tendina le due Connections precedentemente configurate (Text File as a Source, Rest Web Services)
 ![add_map_conn.png](/scribe/add_map_conn.png)
