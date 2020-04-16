@@ -2,13 +2,13 @@
 title: training
 description: lista dei training aziendali
 published: true
-date: 2020-02-25T13:51:20.922Z
+date: 2020-04-16T15:17:54.088Z
 tags: training
 ---
 
-- [Training organization *Struttura dei moduli dei training*](/home/training/tableOfContents)
+- [Training organization *Struttura dei moduli dei training*](/training/tableOfContents)
 {.links-list}
-- [Getting started *System integration training topics and resources*](/home/training/tableOfContents)
+- [Getting started *System integration training topics and resources*](/training/tableOfContents)
 {.links-list}
 - [Tibco *Guidelines to TIBCO resources and official doc*](/training/tibco)
 {.links-list}
