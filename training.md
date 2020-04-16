@@ -2,7 +2,7 @@
 title: training
 description: lista dei training aziendali
 published: true
-date: 2020-04-16T15:17:54.088Z
+date: 2020-04-16T15:18:04.983Z
 tags: training
 ---
 
