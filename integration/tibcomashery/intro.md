@@ -2,7 +2,7 @@
 title: Introduzione a Mashery
 description: 
 published: true
-date: 2020-04-17T16:16:29.244Z
+date: 2020-04-17T16:18:38.182Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -21,16 +21,16 @@ I macro-componenti principali di Mashery sono:
 - Mashery API
 - Gateway
 
-#### Control Center
+### Control Center
 Il Control Center (CC per brevità) è un portale web dedicato alla configurazione e amministrazione di tutti gli oggetti/risorse necessari al funzionamento del gateway. Questi comprendono le API stesse (detti anche servizi), i package e plan, utenti e ruoli, chiavi d'accesso e altro. Gli oggetti stessi verranno trattati in dettaglio più avanti. Oltre a questo il CC permette anche la consultazione dei report di utilizzo dei servizi esposti sul gateway
 
-#### Developer Portal
+### Developer Portal
 Il Developer Portal (o dev portal) è un portale web dedicato agli utenti finali, cioè agli sviluppatori, che vogliono accedere alle API esposte dal gateway. Il portale permette di registrarsi, consultare la documentazione relativa ai servizi, testarli tramite swagger, farsi assegnare delle chiavi di accesso, chiedere informazioni o supporto.
 
-#### Mashery API
+### Mashery API
 L'API di prodotto Mashery permette di effettuare operazioni di tipo CRUD (Create Read Update Delete) su quasi tutti gli oggetti/risorse del gateway. In questo modo è possibile eseguire programmaticamente la stragrande maggioranza delle le operazioni amministrative disponibili sul CC. Esistono due versioni di questa API (V2 e V3) ma la V3 è quella più moderna e più facilmente utilizzabile poiché segue il paradigma REST. La V2 ha un metodo di autenticazione alquanto bizantino; permette tuttavia di agire con un'unica chiamata su attributi relativi a risorse diverse (supporta un linguaggio simil-SQL) quindi esistono dei casi limite in cui può essere più efficace della V3.
 
-#### Gateway
+### Gateway
 Il gateway vero e proprio è costituito dai seguenti componenti:
 
 - Traffic Manager (TM): il proxy che si occupa dell'instradamento delle chiamate. Nella realtà sono eseguiti più TM in parallelo per meglio gestire il traffico.
@@ -46,8 +46,8 @@ Mashery può essere deployato in tre diverse modalità:
 - **Local Hybrid**
 - **Local untethered**
 
-#### Cloud
+### Cloud
 
-#### Local Hybrid
+### Local Hybrid
 
-#### Local Untethered
+### Local Untethered
