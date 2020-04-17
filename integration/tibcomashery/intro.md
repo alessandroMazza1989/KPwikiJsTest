@@ -2,7 +2,7 @@
 title: Introduzione a Mashery
 description: 
 published: true
-date: 2020-04-17T16:18:38.182Z
+date: 2020-04-17T16:21:31.468Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -12,7 +12,7 @@ Un API Gateway si occupa di fare da proxy tra i client che vogliono accedere all
 
 ![api_gateway.jpg](/mashery/api_gateway.jpg){.align-center}
 
-Ovviamente questa è una visione semplicistica dello strumento che mette a disposizione una serie di funzionalità aggiuntive. Queste funzionalità verranno illustrate nei paragrafi seguenti.
+Ovviamente questa è una visione semplicistica di uno strumento che mette a disposizione una serie di funzionalità aggiuntive. Queste funzionalità verranno illustrate nei paragrafi seguenti.
 
 ## Architettura di Mashery
 I macro-componenti principali di Mashery sono:
