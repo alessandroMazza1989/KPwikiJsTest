@@ -2,15 +2,12 @@
 title: Common Topics
 description: Indice degli argomenti comuni
 published: true
-date: 2020-04-20T15:05:52.694Z
+date: 2020-04-20T15:06:40.583Z
 tags: commons
 ---
 
-
-# Common Topics
 In questa sezione verranno trattati i principali argomenti che rappresentano la base di una formazione specialistica.
 Individuare le sezioni di interesse insieme al proprio tutor.
-
 <p>&nbsp;</p>
 
 # Software Versioning
