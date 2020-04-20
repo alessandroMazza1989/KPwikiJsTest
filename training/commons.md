@@ -2,8 +2,8 @@
 title: Common Topics
 description: Indice degli argomenti comuni
 published: true
-date: 2020-04-20T15:06:40.583Z
-tags: commons
+date: 2020-04-20T15:17:59.886Z
+tags: commons, software versioning, git
 ---
 
 In questa sezione verranno trattati i principali argomenti che rappresentano la base di una formazione specialistica.
