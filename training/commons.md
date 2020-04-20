@@ -2,13 +2,16 @@
 title: Common Topics
 description: Indice degli argomenti comuni
 published: true
-date: 2020-04-20T15:19:08.013Z
+date: 2020-04-20T15:39:32.834Z
 tags: commons, software versioning, git
 ---
 
 In questa sezione verranno trattati i principali argomenti che rappresentano la base di una formazione specialistica.
 Individuare le sezioni di interesse insieme al proprio tutor.
 <p>&nbsp;</p>
+
+# Networking
+# Unix Shell
 
 # Software Versioning
 Questo capitolo ha l’obiettivo di introdurre il concetto di controllo di versione, di descriverne i diversi approcci e di approfondire gli strumenti maggiormente utilizzati per implementarlo, specialmente nell'ambito dei sistemi software.
@@ -73,3 +76,14 @@ https://git-scm.com/book/en/v2
 	- Saper usare le funzionalità di stashing;
 	- Saper modificare la history di un repository;
 	- Saper utilizzare i comandi cherry-pick, diff e log;
+  
+# XML/XSD/XPATH/XSLT
+# Algoritmi e strutture dati
+# Databases
+# Logs
+# Software Lifecycle
+# Web e Application Servers
+# Web Services (SOAP/REST)
+# Design e Architectural Patterns
+
+
