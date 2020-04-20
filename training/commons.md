@@ -2,7 +2,7 @@
 title: Common Topics
 description: Indice degli argomenti comuni
 published: true
-date: 2020-04-20T15:39:32.834Z
+date: 2020-04-20T15:49:34.418Z
 tags: commons, software versioning, git
 ---
 
@@ -11,7 +11,56 @@ Individuare le sezioni di interesse insieme al proprio tutor.
 <p>&nbsp;</p>
 
 # Networking
+Intro
+### Basic
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
+### Advanced
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
 # Unix Shell
+Intro
+### Basic
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
+### Advanced
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
 
 # Software Versioning
 Questo capitolo ha l’obiettivo di introdurre il concetto di controllo di versione, di descriverne i diversi approcci e di approfondire gli strumenti maggiormente utilizzati per implementarlo, specialmente nell'ambito dei sistemi software.
@@ -36,15 +85,6 @@ Nei sistemi distribuiti (DVCS) invece, ogni sviluppatore ha una propria copia lo
 
 ## GIT
 ### Basic
-- **Sito ufficiale**
-https://git-scm.com/
-- **Documentazione**
-https://git-scm.com/book/en/v2
-- **Percorso**
-	- [Getting Started](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control): da 1.1 a 1.8
-	- [Git Basics](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository): da 2.1 a 2.8
-	- [Git Branching](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell): da 3.1 a 3.5
-   
 - **Obiettivi**
 	- Conoscere git e le sue basi;
 	- Saper installare e configurare git;
@@ -55,35 +95,260 @@ https://git-scm.com/book/en/v2
 	- Saper modificare un branch;
 	- Saper mergiare un branch nel repository master e risolvere eventuali conflitti;
   
-### Advanced
-- **Sito ufficiale**
-https://git-scm.com/
-- **Documentazione**
-https://git-scm.com/book/en/v2
-- **Percorso**
-	- [Branching and Rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing): 3.6
-	- [Interactive Staging](https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging): 7.2
-	- [Stashing and Cleaning](https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning): 7.3
-	- [Rewriting History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History): 7.6
-	- [Reset Demystified](https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified): 7.7
-- **Comandi avanzati**
-	- [Cherry Pick](https://git-scm.com/docs/git-cherry-pick)
-	- [Diff](https://git-scm.com/docs/git-diff)
-	- [Log](https://git-scm.com/docs/git-log)
+- **Link Utili**
+[Sito ufficiale](https://git-scm.com/)
+[Documentazione](https://git-scm.com/book/en/v2)
+[Getting Started](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
+[Git Basics](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
+[Git Branching](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)
 
+
+- **Tools & Lab**
+
+### Advanced
 - **Obiettivi**
 	- Saper effettuare un rebase di un branch rispetto al repository master e risolvere interattivamente eventuali conflitti;
 	- Saper usare le funzionalità di stashing;
 	- Saper modificare la history di un repository;
 	- Saper utilizzare i comandi cherry-pick, diff e log;
   
+- **Link Utili**
+[Sito ufficiale](https://git-scm.com/)
+[Documentazione](https://git-scm.com/book/en/v2)
+[Branching and Rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)
+[Interactive Staging](https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging)
+[Stashing and Cleaning](https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning)
+[Rewriting History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
+[Reset Demystified](https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified)
+[Cherry Pick](https://git-scm.com/docs/git-cherry-pick)
+[Diff](https://git-scm.com/docs/git-diff)
+[Log](https://git-scm.com/docs/git-log)
+  
+## SVN
+### Basic
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
+### Advanced
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
+
 # XML/XSD/XPATH/XSLT
+### Basic
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
+### Advanced
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
 # Algoritmi e strutture dati
+### Basic
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
+### Advanced
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
 # Databases
+### Basic
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
+### Advanced
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
 # Logs
+### Basic
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
+### Advanced
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
 # Software Lifecycle
+### Basic
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
+### Advanced
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
 # Web e Application Servers
+### Basic
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
+### Advanced
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
 # Web Services (SOAP/REST)
+### Basic
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
+### Advanced
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
 # Design e Architectural Patterns
+### Basic
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
+### Advanced
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
 
 
