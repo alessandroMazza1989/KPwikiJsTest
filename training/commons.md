@@ -2,7 +2,7 @@
 title: Common Topics
 description: Indice degli argomenti comuni
 published: true
-date: 2020-04-20T15:17:59.886Z
+date: 2020-04-20T15:19:08.013Z
 tags: commons, software versioning, git
 ---
 
