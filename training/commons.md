@@ -2,8 +2,8 @@
 title: Common Topics
 description: Indice degli argomenti comuni
 published: true
-date: 2020-04-20T15:50:15.591Z
-tags: commons, software versioning, git
+date: 2020-04-20T15:54:11.838Z
+tags: commons, software versioning, git, networking, pattern, design, web services, unix, shell, wsdl, soap, rest, server, algoritmi, databases, sql, relational, lifecycle, log
 ---
 
 In questa sezione verranno trattati i principali argomenti che rappresentano la base di una formazione specialistica.
