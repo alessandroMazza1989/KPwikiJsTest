@@ -2,7 +2,7 @@
 title: Common Topics
 description: Indice degli argomenti comuni
 published: true
-date: 2020-04-20T16:02:48.690Z
+date: 2020-04-20T16:07:05.761Z
 tags: commons, software versioning, git, networking, pattern, design, web services, unix, shell, wsdl, soap, rest, server, algoritmi, databases, sql, relational, lifecycle, log
 ---
 
