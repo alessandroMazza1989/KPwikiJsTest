@@ -2,7 +2,7 @@
 title: Architettura
 description: 
 published: true
-date: 2020-04-21T14:37:32.708Z
+date: 2020-04-21T14:39:40.851Z
 tags: mashery, tibco, architecture
 ---
 
@@ -30,9 +30,9 @@ Di seguito l'elenco dei container/componenti di Mashery:
 - Traffic Manager (TM): il proxy che si occupa dell'autenticazione, elaborazione e instradamento delle chiamate. Di gran lunga il componente più importante poiché è quello che direttamente eroga il servizio verso i client.
 - Cassandra Registry: un DB nosql che Mashery utilizza per tenere traccia della topologia dei suoi componenti interni e, in caso di installazione distribuita geograficamente, sincronizzarla tra le diverse zone.
 - MySQL DB: qui vengono persistite tutte le configurazioni e gli oggetti gestiti dal CC o dalla Mashery API e necessari al funzionamento del gateway.
-- Memcached: questo componente si occupa dell'eventuale caching delle risposte ai servizi e di mantenere in cache le configurazioni alle quali è necessario un accesso veloce e ricorrente da parte dei TM (ad esempio le chiavi d'accesso).
+- Memcached: si occupa del caching opzionale delle risposte ai servizi e di mantenere in cache le informazioni per le quali è richiesto un accesso veloce e ricorrente da parte dei TM (ad esempio le chiavi d'accesso).
 - Log Service: basato su fluentd, si occupa dell'accentramento di tutti i log provenienti dagli altri componenti e dell'eventuale instradamento a piattaforme esterne di log management (elastic, splunk, ...).
-- Cluster Manager: da questo componente è implementata ed esposta l'API di prodotto, oltre a questo mette a disposizione una command line per operazioni amministrative di basso livello.
+- Cluster Manager: espone l'API di prodotto e mette a disposizione una command line per operazioni amministrative a basso livello.
 
 **NB**: le considerazioni fatte in questo paragrafo valgono ufficialmente per un'installazione local di Mashery. Non esiste documentazione sul funzionamento interno del Gateway in modalità cloud tuttavia possiamo presumere con una certa dose di sicurezza che non si discosti affatto da quanto scritto.
 ## Deployment
