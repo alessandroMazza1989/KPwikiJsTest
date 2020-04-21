@@ -2,7 +2,7 @@
 title: Architettura
 description: 
 published: true
-date: 2020-04-21T14:35:59.582Z
+date: 2020-04-21T14:37:32.708Z
 tags: mashery, tibco, architecture
 ---
 
@@ -25,7 +25,7 @@ L'API di prodotto Mashery permette di effettuare operazioni di tipo CRUD (Create
 ### Gateway
 Il gateway vero e proprio è il motore di Mashery ed è *container based*. Ciò significa che ogni componente risiede in un container Docker dedicato. Un container Docker può essere visto, semplificando, come una piccola Virtual Machine con un overhead molto ridotto. I container sono per loro stessa natura effimeri e rapidamente sostituibili e devono essere gestiti da un orchestratore (eg. Kubernetes, Swarm, OpenShift, ...) andando a formare un *cluster*. È possibile, e consigliato, replicare ogni container all'interno del cluster in modo da garantire robustezza e parallelismo. Il dimensionamento dell'infrastruttura richiede considerazioni relative al volume di traffico previsto e a eventuali picchi, alle risorse hardware disponibili e al loro costo, alla ridondanza geografica, ecc.
 
-Di seguito l'elenco dei container/componenti:
+Di seguito l'elenco dei container/componenti di Mashery:
 
 - Traffic Manager (TM): il proxy che si occupa dell'autenticazione, elaborazione e instradamento delle chiamate. Di gran lunga il componente più importante poiché è quello che direttamente eroga il servizio verso i client.
 - Cassandra Registry: un DB nosql che Mashery utilizza per tenere traccia della topologia dei suoi componenti interni e, in caso di installazione distribuita geograficamente, sincronizzarla tra le diverse zone.
