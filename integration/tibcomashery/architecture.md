@@ -2,7 +2,7 @@
 title: Architettura
 description: 
 published: true
-date: 2020-04-21T15:24:55.182Z
+date: 2020-04-21T15:38:16.559Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
@@ -22,6 +22,7 @@ Il [Control Center](http://docs.mashery.com/gettingstarted/GUID-84038256-96F8-47
 Il [Developer Portal](http://docs.mashery.com/manage/GUID-FFE293BA-7DD7-4A3A-9257-3580013733BB.html) (o dev portal) è un portale web dedicato agli utenti finali, cioè agli sviluppatori che vogliono accedere alle API esposte dal gateway. Il portale permette di registrarsi, consultare la documentazione relativa ai servizi, testarli tramite swagger, farsi assegnare delle chiavi di accesso, chiedere informazioni o supporto.
 
 ### Mashery API
+![mashery_api.jpg](/mashery/mashery_api.jpg)
 L'[API](https://developer.mashery.com/docs/read/mashery_api) di prodotto Mashery permette di effettuare operazioni di tipo CRUD (Create Read Update Delete) su quasi tutti gli oggetti/risorse del gateway. In questo modo è possibile eseguire programmaticamente la stragrande maggioranza delle operazioni amministrative disponibili sul CC. Esistono due versioni di questa API (V2 e V3) ma la V3 è quella più moderna e più facilmente utilizzabile poiché segue il paradigma REST. La V2 ha un'autenticazione alquanto bizantina; permette tuttavia di agire con un'unica chiamata su attributi relativi a risorse diverse (supporta un linguaggio simil-SQL) quindi esistono dei casi limite in cui può essere più efficace della V3.
 
 ### Gateway
@@ -36,6 +37,7 @@ Di seguito l'elenco dei container/componenti di Mashery:
 - Log Service: basato su fluentd, si occupa dell'accentramento di tutti i log provenienti dagli altri componenti e dell'eventuale instradamento a piattaforme esterne di log management (elastic, splunk, ...).
 - Cluster Manager: espone l'API di prodotto e mette a disposizione una command line per operazioni amministrative a basso livello.
 
+![cluster.jpg](/mashery/cluster.jpg)
 **NB**: le considerazioni fatte in questa sezione valgono per un'installazione local di Mashery. Non esiste documentazione ufficiale sul funzionamento interno del Gateway in modalità cloud tuttavia possiamo presumere con una certa dose di sicurezza che non si discosti affatto da quanto scritto.
 ## Deployment
 Mashery può essere deployato in tre diverse modalità: 
