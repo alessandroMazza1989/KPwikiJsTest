@@ -1,12 +1,11 @@
 ---
-title: 
+title: Tibco Mashery
 description: Table of Contents
 published: true
-date: 2020-04-21T15:56:36.804Z
+date: 2020-04-21T15:57:07.626Z
 tags: mashery, api, gateway, cloud, tibco
 ---
 
-# Tibco Mashery
 - [Introduzione](/integration/tibcomashery/intro)
 {.links-list}
 - [Architettura](/integration/tibcomashery/architecture)
