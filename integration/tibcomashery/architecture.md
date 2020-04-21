@@ -2,7 +2,7 @@
 title: Architettura
 description: 
 published: true
-date: 2020-04-21T15:23:00.147Z
+date: 2020-04-21T15:24:55.182Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
@@ -18,6 +18,7 @@ I macro-componenti principali di Mashery sono:
 Il [Control Center](http://docs.mashery.com/gettingstarted/GUID-84038256-96F8-47F2-AD86-8EEC424F7BB6.html) (CC per brevità) è un portale web dedicato alla configurazione e amministrazione di tutti gli oggetti/risorse necessari al funzionamento del gateway. Questi comprendono le API stesse (detti anche servizi), i package e plan, utenti e ruoli, chiavi d'accesso e altro. Gli oggetti stessi sono trattati in dettaglio nella sezione dedicata. Oltre a questo il CC permette anche la consultazione dei report di utilizzo dei servizi esposti sul gateway.
 
 ### Developer Portal
+![dev_portal.jpg](/mashery/dev_portal.jpg)
 Il [Developer Portal](http://docs.mashery.com/manage/GUID-FFE293BA-7DD7-4A3A-9257-3580013733BB.html) (o dev portal) è un portale web dedicato agli utenti finali, cioè agli sviluppatori che vogliono accedere alle API esposte dal gateway. Il portale permette di registrarsi, consultare la documentazione relativa ai servizi, testarli tramite swagger, farsi assegnare delle chiavi di accesso, chiedere informazioni o supporto.
 
 ### Mashery API
