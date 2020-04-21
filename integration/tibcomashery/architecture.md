@@ -2,7 +2,7 @@
 title: Architettura
 description: 
 published: true
-date: 2020-04-21T14:59:37.691Z
+date: 2020-04-21T15:17:25.425Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
