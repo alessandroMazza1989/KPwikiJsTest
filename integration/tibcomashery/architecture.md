@@ -2,8 +2,8 @@
 title: Architettura
 description: 
 published: true
-date: 2020-04-21T14:39:40.851Z
-tags: mashery, tibco, architecture
+date: 2020-04-21T14:59:37.691Z
+tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
 ## Architettura di Mashery
@@ -14,27 +14,27 @@ I macro-componenti principali di Mashery sono:
 - Gateway
 
 ### Control Center
-Il Control Center (CC per brevità) è un portale web dedicato alla configurazione e amministrazione di tutti gli oggetti/risorse necessari al funzionamento del gateway. Questi comprendono le API stesse (detti anche servizi), i package e plan, utenti e ruoli, chiavi d'accesso e altro. Gli oggetti stessi verranno trattati in dettaglio più avanti. Oltre a questo il CC permette anche la consultazione dei report di utilizzo dei servizi esposti sul gateway
+Il [Control Center](http://docs.mashery.com/gettingstarted/GUID-84038256-96F8-47F2-AD86-8EEC424F7BB6.html) (CC per brevità) è un portale web dedicato alla configurazione e amministrazione di tutti gli oggetti/risorse necessari al funzionamento del gateway. Questi comprendono le API stesse (detti anche servizi), i package e plan, utenti e ruoli, chiavi d'accesso e altro. Gli oggetti stessi sono trattati in dettaglio nella sezione dedicata. Oltre a questo il CC permette anche la consultazione dei report di utilizzo dei servizi esposti sul gateway.
 
 ### Developer Portal
-Il Developer Portal (o dev portal) è un portale web dedicato agli utenti finali, cioè agli sviluppatori, che vogliono accedere alle API esposte dal gateway. Il portale permette di registrarsi, consultare la documentazione relativa ai servizi, testarli tramite swagger, farsi assegnare delle chiavi di accesso, chiedere informazioni o supporto.
+Il [Developer Portal](http://docs.mashery.com/manage/GUID-FFE293BA-7DD7-4A3A-9257-3580013733BB.html) (o dev portal) è un portale web dedicato agli utenti finali, cioè agli sviluppatori che vogliono accedere alle API esposte dal gateway. Il portale permette di registrarsi, consultare la documentazione relativa ai servizi, testarli tramite swagger, farsi assegnare delle chiavi di accesso, chiedere informazioni o supporto.
 
 ### Mashery API
-L'API di prodotto Mashery permette di effettuare operazioni di tipo CRUD (Create Read Update Delete) su quasi tutti gli oggetti/risorse del gateway. In questo modo è possibile eseguire programmaticamente la stragrande maggioranza delle le operazioni amministrative disponibili sul CC. Esistono due versioni di questa API (V2 e V3) ma la V3 è quella più moderna e più facilmente utilizzabile poiché segue il paradigma REST. La V2 ha un metodo di autenticazione alquanto bizantino; permette tuttavia di agire con un'unica chiamata su attributi relativi a risorse diverse (supporta un linguaggio simil-SQL) quindi esistono dei casi limite in cui può essere più efficace della V3.
+L'[API](https://developer.mashery.com/docs/read/mashery_api) di prodotto Mashery permette di effettuare operazioni di tipo CRUD (Create Read Update Delete) su quasi tutti gli oggetti/risorse del gateway. In questo modo è possibile eseguire programmaticamente la stragrande maggioranza delle operazioni amministrative disponibili sul CC. Esistono due versioni di questa API (V2 e V3) ma la V3 è quella più moderna e più facilmente utilizzabile poiché segue il paradigma REST. La V2 ha un'autenticazione alquanto bizantina; permette tuttavia di agire con un'unica chiamata su attributi relativi a risorse diverse (supporta un linguaggio simil-SQL) quindi esistono dei casi limite in cui può essere più efficace della V3.
 
 ### Gateway
-Il gateway vero e proprio è il motore di Mashery ed è *container based*. Ciò significa che ogni componente risiede in un container Docker dedicato. Un container Docker può essere visto, semplificando, come una piccola Virtual Machine con un overhead molto ridotto. I container sono per loro stessa natura effimeri e rapidamente sostituibili e devono essere gestiti da un orchestratore (eg. Kubernetes, Swarm, OpenShift, ...) andando a formare un *cluster*. È possibile, e consigliato, replicare ogni container all'interno del cluster in modo da garantire robustezza e parallelismo. Il dimensionamento dell'infrastruttura richiede considerazioni relative al volume di traffico previsto e a eventuali picchi, alle risorse hardware disponibili e al loro costo, alla ridondanza geografica, ecc.
+Il gateway vero e proprio è il motore di Mashery ed è *container based*. È cioè composto da [componenti separati](https://docs.tibco.com/pub/mash-local/5.3.0/doc/html/GUID-B454FA7F-9A50-488D-AF3C-0DD15E83C7EB.html) eseguiti da container Docker dedicati. Un container Docker può essere visto, semplificando, come una piccola Virtual Machine con overhead molto ridotto. I container sono per loro stessa natura effimeri e velocemente sostituibili e devono essere gestiti da un orchestratore (eg. Kubernetes, Swarm, OpenShift, ...) andando a formare un *cluster*. È possibile, e consigliato, replicare ogni container all'interno del cluster in modo da garantire robustezza e parallelismo. Il dimensionamento dell'infrastruttura richiede considerazioni relative al volume di traffico previsto e a eventuali picchi, alle risorse hardware disponibili e al loro costo, alla ridondanza geografica, ecc.
 
 Di seguito l'elenco dei container/componenti di Mashery:
 
 - Traffic Manager (TM): il proxy che si occupa dell'autenticazione, elaborazione e instradamento delle chiamate. Di gran lunga il componente più importante poiché è quello che direttamente eroga il servizio verso i client.
-- Cassandra Registry: un DB nosql che Mashery utilizza per tenere traccia della topologia dei suoi componenti interni e, in caso di installazione distribuita geograficamente, sincronizzarla tra le diverse zone.
-- MySQL DB: qui vengono persistite tutte le configurazioni e gli oggetti gestiti dal CC o dalla Mashery API e necessari al funzionamento del gateway.
+- Cassandra Registry: un database noSQL che tiene traccia della topologia dei componenti stessi e, in caso di installazione distribuita geograficamente, la condivide e sincronizza tra le diverse zone.
+- MySQL DB: persiste tutte le configurazioni e gli oggetti configurati dal CC o dalla Mashery API e necessari al funzionamento del gateway.
 - Memcached: si occupa del caching opzionale delle risposte ai servizi e di mantenere in cache le informazioni per le quali è richiesto un accesso veloce e ricorrente da parte dei TM (ad esempio le chiavi d'accesso).
 - Log Service: basato su fluentd, si occupa dell'accentramento di tutti i log provenienti dagli altri componenti e dell'eventuale instradamento a piattaforme esterne di log management (elastic, splunk, ...).
 - Cluster Manager: espone l'API di prodotto e mette a disposizione una command line per operazioni amministrative a basso livello.
 
-**NB**: le considerazioni fatte in questo paragrafo valgono ufficialmente per un'installazione local di Mashery. Non esiste documentazione sul funzionamento interno del Gateway in modalità cloud tuttavia possiamo presumere con una certa dose di sicurezza che non si discosti affatto da quanto scritto.
+**NB**: le considerazioni fatte in questa sezione valgono per un'installazione local di Mashery. Non esiste documentazione ufficiale sul funzionamento interno del Gateway in modalità cloud tuttavia possiamo presumere con una certa dose di sicurezza che non si discosti affatto da quanto scritto.
 ## Deployment
 Mashery può essere deployato in tre diverse modalità: 
 - **Cloud**
@@ -56,4 +56,4 @@ I restanti componenti (CC, Dev Portal, API di prodotto) continuano a essere in g
 ### Local Untethered
 In modalità untethered tutti i componenti vengono installati e gestiti esclusivamente in locale. Ci sono alcune variazioni di nomenclatura dei componenti (eg: il Control Center locale viene chiamato *Configuration Manager* mentre il Developer Portal per distinzione diventa *Local Developer Portal*) e alcune funzionalità dei portali cloud sono diverse e/o assenti. Non c'è comunicazione alcuna con il MOM.
 
-**NB**: le modalità Hybrid e Untethered sono mutualmente esclusive e la scelta viene fatta in fase di installazione di Mashery Local.
+**NB**: le modalità Hybrid e Untethered sono mutualmente esclusive e la scelta deve essere fatta in fase di installazione di Mashery Local.
