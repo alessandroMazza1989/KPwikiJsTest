@@ -2,16 +2,16 @@
 title: Architettura e Deployment di Mashery
 description: 
 published: true
-date: 2020-04-21T15:58:20.019Z
+date: 2020-04-21T15:59:52.866Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
 # Architettura
 I macro-componenti principali di Mashery sono:
-- Control Center
-- Developer Portal
-- Mashery API
-- Gateway
+- [Control Center](http://ec2-54-154-224-106.eu-west-1.compute.amazonaws.com/en/integration/tibcomashery/architecture#control-center)
+- [Developer Portal](http://ec2-54-154-224-106.eu-west-1.compute.amazonaws.com/en/integration/tibcomashery/architecture#developer-portal)
+- [Mashery API](http://ec2-54-154-224-106.eu-west-1.compute.amazonaws.com/en/integration/tibcomashery/architecture#mashery-api)
+- [Gateway](http://ec2-54-154-224-106.eu-west-1.compute.amazonaws.com/en/integration/tibcomashery/architecture#gateway)
 
 ## Control Center
 ![cc.jpg](/mashery/cc.jpg)
