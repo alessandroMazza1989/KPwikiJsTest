@@ -1,12 +1,12 @@
 ---
-title: Architettura
+title: Architettura e Deployment di Mashery
 description: 
 published: true
-date: 2020-04-21T15:54:27.205Z
+date: 2020-04-21T15:58:20.019Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
-# Architettura di Mashery
+# Architettura
 I macro-componenti principali di Mashery sono:
 - Control Center
 - Developer Portal
