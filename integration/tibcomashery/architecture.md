@@ -2,7 +2,7 @@
 title: Architettura
 description: 
 published: true
-date: 2020-04-21T15:53:51.871Z
+date: 2020-04-21T15:54:27.205Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
@@ -64,6 +64,6 @@ In modalità ibrida, anche detta tethered (dall'inglese *tether*: "corda, colleg
 I restanti componenti (CC, Dev Portal, API di prodotto) continuano a essere in gestione a Tibco. Si rende necessaria una sincronizzazione costante tra la parte local e quella cloud (essenzialmente l'ambiente locale recepisce le configurazioni effettuate sul CC e l'ambiente cloud riceve aggiornamenti sulle statistiche d'uso delle API esposte). La comunicazione in entrambe le direzioni avviene unicamente tramite interrogazioni dal local a un servizio cloud dedicato (il MOM, *Mashery On-Prem Manager*).
 
 #### Untethered
-In modalità untethered tutti i componenti vengono installati e gestiti esclusivamente in locale. Ci sono alcune variazioni di nomenclatura (eg: il Control Center locale viene chiamato *Configuration Manager* mentre il Developer Portal per distinzione diventa *Local Developer Portal*) e alcune funzionalità dei portali cloud sono diverse e/o assenti. Non c'è comunicazione alcuna con il MOM.
+In modalità untethered tutti i componenti vengono installati e gestiti esclusivamente in locale. Ci sono alcune variazioni di nomenclatura (eg: il Control Center locale viene chiamato *Configuration Manager* mentre il Developer Portal per distinzione diventa *Local Developer Portal*) e alcune funzionalità disponibili sui portali cloud sono diverse e/o assenti. Non c'è comunicazione alcuna con il MOM.
 
 **NB**: le modalità Hybrid e Untethered sono mutualmente esclusive e la scelta deve essere fatta in fase di installazione di Mashery Local.
