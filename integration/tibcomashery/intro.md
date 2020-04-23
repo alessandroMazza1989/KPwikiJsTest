@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-23T15:04:09.542Z
+date: 2020-04-23T15:24:08.664Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -19,19 +19,37 @@ L'organizzazione logica interna di Mashery si basa su una serie di oggetti. Semp
 
 ![objects.jpg](/mashery/objects.jpg)
 
+Nei paragrafi seguenti verranno illustrati gli oggetti più importanti.
+
 ### API
 Il primo oggetto da considerare è ovviamente l'**API** o **servizio**. Una API è essenzialmente un contentitore logico di endpoints. Vi sono alcune configurazioni che possono essere effettuate a livello di API ma in generale esse vengono sovrascritte dalle configurazioni impostate sul singolo endpoint.
 
 ![api_list.jpg](/mashery/api_list.jpg)
 
-Il 99% dei servizi moderni appartiene a una delle due famiglie **REST** o **SOAP**. Mashery supporta entrambi gli standard con un livello variabile di successo. Non è fra gli obiettivi di questa guida illustrare le caratteristiche dei due paradigmi tuttavia una loro conoscenza di base è richiesta sia per comprenderla che per lavorare con un API Gateway.
+Il 99% dei servizi moderni appartiene a una delle due famiglie **REST** o **SOAP**. Mashery supporta entrambi gli standard con un livello variabile di successo. Non è fra gli obiettivi di questa guida illustrare le caratteristiche dei due paradigmi tuttavia una loro conoscenza di base è consigliata.
 
 ### Endpoint
-L'**endpoint** è sicuramente l'oggetto più importante e più complesso di Mashery. Un endpoint rappresenta un canale di comunicazione messo a disposizione dal gateway al mondo esterno. Ogni endpoint deve avere un indirizzo (URI, Uniform Resource Identifier) che lo identifica in maniera univoca e universale: non possono esistere due URI uguali sulla rete. Tramite un endpoint il client è in grado di accedere a una o più risorse messe a disposizione dal backend. Per fare ciò il client invia richieste all'endpoint e riceve risposte dallo stesso.
-La maggioranza delle configurazioni necessarie alla pubblicazione di una API sul gateway viene effettuata a livello di endpoint.
+L'**endpoint** è sicuramente l'oggetto più importante e più complesso di Mashery. Un endpoint rappresenta un canale di comunicazione tra il gateway e il mondo esterno. Ogni endpoint deve avere un indirizzo (URI, Uniform Resource Identifier) che lo identifica in maniera univoca e universale: non possono esistere due URI uguali sulla rete. Tramite un endpoint il client è in grado di accedere a una o più risorse messe a disposizione dal backend; per fare ciò il client invia richieste all'endpoint e riceve risposte dallo stesso.
 
 ![ep_list.jpg](/mashery/ep_list.jpg)
 
+La maggioranza delle configurazioni necessarie alla pubblicazione di una API sul gateway viene effettuata a livello di singolo endpoint. Come già detto in Mashery gli endpoints sono raggruppati logicamente all'interno dei servizi.
+
+**NB**: esiste un certo livello di ambiguità tra gli addetti ai lavori su cosa sia un servizio. C'è chi identifica il servizio con il singolo endpoint e chi invece lo identifica con un gruppo di endpoints funzionalmente imparentati (vale a dire una API). Sia nella documentazione ufficiale Tibco che in questo documento quando si parla di servizio ci si riferisce *sempre* a una API.
+
+### Metodo
+
+### Utente
+
+### Ruolo
+
+### Applicazione
+
+### Pacchetto
+
+### Piano
+
+### Chiave
 
 # Funzionalità
 Di seguito la lista delle macro funzionalità che Tibco Mashery mette a disposizione di un cliente per gestire la sua API governance:
