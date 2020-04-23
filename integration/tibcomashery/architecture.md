@@ -2,7 +2,7 @@
 title: Architettura e Deployment di Mashery
 description: 
 published: true
-date: 2020-04-21T16:03:36.227Z
+date: 2020-04-23T16:45:38.188Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
@@ -14,12 +14,33 @@ I macro-componenti principali di Mashery sono:
 - [Gateway](#gateway)
 
 ## Control Center
-![cc.jpg](/mashery/cc.jpg)
 Il [Control Center](http://docs.mashery.com/gettingstarted/GUID-84038256-96F8-47F2-AD86-8EEC424F7BB6.html) (CC per brevità) è un portale web dedicato alla configurazione e amministrazione di tutti gli oggetti/risorse necessari al funzionamento del gateway. Questi comprendono le API stesse (detti anche servizi), i package e plan, utenti e ruoli, chiavi d'accesso e altro. Gli oggetti stessi sono trattati in dettaglio nella sezione dedicata. Oltre a questo il CC permette anche la consultazione dei report di utilizzo dei servizi esposti sul gateway.
 
+![cc.jpg](/mashery/cc.jpg)
+
+L'indirizzo del CC è [*\<nomeareacliente\>.admin.mashery.com*](http://www.blankwebsite.com/). È anche possibile (o necessario, se si utilizza un'utenza in Single sign-on) raggiungerlo dal sito [*cloud.tibco.com*](https://cloud.tibco.com/) selezionando *APIs → Control Center* dopo essersi autenticati.
+
+![cloud_homepage.jpg](/mashery/cloud_homepage.jpg)
+
 ## Developer Portal
-![dev_portal.jpg](/mashery/dev_portal.jpg)
 Il [Developer Portal](http://docs.mashery.com/manage/GUID-FFE293BA-7DD7-4A3A-9257-3580013733BB.html) (o dev portal) è un portale web dedicato agli utenti finali, cioè agli sviluppatori che vogliono accedere alle API esposte dal gateway. Il portale permette di registrarsi, consultare la documentazione relativa ai servizi, testarli tramite swagger, farsi assegnare delle chiavi di accesso, chiedere informazioni o supporto.
+
+![dev_portal.jpg](/mashery/dev_portal.jpg)
+
+L'indirizzo iniziale del Developer Portal Cloud è [*\<nomeareacliente\>.mashery.com*](http://www.blankwebsite.com/). Una delle prime operazioni in fase di adozione di Mashery è la customizzazione dell'indirizzo ([*developer.\<nomeareacliente\>.com*](http://www.blankwebsite.com/) è generalmente la scelta più popolare).
+
+Esempi di Dev Portal di alcuni clienti Tibco, con diversi gradi di personalizzazione, sono:
+
+- [developer.pirelli.com](https://developer.pirelli.com/)
+- [developer.sportradar.com](https://developer.sportradar.com/)
+- [developer.battle.net](https://developer.battle.net/)
+- [developer.walmartlabs.com](https://developer.walmartlabs.com/)
+- [developer.fandango.com](https://developer.fandango.com/)
+- [developer.hotelbeds.com](https://developer.hotelbeds.com/)
+- [developer.lufthansa.com](https://developer.lufthansa.com/)
+- [developer.airfranceklm.com](https://developer.airfranceklm.com/)
+- [developer.iairgroup.com](https://developer.iairgroup.com/)
+- [developer.avios.com](https://developer.avios.com/)
 
 ## Mashery API
 ![mashery_api.jpg](/mashery/mashery_api.jpg)
