@@ -2,7 +2,7 @@
 title: Architettura e Deployment di Mashery
 description: 
 published: true
-date: 2020-04-23T16:45:38.188Z
+date: 2020-04-23T16:51:11.498Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
@@ -47,7 +47,8 @@ Esempi di Dev Portal di alcuni clienti Tibco, con diversi gradi di personalizzaz
 L'[API](https://developer.mashery.com/docs/read/mashery_api) di prodotto Mashery permette di effettuare operazioni di tipo CRUD (Create Read Update Delete) su quasi tutti gli oggetti/risorse del gateway. In questo modo è possibile eseguire programmaticamente la stragrande maggioranza delle operazioni amministrative disponibili sul CC. Esistono due versioni di questa API (V2 e V3) ma la V3 è quella più moderna e più facilmente utilizzabile poiché segue il paradigma REST. La V2 ha un'autenticazione alquanto bizantina; permette tuttavia di agire con un'unica chiamata su attributi relativi a risorse diverse (supporta un linguaggio simil-SQL) quindi esistono dei casi limite in cui può essere più efficace della V3.
 
 ## Gateway
-Il gateway vero e proprio è il motore di Mashery ed è *container based*. È cioè composto da [componenti separati](https://docs.tibco.com/pub/mash-local/5.3.0/doc/html/GUID-B454FA7F-9A50-488D-AF3C-0DD15E83C7EB.html) eseguiti da container Docker dedicati. Un container Docker può essere visto, semplificando, come una piccola Virtual Machine con overhead molto ridotto. I container sono per loro stessa natura effimeri e velocemente sostituibili e devono essere gestiti da un orchestratore (eg. Kubernetes, Swarm, OpenShift, ...) andando a formare un *cluster*. È possibile, e consigliato, replicare ogni container all'interno del cluster in modo da garantire robustezza e parallelismo. Il dimensionamento dell'infrastruttura richiede considerazioni relative al volume di traffico previsto e a eventuali picchi, alle risorse hardware disponibili e al loro costo, alla ridondanza geografica, ecc.
+Il gateway vero e proprio è il motore di Mashery ed è *container based*. È cioè composto da [componenti separati](https://docs.tibco.com/pub/mash-local/5.3.0/doc/html/GUID-B454FA7F-9A50-488D-AF3C-0DD15E83C7EB.html) eseguiti da container Docker dedicati. Un container Docker può essere visto, semplificando, come una piccola Virtual Machine con overhead molto ridotto. I container sono per loro stessa natura effimeri e velocemente sostituibili e devono essere gestiti da un orchestratore (eg. Kubernetes, Swarm, OpenShift, ...) andando a formare un *cluster*. 
+È possibile, e consigliato, replicare ogni container all'interno del cluster in modo da garantire robustezza e parallelismo. Il dimensionamento dell'infrastruttura richiede considerazioni relative al volume di traffico previsto e a eventuali picchi, alle risorse hardware disponibili e al loro costo, alla ridondanza geografica, ecc.
 
 ![cluster.jpg](/mashery/cluster.jpg)
 
@@ -61,6 +62,8 @@ Di seguito l'elenco dei container/componenti di Mashery:
 - Cluster Manager (CM): espone l'API di prodotto e mette a disposizione una command line per operazioni amministrative a basso livello.
 
 **NB**: le considerazioni fatte in questa sezione valgono per un'installazione local di Mashery. Non esiste documentazione ufficiale sul funzionamento interno del Gateway in modalità cloud tuttavia possiamo presumere con una certa dose di sicurezza che non si discosti affatto da quanto scritto.
+
+Il dominio di default del gateway cloud (vale a dire dei traffic manager messi a disposizione da Tibco) è [*\<nomeareacliente\>.api.mashery.com*](http://www.blankwebsite.com/). Analogamente al Dev Portal è possibile raggiungere il TM definendo un CNAME customizzabile in modo da "brandizzare" il dominio.
 
 # Deployment
 Mashery può essere deployato in tre diverse modalità: 
