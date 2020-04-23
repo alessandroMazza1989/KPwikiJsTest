@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-23T15:30:44.781Z
+date: 2020-04-23T15:52:22.402Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -37,6 +37,14 @@ La maggioranza delle configurazioni necessarie alla pubblicazione di una API sul
 **NB**: esiste un certo livello di ambiguità tra gli addetti ai lavori su cosa sia un servizio. C'è chi identifica il servizio con il singolo endpoint e chi invece lo identifica con un gruppo di endpoints funzionalmente imparentati (vale a dire una API). Sia nella documentazione ufficiale Tibco che in questo documento quando si parla di servizio ci si riferisce *sempre* a una API.
 
 ## Metodo
+
+Un **metodo** è un'ulteriore suddivisione logica messa a disposizione dal gateway per distinguere operazioni/risorse diverse accessibili tramite lo stesso endpoint. In quest'ottica è anche possibile considerare un endpoint come un raggruppamento logico di metodi, completando quindi la gerarchia.
+
+![api_hierarchy.jpg](/mashery/api_hierarchy.jpg)
+
+La configurazione dei metodi è opzionale in Mashery e si adatta particolarmente bene all'archetipo SOAP, in cui il metodo è sovrapponibile al concetto di *SOAP operation*, mentre risulta superflua nei servizi REST (escludendo casi limite in cui il cliente necessità di alcune funzionalità specifiche implementabili esclusivamente tramite i metodi, che verranno trattate in seguito).
+
+**NB**: il metodo Mashery **non** corrisponde al metodo REST!
 
 ## Utente
 
