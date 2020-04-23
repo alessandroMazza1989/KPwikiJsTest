@@ -2,9 +2,9 @@
 title: Integration
 description: List of available integration topics
 published: true
-date: 2020-04-21T12:17:09.711Z
+date: 2020-04-23T15:06:20.790Z
 tags: integration
 ---
 
-- [Tibco Mashery *Installation and administration of the Mashery API Gateway*](/integration/tibcomashery)
+- [Tibco Mashery *Installazione e amministrazione dell'API Gateway Mashery*](/integration/tibcomashery)
 {.links-list}
