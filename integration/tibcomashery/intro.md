@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-23T15:52:22.402Z
+date: 2020-04-23T15:53:46.639Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -42,7 +42,7 @@ Un **metodo** è un'ulteriore suddivisione logica messa a disposizione dal gatew
 
 ![api_hierarchy.jpg](/mashery/api_hierarchy.jpg)
 
-La configurazione dei metodi è opzionale in Mashery e si adatta particolarmente bene all'archetipo SOAP, in cui il metodo è sovrapponibile al concetto di *SOAP operation*, mentre risulta superflua nei servizi REST (escludendo casi limite in cui il cliente necessità di alcune funzionalità specifiche implementabili esclusivamente tramite i metodi, che verranno trattate in seguito).
+La configurazione dei metodi è opzionale in Mashery e si adatta particolarmente bene all'archetipo SOAP, in cui il metodo è sovrapponibile al concetto di *SOAP operation*, mentre risulta superflua nei servizi REST (escludendo casi limite in cui il cliente necessita di alcune funzionalità specifiche implementabili esclusivamente tramite i metodi, che verranno trattate in seguito).
 
 **NB**: il metodo Mashery **non** corrisponde al metodo REST!
 
