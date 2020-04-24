@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-23T16:18:22.057Z
+date: 2020-04-24T14:05:11.737Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -27,7 +27,10 @@ Quando viene effettuata una sottoscrizione a Mashery Tibco crea una **area** ded
 ![area.jpg](/mashery/area.jpg)
 
 Ogni area ha UUID e ID univoci che la identificano e possono essere utili in caso di contatti con il supporto. L'area è in pratica l'organizzazione *root* all'interno delle quali risiedono le organizzazioni definite dal cliente.
+
 ## Organizzazione
+
+Una **organizzazione** è un contenitore di risorse (API, Pacchetti, Documentazione, ecc.) che sono tra loro logicamente collegati. Ad esempio un'organizzazione può essere creata per raccogliere le risorse dedicate a una certa Business Unit del cliente oppure a un dato gruppo di lavoro o ancora a un determinato progetto. Tutte le organizzazioni sono figlie dell'area, che nella pratica è l'organizzazione *root* all'interno della quale risiedono tutte le altre.
 
 ## API
 Il primo oggetto da considerare è ovviamente l'**API** o **servizio**. Una API è essenzialmente un contentitore logico di endpoints. Vi sono alcune configurazioni che possono essere effettuate a livello di API ma in generale esse vengono sovrascritte dalle configurazioni impostate sul singolo endpoint.
