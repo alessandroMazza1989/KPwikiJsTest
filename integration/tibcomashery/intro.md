@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-27T16:01:06.801Z
+date: 2020-04-27T16:11:22.874Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -95,7 +95,7 @@ La maggioranza delle configurazioni necessarie alla pubblicazione di una API sul
 Un **metodo** è un'ulteriore suddivisione logica messa a disposizione dal gateway per distinguere operazioni/risorse diverse accessibili tramite lo stesso endpoint. In quest'ottica è anche possibile considerare un endpoint come un raggruppamento logico di metodi, completando quindi la gerarchia.
 
 >![api_hierarchy.jpg](/mashery/api_hierarchy.jpg)
-> Gerarchia degli oggetti
+> Gerarchia degli oggetti in Mashery
 
 La configurazione dei metodi è opzionale in Mashery e si adatta particolarmente bene all'archetipo SOAP, in cui il metodo è sovrapponibile al concetto di *SOAP operation*, mentre risulta superflua nei servizi REST (escludendo casi limite in cui il cliente necessita di alcune funzionalità specifiche implementabili esclusivamente tramite i metodi, che verranno trattate in seguito).
 
@@ -120,10 +120,16 @@ Non è possibile accedere agli endpoint esposti dal gateway senza prima aver cre
 > Schermata di elenco delle applicazioni 
 
 ## Pacchetto
-Il [**pacchetto**](http://docs.mashery.com/design/GUID-B9F7E9DA-6E0C-4300-9A1D-CB7B407BC5D3.html) è un raggruppamento logico di [piani](#piano) di utilizzo delle API. Alcune (poche) configurazioni si effettuano a livello di pacchetto ma generalmente parlando si tratta di un semplice contenitore.
+Il [**pacchetto**](http://docs.mashery.com/design/GUID-B9F7E9DA-6E0C-4300-9A1D-CB7B407BC5D3.html) è un raggruppamento logico di [piani](#piano) di utilizzo delle API. 
+
+>![packages_plans.jpg](/mashery/packages_plans.jpg)
+> Esempio di pacchetto contenente tre diversi piani di accesso
+
+Alcune (poche) configurazioni si effettuano a livello di pacchetto ma generalmente parlando si tratta di un semplice contenitore.
 
 >![packages.jpg](/mashery/packages.jpg)
 > Schermata di elenco dei pacchetti creati per l'[area](#area)
+
 ## Piano
 Un [**piano**](http://docs.mashery.com/design/GUID-B78424FD-C04D-4BBD-ACCA-73E0F6F90214.html) non può esistere se prima non è stato creato un [pacchetto](#pacchetto) che lo contenga.
 
