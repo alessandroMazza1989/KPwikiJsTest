@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-27T12:59:20.846Z
+date: 2020-04-27T13:01:03.724Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -46,7 +46,7 @@ Questi [ruoli](http://docs.mashery.com/manage/GUID-BC63BAB0-7BFE-4F0E-887F-CF323
 #### Organization Roles
 Per ogni organizzazione creata Mashery genera automaticamente una serie di [ruoli](http://docs.mashery.com/manage/GUID-EAD30F7B-689D-4BC5-9B25-28CD6BD400A7.html), analoghi ai Control Center Role, con la differenza che in questo caso la visibilità è solo sulla determinata organizzazione.
 #### Portal Access Groups
-Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno la stessa funzione e le stesse caratteristiche ma in ambito Dev Portal. Determinano cioè la visibilità da parte dei developer degli oggetti a loro visibili ([Piani](#Piano) e [Documentazione Interattiva](#DocumentazioneInterattiva)). Sono customizzabili: vengono creati con un nome a piacere tramite il CC ed è possibile definire liberamente quali utenti ne fanno parte e a quali risorse hanno accesso.
+Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno la stessa funzione e le stesse caratteristiche ma in ambito Dev Portal. Determinano cioè la visibilità da parte dei developer degli oggetti a loro visibili ([piani](#piano) e [documentazione interattiva](#documentazione-interattiva)). Sono customizzabili: vengono creati con un nome a piacere tramite il CC ed è possibile definire liberamente quali utenti ne fanno parte e a quali risorse hanno accesso.
 
 ## API
 Il primo oggetto da considerare è ovviamente l'**API** o **servizio**. Una API è essenzialmente un contentitore logico di endpoints. Vi sono alcune configurazioni che possono essere effettuate a livello di API ma in generale esse vengono sovrascritte dalle configurazioni impostate sul singolo endpoint.
