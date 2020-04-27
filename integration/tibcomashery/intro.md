@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-27T16:48:32.200Z
+date: 2020-04-27T16:52:48.122Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -10,7 +10,7 @@ tags: mashery, api, tibco, api gateway
 Un API Gateway si occupa di fare da proxy tra i client che vogliono accedere alle risorse messe a disposizione dalle varie API e i sistemi di backend dove i servizi sono in esecuzione. Ciò significa che la funzione primaria del gateway è ricevere una chiamata da un client, smistarla verso il corretto backend di destinazione, ricevere la risposta e restituirla al client stesso.
 
 >![api_gateway.jpg](/mashery/api_gateway.jpg){.align-center}
-> Schema di base del funzionamento di un API gateway
+> *Schema di base del funzionamento di un API gateway*
 
 Ovviamente questa è una visione semplicistica: lo strumento mette a disposizione una serie di features aggiuntive che verranno illustrate più avanti.
 
@@ -18,7 +18,7 @@ Ovviamente questa è una visione semplicistica: lo strumento mette a disposizion
 L'organizzazione logica interna di Mashery si basa su una serie di oggetti. Semplificando questi oggetti possono essere visti come record di tabelle di un database. Ogni oggetto ha degli attributi configurabili ed è collegato gerarchicamente ad altri oggetti.
 
 >![objects.jpg](/mashery/objects.jpg)
-> Alcuni degli oggetti di Mashery con le rispettive relazioni
+> *Alcuni degli oggetti di Mashery con le rispettive relazioni*
 
 Nei paragrafi seguenti verranno illustrati gli oggetti più importanti.
 
@@ -27,7 +27,7 @@ Nei paragrafi seguenti verranno illustrati gli oggetti più importanti.
 Quando viene effettuata una sottoscrizione a Mashery Tibco crea una **area** dedicata al cliente. Tutti gli oggetti verranno creati all'interno di questa area.
 
 >![area.jpg](/mashery/area.jpg)
-> Dettaglio delle informazioni dell'area *pirelliapiportal*
+> *Dettaglio delle informazioni dell'area *pirelliapiportal**
 
 Ogni area ha UUID e ID univoci che la identificano e possono essere utili in caso di contatti con il supporto.
 
@@ -36,7 +36,7 @@ Ogni area ha UUID e ID univoci che la identificano e possono essere utili in cas
 Un'[**organizzazione**](http://docs.mashery.com/manage/GUID-EAD30F7B-689D-4BC5-9B25-28CD6BD400A7.html) è un contenitore di risorse (API, Pacchetti, Documentazione, ecc.) fra loro logicamente collegati. Ad esempio un'organizzazione può essere creata per raccogliere le risorse dedicate a una certa Business Unit del cliente oppure a un dato gruppo di lavoro. Tutte le organizzazioni sono figlie dell'area, l'organizzazione *root* all'interno della quale risiedono tutte le altre.
 
 >![organizations.jpg](/mashery/organizations.jpg)
-> Esempio di struttura delle organizzazioni Mashery per un'ipotetica società
+> *Esempio di struttura delle organizzazioni Mashery per un'ipotetica società*
 
 In ogni organizzazione è possibile definire sotto-organizzazioni che funzionano esattamente come le organizzazioni stesse. Ad esempio nell'organizzazione dedicata a un gruppo di lavoro si potrebbe creare una sotto-organizzazione dedicata a uno specifico progetto in sviluppo. Non è possibile scendere ulteriormente nell'albero, quindi il livello massimo è il 3 (non esistono "sotto-sotto-organizzazioni").
 
@@ -49,19 +49,19 @@ Questi [ruoli](http://docs.mashery.com/manage/GUID-BC63BAB0-7BFE-4F0E-887F-CF323
 {.is-warning}
 
 >![area_roles.jpg](/mashery/area_roles.jpg)
-> Schermata di assegnazione dei Control Center Roles
+> *Schermata di assegnazione dei Control Center Roles*
 
 #### Organization Roles
 Per ogni organizzazione creata Mashery genera automaticamente una serie di [ruoli](http://docs.mashery.com/manage/GUID-EAD30F7B-689D-4BC5-9B25-28CD6BD400A7.html), analoghi ai precedenti, con la differenza che in questo caso la visibilità sul CC è limitata ad una determinata organizzazione.
 
 >![org_roles.jpg](/mashery/org_roles.jpg)
-> Schermata di assegnazione degli Organization Roles per un utente
+> *Schermata di assegnazione degli Organization Roles per un utente*
 
 #### Portal Access Groups
 Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno la stessa funzione e le stesse caratteristiche. Determinano la visibilità da parte dei developer degli unici oggetti da loro fruibili sul Developer Portal, cioè [piani](#piano) e [documentazione interattiva](#documentazione-interattiva). Sono customizzabili: vengono creati con un nome a piacere tramite il CC ed è possibile definire liberamente quali utenti ne fanno parte e a quali risorse hanno accesso.
 
 >![access_groups.jpg](/mashery/access_groups.jpg)
-> Dettaglio di un gruppo d'accesso e delle risorse correlate
+> *Dettaglio di un gruppo d'accesso e delle risorse correlate*
 
 > I seguenti ruoli sono utilizzabili, pur non essendo citati da nessuna parte nella documentazione ufficiale:
 > *Everyone*: rappresenta qualunque utente acceda al Dev Portal, sia quelli che hanno effettuato il log-in che quelli che non si sono autenticati.
@@ -76,7 +76,7 @@ Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno l
 Una **API** o **servizio** è essenzialmente un contentitore logico di endpoints. Vi sono alcune configurazioni che possono essere effettuate a livello di API ma in generale esse vengono sovrascritte dalle configurazioni impostate sul singolo endpoint.
 
 >![api_list.jpg](/mashery/api_list.jpg)
-> Schermata di elenco delle API
+> *Schermata di elenco delle API*
 
 > Il 99% dei servizi moderni appartiene a una delle due famiglie **REST** o **SOAP**. Mashery supporta entrambi gli standard con un livello variabile di successo. Non è fra gli obiettivi di questa guida illustrare le caratteristiche dei due paradigmi tuttavia una conoscenza di base delle loro caratteristiche è consigliata.
 {.is-info}
@@ -86,7 +86,7 @@ Una **API** o **servizio** è essenzialmente un contentitore logico di endpoints
 L'**endpoint** è sicuramente l'oggetto più importante e più complesso di Mashery. Un endpoint rappresenta un canale di comunicazione tra il gateway e il mondo esterno. Ogni endpoint deve avere un indirizzo (URI, Uniform Resource Identifier) che lo identifica in maniera univoca e universale: non possono esistere due URI uguali sulla rete. Tramite un endpoint il client è in grado di accedere a una o più risorse messe a disposizione dal backend; per fare ciò il client invia richieste all'endpoint e riceve risposte dallo stesso.
 
 >![ep_list.jpg](/mashery/ep_list.jpg)
-> Schermata di elenco degli endpoint di una [API](#api)
+> *Schermata di elenco degli endpoint di una [API](#api)*
 
 La maggioranza delle configurazioni necessarie alla pubblicazione di una API sul gateway viene effettuata a livello di singolo endpoint. Come già detto in Mashery gli endpoints sono raggruppati logicamente all'interno dei servizi.
 
@@ -98,7 +98,7 @@ La maggioranza delle configurazioni necessarie alla pubblicazione di una API sul
 Un **metodo** è un'ulteriore suddivisione logica messa a disposizione dal gateway per distinguere operazioni/risorse diverse accessibili tramite lo stesso endpoint. In quest'ottica è anche possibile considerare un endpoint come un raggruppamento logico di metodi, completando quindi la gerarchia.
 
 >![api_hierarchy.jpg](/mashery/api_hierarchy.jpg)
-> Gerarchia degli oggetti in Mashery
+> *Gerarchia degli oggetti in Mashery*
 
 La configurazione dei metodi è opzionale in Mashery e si adatta particolarmente bene all'archetipo SOAP, in cui il metodo è sovrapponibile al concetto di *SOAP operation*, mentre risulta superflua nei servizi REST (escludendo casi limite in cui il cliente necessita di alcune funzionalità specifiche implementabili esclusivamente tramite i metodi, che verranno trattate in seguito).
 
@@ -109,7 +109,7 @@ La configurazione dei metodi è opzionale in Mashery e si adatta particolarmente
 Un oggetto **utente** viene creato indifferentemente al momento della registrazione sul Dev Portal (in *self-service*) o da un amministratore nel Control Center. L'utente è legato indissolubilmente a un indirizzo mail, tuttavia è concesso creare più utenti associati allo stesso indirizzo. Al momento della creazione in *self-service* verrà inviata una mail con un link di conferma prima di finalizzare la creazione.
 
 >![users.jpg](/mashery/users.jpg)
-> Schermata di elenco degli utenti appartenenti all'[area](#area)
+> *Schermata di elenco degli utenti appartenenti all'[area](#area)*
 
 > Una particolarità degli utenti Mashery è che sono salvati in una tabella condivisa tra tutte le aree dei vari clienti. Ciò significa che il campo *Username* deve essere necessariamente univoco, in caso contrario la creazione fallirà.
 {.is-info}
@@ -120,30 +120,30 @@ Un'[**applicazione**](http://docs.mashery.com/manage/GUID-8598F4C2-41F6-4703-A48
 {.is-info}
 
 >![applications.jpg](/mashery/applications.jpg)
-> Schermata di elenco delle applicazioni 
+> *Schermata di elenco delle applicazioni *
 
 ## Pacchetto
 Il [**pacchetto**](http://docs.mashery.com/design/GUID-B9F7E9DA-6E0C-4300-9A1D-CB7B407BC5D3.html) è un raggruppamento logico di [piani](#piano) di utilizzo delle API. 
 
 >![packages_plans.jpg](/mashery/packages_plans.jpg)
-> Esempio di pacchetto contenente tre diversi piani di accesso
+> *Esempio di pacchetto contenente tre diversi piani di accesso*
 
 > Alcune (poche) configurazioni si effettuano a livello di pacchetto ma a tutti gli effetti si tratta semplicemente di un contenitore.
 {.is-info}
 
 >![packages.jpg](/mashery/packages.jpg)
-> Schermata di elenco dei pacchetti creati per l'[area](#area)
+> *Schermata di elenco dei pacchetti creati per l'[area](#area)*
 
 ## Piano
 Un [**piano**](http://docs.mashery.com/design/GUID-B78424FD-C04D-4BBD-ACCA-73E0F6F90214.html) non può esistere se prima non è stato creato un [pacchetto](#pacchetto) che lo contenga.
 
 >![plans.jpg](/mashery/plans.jpg)
-> Schermata di elenco dei piani appartenenti al pacchetto *b2cws*
+> *Schermata di elenco dei piani appartenenti al pacchetto *b2cws**
 
 Nel piano è definita una lista di [API](#api)/[endpoints](#endpoint)/[metodi](#metodo) (la granularità è configurabile a piacere) a cui il piano stesso dà diritto di accesso. Oltre a ciò a questo livello possono essere definiti i limiti di [throttling](#throttling) e alcune proprietà delle [chiavi](#chiave) che verranno generate per il piano.
 
 >![plan_designer.jpg](/mashery/plan_designer.jpg)
-> Dettaglio degli endpoint accessibili sottoscrivendosi al piano *b2cws_dev*
+> *Dettaglio degli endpoint accessibili sottoscrivendosi al piano *b2cws_dev**
 
 > Non è possibile accedere agli endpoint esposti dal gateway senza prima aver creato un'applicazione, selezionato un [piano](#piano) di utilizzo e ricevuto una [chiave](#chiave) con cui identificare le proprie chiamate. 
 {.is-info}
