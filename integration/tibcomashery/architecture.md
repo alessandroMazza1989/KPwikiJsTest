@@ -2,7 +2,7 @@
 title: Architettura e Deployment di Mashery
 description: 
 published: true
-date: 2020-04-27T16:20:15.843Z
+date: 2020-04-27T16:55:26.244Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
@@ -17,18 +17,18 @@ I macro-componenti principali di Mashery sono:
 Il [Control Center](http://docs.mashery.com/gettingstarted/GUID-84038256-96F8-47F2-AD86-8EEC424F7BB6.html) (CC per brevità) è un portale web dedicato alla configurazione e amministrazione di tutti gli oggetti/risorse necessari al funzionamento del gateway. Questi comprendono le API stesse (detti anche servizi), i package e plan, utenti e ruoli, chiavi d'accesso e altro. Gli oggetti stessi sono trattati in dettaglio nella sezione dedicata. Oltre a questo il CC permette anche la consultazione dei report di utilizzo dei servizi esposti sul gateway.
 
 >![cc.jpg](/mashery/cc.jpg)
->Homepage del Control Center per un utente avente ruolo di Amministratore d'area
+> *Homepage del Control Center per un utente amministratore d'area*
 
 L'indirizzo del CC è [*\<nomeareacliente\>.admin.mashery.com*](http://www.blankwebsite.com/). È anche possibile (o necessario, se si utilizza un'utenza in Single sign-on) raggiungerlo dal sito [*cloud.tibco.com*](https://cloud.tibco.com/) selezionando *APIs → Control Center* dopo essersi autenticati.
 
 >![cloud_homepage.jpg](/mashery/cloud_homepage.jpg)
->Homepage del cloud Tibco
+> *Homepage del cloud Tibco*
 
 ## Developer Portal
 Il [Developer Portal](http://docs.mashery.com/manage/GUID-FFE293BA-7DD7-4A3A-9257-3580013733BB.html) (o dev portal) è un portale web dedicato agli utenti finali, cioè agli sviluppatori che vogliono accedere alle API esposte dal gateway. Il portale permette di registrarsi, consultare la documentazione relativa ai servizi, testarli tramite swagger, farsi assegnare delle chiavi di accesso, chiedere informazioni o supporto.
 
 >![dev_portal.jpg](/mashery/dev_portal.jpg)
-> Homepage del Dev Portal [developer.pirelli.com](https://developer.pirelli.com/)
+> *Homepage del Dev Portal [developer.pirelli.com](https://developer.pirelli.com/)*
 
 >L'indirizzo iniziale del Developer Portal Cloud è [*\<nomeareacliente\>.mashery.com*](http://www.blankwebsite.com/). Una delle prime operazioni in fase di adozione di Mashery è spesso la customizzazione di questo indirizzo; [*developer.\<nomeareacliente\>.com*](http://www.blankwebsite.com/) è generalmente la scelta più popolare.
 >
@@ -50,7 +50,7 @@ Il [Developer Portal](http://docs.mashery.com/manage/GUID-FFE293BA-7DD7-4A3A-925
 La [API](https://developer.mashery.com/docs/read/mashery_api) di prodotto Mashery permette di effettuare operazioni di tipo CRUD (Create Read Update Delete) su quasi tutti gli oggetti/risorse del gateway. In questo modo è possibile eseguire programmaticamente la stragrande maggioranza delle operazioni amministrative disponibili sul CC.
 
 >![mashery_api.jpg](/mashery/mashery_api.jpg)
-> Parte dello [swagger](https://developer.mashery.com/io-docs) della API V3 di prodotto
+> *Parte dello [swagger](https://developer.mashery.com/io-docs) della API V3 di prodotto*
 
 > Esistono due versioni della API (V2 e V3) ma la V3 è quella più moderna e più facilmente utilizzabile poiché segue il paradigma REST. La V2 ha un'autenticazione alquanto bizantina; permette tuttavia di agire con un'unica chiamata su attributi relativi a risorse diverse (supporta un linguaggio simil-SQL) quindi esistono casi limite in cui può essere più efficiente della V3.
 {.is-info}
@@ -63,8 +63,8 @@ Il gateway vero e proprio è il motore di Mashery ed è *container based*. È ci
 > È possibile, e consigliato, replicare ogni container all'interno del cluster in modo da garantire robustezza e parallelismo. Il dimensionamento dell'infrastruttura richiede considerazioni relative al volume di traffico previsto e a eventuali picchi, alle risorse hardware disponibili e al loro costo, alla ridondanza geografica, ecc.
 {.is-info}
 
- >![cluster.jpg](/mashery/cluster.jpg)
- > Un cluster d'esempio Mashery su piattaforma Kubernetes
+>![cluster.jpg](/mashery/cluster.jpg)
+> *Un cluster d'esempio Mashery su piattaforma Kubernetes*
 
 Di seguito l'elenco dei container/componenti di Mashery:
 
