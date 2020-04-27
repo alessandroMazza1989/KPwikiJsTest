@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-24T15:43:46.532Z
+date: 2020-04-27T12:59:20.846Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -36,6 +36,18 @@ Una [**organizzazione**](http://docs.mashery.com/manage/GUID-EAD30F7B-689D-4BC5-
 
 In ogni organizzazione è possibile definire sotto-organizzazioni che funzionano esattamente come le organizzazioni stesse. Ad esempio nell'organizzazione dedicata a un gruppo di lavoro si potrebbe creare una sotto-organizzazione dedicata a uno specifico progetto in sviluppo. Non è possibile scendere ulteriormente nell'albero, quindi il livello massimo è il 3 (non esistono "sotto-sotto-organizzazioni").
 
+## Ruolo
+I **ruoli** assegnati all'utente Mashery determinano quali oggetti esso può vedere e/o modificare sia nel CC che nel Dev Portal. 
+Esistono diversi tipi di ruoli, come illustrato nei seguenti paragrafi.
+#### Defaul Roles
+
+#### Control Center Roles
+Questi [ruoli](http://docs.mashery.com/manage/GUID-BC63BAB0-7BFE-4F0E-887F-CF32342F8F9E.html) riguardano esclusivamente il CC e possiamo definirli "Area Level" poiché regolano la visibilità a livello dell'intera area cliente. 
+#### Organization Roles
+Per ogni organizzazione creata Mashery genera automaticamente una serie di [ruoli](http://docs.mashery.com/manage/GUID-EAD30F7B-689D-4BC5-9B25-28CD6BD400A7.html), analoghi ai Control Center Role, con la differenza che in questo caso la visibilità è solo sulla determinata organizzazione.
+#### Portal Access Groups
+Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno la stessa funzione e le stesse caratteristiche ma in ambito Dev Portal. Determinano cioè la visibilità da parte dei developer degli oggetti a loro visibili ([Piani](#Piano) e [Documentazione Interattiva](#DocumentazioneInterattiva)). Sono customizzabili: vengono creati con un nome a piacere tramite il CC ed è possibile definire liberamente quali utenti ne fanno parte e a quali risorse hanno accesso.
+
 ## API
 Il primo oggetto da considerare è ovviamente l'**API** o **servizio**. Una API è essenzialmente un contentitore logico di endpoints. Vi sono alcune configurazioni che possono essere effettuate a livello di API ma in generale esse vengono sovrascritte dalle configurazioni impostate sul singolo endpoint.
 
@@ -52,7 +64,6 @@ La maggioranza delle configurazioni necessarie alla pubblicazione di una API sul
 
 > Esiste un certo livello di ambiguità tra gli addetti ai lavori su cosa sia un servizio. C'è chi identifica il servizio con il singolo endpoint e chi invece lo identifica con un gruppo di endpoints funzionalmente imparentati (vale a dire una API). Sia nella documentazione ufficiale Tibco che in questo documento quando si parla di servizio ci si riferisce *sempre* a una API.
 {.is-info}
-
 
 ## Metodo
 
@@ -74,8 +85,6 @@ Un oggetto **utente** viene creato indifferentemente al momento della registrazi
 > Una particolarità degli utenti Mashery è che sono salvati in una tabella condivisa tra tutte le aree dei vari clienti. Ciò significa che il campo *Username* deve essere necessariamente univoco, in caso contrario la creazione fallirà.
 {.is-info}
 
-## Ruolo
-
 ## Applicazione
 
 ## Pacchetto
@@ -83,6 +92,8 @@ Un oggetto **utente** viene creato indifferentemente al momento della registrazi
 ## Piano
 
 ## Chiave
+
+## Documentazione Interattiva
 
 # Funzionalità
 Di seguito la lista delle macro funzionalità che Tibco Mashery mette a disposizione di un cliente per gestire la sua API governance:
