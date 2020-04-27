@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-27T16:26:53.161Z
+date: 2020-04-27T16:48:32.200Z
 tags: mashery, api, tibco, api gateway
 ---
 
