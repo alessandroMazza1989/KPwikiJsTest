@@ -2,7 +2,7 @@
 title: Architettura e Deployment di Mashery
 description: 
 published: true
-date: 2020-04-27T15:47:02.686Z
+date: 2020-04-27T16:20:15.843Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
@@ -30,20 +30,19 @@ Il [Developer Portal](http://docs.mashery.com/manage/GUID-FFE293BA-7DD7-4A3A-925
 >![dev_portal.jpg](/mashery/dev_portal.jpg)
 > Homepage del Dev Portal [developer.pirelli.com](https://developer.pirelli.com/)
 
->L'indirizzo iniziale del Developer Portal Cloud è [*\<nomeareacliente\>.mashery.com*](http://www.blankwebsite.com/). Una delle prime operazioni in fase di adozione di Mashery è spesso la customizzazione di questo indirizzo: [*developer.\<nomeareacliente\>.com*](http://www.blankwebsite.com/) è generalmente la scelta più popolare.
+>L'indirizzo iniziale del Developer Portal Cloud è [*\<nomeareacliente\>.mashery.com*](http://www.blankwebsite.com/). Una delle prime operazioni in fase di adozione di Mashery è spesso la customizzazione di questo indirizzo; [*developer.\<nomeareacliente\>.com*](http://www.blankwebsite.com/) è generalmente la scelta più popolare.
 >
 >Esempi di Dev Portal di alcuni clienti Tibco, con diversi gradi di personalizzazione, sono:
-> 
-> - [developer.pirelli.com](https://developer.pirelli.com/)
-> - [developer.sportradar.com](https://developer.sportradar.com/)
-> - [developer.battle.net](https://developer.battle.net/)
-> - [developer.walmartlabs.com](https://developer.walmartlabs.com/)
-> - [developer.fandango.com](https://developer.fandango.com/)
-> - [developer.hotelbeds.com](https://developer.hotelbeds.com/)
-> - [developer.lufthansa.com](https://developer.lufthansa.com/)
-> - [developer.airfranceklm.com](https://developer.airfranceklm.com/)
-> - [developer.iairgroup.com](https://developer.iairgroup.com/)
-> - [developer.avios.com](https://developer.avios.com/)
+> [developer.pirelli.com](https://developer.pirelli.com/)
+> [developer.sportradar.com](https://developer.sportradar.com/)
+> [developer.battle.net](https://developer.battle.net/)
+> [developer.walmartlabs.com](https://developer.walmartlabs.com/)
+> [developer.fandango.com](https://developer.fandango.com/)
+> [developer.hotelbeds.com](https://developer.hotelbeds.com/)
+> [developer.lufthansa.com](https://developer.lufthansa.com/)
+> [developer.airfranceklm.com](https://developer.airfranceklm.com/)
+> [developer.iairgroup.com](https://developer.iairgroup.com/)
+> [developer.avios.com](https://developer.avios.com/)
 {.is-info}
 
 
