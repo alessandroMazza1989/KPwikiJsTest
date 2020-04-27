@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-27T14:56:46.512Z
+date: 2020-04-27T15:42:42.512Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -103,12 +103,30 @@ Un oggetto **utente** viene creato indifferentemente al momento della registrazi
 {.is-info}
 
 ## Applicazione
+Un'[**applicazione**](http://docs.mashery.com/manage/GUID-8598F4C2-41F6-4703-A48B-545917EF8835.html) è l'oggetto che in Mashery rappresenta un client (quindi un'app, un frontend, un qualsiasi sistema in grado di effettuare chiamate) che può fruire dei servizi messi a disposizione dal gateway. Un'applicazione deve essere associata ad uno e un solo utente, tuttavia un utente può creare più applicazioni.
+Non è possibile accedere agli endpoint esposti dal gateway senza prima aver creato un'applicazione, selezionato un [piano](#piano) di utilizzo e ricevuto una [chiave](#chiave) con cui identificare le proprie chiamate.
+
+![applications.jpg](/mashery/applications.jpg)
 
 ## Pacchetto
+Il [**pacchetto**](http://docs.mashery.com/design/GUID-B9F7E9DA-6E0C-4300-9A1D-CB7B407BC5D3.html) è un raggruppamento logico di [piani](#piano) di utilizzo delle API. Alcune (poche) configurazioni si effettuano a livello di pacchetto ma generalmente parlando si tratta di un semplice contenitore.
+
+![packages.jpg](/mashery/packages.jpg)
 
 ## Piano
+Un [**piano**](http://docs.mashery.com/design/GUID-B78424FD-C04D-4BBD-ACCA-73E0F6F90214.html) non può esistere se prima non è stato creato un [pacchetto](#pacchetto) che lo contenga.
+
+![plans.jpg](/mashery/plans.jpg)
+
+Nel piano è definita una lista di [API](#api)/[endpoints](#endpoint)/[metodi](#metodo) (la granularità è configurabile a piacere) a cui il piano stesso dà diritto di accesso. Oltre a ciò a questo livello possono essere definiti i limiti di [throttling](#throttling) e alcune proprietà delle [chiavi](#chiave) che verranno generate per il piano.
+
+![plan_designer.jpg](/mashery/plan_designer.jpg)
+
+Non è possibile accedere agli endpoint esposti dal gateway senza prima aver creato un'applicazione, selezionato un [piano](#piano) di utilizzo e ricevuto una [chiave](#chiave) con cui identificare le proprie chiamate. 
 
 ## Chiave
+
+## Documentazione Statica
 
 ## Documentazione Interattiva
 
