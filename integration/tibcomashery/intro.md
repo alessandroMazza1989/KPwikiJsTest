@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-27T13:01:03.724Z
+date: 2020-04-27T14:56:46.512Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -30,30 +30,47 @@ Ogni area ha UUID e ID univoci che la identificano e possono essere utili in cas
 
 ## Organizzazione
 
-Una [**organizzazione**](http://docs.mashery.com/manage/GUID-EAD30F7B-689D-4BC5-9B25-28CD6BD400A7.html) è un contenitore di risorse (API, Pacchetti, Documentazione, ecc.) fra loro logicamente collegati. Ad esempio un'organizzazione può essere creata per raccogliere le risorse dedicate a una certa Business Unit del cliente oppure a un dato gruppo di lavoro. Tutte le organizzazioni sono figlie dell'area, che nella pratica è l'organizzazione *root* all'interno della quale risiedono tutte le altre.
+Un'[**organizzazione**](http://docs.mashery.com/manage/GUID-EAD30F7B-689D-4BC5-9B25-28CD6BD400A7.html) è un contenitore di risorse (API, Pacchetti, Documentazione, ecc.) fra loro logicamente collegati. Ad esempio un'organizzazione può essere creata per raccogliere le risorse dedicate a una certa Business Unit del cliente oppure a un dato gruppo di lavoro. Tutte le organizzazioni sono figlie dell'area, l'organizzazione *root* all'interno della quale risiedono tutte le altre.
 
 ![organizations.jpg](/mashery/organizations.jpg)
 
 In ogni organizzazione è possibile definire sotto-organizzazioni che funzionano esattamente come le organizzazioni stesse. Ad esempio nell'organizzazione dedicata a un gruppo di lavoro si potrebbe creare una sotto-organizzazione dedicata a uno specifico progetto in sviluppo. Non è possibile scendere ulteriormente nell'albero, quindi il livello massimo è il 3 (non esistono "sotto-sotto-organizzazioni").
 
 ## Ruolo
-I **ruoli** assegnati all'utente Mashery determinano quali oggetti esso può vedere e/o modificare sia nel CC che nel Dev Portal. 
-Esistono diversi tipi di ruoli, come illustrato nei seguenti paragrafi.
-#### Defaul Roles
+I **ruoli** assegnati all'utente Mashery determinano quali oggetti esso può vedere e/o modificare sia nel CC che nel Dev Portal.
 
 #### Control Center Roles
-Questi [ruoli](http://docs.mashery.com/manage/GUID-BC63BAB0-7BFE-4F0E-887F-CF32342F8F9E.html) riguardano esclusivamente il CC e possiamo definirli "Area Level" poiché regolano la visibilità a livello dell'intera area cliente. 
+Questi [ruoli](http://docs.mashery.com/manage/GUID-BC63BAB0-7BFE-4F0E-887F-CF32342F8F9E.html) riguardano esclusivamente il CC e possono essere definiti "Area Level" poiché regolano la visibilità a livello dell'intera area cliente. (https://docs.mashery.com/manage/GUID-C3515849-9ADF-4673-9D02-EC3E54A22134.html).
+> I Control Center Roles non possono essere assegnati dal CC stesso, si assegnano dal cloud Tibco.
+{.is-warning}
+
+
+![area_roles.jpg](/mashery/area_roles.jpg)
+
 #### Organization Roles
-Per ogni organizzazione creata Mashery genera automaticamente una serie di [ruoli](http://docs.mashery.com/manage/GUID-EAD30F7B-689D-4BC5-9B25-28CD6BD400A7.html), analoghi ai Control Center Role, con la differenza che in questo caso la visibilità è solo sulla determinata organizzazione.
+Per ogni organizzazione creata Mashery genera automaticamente una serie di [ruoli](http://docs.mashery.com/manage/GUID-EAD30F7B-689D-4BC5-9B25-28CD6BD400A7.html), analoghi ai precedenti, con la differenza che in questo caso la visibilità sul CC è limitata ad una determinata organizzazione.
+
+![org_roles.jpg](/mashery/org_roles.jpg)
+
 #### Portal Access Groups
-Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno la stessa funzione e le stesse caratteristiche ma in ambito Dev Portal. Determinano cioè la visibilità da parte dei developer degli oggetti a loro visibili ([piani](#piano) e [documentazione interattiva](#documentazione-interattiva)). Sono customizzabili: vengono creati con un nome a piacere tramite il CC ed è possibile definire liberamente quali utenti ne fanno parte e a quali risorse hanno accesso.
+Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno la stessa funzione e le stesse caratteristiche. Determinano la visibilità da parte dei developer degli unici oggetti da loro fruibili sul Developer Portal, cioè [piani](#piano) e [documentazione interattiva](#documentazione-interattiva). Sono customizzabili: vengono creati con un nome a piacere tramite il CC ed è possibile definire liberamente quali utenti ne fanno parte e a quali risorse hanno accesso.
+
+![access_groups.jpg](/mashery/access_groups.jpg)
+
+> I seguenti ruoli sono utilizzabili, pur non essendo citati da nessuna parte nella documentazione ufficiale:
+> 1. *Everyone*: rappresenta qualunque utente acceda al Dev Portal, sia quelli che hanno effettuato il log-in che quelli che non si sono autenticati.
+> 2. *Member*: rappresenta un utente registrato, quindi un utente che ha effettuato il log-in sul Dev Portal.
+> 3. *Organization User*: ???
+> 4. *Service User*: ???
+{.is-info}
+
 
 ## API
-Il primo oggetto da considerare è ovviamente l'**API** o **servizio**. Una API è essenzialmente un contentitore logico di endpoints. Vi sono alcune configurazioni che possono essere effettuate a livello di API ma in generale esse vengono sovrascritte dalle configurazioni impostate sul singolo endpoint.
+ Una **API** o **servizio** è essenzialmente un contentitore logico di endpoints. Vi sono alcune configurazioni che possono essere effettuate a livello di API ma in generale esse vengono sovrascritte dalle configurazioni impostate sul singolo endpoint.
 
 ![api_list.jpg](/mashery/api_list.jpg)
 
-Il 99% dei servizi moderni appartiene a una delle due famiglie **REST** o **SOAP**. Mashery supporta entrambi gli standard con un livello variabile di successo. Non è fra gli obiettivi di questa guida illustrare le caratteristiche dei due paradigmi tuttavia una loro conoscenza di base è consigliata.
+Il 99% dei servizi moderni appartiene a una delle due famiglie **REST** o **SOAP**. Mashery supporta entrambi gli standard con un livello variabile di successo. Non è fra gli obiettivi di questa guida illustrare le caratteristiche dei due paradigmi tuttavia una conoscenza di base delle loro caratteristiche è consigliata.
 
 ## Endpoint
 L'**endpoint** è sicuramente l'oggetto più importante e più complesso di Mashery. Un endpoint rappresenta un canale di comunicazione tra il gateway e il mondo esterno. Ogni endpoint deve avere un indirizzo (URI, Uniform Resource Identifier) che lo identifica in maniera univoca e universale: non possono esistere due URI uguali sulla rete. Tramite un endpoint il client è in grado di accedere a una o più risorse messe a disposizione dal backend; per fare ciò il client invia richieste all'endpoint e riceve risposte dallo stesso.
