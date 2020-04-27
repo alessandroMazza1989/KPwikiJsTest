@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-27T16:11:22.874Z
+date: 2020-04-27T16:26:53.161Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -64,11 +64,12 @@ Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno l
 > Dettaglio di un gruppo d'accesso e delle risorse correlate
 
 > I seguenti ruoli sono utilizzabili, pur non essendo citati da nessuna parte nella documentazione ufficiale:
-> 1. *Everyone*: rappresenta qualunque utente acceda al Dev Portal, sia quelli che hanno effettuato il log-in che quelli che non si sono autenticati.
-> 2. *Member*: rappresenta un utente registrato, quindi un utente che ha effettuato il log-in sul Dev Portal.
-> 3. *Organization User*: ???
-> 4. *Service User*: ???
+> *Everyone*: rappresenta qualunque utente acceda al Dev Portal, sia quelli che hanno effettuato il log-in che quelli che non si sono autenticati.
+> *Member*: rappresenta un utente registrato, quindi un utente che ha effettuato il log-in sul Dev Portal.
+> *Organization User*: ???
+> *Service User*: ???
 {.is-info}
+
 
 
 ## API
@@ -77,7 +78,9 @@ Una **API** o **servizio** è essenzialmente un contentitore logico di endpoints
 >![api_list.jpg](/mashery/api_list.jpg)
 > Schermata di elenco delle API
 
-Il 99% dei servizi moderni appartiene a una delle due famiglie **REST** o **SOAP**. Mashery supporta entrambi gli standard con un livello variabile di successo. Non è fra gli obiettivi di questa guida illustrare le caratteristiche dei due paradigmi tuttavia una conoscenza di base delle loro caratteristiche è consigliata.
+> Il 99% dei servizi moderni appartiene a una delle due famiglie **REST** o **SOAP**. Mashery supporta entrambi gli standard con un livello variabile di successo. Non è fra gli obiettivi di questa guida illustrare le caratteristiche dei due paradigmi tuttavia una conoscenza di base delle loro caratteristiche è consigliata.
+{.is-info}
+
 
 ## Endpoint
 L'**endpoint** è sicuramente l'oggetto più importante e più complesso di Mashery. Un endpoint rappresenta un canale di comunicazione tra il gateway e il mondo esterno. Ogni endpoint deve avere un indirizzo (URI, Uniform Resource Identifier) che lo identifica in maniera univoca e universale: non possono esistere due URI uguali sulla rete. Tramite un endpoint il client è in grado di accedere a una o più risorse messe a disposizione dal backend; per fare ciò il client invia richieste all'endpoint e riceve risposte dallo stesso.
@@ -102,7 +105,6 @@ La configurazione dei metodi è opzionale in Mashery e si adatta particolarmente
 > Il metodo Mashery **non** corrisponde al metodo REST!
 {.is-warning}
 
-
 ## Utente
 Un oggetto **utente** viene creato indifferentemente al momento della registrazione sul Dev Portal (in *self-service*) o da un amministratore nel Control Center. L'utente è legato indissolubilmente a un indirizzo mail, tuttavia è concesso creare più utenti associati allo stesso indirizzo. Al momento della creazione in *self-service* verrà inviata una mail con un link di conferma prima di finalizzare la creazione.
 
@@ -113,8 +115,9 @@ Un oggetto **utente** viene creato indifferentemente al momento della registrazi
 {.is-info}
 
 ## Applicazione
-Un'[**applicazione**](http://docs.mashery.com/manage/GUID-8598F4C2-41F6-4703-A48B-545917EF8835.html) è l'oggetto che in Mashery rappresenta un client (quindi un'app, un frontend, un qualsiasi sistema in grado di effettuare chiamate) che può fruire dei servizi messi a disposizione dal gateway. Un'applicazione deve essere associata ad uno e un solo utente, tuttavia un utente può creare più applicazioni.
-Non è possibile accedere agli endpoint esposti dal gateway senza prima aver creato un'applicazione, selezionato un [piano](#piano) di utilizzo e ricevuto una [chiave](#chiave) con cui identificare le proprie chiamate.
+Un'[**applicazione**](http://docs.mashery.com/manage/GUID-8598F4C2-41F6-4703-A48B-545917EF8835.html) è l'oggetto che in Mashery rappresenta un client (quindi un'app, un frontend, un qualsiasi sistema in grado di effettuare chiamate) che può fruire dei servizi messi a disposizione dal gateway. L'applicazione deve essere associata ad uno e un solo utente, tuttavia un utente può creare più applicazioni.
+> Non è possibile accedere agli endpoint esposti dal gateway senza prima aver creato un'applicazione, selezionato un [piano](#piano) di utilizzo e ricevuto una [chiave](#chiave) con cui identificare le proprie chiamate.
+{.is-info}
 
 >![applications.jpg](/mashery/applications.jpg)
 > Schermata di elenco delle applicazioni 
@@ -125,7 +128,8 @@ Il [**pacchetto**](http://docs.mashery.com/design/GUID-B9F7E9DA-6E0C-4300-9A1D-C
 >![packages_plans.jpg](/mashery/packages_plans.jpg)
 > Esempio di pacchetto contenente tre diversi piani di accesso
 
-Alcune (poche) configurazioni si effettuano a livello di pacchetto ma generalmente parlando si tratta di un semplice contenitore.
+> Alcune (poche) configurazioni si effettuano a livello di pacchetto ma a tutti gli effetti si tratta semplicemente di un contenitore.
+{.is-info}
 
 >![packages.jpg](/mashery/packages.jpg)
 > Schermata di elenco dei pacchetti creati per l'[area](#area)
@@ -141,7 +145,8 @@ Nel piano è definita una lista di [API](#api)/[endpoints](#endpoint)/[metodi](#
 >![plan_designer.jpg](/mashery/plan_designer.jpg)
 > Dettaglio degli endpoint accessibili sottoscrivendosi al piano *b2cws_dev*
 
-Non è possibile accedere agli endpoint esposti dal gateway senza prima aver creato un'applicazione, selezionato un [piano](#piano) di utilizzo e ricevuto una [chiave](#chiave) con cui identificare le proprie chiamate. 
+> Non è possibile accedere agli endpoint esposti dal gateway senza prima aver creato un'applicazione, selezionato un [piano](#piano) di utilizzo e ricevuto una [chiave](#chiave) con cui identificare le proprie chiamate. 
+{.is-info}
 
 ## Chiave
 
@@ -150,15 +155,15 @@ Non è possibile accedere agli endpoint esposti dal gateway senza prima aver cre
 ## Documentazione Interattiva
 
 # Funzionalità
-Di seguito la lista delle macro funzionalità che Tibco Mashery mette a disposizione di un cliente per gestire la sua API governance:
+Nelle sezioni successive sono dettagliate le macro funzionalità che Tibco Mashery mette a disposizione di un cliente per gestire la sua API governance.
 
-1. Autenticazione & Autorizzazione
-2. Auditing
-3. Filtraggio delle chiamate
-4. Throttling
-5. Notifiche di eventi
-5. Caching
-6. Processing delle chiamate
-7. Documentazione e divulgazione delle API
-8. Organizzazione gerarchica degli oggetti
-9. Amministrazione *self-service* degli oggetti
+## Autenticazione & Autorizzazione
+## Auditing
+## Filtraggio delle chiamate
+## Throttling
+## Notifiche di eventi
+## Caching
+## Processing delle chiamate
+## Documentazione e divulgazione delle API
+## Organizzazione gerarchica degli oggetti
+## Amministrazione *self-service* degli oggetti
