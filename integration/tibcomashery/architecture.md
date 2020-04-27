@@ -2,7 +2,7 @@
 title: Architettura e Deployment di Mashery
 description: 
 published: true
-date: 2020-04-24T16:16:09.774Z
+date: 2020-04-27T15:47:02.686Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
@@ -56,7 +56,7 @@ La [API](https://developer.mashery.com/docs/read/mashery_api) di prodotto Masher
 > Esistono due versioni della API (V2 e V3) ma la V3 è quella più moderna e più facilmente utilizzabile poiché segue il paradigma REST. La V2 ha un'autenticazione alquanto bizantina; permette tuttavia di agire con un'unica chiamata su attributi relativi a risorse diverse (supporta un linguaggio simil-SQL) quindi esistono casi limite in cui può essere più efficiente della V3.
 {.is-info}
 
->[Qui](/mashery/mashery_api.postman_collection.json) una collection postman per effettuare chiamate all'API.
+>[Qui](https://documenter.getpostman.com/view/4885521/RzfcKqGJ?version=latest) e/o [qui](/mashery/mashery_api.postman_collection.json) è reperibile una collection postman per effettuare chiamate all'API.
 {.is-info}
 
 ## Gateway
