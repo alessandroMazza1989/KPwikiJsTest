@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-28T15:37:03.932Z
+date: 2020-04-28T15:49:57.579Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -64,8 +64,8 @@ Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno l
 > *Dettaglio di un gruppo d'accesso e delle risorse correlate*
 
 > I seguenti ruoli sono utilizzabili, pur non essendo citati da nessuna parte nella documentazione ufficiale:
-> *Everyone*: rappresenta qualunque utente acceda al Dev Portal, sia quelli che hanno effettuato il log-in che quelli che non si sono autenticati.
-> *Member*: rappresenta un utente registrato, quindi un utente che ha effettuato il log-in sul Dev Portal.
+> *Everyone*: qualunque utente acceda al Dev Portal, sia quelli che hanno effettuato il log-in che quelli che non si sono autenticati.
+> *Member*: un utente registrato, quindi un utente che ha effettuato il log-in sul Dev Portal.
 > *Organization User*: qualunque utente registrato che fa parte di almeno una [organizzazione](#organizzazione).
 > *Service User*: un ruolo tecnico assegnato da Tibco al primo utente creato nell'area cliente, inutile in ambito di amministrazione del gateway.
 {.is-info}
@@ -167,7 +167,7 @@ Una volta creata la chiave non è possibile modificarne il valore. È invece pos
 Il secret è un'ulteriore stringa alfanumerica utilizzata per le implementazioni di autenticazione più complesse, ad esempio oAuth2. Analogamente alla chiave viene generato dal gateway e deve essere incluso nelle chiamate dei client. È possibile modificare il secret dal CC in ogni momento, contrariamente alla [chiave](#chiave) che una volta generata è immutabile.
 
 ## Documentazione Statica
-La [**documentazione statica**](http://docs.mashery.com/manage/GUID-40EED8A4-4972-4183-975A-649AFF7B0BAD.html) è l'insieme delle pagine web pubblicate sul [Developer Portal](/integration/tibcomashery/architecture#developer-portal) consultabili dagli sviluppatori. Nella documentazione vengono fornite informazioni, guide e suggerimenti riguardanti il gateway, esempi di chiamate ai servizi pubblicati e quant'altro sia ritenuto utile alla dissemination dello strumento.
+La [**documentazione statica**](http://docs.mashery.com/manage/GUID-40EED8A4-4972-4183-975A-649AFF7B0BAD.html) è l'insieme delle pagine web pubblicate sul [Developer Portal](/integration/tibcomashery/architecture#developer-portal) e consultabili dagli sviluppatori. Nella documentazione vengono fornite informazioni, guide e suggerimenti riguardanti il gateway, esempi di chiamate ai servizi pubblicati e quant'altro sia ritenuto utile alla dissemination dello strumento.
 
 >![doc_page.jpg](/mashery/doc_page.jpg)
 > *Esempio di documentazione statica*
