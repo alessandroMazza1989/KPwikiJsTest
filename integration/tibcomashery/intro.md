@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-28T15:24:04.995Z
+date: 2020-04-28T15:24:29.893Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -58,7 +58,7 @@ Per ogni organizzazione creata Mashery genera automaticamente una serie di [ruol
 > *Schermata di assegnazione degli Organization Roles per un utente*
 
 #### Portal Access Groups
-Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno la stessa funzione e le stesse caratteristiche. Determinano la visibilità da parte dei developer degli unici oggetti da loro fruibili sul [Developer Portal](#/../architecture#developer-portal), cioè [piani](#piano) e [documentazione interattiva](#documentazione-interattiva). Sono customizzabili: vengono creati con un nome a piacere tramite il CC ed è possibile definire liberamente quali utenti ne fanno parte e a quali risorse hanno accesso.
+Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno la stessa funzione e le stesse caratteristiche. Determinano la visibilità da parte dei developer degli unici oggetti da loro fruibili sul [Developer Portal](../architecture#developer-portal), cioè [piani](#piano) e [documentazione interattiva](#documentazione-interattiva). Sono customizzabili: vengono creati con un nome a piacere tramite il CC ed è possibile definire liberamente quali utenti ne fanno parte e a quali risorse hanno accesso.
 
 >![access_groups.jpg](/mashery/access_groups.jpg)
 > *Dettaglio di un gruppo d'accesso e delle risorse correlate*
