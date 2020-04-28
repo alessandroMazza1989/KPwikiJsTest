@@ -2,7 +2,7 @@
 title: Common Topics
 description: Indice degli argomenti comuni
 published: true
-date: 2020-04-28T11:10:33.433Z
+date: 2020-04-28T13:46:48.882Z
 tags: commons, software versioning, git, networking, pattern, design, web services, unix, shell, wsdl, soap, rest, server, algoritmi, databases, sql, relational, lifecycle, log
 ---
 
@@ -129,7 +129,6 @@ Tool [Online XML - XSD formatter](http://www.freeformatter.com/)
 [**Lab**: KP Xsl exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfWkpkNk1wTmNlRkE)
 
 # Unix Shell
-Intro
 ### Basic
 - **Obiettivi**
 1. What is unix
