@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-27T16:52:48.122Z
+date: 2020-04-28T13:06:19.578Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -66,11 +66,9 @@ Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno l
 > I seguenti ruoli sono utilizzabili, pur non essendo citati da nessuna parte nella documentazione ufficiale:
 > *Everyone*: rappresenta qualunque utente acceda al Dev Portal, sia quelli che hanno effettuato il log-in che quelli che non si sono autenticati.
 > *Member*: rappresenta un utente registrato, quindi un utente che ha effettuato il log-in sul Dev Portal.
-> *Organization User*: ???
-> *Service User*: ???
+> *Organization User*: qualunque utente registrato che fa parte di almeno una [organizzazione](#organizzazione).
+> *Service User*: un ruolo tecnico assegnato da Tibco al primo utente creato nell'area cliente, inutile in ambito di amministrazione del gateway.
 {.is-info}
-
-
 
 ## API
 Una **API** o **servizio** è essenzialmente un contentitore logico di endpoints. Vi sono alcune configurazioni che possono essere effettuate a livello di API ma in generale esse vengono sovrascritte dalle configurazioni impostate sul singolo endpoint.
@@ -120,7 +118,7 @@ Un'[**applicazione**](http://docs.mashery.com/manage/GUID-8598F4C2-41F6-4703-A48
 {.is-info}
 
 >![applications.jpg](/mashery/applications.jpg)
-> *Schermata di elenco delle applicazioni *
+> *Schermata di elenco delle applicazioni*
 
 ## Pacchetto
 Il [**pacchetto**](http://docs.mashery.com/design/GUID-B9F7E9DA-6E0C-4300-9A1D-CB7B407BC5D3.html) è un raggruppamento logico di [piani](#piano) di utilizzo delle API. 
@@ -138,12 +136,12 @@ Il [**pacchetto**](http://docs.mashery.com/design/GUID-B9F7E9DA-6E0C-4300-9A1D-C
 Un [**piano**](http://docs.mashery.com/design/GUID-B78424FD-C04D-4BBD-ACCA-73E0F6F90214.html) non può esistere se prima non è stato creato un [pacchetto](#pacchetto) che lo contenga.
 
 >![plans.jpg](/mashery/plans.jpg)
-> *Schermata di elenco dei piani appartenenti al pacchetto *b2cws**
+> *Schermata di elenco dei piani appartenenti al pacchetto b2cws*
 
 Nel piano è definita una lista di [API](#api)/[endpoints](#endpoint)/[metodi](#metodo) (la granularità è configurabile a piacere) a cui il piano stesso dà diritto di accesso. Oltre a ciò a questo livello possono essere definiti i limiti di [throttling](#throttling) e alcune proprietà delle [chiavi](#chiave) che verranno generate per il piano.
 
 >![plan_designer.jpg](/mashery/plan_designer.jpg)
-> *Dettaglio degli endpoint accessibili sottoscrivendosi al piano *b2cws_dev**
+> *Dettaglio degli endpoint accessibili sottoscrivendosi al piano b2cws_dev*
 
 > Non è possibile accedere agli endpoint esposti dal gateway senza prima aver creato un'applicazione, selezionato un [piano](#piano) di utilizzo e ricevuto una [chiave](#chiave) con cui identificare le proprie chiamate. 
 {.is-info}
