@@ -2,7 +2,7 @@
 title: Common Topics
 description: Indice degli argomenti comuni
 published: true
-date: 2020-04-28T08:07:53.815Z
+date: 2020-04-28T08:19:23.019Z
 tags: commons, software versioning, git, networking, pattern, design, web services, unix, shell, wsdl, soap, rest, server, algoritmi, databases, sql, relational, lifecycle, log
 ---
 
@@ -157,52 +157,40 @@ Intro
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Ping
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Wget
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Curl
-23. Shell scripting (see link below)
 24. Finding your own IP 
 - **Link Utili**
 [Unix guide (required content extends till tutorial number 6)](http://www.ee.surrey.ac.uk/Teaching/Unix/)
-[Unix shell scripting (sections from 1 to 10)](https://www.html.it/guide/shell-scripting-la-guida/)
 - **Tools & Lab**
 Tool [Virtual box VM guide and references](https://docs.google.com/document/d/1OSbQtX0NoG31UhdtxFlawpnaja8KeDzXd8wushVZzdk/edit?usp=sharing)
 Lab [KP Unix/Linux exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfUzFobUxTU0wtV1E)
 
 ### Advanced
 - **Obiettivi**
-Obiettivo1
-Obiettivo2
-Obiettivo3
+1. Shell scripting
 - **Link Utili**
-[Link1](http://)
-[Link2](http://)
-- **Tools & Lab**
-[Tool1](http://)
-Lab
+[Unix shell scripting (sections from 1 to 10)](https://www.html.it/guide/shell-scripting-la-guida/)
 
 # Networking
 Intro
 ### Basic
 - **Obiettivi**
-Obiettivo1
-Obiettivo2
-Obiettivo3
+1.Stack ISO/OSI
+2.LAN/WAN/MAN
+3.Subnet
+4.ridge/NAT
+5.ateway
+6.Routing table
+7.Firewall
 - **Link Utili**
-[Link1](http://)
-[Link2](http://)
-- **Tools & Lab**
-[Tool1](http://)
-Lab
+Coming soon
 
 ### Advanced
 - **Obiettivi**
-Obiettivo1
-Obiettivo2
-Obiettivo3
+1.Cloud
+2.SaaS
+3.iPaas
 - **Link Utili**
-[Link1](http://)
-[Link2](http://)
-- **Tools & Lab**
-[Tool1](http://)
-Lab
+Coming soon
 
 # Software Versioning
 Questo capitolo ha l’obiettivo di introdurre il concetto di controllo di versione, di descriverne i diversi approcci e di approfondire gli strumenti maggiormente utilizzati per implementarlo, specialmente nell'ambito dei sistemi software.
@@ -290,6 +278,126 @@ Obiettivo3
 - **Tools & Lab**
 [Tool1](http://)
 Lab
+
+# EAI (Enterprise Application Integration)
+- **Obiettivi**
+1. General concepts pertaining system integration
+2. Integration Styles
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. File Transfer
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Shared Database
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Remote Procedure Invocation
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Messaging 
+3. Messaging Systems
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Message Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Message
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Pipes and Filters
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Message Router
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Message Translator
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Message Endpoint
+4. Messaging Channels
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Point-to-Point Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Publish-Subscribe Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Datatype Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Invalid Message Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Dead Letter Channel
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Guaranteed Delivery
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> g. Channel Adapter
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> h. Messaging Bridge
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> i. Message Bus
+5. Message Construction
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Command Message
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Document Message
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Event Message
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Request-Reply
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Return Address
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Correlation Identifier
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> g. Message Sequence
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> h. Message Expiration
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> i. Format Indicator
+6. Message Routing
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Content-Based Router
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Message Filter
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Dynamic Router
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Recipient List
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Splitter
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Aggregator
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> g. Resequencer
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> h. Composed Msg. Processor
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> i. Scatter-Gather
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> j. Routing Slip
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> k. Process Manager
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> l. Message Broker
+7. Message Transformation
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Envelope Wrapper
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Content Enricher
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Content Filter
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Claim Check
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Normalizer
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Canonical Data Model
+8. Message Endpoints
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Messaging Gateway
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Messaging Mapper
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Transactional Client
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Polling Consumer
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Event-Driven Consumer
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Competing Consumers
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b  Message Dispatcher
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Selective Consumer
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Durable Subscriber
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Idempotent Receiver
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Service Activator
+- **Link Utili**
+[Integration theory guide](http://www.enterpriseintegrationpatterns.com/Introduction.html)
+
+## JMS
+- **Obiettivi**
+1. What is a Messaging system?
+2. JMS API and related Concepts
+3. JMS API Programming Model
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Connection Factories
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Destinations
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Connections
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Sessions
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Message Producers
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. Message Consumers
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> g. Message Listeners
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> h. Message Selectors
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> i. Messages
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> j. Message Headers
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> k. Message Properties
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> l. Message Bodies
+- **Link Utili**
+[JMS Guide (relevat topics up to chapter 3 included)](http://docs.oracle.com/javaee/1.3/jms/tutorial/1_3_1-fcs/doc/jms_tutorialTOC.html)
+- **Tools & Lab**
+Lab: Installation of a EMS server on the previously created Centos 6.5 VM.
+Lab: Creation of a centos VM using vagrant. [Link to vagrant guide](https://docs.google.com/document/d/1kypDQ33wxUAE1-_Cm94UNwGtmWy0_UGw5SePVHutzws/edit?usp=sharing )
+Lab [KP linux exercises](https://drive.google.com/open?id=0BydghG4Au4HfUzFobUxTU0wtV1E)
+
+## SOA
+- **Obiettivi**
+1. Service Oriented Architecture paradigm concept 
+2. Service design principles
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Standardized service contract
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Service loose coupling
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. service abstraction
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. service reusability
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. service autonomy
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. service statelessness
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> g. service discoverability
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> h. service composability
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> i. interoperability
+3. Service orientation and the concept of applicazione soa
+4. Service orientation e il concept of integrazione inside soa
+5. Service models
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. service layers
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. entity services
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. task services
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. utility services
+6. Undertanding the difference between the  top down and the bottom up delivery strategies
+- **Link Utili**
+[SOA theory guide](http://serviceorientation.com/serviceorientation/index)
+[SOA review blogspot](http://savedev.blogspot.it/2013/09/spaghetti-integration-to-soa.html)
+[SOA tutorial](http://soaschools.com/)
 
 # Algoritmi e strutture dati
 ### Basic
@@ -394,27 +502,58 @@ Lab
 # Web Services (SOAP/REST)
 ### Basic
 - **Obiettivi**
-Obiettivo1
-Obiettivo2
-Obiettivo3
+1. Difference between API and Web Services
+2. Inner workings of web services
+3. Why use web services?
 - **Link Utili**
-[Link1](http://)
-[Link2](http://)
-- **Tools & Lab**
-[Tool1](http://)
-Lab
+[Difference between API and web services explained 0](https://www.linkedin.com/pulse/difference-between-api-web-service-chitrakannan-balasubramanian/)
+[Difference between API and web services explained 1](https://testautomationresources.com/api-testing/differences-web-services-api/)
 
-### Advanced
+### SOAP, WSDL
 - **Obiettivi**
-Obiettivo1
-Obiettivo2
-Obiettivo3
+1. wsdl elements (types, message, operation, portType, binding)
+2. Definition of data types using xml schema
+3. Definition of messagges
+4. Definition of operations
+5. Definition of portType
+6. Definition of binding
+7. abstract wsdl vs concrete wsdl
+8. The usage of SOAP as an applicative protocol 
+9. SOAP syntax
+10. SOAP Envelope
+11. SOAP Header
+12. SOAP Body
+13. SOAP Fault
 - **Link Utili**
-[Link1](http://)
-[Link2](http://)
+[w3 school xml_services](https://www.w3schools.com/xml/xml_services.asp)
+[guide to web services](http://www.html.it/guide/guida-web-service/)
 - **Tools & Lab**
-[Tool1](http://)
-Lab
+[Tool: Download SoapUi](https://www.soapui.org/downloads/soapui.html)
+[Tool: Soap UI Mock]( https://www.soapui.org/soap-mocking/working-with-mockservices.htm)
+
+### RESTful
+- **Obiettivi**
+1. Web service definition
+2. Elements of a wsdl (types, message, operation, portType, binding)
+3. Definition of data types using xml schema
+4. Definition of messagges
+5. Definition of operations
+6. Definition of portType
+7. Definition of binding
+8. abstract wsdl vs concrete wsdl
+9. The usage of SOAP as an applicative protocol 
+10. SOAP syntax
+11. SOAP Envelope
+12. SOAP Header
+13. SOAP Body
+14. SOAP Fault
+- **Link Utili**
+[w3 school xml_services](https://www.w3schools.com/xml/xml_services.asp)
+[guide to restful web services](https://www.html.it/guide/restful-web-services-la-guida/)
+[rest vs soap](https://www.html.it/pag/19612/differenze-tra-web-service-rest-e-soap/)
+- **Tools & Lab**
+[Tool: Download Postman](https://www.getpostman.com/downloads/)
+[Tool: Download Swagger]( https://swagger.io/tools/swagger-editor/download/)
 
 # Design e Architectural Patterns
 ### Basic
