@@ -2,7 +2,7 @@
 title: Common Topics
 description: Indice degli argomenti comuni
 published: true
-date: 2020-04-28T11:00:42.883Z
+date: 2020-04-28T11:05:40.174Z
 tags: commons, software versioning, git, networking, pattern, design, web services, unix, shell, wsdl, soap, rest, server, algoritmi, databases, sql, relational, lifecycle, log
 ---
 
@@ -67,6 +67,7 @@ Lab [KP drive SQL exercises](https://drive.google.com/open?id=0BydghG4Au4Hfd1E0b
   10. XML Schema (XSD): Definition
 - **Link Utili**
 [w3School XML Reference](http://www.w3schools.com/xml/)
+[namespaces](https://www.html.it/articoli/il-misterioso-mondo-dei-namespaces/)
 - **Tools & Lab**
 Tool [Online XML - XSD formatter](http://www.freeformatter.com/)
 
