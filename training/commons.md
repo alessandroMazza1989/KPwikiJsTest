@@ -2,13 +2,88 @@
 title: Common Topics
 description: Indice degli argomenti comuni
 published: true
-date: 2020-04-20T16:07:05.761Z
+date: 2020-04-28T08:02:41.036Z
 tags: commons, software versioning, git, networking, pattern, design, web services, unix, shell, wsdl, soap, rest, server, algoritmi, databases, sql, relational, lifecycle, log
 ---
 
 In questa sezione verranno trattati i principali argomenti che rappresentano la base di una formazione specialistica.
 Individuare le sezioni di interesse insieme al proprio tutor.
 <p>&nbsp;</p>
+
+# Databases
+### Basic
+- **Obiettivi**
+   1. RDBMS: definition 
+   2. Table: definition 
+   3. Primary key (PK): definition and usage
+   4. Foreign key (FK): definition and usage 
+   5. How to define relationships between tables
+   6. SQL (Standard Query Language) definition 
+   7. SQL Syntax.
+   8. Fundamental keywords (SELECT, INSERT, UPDATE, DELETE)
+   9. Filter the selected records (WHERE clause)
+   10. Comparison operators ( =,<, >, !=, <>, LIKE)
+   11. record in list (IN clause)
+   12. Sorting records (ORDER BY clause)
+   13. Aliasing 
+   14. SQL joins (Inner, Outer, Left, Right, Full, Cross)
+   15. Aggregation functions, GROUP BY clause 
+   16. Create DB
+   17. Create Table 
+   18. Constrains 
+- **Link Utili**
+[w3school SQL reference](http://www.w3schools.com/sql/default.asp)
+[html.it guida al linguaggio SQL](http://www.html.it/guide/guida-linguaggio-sql/)
+[Postgress exercises site](https://pgexercises.com/) 
+- **Tools & Lab**
+Tool [PostgreSQL](http://www.postgresql.org/download/)
+Lab [KP drive SQL exercises](https://drive.google.com/open?id=0BydghG4Au4Hfd1E0b3pQQlhvNk0)
+
+### Advanced
+- **Obiettivi**
+   1. Create Index
+   2. Drop
+   3. Alter
+   4. Auto Increment
+   5. Views
+   6. DATE functions 
+   7. CASTING functions
+   8. The NULL value
+   9. NULL functions
+   10. DATA types (RDBS dependant)
+
+# XML/XSD/XPATH/XSLT
+## XML
+### Basic
+- **Obiettivi**
+  1. XML:Definition
+  2. Use cases 
+  3. hierarchical structure of an XML 
+  4. Sintax
+  5. XML tags 
+  6. XML attributes
+  7. Namespaces
+  8. Encoding
+  9. XML Doctypes
+  10. XML Schema (XSD): Definition
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
+
+### Advanced
+- **Obiettivi**
+Obiettivo1
+Obiettivo2
+Obiettivo3
+- **Link Utili**
+[Link1](http://)
+[Link2](http://)
+- **Tools & Lab**
+[Tool1](http://)
+Lab
 
 # Networking
 Intro
@@ -149,58 +224,7 @@ Obiettivo3
 [Tool1](http://)
 Lab
 
-
-# XML/XSD/XPATH/XSLT
-### Basic
-- **Obiettivi**
-Obiettivo1
-Obiettivo2
-Obiettivo3
-- **Link Utili**
-[Link1](http://)
-[Link2](http://)
-- **Tools & Lab**
-[Tool1](http://)
-Lab
-
-### Advanced
-- **Obiettivi**
-Obiettivo1
-Obiettivo2
-Obiettivo3
-- **Link Utili**
-[Link1](http://)
-[Link2](http://)
-- **Tools & Lab**
-[Tool1](http://)
-Lab
-
 # Algoritmi e strutture dati
-### Basic
-- **Obiettivi**
-Obiettivo1
-Obiettivo2
-Obiettivo3
-- **Link Utili**
-[Link1](http://)
-[Link2](http://)
-- **Tools & Lab**
-[Tool1](http://)
-Lab
-
-### Advanced
-- **Obiettivi**
-Obiettivo1
-Obiettivo2
-Obiettivo3
-- **Link Utili**
-[Link1](http://)
-[Link2](http://)
-- **Tools & Lab**
-[Tool1](http://)
-Lab
-
-# Databases
 ### Basic
 - **Obiettivi**
 Obiettivo1
