@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-28T13:06:19.578Z
+date: 2020-04-28T15:23:39.245Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -58,7 +58,7 @@ Per ogni organizzazione creata Mashery genera automaticamente una serie di [ruol
 > *Schermata di assegnazione degli Organization Roles per un utente*
 
 #### Portal Access Groups
-Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno la stessa funzione e le stesse caratteristiche. Determinano la visibilità da parte dei developer degli unici oggetti da loro fruibili sul Developer Portal, cioè [piani](#piano) e [documentazione interattiva](#documentazione-interattiva). Sono customizzabili: vengono creati con un nome a piacere tramite il CC ed è possibile definire liberamente quali utenti ne fanno parte e a quali risorse hanno accesso.
+Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno la stessa funzione e le stesse caratteristiche. Determinano la visibilità da parte dei developer degli unici oggetti da loro fruibili sul [Developer Portal](#/../intro#developer-portal), cioè [piani](#piano) e [documentazione interattiva](#documentazione-interattiva). Sono customizzabili: vengono creati con un nome a piacere tramite il CC ed è possibile definire liberamente quali utenti ne fanno parte e a quali risorse hanno accesso.
 
 >![access_groups.jpg](/mashery/access_groups.jpg)
 > *Dettaglio di un gruppo d'accesso e delle risorse correlate*
@@ -114,7 +114,7 @@ Un oggetto **utente** viene creato indifferentemente al momento della registrazi
 
 ## Applicazione
 Un'[**applicazione**](http://docs.mashery.com/manage/GUID-8598F4C2-41F6-4703-A48B-545917EF8835.html) è l'oggetto che in Mashery rappresenta un client (quindi un'app, un frontend, un qualsiasi sistema in grado di effettuare chiamate) che può fruire dei servizi messi a disposizione dal gateway. L'applicazione deve essere associata ad uno e un solo utente, tuttavia un utente può creare più applicazioni.
-> Non è possibile accedere agli endpoint esposti dal gateway senza prima aver creato un'applicazione, selezionato un [piano](#piano) di utilizzo e ricevuto una [chiave](#chiave) con cui identificare le proprie chiamate.
+> Non è possibile invocare gli endpoint esposti dal gateway senza prima aver creato un'applicazione, selezionato un [piano](#piano) di utilizzo e ricevuto una [chiave](#chiave) con cui identificare le proprie chiamate.
 {.is-info}
 
 >![applications.jpg](/mashery/applications.jpg)
@@ -143,13 +143,31 @@ Nel piano è definita una lista di [API](#api)/[endpoints](#endpoint)/[metodi](#
 >![plan_designer.jpg](/mashery/plan_designer.jpg)
 > *Dettaglio degli endpoint accessibili sottoscrivendosi al piano b2cws_dev*
 
-> Non è possibile accedere agli endpoint esposti dal gateway senza prima aver creato un'applicazione, selezionato un [piano](#piano) di utilizzo e ricevuto una [chiave](#chiave) con cui identificare le proprie chiamate. 
+> Non è possibile invocare gli endpoint esposti dal gateway senza prima aver creato un'applicazione, selezionato un piano di utilizzo e ricevuto una chiave con cui identificare le proprie chiamate. 
 {.is-info}
 
 ## Chiave
+Una [chiave](http://docs.mashery.com/design/GUID-B78424FD-C04D-4BBD-ACCA-73E0F6F90214.html) è una semplice stringa randomica alfanumerica generata dal gateway o inserita manualmente in fase di creazione. La chiave viene creata dopo aver selezionato una [applicazione](#applicazione) ed un [piano](#piano) e dovrà essere inclusa dai client in ogni chiamata al gateway così da identificarsi ed essere autorizzato all'accesso alle risorse specificate nel piano stesso.
+
+>![package_keys.jpg](/mashery/package_keys.jpg)
+> *Schermata di elenco delle chiavi. Come si può vedere ogni chiave è associata a una specifica applicazione, di conseguenza a un [utente](#utente), ma soprattutto a un [pacchetto](#pacchetto) e a un determinato piano di quel pacchetto.*
+
+Una volta creata la chiave non è possibile modificarne il valore. È invece possibile modificare il piano associato a una chiave anche dopo la creazione della chiave stessa, purché il piano appartenga allo stesso pacchetto. A livello di chiave è anche possibile impostare dei valori di [throttling](#throttling) che vanno a sovrascrivere quelli specificati sull'[endpoint](#endpoint) e sul piano.
+
+>![key.jpg](/mashery/key.jpg)
+>*Dettaglio della configurazione di una chiave. *
+
+> Per ogni combinazione applicazione-pacchetto può essere staccata una sola chiave. Se è richiesto avere due chiavi per due piani di uno stesso pacchetto sarà necessario creare due applicazioni separate.
+{.is-warning}
+
+>![members_applications_keys.jpg](/mashery/members_applications_keys.jpg)
+> *Esempio di una possibile assegnazione di tre chiavi allo stesso utente. Come si può vedere possono essere staccate più chiavi per la stessa applicazione, purché esse facciano parte di pacchetti diversi.*
+
+### Secret
+Il secret è un'ulteriore stringa alfanumerica utilizzata per le implementazioni di autenticazione più complesse, ad esempio oAuth2. Analogamente alla chiave viene generato dal gateway e deve essere incluso nelle chiamate dei client. È possibile modificare il secret dal CC in ogni momento, contrariamente alla [chiave](#chiave) che una volta generata è immutabile.
 
 ## Documentazione Statica
-
+La [**documentazione statica**](http://docs.mashery.com/manage/GUID-40EED8A4-4972-4183-975A-649AFF7B0BAD.html) è l'insieme delle pagine web che possono essere rese disponibili sul 
 ## Documentazione Interattiva
 
 # Funzionalità
