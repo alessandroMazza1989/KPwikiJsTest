@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-28T15:50:08.007Z
+date: 2020-04-28T15:50:34.350Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -65,7 +65,7 @@ Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno l
 
 > I seguenti ruoli sono utilizzabili, pur non essendo citati da nessuna parte nella documentazione ufficiale:
 >
-> *Everyone*: qualunque utente acceda al Dev Portal, sia quelli che hanno effettuato il log-in che quelli che non si sono autenticati.
+> *Everyone*: qualunque utente acceda al Dev Portal, sia quelli che hanno effettuato il log-in che quelli non autenticati.
 > *Member*: un utente registrato, quindi un utente che ha effettuato il log-in sul Dev Portal.
 > *Organization User*: qualunque utente registrato che fa parte di almeno una [organizzazione](#organizzazione).
 > *Service User*: un ruolo tecnico assegnato da Tibco al primo utente creato nell'area cliente, inutile in ambito di amministrazione del gateway.
