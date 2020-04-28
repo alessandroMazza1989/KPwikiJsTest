@@ -2,7 +2,7 @@
 title: Common Topics
 description: Indice degli argomenti comuni
 published: true
-date: 2020-04-28T11:05:40.174Z
+date: 2020-04-28T11:10:33.433Z
 tags: commons, software versioning, git, networking, pattern, design, web services, unix, shell, wsdl, soap, rest, server, algoritmi, databases, sql, relational, lifecycle, log
 ---
 
@@ -88,6 +88,7 @@ Tool [Online XML - XSD formatter](http://www.freeformatter.com/)
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Types with only text
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Indicators (choice, sequence, all)
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. &lt;any> e &lt;anyAttribute> tags 
+7. Include ed Import schema
 - **Link Utili**
 [w3School XSD Schema Reference](https://www.w3schools.com/xml/schema_intro.asp)
 - **Tools & Lab**
@@ -175,13 +176,13 @@ Lab [KP Unix/Linux exercises folder](https://drive.google.com/open?id=0BydghG4Au
 Intro
 ### Basic
 - **Obiettivi**
-1.Stack ISO/OSI
-2.LAN/WAN/MAN
-3.Subnet
-4.ridge/NAT
-5.ateway
-6.Routing table
-7.Firewall
+1. Stack ISO/OSI
+2. LAN/WAN/MAN
+3. Subnet
+4. Bridge/NAT
+5. Gateway
+6. Routing table
+7. Firewall
 - **Link Utili**
 Coming soon
 
@@ -528,6 +529,7 @@ Lab
 - **Link Utili**
 [w3 school xml_services](https://www.w3schools.com/xml/xml_services.asp)
 [guide to web services](http://www.html.it/guide/guida-web-service/)
+[wsdl HelloWorld sample](https://www.tutorialspoint.com/wsdl/wsdl_example.htm)
 - **Tools & Lab**
 [Tool: Download SoapUi](https://www.soapui.org/downloads/soapui.html)
 [Tool: Soap UI Mock]( https://www.soapui.org/soap-mocking/working-with-mockservices.htm)
