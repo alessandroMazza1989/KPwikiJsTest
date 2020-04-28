@@ -2,7 +2,7 @@
 title: Common Topics
 description: Indice degli argomenti comuni
 published: true
-date: 2020-04-28T13:46:48.882Z
+date: 2020-04-28T13:47:41.451Z
 tags: commons, software versioning, git, networking, pattern, design, web services, unix, shell, wsdl, soap, rest, server, algoritmi, databases, sql, relational, lifecycle, log
 ---
 
@@ -172,7 +172,6 @@ Lab [KP Unix/Linux exercises folder](https://drive.google.com/open?id=0BydghG4Au
 [Unix shell scripting (sections from 1 to 10)](https://www.html.it/guide/shell-scripting-la-guida/)
 
 # Networking
-Intro
 ### Basic
 - **Obiettivi**
 1. Stack ISO/OSI
