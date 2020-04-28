@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-28T15:26:11.526Z
+date: 2020-04-28T15:32:11.117Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -167,7 +167,7 @@ Una volta creata la chiave non è possibile modificarne il valore. È invece pos
 Il secret è un'ulteriore stringa alfanumerica utilizzata per le implementazioni di autenticazione più complesse, ad esempio oAuth2. Analogamente alla chiave viene generato dal gateway e deve essere incluso nelle chiamate dei client. È possibile modificare il secret dal CC in ogni momento, contrariamente alla [chiave](#chiave) che una volta generata è immutabile.
 
 ## Documentazione Statica
-La [**documentazione statica**](http://docs.mashery.com/manage/GUID-40EED8A4-4972-4183-975A-649AFF7B0BAD.html) è l'insieme delle pagine web che possono essere rese disponibili sul 
+La [**documentazione statica**](http://docs.mashery.com/manage/GUID-40EED8A4-4972-4183-975A-649AFF7B0BAD.html) è l'insieme delle pagine web pubblicate sul [Developer Portal](/integration/tibcomashery/architecture#developer-portal) consultabili dagli sviluppatori. Nella documentazione vengono fornite informazioni, guide e suggerimenti riguardanti il gateway, esempi di chiamate ai servizi pubblicati e quant'altro sia ritenuto utile alla dissemination dello strumento.
 ## Documentazione Interattiva
 
 # Funzionalità
