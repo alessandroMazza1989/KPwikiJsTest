@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-28T15:50:44.536Z
+date: 2020-04-28T15:53:25.878Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -68,21 +68,21 @@ Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno l
 > *Everyone*: qualunque utente acceda al Dev Portal, sia quelli che hanno effettuato il log-in che quelli non autenticati.
 > *Member*: un utente registrato che ha effettuato il log-in sul Dev Portal.
 > *Organization User*: qualunque utente registrato che fa parte di almeno una [organizzazione](#organizzazione).
-> *Service User*: un ruolo tecnico assegnato da Tibco al primo utente creato nell'area cliente, inutile in ambito di amministrazione del gateway.
+> *Service User*: il primo utente creato nell'area cliente. Si tratta di un ruolo tecnico assegnato da Tibco, inutile in ambito di amministrazione del gateway.
 {.is-info}
 
 ## API
-Una **API** o **servizio** è essenzialmente un contentitore logico di endpoints. Vi sono alcune configurazioni che possono essere effettuate a livello di API ma in generale esse vengono sovrascritte dalle configurazioni impostate sul singolo endpoint.
+Una **API** o **servizio** è essenzialmente un contentitore logico di endpoints. Vi sono alcune configurazioni che possono essere effettuate a livello di API ma in generale esse vengono sovrascritte da quelle del singolo endpoint.
 
 >![api_list.jpg](/mashery/api_list.jpg)
 > *Schermata di elenco delle API*
 
-> Il 99% dei servizi moderni appartiene a una delle due famiglie **REST** o **SOAP**. Mashery supporta entrambi gli standard con un livello variabile di successo. Non è fra gli obiettivi di questa guida illustrare le caratteristiche dei due paradigmi tuttavia una conoscenza di base delle loro caratteristiche è consigliata.
+> Il 99% delle API moderne appartiene a una delle due famiglie **REST** o **SOAP**. Mashery supporta entrambi gli standard con un livello variabile di successo. Non è fra gli obiettivi di questa guida illustrare le caratteristiche dei due paradigmi tuttavia una conoscenza di base delle loro caratteristiche è consigliata.
 {.is-info}
 
 
 ## Endpoint
-L'**endpoint** è sicuramente l'oggetto più importante e più complesso di Mashery. Un endpoint rappresenta un canale di comunicazione tra il gateway e il mondo esterno. Ogni endpoint deve avere un indirizzo (URI, Uniform Resource Identifier) che lo identifica in maniera univoca e universale: non possono esistere due URI uguali sulla rete. Tramite un endpoint il client è in grado di accedere a una o più risorse messe a disposizione dal backend; per fare ciò il client invia richieste all'endpoint e riceve risposte dallo stesso.
+L'**endpoint** è sicuramente l'oggetto più importante e più complesso di Mashery. Un endpoint rappresenta un canale di comunicazione tra il gateway e il mondo esterno. Ogni endpoint deve avere un indirizzo (URI, Uniform Resource Identifier) che lo identifica in maniera univoca e universale: non possono esistere due endpoint aventi lo stesso URI sulla rete. Tramite l'endpoint il client è in grado di accedere a una o più risorse messe a disposizione dal backend; per fare ciò il client invia richieste e riceve risposte dall'endpoint.
 
 >![ep_list.jpg](/mashery/ep_list.jpg)
 > *Schermata di elenco degli endpoint di una [API](#api)*
