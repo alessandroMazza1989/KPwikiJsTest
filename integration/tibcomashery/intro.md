@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-28T15:32:11.117Z
+date: 2020-04-28T15:37:03.932Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -168,6 +168,10 @@ Il secret è un'ulteriore stringa alfanumerica utilizzata per le implementazioni
 
 ## Documentazione Statica
 La [**documentazione statica**](http://docs.mashery.com/manage/GUID-40EED8A4-4972-4183-975A-649AFF7B0BAD.html) è l'insieme delle pagine web pubblicate sul [Developer Portal](/integration/tibcomashery/architecture#developer-portal) consultabili dagli sviluppatori. Nella documentazione vengono fornite informazioni, guide e suggerimenti riguardanti il gateway, esempi di chiamate ai servizi pubblicati e quant'altro sia ritenuto utile alla dissemination dello strumento.
+
+>![doc_page.jpg](/mashery/doc_page.jpg)
+> *Esempio di documentazione statica*
+
 ## Documentazione Interattiva
 
 # Funzionalità
