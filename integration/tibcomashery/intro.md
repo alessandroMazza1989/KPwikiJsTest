@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-28T15:53:25.878Z
+date: 2020-04-28T16:03:52.603Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -72,7 +72,7 @@ Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno l
 {.is-info}
 
 ## API
-Una **API** o **servizio** è essenzialmente un contentitore logico di endpoints. Vi sono alcune configurazioni che possono essere effettuate a livello di API ma in generale esse vengono sovrascritte da quelle del singolo endpoint.
+Una **API** o **servizio** è essenzialmente un contentitore logico di [endpoints](#endpoint). Vi sono alcune configurazioni che possono essere effettuate a livello di API ma in generale esse vengono sovrascritte da quelle del singolo endpoint.
 
 >![api_list.jpg](/mashery/api_list.jpg)
 > *Schermata di elenco delle API*
@@ -84,33 +84,32 @@ Una **API** o **servizio** è essenzialmente un contentitore logico di endpoints
 ## Endpoint
 L'**endpoint** è sicuramente l'oggetto più importante e più complesso di Mashery. Un endpoint rappresenta un canale di comunicazione tra il gateway e il mondo esterno. Ogni endpoint deve avere un indirizzo (URI, Uniform Resource Identifier) che lo identifica in maniera univoca e universale: non possono esistere due endpoint aventi lo stesso URI sulla rete. Tramite l'endpoint il client è in grado di accedere a una o più risorse messe a disposizione dal backend; per fare ciò il client invia richieste e riceve risposte dall'endpoint.
 
->![ep_list.jpg](/mashery/ep_list.jpg)
-> *Schermata di elenco degli endpoint di una [API](#api)*
+La maggioranza delle configurazioni necessarie alla pubblicazione di una API sul gateway viene effettuata a livello di singolo endpoint. Come già detto in Mashery gli endpoints sono raggruppati logicamente all'interno delle [API](#api).
 
-La maggioranza delle configurazioni necessarie alla pubblicazione di una API sul gateway viene effettuata a livello di singolo endpoint. Come già detto in Mashery gli endpoints sono raggruppati logicamente all'interno dei servizi.
+>![ep_list.jpg](/mashery/ep_list.jpg)
+> *Schermata di elenco degli endpoint di una API*
 
 > Esiste un certo livello di ambiguità tra gli addetti ai lavori su cosa sia un servizio. C'è chi identifica il servizio con il singolo endpoint e chi invece lo identifica con un gruppo di endpoints funzionalmente imparentati (vale a dire una API). Sia nella documentazione ufficiale Tibco che in questo documento quando si parla di servizio ci si riferisce *sempre* a una API.
 {.is-info}
 
 ## Metodo
-
-Un **metodo** è un'ulteriore suddivisione logica messa a disposizione dal gateway per distinguere operazioni/risorse diverse accessibili tramite lo stesso endpoint. In quest'ottica è anche possibile considerare un endpoint come un raggruppamento logico di metodi, completando quindi la gerarchia.
+Un [**metodo**](http://docs.mashery.com/design/GUID-AD59176F-2EAD-4214-B95E-CE98E3CC33DE.html) è un'ulteriore suddivisione logica messa a disposizione dal gateway per distinguere operazioni/risorse diverse accessibili tramite lo stesso [endpoint](#endpoint). In quest'ottica è anche possibile considerare un endpoint come un raggruppamento logico di metodi, completando quindi la gerarchia.
 
 >![api_hierarchy.jpg](/mashery/api_hierarchy.jpg)
 > *Gerarchia degli oggetti in Mashery*
 
-La configurazione dei metodi è opzionale in Mashery e si adatta particolarmente bene all'archetipo SOAP, in cui il metodo è sovrapponibile al concetto di *SOAP operation*, mentre risulta superflua nei servizi REST (escludendo casi limite in cui il cliente necessita di alcune funzionalità specifiche implementabili esclusivamente tramite i metodi, che verranno trattate in seguito).
+L'utilizzo dei metodi è opzionale in Mashery e si adatta particolarmente bene all'archetipo SOAP, dove il metodo è sovrapponibile al concetto di *SOAP operation*, mentre risulta superflua nei servizi REST (escludendo casi limite in cui il cliente necessita di alcune funzionalità specifiche implementabili esclusivamente tramite i metodi).
 
 > Il metodo Mashery **non** corrisponde al metodo REST!
 {.is-warning}
 
 ## Utente
-Un oggetto **utente** viene creato indifferentemente al momento della registrazione sul Dev Portal (in *self-service*) o da un amministratore nel Control Center. L'utente è legato indissolubilmente a un indirizzo mail, tuttavia è concesso creare più utenti associati allo stesso indirizzo. Al momento della creazione in *self-service* verrà inviata una mail con un link di conferma prima di finalizzare la creazione.
+Un oggetto [**utente**](http://docs.mashery.com/manage/GUID-7D08A6AC-E20B-43A5-B5E2-B3E5551087C6.html) viene creato al momento della registrazione di un nuovo membro sul Dev Portal o manualmente da un amministratore nel Control Center. L'utente è legato indissolubilmente a un indirizzo mail, tuttavia è concesso creare più utenti associati allo stesso indirizzo. Dopo la registrazione, se effettuata in *self-service*, verrà inviata una mail con un link di conferma prima di finalizzare la creazione.
 
 >![users.jpg](/mashery/users.jpg)
 > *Schermata di elenco degli utenti appartenenti all'[area](#area)*
 
-> Una particolarità degli utenti Mashery è che sono salvati in una tabella condivisa tra tutte le aree dei vari clienti. Ciò significa che il campo *Username* deve essere necessariamente univoco, in caso contrario la creazione fallirà.
+> Una particolarità degli utenti Mashery è che sono salvati in uno spazio condiviso tra le aree dei vari clienti. Ciò significa che il campo *Username* deve essere necessariamente univoco sull'intero ambito del cloud Tibco, in caso contrario la creazione fallirà.
 {.is-info}
 
 ## Applicazione
