@@ -2,7 +2,7 @@
 title: Introduzione e oggetti di Mashery
 description: 
 published: true
-date: 2020-04-29T14:41:55.366Z
+date: 2020-04-29T14:47:03.121Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -151,15 +151,15 @@ Nel piano è definita una lista di [API](#api)/[endpoints](#endpoint)/[metodi](#
 {.is-info}
 
 ## Chiave
-Una [chiave](http://docs.mashery.com/design/GUID-B78424FD-C04D-4BBD-ACCA-73E0F6F90214.html) è una semplice stringa randomica alfanumerica generata dal gateway o inserita manualmente in fase di creazione. La chiave viene creata dopo aver selezionato una [applicazione](#applicazione) ed un [piano](#piano) e dovrà essere inclusa dai client in ogni chiamata al gateway così da identificarsi ed essere autorizzato all'accesso alle risorse specificate nel piano stesso.
+Una [chiave](http://docs.mashery.com/design/GUID-B78424FD-C04D-4BBD-ACCA-73E0F6F90214.html) è una semplice stringa randomica alfanumerica generata dal gateway oppure inserita manualmente da un amministratore in fase di creazione. La chiave viene creata dopo aver selezionato una [applicazione](#applicazione) ed un [piano](#piano) e dovrà essere inclusa dai client in ogni chiamata al gateway così da identificarsi ed essere autorizzato all'accesso alle risorse specificate nel piano stesso.
 
 >![package_keys.jpg](/mashery/package_keys.jpg)
 > *Schermata di elenco delle chiavi. Come si può vedere ogni chiave è associata a una specifica applicazione, di conseguenza a un [utente](#utente), ma soprattutto a un [pacchetto](#pacchetto) e a un determinato piano di quel pacchetto.*
 
-Una volta creata la chiave non è possibile modificarne il valore. È invece possibile modificare il piano associato a una chiave anche dopo la creazione della chiave stessa, purché il piano appartenga allo stesso pacchetto. A livello di chiave è anche possibile impostare dei valori di [throttling](#throttling) che vanno a sovrascrivere quelli specificati sull'[endpoint](#endpoint) e sul piano.
+Una volta creata la chiave non è possibile modificarne il valore. È invece possibile modificare il piano associato a una chiave anche dopo la creazione della chiave stessa, purché il piano appartenga allo stesso pacchetto. A livello di chiave è anche possibile impostare dei valori di [throttling](/integration/tibcomashery/features#throttling) che vanno a sovrascrivere quelli specificati sull'[endpoint](#endpoint) e sul piano.
 
 >![key.jpg](/mashery/key.jpg)
->*Dettaglio della configurazione di una chiave. *
+>*Dettaglio della configurazione di una chiave.*
 
 > Per ogni combinazione applicazione-pacchetto può essere staccata una sola chiave. Se è richiesto avere due chiavi per due piani di uno stesso pacchetto sarà necessario creare due applicazioni separate.
 {.is-warning}
@@ -171,12 +171,12 @@ Una volta creata la chiave non è possibile modificarne il valore. È invece pos
 Il secret è un'ulteriore stringa alfanumerica utilizzata per le implementazioni di autenticazione più complesse, ad esempio oAuth2. Analogamente alla chiave viene generato dal gateway e deve essere incluso nelle chiamate dei client. È possibile modificare il secret dal CC in ogni momento, contrariamente alla [chiave](#chiave) che una volta generata è immutabile.
 
 ## Documentazione Statica
-La [**documentazione statica**](http://docs.mashery.com/manage/GUID-40EED8A4-4972-4183-975A-649AFF7B0BAD.html) (o *content*, utilizzando il generico termine scelto da Tibco) è l'insieme delle pagine web pubblicate sul [Developer Portal](/integration/tibcomashery/architecture#developer-portal) e consultabili dagli sviluppatori. Nella documentazione vengono fornite informazioni, guide e suggerimenti riguardanti il gateway, esempi di chiamate ai servizi pubblicati e quant'altro sia ritenuto utile alla dissemination dello strumento.
+La [**documentazione statica**](http://docs.mashery.com/manage/GUID-40EED8A4-4972-4183-975A-649AFF7B0BAD.html) (o *content*, utilizzando il generico termine scelto da Tibco) è l'insieme delle pagine web custom pubblicate sul [Developer Portal](/integration/tibcomashery/architecture#developer-portal) e consultabili dagli sviluppatori. Lo scopo della documentazione è fornire informazioni, guide e suggerimenti riguardanti il gateway, esempi di chiamate ai servizi pubblicati e quant'altro sia ritenuto utile alla dissemination e adoption dello strumento.
 
 >![doc_page.jpg](/mashery/doc_page.jpg)
 > *Esempio di documentazione statica*
 
-Ad oggi l'unico modo per gestire la documentazione statica è tramite un editor (piuttosto buggato e con una user experience squisitamente anni 80) accessibile dal [Control Center](/integration/tibcomashery/architecture#control-center), che supporta HTML e Markdown. È anche fornito un primitivo *File Manager* che consente l'hosting di immagini e generici file sul portale. 
+Ad oggi l'unico modo per gestire la documentazione statica è tramite un editor (piuttosto buggato e con user-experience squisitamente anni 80) accessibile dal [Control Center](/integration/tibcomashery/architecture#control-center), che supporta HTML e Markdown. È anche disponibile un primitivo *File Manager* che consente l'hosting di immagini e altri tipi di file sul portale. 
 
 > Non è possibile agire sulla documentazione statica tramite la API di prodotto.
 {.is-warning}
@@ -185,7 +185,7 @@ Ad oggi l'unico modo per gestire la documentazione statica è tramite un editor 
 >![content_editor.jpg](/mashery/content_editor.jpg)
 > *Editor dei contenuti del portale*
 ## Documentazione Interattiva
-La [**documentazione interattiva**](http://docs.mashery.com/design/GUID-B0B8E8AF-AC34-44CE-950B-57D7103B0C0E.html), cui spesso Tibco si riferisce anche con il termine *IO-docs* e che impropriamente viene di solito chiamata *Swagger*, ha una sezione dedicata sul [Dev Portal](/integration/tibcomashery/architecture#developer-portal). In questa sezione, chiamata anche *API Console* per confondere ulteriormente le acque, una UI grafica di facile interpretazione presenta i seguenti elementi di ogni API agli sviluppatori:
+La [**documentazione interattiva**](http://docs.mashery.com/design/GUID-B0B8E8AF-AC34-44CE-950B-57D7103B0C0E.html), cui spesso Tibco si riferisce anche con il termine *IO-docs* e che impropriamente viene di solito chiamata *Swagger*, ha una sezione dedicata sul [Dev Portal](/integration/tibcomashery/architecture#developer-portal). In questa sezione, definita *API Console* per confondere ulteriormente le acque, una UI grafica presenta i seguenti elementi di ogni API agli sviluppatori:
 - la struttura (quali sono i suoi endpoint e a cosa servono)
 - il tipo di autorizzazione utilizzata
 - i possibili codici d'errore restituiti e il loro significato
