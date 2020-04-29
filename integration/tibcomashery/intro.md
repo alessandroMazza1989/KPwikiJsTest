@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-29T13:57:47.867Z
+date: 2020-04-29T14:27:14.712Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -172,35 +172,29 @@ La [**documentazione statica**](http://docs.mashery.com/manage/GUID-40EED8A4-497
 >![doc_page.jpg](/mashery/doc_page.jpg)
 > *Esempio di documentazione statica*
 
-Ad oggi l'unico modo per gestire la documentazione statica è tramite un editor (piuttosto buggato e con una user experience squisitamente anni 80) accessibile dal [Control Center](/integration/tibcomashery/architecture#control-center) che supporta HTML e Markdown. È anche previsto un primitivo *File Manager* che consente l'hosting di immagini e generici file sul portale.
+Ad oggi l'unico modo per gestire la documentazione statica è tramite un editor (piuttosto buggato e con una user experience squisitamente anni 80) accessibile dal [Control Center](/integration/tibcomashery/architecture#control-center), che supporta HTML e Markdown. È anche fornito un primitivo *File Manager* che consente l'hosting di immagini e generici file sul portale. 
+
+> Non è possibile agire sulla documentazione statica tramite la API di prodotto.
+{.is-warning}
+
 
 >![content_editor.jpg](/mashery/content_editor.jpg)
 > *Editor dei contenuti del portale*
 ## Documentazione Interattiva
-La [**documentazione interattiva**](http://docs.mashery.com/design/GUID-B0B8E8AF-AC34-44CE-950B-57D7103B0C0E.html), cui spesso Tibco si riferisce anche con il termine *IO-docs* e che impropriamente viene di solito chiamata *Swagger*, ha una sezione dedicata sul [Dev Portal](/integration/tibcomashery/architecture#developer-portal). In questa sezione, chiamata anche *API Console* per confondere ulteriormente le acque, una UI grafica di facile interpretazione presenta i seguenti elementi di una API agli sviluppatori:
+La [**documentazione interattiva**](http://docs.mashery.com/design/GUID-B0B8E8AF-AC34-44CE-950B-57D7103B0C0E.html), cui spesso Tibco si riferisce anche con il termine *IO-docs* e che impropriamente viene di solito chiamata *Swagger*, ha una sezione dedicata sul [Dev Portal](/integration/tibcomashery/architecture#developer-portal). In questa sezione, chiamata anche *API Console* per confondere ulteriormente le acque, una UI grafica di facile interpretazione presenta i seguenti elementi di ogni API agli sviluppatori:
 - la struttura (quali sono i suoi endpoint e a cosa servono)
-- il tipo di autenticazione utilizzata
-- l'interfaccia di input (quali parametri devono essere passati, quali sono opzionali, cosa rappresentano)
-- l'interfaccia di output (quali parametri vengono passati nella risposta e in che modo)
-- le strutture dati utilizzate dalle interfacce (dette anche *definitions* usando la terminologia di swagger e *models* secondo quella Tibco)
+- il tipo di autorizzazione utilizzata
 - i possibili codici d'errore restituiti e il loro significato
+- l'interfaccia di input di ogni endpoint (quali parametri devono essere passati, quali sono opzionali, cosa rappresentano)
+- l'interfaccia di output di ogni endpoint (quali parametri vengono passati nella risposta e in che modo)
+- le strutture dati utilizzate (dette anche *definitions* usando la terminologia dello standard swagger o *models* secondo quella Tibco)
 
-
+>![io_doc.jpg](/mashery/io_doc.jpg)
+> *Documentazione interattiva di un semplice servizio REST con un singolo endpoint.*
 
 La documentazione è definita interattiva perché è possibile preparare effettuare chiamate di test ai servizi senza dover uscire dal browser e ricevere risposte dal gateway, esattamente come se a chiamare fosse un "vero" client.
 
+>![io_doc_exploded_ep.jpg](/mashery/io_doc_exploded_ep.jpg)
+> *Dettaglio del singolo endpoint dopo che è stata effettuata una chiamata di test*
+
 La UI utilizzata è un porting del progetto [SwaggerUI](https://swagger.io/tools/swagger-ui/).
-
-# Funzionalità
-Nelle sezioni successive sono dettagliate le macro funzionalità che Tibco Mashery mette a disposizione di un cliente per gestire la sua API governance.
-
-## Autenticazione & Autorizzazione
-## Auditing
-## Filtraggio delle chiamate
-## Throttling
-## Notifiche di eventi
-## Caching
-## Processing delle chiamate
-## Documentazione e divulgazione delle API
-## Organizzazione gerarchica degli oggetti
-## Amministrazione *self-service* degli oggetti
