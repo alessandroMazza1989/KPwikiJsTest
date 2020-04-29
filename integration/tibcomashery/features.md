@@ -2,12 +2,11 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-04-29T15:41:28.378Z
+date: 2020-04-29T15:47:41.506Z
 tags: mashery, tibco, api gateway
 ---
 
-# Funzionalità
-Nelle sezioni successive sono dettagliate le macro funzionalità che Tibco Mashery mette a disposizione di un cliente per gestire la sua API governance.
+Nelle sezioni successive sono dettagliate le macro funzionalità che Tibco Mashery mette a disposizione di un cliente per implementare la sua API governance.
 
 ## Autenticazione & Autorizzazione
 Una delle funzionalità più importanti, se non la più importante, che il gateway fornisce è l'abilità di accertare l'identità dei chiamanti (**autenticazione**) e stabilire di conseguenza a quali risorse essi abbiano eventualmente accesso (**autorizzazione**). Per fare ciò Mashery mette a disposizione diversi metodi.
