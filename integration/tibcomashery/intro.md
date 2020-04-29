@@ -2,7 +2,7 @@
 title: Introduzione e oggetti di Mashery
 description: 
 published: true
-date: 2020-04-29T16:15:59.194Z
+date: 2020-04-29T16:16:24.193Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -12,7 +12,7 @@ Un API Gateway si occupa di fare da proxy tra i client che vogliono accedere all
 >![api_gateway.jpg](/mashery/api_gateway.jpg){.align-center}
 > *Schema di base del funzionamento di un API gateway*
 
-Ovviamente questa è una visione semplicistica: lo strumento mette a disposizione una serie di [features](/integration/tibcomashery/features) aggiuntive.
+Ovviamente questa è una visione semplicistica: lo strumento mette a disposizione una serie di [funzionalità](/integration/tibcomashery/features) aggiuntive.
 
 # Oggetti
 L'organizzazione logica interna di Mashery si basa su una serie di oggetti. Semplificando questi oggetti possono essere visti come record di tabelle di un database. Ogni oggetto ha degli attributi configurabili ed è collegato gerarchicamente ad altri oggetti.
