@@ -2,7 +2,7 @@
 title: Introduzione e funzionalità di Mashery
 description: 
 published: true
-date: 2020-04-28T16:03:52.603Z
+date: 2020-04-29T13:57:47.867Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -41,7 +41,7 @@ Un'[**organizzazione**](http://docs.mashery.com/manage/GUID-EAD30F7B-689D-4BC5-9
 In ogni organizzazione è possibile definire sotto-organizzazioni che funzionano esattamente come le organizzazioni stesse. Ad esempio nell'organizzazione dedicata a un gruppo di lavoro si potrebbe creare una sotto-organizzazione dedicata a uno specifico progetto in sviluppo. Non è possibile scendere ulteriormente nell'albero, quindi il livello massimo è il 3 (non esistono "sotto-sotto-organizzazioni").
 
 ## Ruolo
-I **ruoli** assegnati all'utente Mashery determinano quali oggetti esso può vedere e/o modificare sia nel CC che nel Dev Portal.
+I **ruoli** assegnati all'utente Mashery determinano quali oggetti esso può vedere e/o modificare sia nel [Control Center](/integration/tibcomashery/architecture#control-center) che nel [Dev Portal](/integration/tibcomashery/architecture#developer-portal).
 
 #### Control Center Roles
 Questi [ruoli](http://docs.mashery.com/manage/GUID-BC63BAB0-7BFE-4F0E-887F-CF32342F8F9E.html) riguardano esclusivamente il CC e possono essere definiti "Area Level" poiché regolano la visibilità a livello dell'intera area cliente. (https://docs.mashery.com/manage/GUID-C3515849-9ADF-4673-9D02-EC3E54A22134.html).
@@ -104,7 +104,7 @@ L'utilizzo dei metodi è opzionale in Mashery e si adatta particolarmente bene a
 {.is-warning}
 
 ## Utente
-Un oggetto [**utente**](http://docs.mashery.com/manage/GUID-7D08A6AC-E20B-43A5-B5E2-B3E5551087C6.html) viene creato al momento della registrazione di un nuovo membro sul Dev Portal o manualmente da un amministratore nel Control Center. L'utente è legato indissolubilmente a un indirizzo mail, tuttavia è concesso creare più utenti associati allo stesso indirizzo. Dopo la registrazione, se effettuata in *self-service*, verrà inviata una mail con un link di conferma prima di finalizzare la creazione.
+Un oggetto [**utente**](http://docs.mashery.com/manage/GUID-7D08A6AC-E20B-43A5-B5E2-B3E5551087C6.html) viene creato al momento della registrazione di un nuovo membro sul [Dev Portal](/integration/tibcomashery/architecture#developer-portal) o manualmente da un amministratore nel [Control Center](/integration/tibcomashery/architecture#control-center). L'utente è legato indissolubilmente a un indirizzo mail, tuttavia è concesso creare più utenti associati allo stesso indirizzo. Dopo la registrazione, se effettuata in *self-service*, verrà inviata una mail con un link di conferma prima di finalizzare la creazione.
 
 >![users.jpg](/mashery/users.jpg)
 > *Schermata di elenco degli utenti appartenenti all'[area](#area)*
@@ -167,12 +167,29 @@ Una volta creata la chiave non è possibile modificarne il valore. È invece pos
 Il secret è un'ulteriore stringa alfanumerica utilizzata per le implementazioni di autenticazione più complesse, ad esempio oAuth2. Analogamente alla chiave viene generato dal gateway e deve essere incluso nelle chiamate dei client. È possibile modificare il secret dal CC in ogni momento, contrariamente alla [chiave](#chiave) che una volta generata è immutabile.
 
 ## Documentazione Statica
-La [**documentazione statica**](http://docs.mashery.com/manage/GUID-40EED8A4-4972-4183-975A-649AFF7B0BAD.html) è l'insieme delle pagine web pubblicate sul [Developer Portal](/integration/tibcomashery/architecture#developer-portal) e consultabili dagli sviluppatori. Nella documentazione vengono fornite informazioni, guide e suggerimenti riguardanti il gateway, esempi di chiamate ai servizi pubblicati e quant'altro sia ritenuto utile alla dissemination dello strumento.
+La [**documentazione statica**](http://docs.mashery.com/manage/GUID-40EED8A4-4972-4183-975A-649AFF7B0BAD.html) (o *content*, utilizzando il generico termine scelto da Tibco) è l'insieme delle pagine web pubblicate sul [Developer Portal](/integration/tibcomashery/architecture#developer-portal) e consultabili dagli sviluppatori. Nella documentazione vengono fornite informazioni, guide e suggerimenti riguardanti il gateway, esempi di chiamate ai servizi pubblicati e quant'altro sia ritenuto utile alla dissemination dello strumento.
 
 >![doc_page.jpg](/mashery/doc_page.jpg)
 > *Esempio di documentazione statica*
 
+Ad oggi l'unico modo per gestire la documentazione statica è tramite un editor (piuttosto buggato e con una user experience squisitamente anni 80) accessibile dal [Control Center](/integration/tibcomashery/architecture#control-center) che supporta HTML e Markdown. È anche previsto un primitivo *File Manager* che consente l'hosting di immagini e generici file sul portale.
+
+>![content_editor.jpg](/mashery/content_editor.jpg)
+> *Editor dei contenuti del portale*
 ## Documentazione Interattiva
+La [**documentazione interattiva**](http://docs.mashery.com/design/GUID-B0B8E8AF-AC34-44CE-950B-57D7103B0C0E.html), cui spesso Tibco si riferisce anche con il termine *IO-docs* e che impropriamente viene di solito chiamata *Swagger*, ha una sezione dedicata sul [Dev Portal](/integration/tibcomashery/architecture#developer-portal). In questa sezione, chiamata anche *API Console* per confondere ulteriormente le acque, una UI grafica di facile interpretazione presenta i seguenti elementi di una API agli sviluppatori:
+- la struttura (quali sono i suoi endpoint e a cosa servono)
+- il tipo di autenticazione utilizzata
+- l'interfaccia di input (quali parametri devono essere passati, quali sono opzionali, cosa rappresentano)
+- l'interfaccia di output (quali parametri vengono passati nella risposta e in che modo)
+- le strutture dati utilizzate dalle interfacce (dette anche *definitions* usando la terminologia di swagger e *models* secondo quella Tibco)
+- i possibili codici d'errore restituiti e il loro significato
+
+
+
+La documentazione è definita interattiva perché è possibile preparare effettuare chiamate di test ai servizi senza dover uscire dal browser e ricevere risposte dal gateway, esattamente come se a chiamare fosse un "vero" client.
+
+La UI utilizzata è un porting del progetto [SwaggerUI](https://swagger.io/tools/swagger-ui/).
 
 # Funzionalità
 Nelle sezioni successive sono dettagliate le macro funzionalità che Tibco Mashery mette a disposizione di un cliente per gestire la sua API governance.
