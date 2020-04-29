@@ -2,7 +2,7 @@
 title: Introduzione e oggetti di Mashery
 description: 
 published: true
-date: 2020-04-29T14:28:10.067Z
+date: 2020-04-29T14:41:55.366Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -36,9 +36,13 @@ Ogni area ha UUID e ID univoci che la identificano e possono essere utili in cas
 Un'[**organizzazione**](http://docs.mashery.com/manage/GUID-EAD30F7B-689D-4BC5-9B25-28CD6BD400A7.html) è un contenitore di risorse (API, Pacchetti, Documentazione, ecc.) fra loro logicamente collegati. Ad esempio un'organizzazione può essere creata per raccogliere le risorse dedicate a una certa Business Unit del cliente oppure a un dato gruppo di lavoro. Tutte le organizzazioni sono figlie dell'area, l'organizzazione *root* all'interno della quale risiedono tutte le altre.
 
 >![organizations.jpg](/mashery/organizations.jpg)
-> *Esempio di struttura delle organizzazioni Mashery per un'ipotetica società*
+> *Esempio di struttura delle organizzazioni Mashery di un'ipotetica società*
 
-In ogni organizzazione è possibile definire sotto-organizzazioni che funzionano esattamente come le organizzazioni stesse. Ad esempio nell'organizzazione dedicata a un gruppo di lavoro si potrebbe creare una sotto-organizzazione dedicata a uno specifico progetto in sviluppo. Non è possibile scendere ulteriormente nell'albero, quindi il livello massimo è il 3 (non esistono "sotto-sotto-organizzazioni").
+In ogni organizzazione è possibile definire sotto-organizzazioni che funzionano esattamente come le organizzazioni stesse. Ad esempio nella già citata organizzazione dedicata a un gruppo di lavoro si potrebbe creare una sotto-organizzazione riservata ad uno specifico progetto in sviluppo. 
+
+> Non è possibile scendere ulteriormente nell'albero, quindi il livello massimo è 3 (non esistono "sotto-sotto-organizzazioni").
+{.is-info}
+
 
 ## Ruolo
 I **ruoli** assegnati all'utente Mashery determinano quali oggetti esso può vedere e/o modificare sia nel [Control Center](/integration/tibcomashery/architecture#control-center) che nel [Dev Portal](/integration/tibcomashery/architecture#developer-portal).
@@ -63,7 +67,7 @@ Come suggerito dal nome Tibco li considera "gruppi", non ruoli, tuttavia hanno l
 >![access_groups.jpg](/mashery/access_groups.jpg)
 > *Dettaglio di un gruppo d'accesso e delle risorse correlate*
 
-> I seguenti ruoli sono utilizzabili, pur non essendo citati da nessuna parte nella documentazione ufficiale:
+> I seguenti ruoli sono utilizzabili, pur non essendo citati dalla documentazione ufficiale:
 >
 > *Everyone*: qualunque utente acceda al Dev Portal, sia quelli che hanno effettuato il log-in che quelli non autenticati.
 > *Member*: un utente registrato che ha effettuato il log-in sul Dev Portal.
@@ -138,12 +142,12 @@ Un [**piano**](http://docs.mashery.com/design/GUID-B78424FD-C04D-4BBD-ACCA-73E0F
 >![plans.jpg](/mashery/plans.jpg)
 > *Schermata di elenco dei piani appartenenti al pacchetto b2cws*
 
-Nel piano è definita una lista di [API](#api)/[endpoints](#endpoint)/[metodi](#metodo) (la granularità è configurabile a piacere) a cui il piano stesso dà diritto di accesso. Oltre a ciò a questo livello possono essere definiti i limiti di [throttling](#throttling) e alcune proprietà delle [chiavi](#chiave) che verranno generate per il piano.
+Nel piano è definita una lista di [API](#api)/[endpoints](#endpoint)/[metodi](#metodo) (la granularità è configurabile a piacere) a cui il piano stesso dà diritto di accesso. Oltre a ciò a questo livello possono essere definiti i limiti di [throttling](/integration/tibcomashery/features#throttling) e alcune proprietà delle [chiavi](#chiave) che verranno generate per il piano.
 
 >![plan_designer.jpg](/mashery/plan_designer.jpg)
 > *Dettaglio degli endpoint accessibili sottoscrivendosi al piano b2cws_dev*
 
-> Non è possibile invocare gli endpoint esposti dal gateway senza prima aver creato un'applicazione, selezionato un piano di utilizzo e ricevuto una chiave con cui identificare le proprie chiamate. 
+> Non è possibile invocare gli endpoint esposti dal gateway senza prima aver creato un'[applicazione](#applicazione), selezionato un piano di utilizzo e ricevuto una chiave con cui identificare le proprie chiamate. 
 {.is-info}
 
 ## Chiave
