@@ -2,7 +2,7 @@
 title: Architettura e Deployment di Mashery
 description: 
 published: true
-date: 2020-05-04T15:22:48.785Z
+date: 2020-05-04T15:48:42.127Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
@@ -103,11 +103,11 @@ In modalità *Local* parte dei o tutti i componenti sono installati in locale e 
 {.is-info}
 
 #### Hybrid
-In modalità ibrida, anche detta tethered (dall'inglese *tether*: "corda, collegamento") il componente Gateway viene installato e gestito dal cliente in locale. 
+In modalità ibrida, anche detta *tethered* (dall'inglese *tether*: "corda, collegamento") il componente Gateway viene installato e gestito dal cliente in locale. 
 I restanti componenti (CC, Dev Portal, API di prodotto) continuano a essere in gestione a Tibco. Si rende necessaria una sincronizzazione costante tra la parte local e quella cloud (essenzialmente l'ambiente locale recepisce le configurazioni effettuate sul CC e l'ambiente cloud riceve aggiornamenti sulle statistiche d'uso delle API esposte). La comunicazione in entrambe le direzioni avviene unicamente tramite interrogazioni dal local a un servizio cloud dedicato (il MOM, *Mashery On-Prem Manager*).
 
 #### Untethered
-In modalità untethered tutti i componenti vengono installati e gestiti esclusivamente in locale. Ci sono alcune variazioni di nomenclatura (eg: il Control Center locale viene chiamato *Configuration Manager* mentre il Developer Portal per distinzione diventa *Local Developer Portal*) e alcune funzionalità disponibili sui portali cloud sono diverse e/o assenti. Non c'è comunicazione alcuna con il MOM.
+In modalità *untethered* tutti i componenti vengono installati e gestiti esclusivamente in locale. Ci sono alcune variazioni di nomenclatura (eg: il Control Center locale viene chiamato *Configuration Manager* mentre il Developer Portal per distinzione diventa *Local Developer Portal*) e alcune funzionalità disponibili sui portali cloud sono diverse e/o assenti. Non c'è comunicazione alcuna con il MOM.
 
 > Le due modalità Hybrid e Untethered sono mutualmente esclusive e la scelta deve essere fatta in fase di installazione di Mashery Local.
 {.is-warning}
@@ -115,7 +115,7 @@ In modalità untethered tutti i componenti vengono installati e gestiti esclusiv
 ## Why not both?
 Al momento della sottoscrizione di Mashery Tibco attiva tutti i servizi cloud, tra cui i traffic manager, e anche a seguito di un'eventuale installazione local i componenti cloud rimangono a disposizione del cliente. Ciò significa che a tutti gli effetti i traffic manager local e cloud convivono nella stessa [area](/integration/tibcomashery/intro#area). 
 
-> Le configurazioni effettuate sul [Control Center](#control-center) o via [API di prodotto](#mashery-api) vengono sempre distribuite a tutti i cluster associati all'area, siano essi local o in cloud.  
+> Le configurazioni effettuate sul [Control Center](#control-center) o via [API di prodotto](#mashery-api) vengono sempre distribuite a tutti i cluster associati all'area, siano essi local (purché *tethered*) o in cloud.  
 {.is-info}
 
 In ogni momento è quindi possibile avere alcuni servizi esposti dal gateway local e altri dal gateway cloud o persino esporre contemporaneamente un servizio in entrambe le modalità (ovviamente su domini web differenti). Avere questo tipo di elasticità, con le dovute accortezze, potrebbe essere interessante per alcuni casi d'uso.
