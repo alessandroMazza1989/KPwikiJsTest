@@ -2,14 +2,14 @@
 title: Amministrazione
 description: 
 published: true
-date: 2020-05-04T15:09:46.043Z
+date: 2020-05-04T15:10:11.964Z
 tags: 
 ---
 
 WIP
 
 ### Access Logs
-Gli access log a più basso livello prodotti dai *traffic manager* e raccolti dal *log service* (cfr [architettura del gateway]((/integration/tibcomashery/architecture#gateway)). Sono composti da *space separated values* e risultano abbastanza illeggibili ad un occhio non allenato.
+Gli access log a più basso livello prodotti dai *traffic manager* e raccolti dal *log service* (cfr [architettura del gateway](/integration/tibcomashery/architecture#gateway)). Sono composti da *space separated values* e risultano abbastanza illeggibili ad un occhio non allenato.
 >`dev-api.pirelli.com 217.244.212.244,217.244.212.244 9383c97f-1bfd-4f71-a87e-f73dbf8a355f cors_actual [04/May/2020:13:07:31 +0000] "POST /buynow/products/availability?targetCountry=DE HTTP/1.1" 2 200 "https://www.pirelli.com/tyres/de-de/pkw/produkte" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36" 1588597651.531_6szb9htdxqsqzgu9vtz7b8d3_fv3b8qx4gabtp9zkfpvp37sy "-" "tm-deploy-0-7f88c87bd5-z7mg4" "-" 0 - 0.388 0.085 0.017 0.000 - - - - - 0 99556 100 0 99556 100 0 0 0 99556 286270 0 0 0 0 0 0.000`
 > *Esempio di entry dell'access log di Mashery*
 
