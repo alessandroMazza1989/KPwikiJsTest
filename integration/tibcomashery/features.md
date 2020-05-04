@@ -2,7 +2,7 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-05-04T12:44:12.225Z
+date: 2020-05-04T13:16:38.465Z
 tags: mashery, tibco, api gateway
 ---
 
@@ -40,7 +40,19 @@ La maggiore sicurezza garantita da questo protocollo deriva dal fatto che il tok
 > *Esempio di invocazione riuscita ad un token endpoint; come si può vedere nella risposta è esplicitata anche la durata del token stesso*
 
 ## Auditing
-Una volta che il gateway è in grado di [identificare](#autenticazione-autorizzazione) con certezza il client associato ad ogni chiamata 
+Una volta che il gateway è in grado di [identificare](#autenticazione-autorizzazione) con certezza il client associato ad ogni chiamata il logico step successivo è mantenere un registro delle richieste con il maggior numero di informazioni possibili, tra cui ovviamente chi ha invocato quale endpoint e in quale momento.
+Per fare ciò Mashery produce *access logs* interni che possono essere consultati direttamente e/o rediretti verso piattaforme di log management (elastic, splunk, ...).
+
+>`dev-api.pirelli.com 217.244.212.244,217.244.212.244 5d547f19-e562-4844-b456-0505038475b2 cors_preflight [04/May/2020:13:07:31 +0000] "OPTIONS /buynow/products/availability?targetCountry=DE HTTP/1.1" 0 200 "https://www.pirelli.com/tyres/de-de/pkw/produkte" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36" 1588597651.398_unknown_fv3b8qx4gabtp9zkfpvp37sy "-" "tm-deploy-0-7f88c87bd5-z7mg4" "-" 0 - 0.036 0.000 0.000 0.000 - - - - - 0 - 0 0 - 0 0 0 0 0 286270 0 0 0 0 0 0.000
+dev-api.pirelli.com 217.244.212.244,217.244.212.244 9383c97f-1bfd-4f71-a87e-f73dbf8a355f cors_actual [04/May/2020:13:07:31 +0000] "POST /buynow/products/availability?targetCountry=DE HTTP/1.1" 2 200 "https://www.pirelli.com/tyres/de-de/pkw/produkte" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36" 1588597651.531_6szb9htdxqsqzgu9vtz7b8d3_fv3b8qx4gabtp9zkfpvp37sy "-" "tm-deploy-0-7f88c87bd5-z7mg4" "-" 0 - 0.388 0.085 0.017 0.000 - - - - - 0 99556 100 0 99556 100 0 0 0 99556 286270 0 0 0 0 0 0.000`
+> *Esempio di access logs interni relativi a due chiamate *
+
+
+### Enriched Access Logs
+Gli [enriched access logs](https://docs.tibco.com/pub/mash-local/5.3.0/doc/html/GUID-267B417C-2D51-4C13-820B-C862EC7BCAF6.html)
+>![example_access_logs.jpg](/mashery/example_access_logs.jpg)
+> *Esempio di enriched access logs relativi a tre chiamate in ingresso*
+
 ## Filtraggio delle chiamate
 stabilire e far rispettare regole che stabiliscono quali client possono accedere ai servizi e quali no
 ## Throttling
