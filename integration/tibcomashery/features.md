@@ -2,7 +2,7 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-04-29T16:14:49.799Z
+date: 2020-05-04T12:34:25.931Z
 tags: mashery, tibco, api gateway
 ---
 
@@ -23,8 +23,21 @@ Nell'autenticazione tramite **API key** il client deve includere la sua chiave i
 >![api_key_config.jpg](/mashery/api_key_config.jpg)
 > *Esempio di endpoint configurato per autenticazione tramite API key*
 
+Se il gateway non rileva nella richiesta una chiave valida l'accesso alla risorsa viene negato e una risposta di errore restituita al client. In questo caso non viene effettuata nessuna chiamata verso il backend.
+
+>![403_error.jpg](/mashery/403_error.jpg)
+> *Esempi di risposta d'errore restituita dal gateway in caso di autenticazione negata (chiave assente/invalida) o di autorizzazione negata (chiave corretta ma non valida per lo specifico endpoint)*
+
 ### OAuth2
-Il protocollo [**OAuth2**](https://tools.ietf.org/html/rfc6749) 
+Il protocollo [**OAuth2**](https://tools.ietf.org/html/rfc6749) prevede che in ogni chiamata sia incluso un *token* di accesso. Il conseguente meccanismo di autenticazione e autorizzazione da parte del gateway è analogo a quello già visto per la [API key](#api-key): in caso di token mancante o invalido non è consentito accesso alla risorsa invocata e viene restituito un messaggio di errore.
+
+>![401_mashery_api.jpg](/mashery/401_mashery_api.jpg)
+> *Esempio di risposta d'errore restituita dalla API di prodotto (esposta da un gateway Mashery) in caso di token errato o scaduto*
+
+La maggiore sicurezza garantita da questo protocollo deriva dal fatto che il token sia temporaneo e che debba essere staccato o rinnovato frequentemente da ogni client. Vi sono diversi modi ([*Grant Types*](https://oauth.net/2/grant-types/)) per il client di richiedere e ricevere un token ma tutti quanti prevedono la presenza di un *token endpoint* preposto al provisioning e al refreshing dei token.
+
+
+
 
 ## Auditing
 ## Filtraggio delle chiamate+
