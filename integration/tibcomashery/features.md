@@ -2,7 +2,7 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-05-04T12:43:17.492Z
+date: 2020-05-04T12:44:12.225Z
 tags: mashery, tibco, api gateway
 ---
 
@@ -40,7 +40,7 @@ La maggiore sicurezza garantita da questo protocollo deriva dal fatto che il tok
 > *Esempio di invocazione riuscita ad un token endpoint; come si può vedere nella risposta è esplicitata anche la durata del token stesso*
 
 ## Auditing
-Una volta che il gateway è in grado di [identificare](#autenticazione-&-autorizzazione) con certezza il client associato ad ogni chiamata 
+Una volta che il gateway è in grado di [identificare](#autenticazione-autorizzazione) con certezza il client associato ad ogni chiamata 
 ## Filtraggio delle chiamate
 stabilire e far rispettare regole che stabiliscono quali client possono accedere ai servizi e quali no
 ## Throttling
