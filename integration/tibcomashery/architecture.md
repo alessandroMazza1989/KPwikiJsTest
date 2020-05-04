@@ -2,7 +2,7 @@
 title: Architettura e Deployment di Mashery
 description: 
 published: true
-date: 2020-04-28T15:21:52.126Z
+date: 2020-05-04T14:50:49.918Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
@@ -90,10 +90,9 @@ Mashery può essere deployato in tre diverse modalità:
 > Tibco considera Mashery in modalità *Cloud* quasi come fosse un prodotto separato ([*Tibco Cloud Mashery*](https://docs.tibco.com/products/tibco-cloud-mashery)) categorizzandolo come uno dei tanti servizi messi a disposizione nella sua offerta cloud. Analogamente la modalità *Local* ([*Tibco Mashery Local*](https://docs.tibco.com/products/tibco-mashery-local-5-3-0)) ha documentazione e supporto dedicati. Ciò non toglie che sotto al cofano Mashery è un'unica piattaforma e un cliente può benissimo utilizzare il prodotto contemporaneamente in entrambe le modalità con la stessa sottoscrizione (a patto che abbia le opportune licenze).
 {.is-info}
 
-
 ## Cloud
 In modalità cloud tutti i componenti del gateway sono deployati sul cloud e la gestione della piattaforma è completamente delegata a Tibco. L'amministratore si occupa unicamente della configurazione del gateway e delle API.
-Questa modalità ha come punto di forza l'assenza di overhead per la gestione ad parte del cliente, tuttavia occorre tenere presente che:
+Questa modalità non richiede alcuna installazione e ha come punto di forza l'assenza di overhead per la gestione ad parte del cliente, tuttavia occorre tenere presente che:
 
 1. Occorrerà stabilire un canale di comunicazione sicuro e privato (VPN) e/o autenticare tutte le comunicazioni tra il cloud Tibco e i backend del cliente.
 2. Il flusso dati transita su di un cloud in gestione a una società esterna, Tibco. Ci sono clienti (ad esempio banche o società appaltatrici dell'esercito) per cui la riservatezza e le limitazioni contrattuali sulla locazione geografica dei dati non consentono l'utilizzo di strumenti cloud.
@@ -102,7 +101,6 @@ Questa modalità ha come punto di forza l'assenza di overhead per la gestione ad
 In modalità *Local* parte dei o tutti i componenti sono installati in locale e sono quindi sotto diretto controllo e gestione da parte del cliente.
 > *Local* non significa necessariamente *on-premises*: un'installazione Mashery può benissimo risiedere su un'area cloud privata e viene comunque definita *Local* e non *Cloud*.
 {.is-info}
-
 
 #### Hybrid
 In modalità ibrida, anche detta tethered (dall'inglese *tether*: "corda, collegamento") il componente Gateway viene installato e gestito dal cliente in locale. 
@@ -113,3 +111,14 @@ In modalità untethered tutti i componenti vengono installati e gestiti esclusiv
 
 > Le due modalità Hybrid e Untethered sono mutualmente esclusive e la scelta deve essere fatta in fase di installazione di Mashery Local.
 {.is-warning}
+
+## Why not both?
+Al momento della sottoscrizione di Mashery Tibco attiva tutti i servizi cloud, tra cui i traffic manager, e anche a seguito di un'eventuale installazione local i componenti cloud rimangono a disposizione del cliente. Ciò significa che a tutti gli effetti i traffic manager local e cloud convivono nella stessa [area](/integration/tibcomashery/intro#area). 
+
+> Le configurazioni effettuate sul [Control Center](#control-center) o via [API di prodotto](#mashery-api) vengono sempre distribuite a tutti i cluster associati all'area, siano essi local o in cloud.  
+{.is-info}
+
+In ogni momento è quindi possibile avere alcuni servizi esposti dal gateway local e altri dal gateway cloud o persino esporre contemporaneamente un servizio in entrambe le modalità (ovviamente su domini web differenti). Avere questo tipo di elasticità, con le dovute accortezze, potrebbe essere interessante per alcuni casi d'uso.
+
+>![ep_loadbalancing.jpg](/ep_loadbalancing.jpg)
+> *Il dominio api.pirelli.com punta a un TM local, mentre pirelliapiportal.api.mashery.com punta a un TM cloud. Eseguendo questa configurazione l'endpoint viene esposto su entrambi i domìni.*
