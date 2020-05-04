@@ -2,7 +2,7 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-05-04T15:22:51.282Z
+date: 2020-05-04T15:23:47.965Z
 tags: mashery, tibco, api gateway
 ---
 
@@ -41,7 +41,7 @@ La maggiore sicurezza garantita da questo protocollo deriva dal fatto che il tok
 
 ## Auditing
 Una volta che il gateway è in grado di [identificare](#autenticazione-autorizzazione) con certezza il client associato ad ogni chiamata il logico step successivo è mantenere un registro delle richieste con il maggior numero di informazioni possibili, tra cui ovviamente chi ha invocato quale endpoint e in quale momento.
-Per fare ciò Mashery produce *access logs* interni che possono essere consultati direttamente (principalmente per finalità di debugging) e/o rediretti verso piattaforme di log management (elastic, splunk, ...) in modo da essere categorizzati, trasformati e resi più fruibili ai fini statistici.
+Per fare ciò Mashery produce [*access logs*](/integration/tibcomashery/mladministration#access-logs) interni che possono essere consultati direttamente (principalmente per finalità di debugging) e/o rediretti verso piattaforme di log management (elastic, splunk, ...) in modo da essere categorizzati, trasformati e resi più fruibili ai fini statistici.
 
 ### Executive Summary
 
