@@ -2,7 +2,7 @@
 title: Architettura e Deployment di Mashery
 description: 
 published: true
-date: 2020-05-04T14:51:42.936Z
+date: 2020-05-04T15:05:18.648Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
@@ -120,5 +120,5 @@ Al momento della sottoscrizione di Mashery Tibco attiva tutti i servizi cloud, t
 
 In ogni momento è quindi possibile avere alcuni servizi esposti dal gateway local e altri dal gateway cloud o persino esporre contemporaneamente un servizio in entrambe le modalità (ovviamente su domini web differenti). Avere questo tipo di elasticità, con le dovute accortezze, potrebbe essere interessante per alcuni casi d'uso.
 
->![ep_loadbalancing.jpg](/ep_loadbalancing.jpg)
+>![ep_loadbalancing.jpg](/mashery/ep_loadbalancing.jpg)
 > *Il dominio api.pirelli.com punta a un TM local, mentre pirelliapiportal.api.mashery.com punta a un TM cloud. Eseguendo questa configurazione l'endpoint viene esposto su entrambi i domini.*
