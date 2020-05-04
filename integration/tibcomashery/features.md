@@ -2,7 +2,7 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-05-04T15:23:47.965Z
+date: 2020-05-04T16:08:25.830Z
 tags: mashery, tibco, api gateway
 ---
 
@@ -44,9 +44,13 @@ Una volta che il gateway è in grado di [identificare](#autenticazione-autorizza
 Per fare ciò Mashery produce [*access logs*](/integration/tibcomashery/mladministration#access-logs) interni che possono essere consultati direttamente (principalmente per finalità di debugging) e/o rediretti verso piattaforme di log management (elastic, splunk, ...) in modo da essere categorizzati, trasformati e resi più fruibili ai fini statistici.
 
 ### Executive Summary
+L'[Executive Summary](http://docs.mashery.com/analyze/GUID-C4E657F4-34A7-4788-B08B-F6738C7A3CB8.html) è una sezione del [Control Center](/integration/tibcomashery/architecture#control-center) che consente una visione ad altissimo livello di alcune statistiche d'uso relative all'[area](/integration/tibcomashery/intro#area). E' ben documentato e non c'è molto da aggiungere qui se non che i tempi di caricamento delle singole view sono molto lunghi, soprattutto selezionando archi temporali ampi.
+
+> ![executive_summary.jpg](/mashery/executive_summary.jpg)
+> *Executive summary per l'area pirelliapiportal*
 
 ### Reports
-
+La sezione dedicata ai [Reports](http://docs.mashery.com/analyze/GUID-98A019E2-0870-4D34-B23E-39B41A535114.html) nel [Control Center](/integration/tibcomashery/architecture#control-center) presenta una serie di dashboard dalle quali è possibile estrapolare informazioni d'uso più capillari con focus sui singoli [package](/integration/tibcomashery/intro#pacchetto) o sui singoli [servizi](/integration/tibcomashery/intro#api).
 ### Kibana
 
 ## Filtraggio delle chiamate
