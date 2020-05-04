@@ -2,7 +2,7 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-05-04T12:34:25.931Z
+date: 2020-05-04T12:43:17.492Z
 tags: mashery, tibco, api gateway
 ---
 
@@ -36,11 +36,12 @@ Il protocollo [**OAuth2**](https://tools.ietf.org/html/rfc6749) prevede che in o
 
 La maggiore sicurezza garantita da questo protocollo deriva dal fatto che il token sia temporaneo e che debba essere staccato o rinnovato frequentemente da ogni client. Vi sono diversi modi ([*Grant Types*](https://oauth.net/2/grant-types/)) per il client di richiedere e ricevere un token ma tutti quanti prevedono la presenza di un *token endpoint* preposto al provisioning e al refreshing dei token.
 
-
-
+>![token_ep.jpg](/mashery/token_ep.jpg)
+> *Esempio di invocazione riuscita ad un token endpoint; come si può vedere nella risposta è esplicitata anche la durata del token stesso*
 
 ## Auditing
-## Filtraggio delle chiamate+
+Una volta che il gateway è in grado di [identificare](#autenticazione-&-autorizzazione) con certezza il client associato ad ogni chiamata 
+## Filtraggio delle chiamate
 stabilire e far rispettare regole che stabiliscono quali client possono accedere ai servizi e quali no
 ## Throttling
 ## Notifiche di eventi
