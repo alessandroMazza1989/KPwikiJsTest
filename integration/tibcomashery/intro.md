@@ -2,7 +2,7 @@
 title: Introduzione e oggetti di Mashery
 description: 
 published: true
-date: 2020-05-07T15:45:11.453Z
+date: 2020-05-07T15:56:45.612Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -211,15 +211,18 @@ La UI utilizzata è un porting del progetto [SwaggerUI](https://swagger.io/tools
 Un [connector](http://docs.mashery.com/connectorsguide/GUID-B02231FF-9254-435D-8F54-EC3F4AD4792E.html) è una semplice classe Java che viene inserita come plug-in sul runtime Mashery e si occupa di processare/trasformare le chiamate "in volo" mentre transitano dal gateway. Il connector è essenzialmente la risposta di Tibco alla domanda *"Perché Mashery non mi fa la spremuta? Il commerciale aveva detto che si poteva!"*.
 
 >![use-case.jpg](/mashery/use-case.jpg)
+> *Certo, si può fare, ma ciò non significa che sia una buona idea*
 
-Una delle applicazioni più frequenti dei connector è per use-case che richiedono di trasformare il payload di una chiamata. In linea di massima il gateway non interferisce in alcun modo con il contenuto delle chiamate che smista, con le seguenti rare eccezioni:
+I connector sono modulari e conferiscono al prodotto una elasticità di utilizzo maggiore consentendogli appunto di adattarsi a richieste fuori dal comune. Alcune delle applicazioni più frequenti sono use-case che richiedono di trasformare il payload di una chiamata. 
+> In linea di massima è fuori dallo scope del gateway interferire con il contenuto delle chiamate e Mashery non se ne occupa affatto, con le seguenti rare eccezioni:
+> - se la chiave/token di autenticazione si trova nel payload
+> - se si utilizzano i [metodi](#metodo) e l'identificativo del metodo si trova nel payload
+> - se sono configurati dei *[Response Filters](integration/tibcomashery/features#response-filters)*
+> - se si attiva la funzionalità di *[Verbose Logging](https://docs.tibco.com/pub/mash-local/latest/doc/html/GUID-D3939B05-7202-42B9-8C56-EA7035432D9B.html)* in Mashery Local o il *[Call Inspector](http://docs.mashery.com/analyze/GUID-402C28D5-283F-4AFD-9436-F0550A685F0A.html)* per Mashery Cloud
+{.is-info}
 
-- se la chiave/token di autenticazione si trova nel payload
-- se si utilizzano i [metodi](#metodo) e l'identificativo del metodo si trova nel payload
-- se sono configurati dei *[Response Filters](integration/tibcomashery/features#response-filters)*
-- se si attiva la funzionalità di *[Verbose Logging](https://docs.tibco.com/pub/mash-local/latest/doc/html/GUID-D3939B05-7202-42B9-8C56-EA7035432D9B.html)* in Mashery Local o il *[Call Inspector](http://docs.mashery.com/analyze/GUID-402C28D5-283F-4AFD-9436-F0550A685F0A.html)* per Mashery Cloud
 
-Sottolineiamo tuttavia il fatto che gli adapter non hanno come unica applicazione la trasformazione del payload ma possono anche occuparsi di processing di altro tipo (autenticazione, arricchimento/modifica headers, instradamento condizionale, ...).
+Sottolineiamo tuttavia che gli adapter non hanno come unica applicazione la trasformazione del payload ma possono anche effettuare processing di altro tipo (autenticazione custom, arricchimento/modifica headers, instradamento condizionale, ...).
 
 >![adapter.jpg](/mashery/adapter.jpg)
 > *Schermata di configurazione degli adapter*
