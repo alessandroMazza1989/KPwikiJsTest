@@ -2,7 +2,7 @@
 title: Introduzione e oggetti di Mashery
 description: 
 published: true
-date: 2020-05-07T16:18:18.891Z
+date: 2020-05-07T16:42:59.347Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -222,9 +222,9 @@ I connector sono modulari e conferiscono al prodotto una elasticità di utilizzo
 > • se si attiva la funzionalità di *[Verbose Logging](https://docs.tibco.com/pub/mash-local/latest/doc/html/GUID-D3939B05-7202-42B9-8C56-EA7035432D9B.html)* in Mashery Local o il *[Call Inspector](http://docs.mashery.com/analyze/GUID-402C28D5-283F-4AFD-9436-F0550A685F0A.html)* per Mashery Cloud
 {.is-info}
 
-Sottolineiamo tuttavia che gli adapter non hanno come unica applicazione la trasformazione del payload ma possono anche effettuare processing di altro tipo (autenticazione custom, arricchimento/modifica headers, instradamento condizionale, ...).
+Sottolineiamo tuttavia che gli adapter non hanno come unica applicazione la trasformazione del payload ma possono anche effettuare processing di altro tipo (autenticazione custom, arricchimento/modifica degli headers, instradamento condizionale, ...). Queste elaborazioni possono essere effettuate sia durante il transito della chiamata dal client verso il backend (in questo caso si parla di *pre-processing*) che durante il transito della risposta dal backend verso il client (*post-processing*).
 
-La configurazione degli adapter si effettua esclusivamente sull'oggetto [endpoint](#endpoint), va quindi ripetuta più volte in caso si voglia applicare a un intera [API](#api).
+L'adapter si abilita esclusivamente sull'oggetto [endpoint](#endpoint), va quindi abilitato più volte in caso lo si voglia applicare a un intera [API](#api). Se necessario è possibile anche specificare dei dati di configurazione aggiuntivi da fornire come input all'adapter stesso.
 
 >![adapter.jpg](/mashery/adapter.jpg)
-> *Schermata di configurazione degli adapter*
+> *Schermata di configurazione degli adapter di un endpoint*
