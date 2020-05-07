@@ -2,7 +2,7 @@
 title: Introduzione e oggetti di Mashery
 description: 
 published: true
-date: 2020-05-07T16:16:59.846Z
+date: 2020-05-07T16:18:18.891Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -208,7 +208,7 @@ La UI utilizzata è un porting del progetto [SwaggerUI](https://swagger.io/tools
 > La sottile differenza tra *Connector* e *Adapter* così come da documentazione (gli uni sono standard e forniti da Tibco, gli altri sono custom e sviluppati ad-hoc da Tibco stessa o dal cliente) esiste e ne prendiamo atto. Nella realtà i due termini vengono utilizzati indifferentemente in maniera interscambiabile, così come (più raramente) il termine *Processor*, poiché si riferiscono ad oggetti che hanno esattamente le stesse funzionalità.
 {.is-info}
 
-Un [connector](http://docs.mashery.com/connectorsguide/GUID-B02231FF-9254-435D-8F54-EC3F4AD4792E.html) è una semplice classe Java che viene inserita come plug-in sul runtime Mashery e si occupa di processare/trasformare le chiamate "in volo" mentre transitano dal gateway. Il connector è essenzialmente la risposta di Tibco alla domanda *"Perché Mashery non mi fa la spremuta? Il commerciale aveva detto che si poteva!"*.
+Un [connector](http://docs.mashery.com/connectorsguide/GUID-B02231FF-9254-435D-8F54-EC3F4AD4792E.html) è una semplice classe Java innestata come plug-in sul runtime di Mashery e si occupa di processare/trasformare le chiamate "in volo" mentre transitano dal gateway. Il connector è essenzialmente la risposta di Tibco alla domanda *"Perché Mashery non mi fa la spremuta? Il commerciale aveva detto che si poteva!"*.
 
 >![use-case.jpg](/mashery/use-case.jpg)
 > *Certo, si può fare, ma ciò non significa che sia una buona idea*
