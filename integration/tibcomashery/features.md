@@ -2,7 +2,7 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-05-07T13:39:47.166Z
+date: 2020-05-07T14:18:16.936Z
 tags: mashery, tibco, api gateway
 ---
 
@@ -57,17 +57,23 @@ La sezione dedicata ai [Reports](http://docs.mashery.com/analyze/GUID-98A019E2-0
 I principali svantaggi di questa dashboard fornita out-of-the-box sono la lentezza di caricamento delle singole view e l'impossibilità di esportare i dati integralmente (è solo possibile scaricare i dati di ogni singola view). Inoltre la GUI è decisamente spartana e non è dato customizzare la dashboard in alcun modo: si è limitati a quello che Tibco mette a disposizione.
 
 ### Piattaforme di Log Management
-Mashery fornisce nativamente la possibilità di instradare puntualmente i log di prodotto a piattaforme di log management (elastic, splunk, ...) sia in un deployment [Cloud](/integration/tibcomashery/architecture#cloud) che [Local](/integration/tibcomashery/architecture#local).
+Mashery fornisce nativamente la possibilità di instradare puntualmente i log di prodotto a piattaforme di log management (elastic, splunk, kafka, ...) sia in un deployment [Cloud](/integration/tibcomashery/architecture#cloud) che [Local](/integration/tibcomashery/architecture#local).
 
-Nel caso di un gateway cloud o local (purché hybrid/tethered) ciò è implementabile in maniera sincrona tramite la funzionalità di [Call Log Streams](http://docs.mashery.com/analyze/GUID-A085F6A2-AE7A-4D8F-9CA7-63D0DEBE2512.html) che trasmette puntualmente ogni log ad un endpoint di ingestion per mezzo di un WebSocket. Sono tuttavia possibili ritardi anche di svariati minuti tra una chiamata e la trasmissione del corrispondente log in formato JSON.
+Nel caso di un gateway cloud (tecnicamente anche local, ma solo in modalità hybrid/tethered) ciò è implementabile in maniera sincrona tramite la funzionalità di [Call Log Streams](http://docs.mashery.com/analyze/GUID-A085F6A2-AE7A-4D8F-9CA7-63D0DEBE2512.html) che trasmette puntualmente ogni log ad un endpoint di ingestion per mezzo di un WebSocket. Sono tuttavia possibili ritardi anche di svariati minuti tra una chiamata e la trasmissione del corrispondente log in formato JSON.
 
 >![wss_logs.jpg](/mashery/wss_logs.jpg)
-> *Esempio di logs catturati tramite un WebSocket client di test*
+> *Esempio di log stream catturato tramite un WebSocket client di test*
 
-Nel caso invece di un deployment local, sia untethered che hybrid,
+Nel caso invece di un deployment local, sia untethered che hybrid, è il componente Log Service che si occupa dell'instradamento dei log verso una piattaforma esterna, purché vengano effettuate le necessarie [configurazioni](https://docs.tibco.com/pub/mash-local/latest/doc/html/GUID-7FE86E9D-943C-427C-98AA-C11B37BABBCF.html). Anche in questo caso i log vengono trasmessi in formato JSON, tuttavia il ritardo di trasmissione è di pochi secondi.
 
-## Filtraggio delle chiamate
-stabilire e far rispettare regole che stabiliscono quali client possono accedere ai servizi e quali no
+>![elastic_log.jpg](/mashery/elastic_log.jpg)
+> *Esempio di document elastic derivato da un singolo log Mashery*
+
+> Sia utilizzando la funzionalità di Call Log Streams che configurando Mashery Local per instradare i log ad oggi non è possibile in alcun modo modificare la struttura dei log stessi (aggiungere/rimuovere campi, ad esempio).
+{.is-info}
+
+## Filtro delle chiamate
+Uno schermo di sicurezza aggiuntivo, che a onor del vero Mashery non fornisce out-of-the-box ma solamente tramite l'utilizzo di adapters, prevede la possibilità di permettere o negare l'accesso ai servizi a seconda dell'IP del chiamante. 
 ## Throttling
 ## Notifiche di eventi
 ## Caching
