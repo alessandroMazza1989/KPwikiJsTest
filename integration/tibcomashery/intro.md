@@ -2,7 +2,7 @@
 title: Introduzione e oggetti di Mashery
 description: 
 published: true
-date: 2020-05-07T15:56:45.612Z
+date: 2020-05-07T16:16:59.846Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -215,14 +215,16 @@ Un [connector](http://docs.mashery.com/connectorsguide/GUID-B02231FF-9254-435D-8
 
 I connector sono modulari e conferiscono al prodotto una elasticità di utilizzo maggiore consentendogli appunto di adattarsi a richieste fuori dal comune. Alcune delle applicazioni più frequenti sono use-case che richiedono di trasformare il payload di una chiamata. 
 > In linea di massima è fuori dallo scope del gateway interferire con il contenuto delle chiamate e Mashery non se ne occupa affatto, con le seguenti rare eccezioni:
-> - se la chiave/token di autenticazione si trova nel payload
-> - se si utilizzano i [metodi](#metodo) e l'identificativo del metodo si trova nel payload
-> - se sono configurati dei *[Response Filters](integration/tibcomashery/features#response-filters)*
-> - se si attiva la funzionalità di *[Verbose Logging](https://docs.tibco.com/pub/mash-local/latest/doc/html/GUID-D3939B05-7202-42B9-8C56-EA7035432D9B.html)* in Mashery Local o il *[Call Inspector](http://docs.mashery.com/analyze/GUID-402C28D5-283F-4AFD-9436-F0550A685F0A.html)* per Mashery Cloud
+>
+> • se la chiave/token di autenticazione si trova nel payload
+> • se si utilizzano i [metodi](#metodo) e l'identificativo del metodo si trova nel payload
+> • se sono configurati dei *[Response Filters](integration/tibcomashery/features#response-filters)*
+> • se si attiva la funzionalità di *[Verbose Logging](https://docs.tibco.com/pub/mash-local/latest/doc/html/GUID-D3939B05-7202-42B9-8C56-EA7035432D9B.html)* in Mashery Local o il *[Call Inspector](http://docs.mashery.com/analyze/GUID-402C28D5-283F-4AFD-9436-F0550A685F0A.html)* per Mashery Cloud
 {.is-info}
 
-
 Sottolineiamo tuttavia che gli adapter non hanno come unica applicazione la trasformazione del payload ma possono anche effettuare processing di altro tipo (autenticazione custom, arricchimento/modifica headers, instradamento condizionale, ...).
+
+La configurazione degli adapter si effettua esclusivamente sull'oggetto [endpoint](#endpoint), va quindi ripetuta più volte in caso si voglia applicare a un intera [API](#api).
 
 >![adapter.jpg](/mashery/adapter.jpg)
 > *Schermata di configurazione degli adapter*
