@@ -2,7 +2,7 @@
 title: Introduzione e oggetti di Mashery
 description: 
 published: true
-date: 2020-04-29T16:16:24.193Z
+date: 2020-05-07T14:40:13.370Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -202,3 +202,11 @@ La documentazione è definita interattiva perché è possibile preparare effettu
 > *Dettaglio del singolo endpoint dopo che è stata effettuata una chiamata di test*
 
 La UI utilizzata è un porting del progetto [SwaggerUI](https://swagger.io/tools/swagger-ui/).
+
+# Connectors / Adapters
+
+> La sottile differenza tra *Connector* e *Adapter* così come da documentazione (gli uni sono standard e forniti da Tibco, gli altri sono custom e sviluppati ad-hoc da Tibco stessa o dal cliente) esiste e ne prendiamo atto. Nella realtà i due termini vengono utilizzati indifferentemente in maniera interscambiabile, così come (più raramente) il termine *Processor*, poiché si riferiscono ad oggetti che hanno esattamente le stesse funzionalità.
+{.is-info}
+
+Un Adapter è una semplice classe Java che viene inserita come plug-in sul runtime Mashery e si occupa di processare/trasformare le chiamate "in volo" mentre transita dal gateway. L'Adapter è essenzialmente la risposta di Tibco alla domanda *"Perché con Mashery non posso fare la spremuta? Sulla brochure c'era scritto che faceva i frullati!"*.
+In linea di massima possiamo affermare che Mashery non ha funzionalità di 
