@@ -2,7 +2,7 @@
 title: Architettura e Deployment di Mashery
 description: 
 published: true
-date: 2020-05-04T15:48:42.127Z
+date: 2020-05-07T13:52:33.214Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
@@ -59,7 +59,7 @@ La [API](https://developer.mashery.com/docs/read/mashery_api) di prodotto Masher
 {.is-info}
 
 ## Gateway
-Il gateway vero e proprio è il motore di Mashery ed è *container based*. È cioè composto da [componenti separati](https://docs.tibco.com/pub/mash-local/5.3.0/doc/html/GUID-B454FA7F-9A50-488D-AF3C-0DD15E83C7EB.html) eseguiti all'interno di container Docker dedicati. Un container Docker può essere visto, semplificando, come una piccola Virtual Machine con overhead molto ridotto. I container sono per loro stessa natura effimeri e velocemente sostituibili e devono essere gestiti da un orchestratore (eg. Kubernetes, Swarm, OpenShift, ...) andando a formare un *cluster*. 
+Il gateway vero e proprio è il motore di Mashery ed è *container based*. È cioè composto da [componenti separati](https://docs.tibco.com/pub/mash-local/latest/doc/html/GUID-B454FA7F-9A50-488D-AF3C-0DD15E83C7EB.html) eseguiti all'interno di container Docker dedicati. Un container Docker può essere visto, semplificando, come una piccola Virtual Machine con overhead molto ridotto. I container sono per loro stessa natura effimeri e velocemente sostituibili e devono essere gestiti da un orchestratore (eg. Kubernetes, Swarm, OpenShift, ...) andando a formare un *cluster*. 
 > È possibile, e consigliato, replicare ogni container all'interno del cluster in modo da garantire robustezza e parallelismo. Il dimensionamento dell'infrastruttura richiede considerazioni relative al volume di traffico previsto e a eventuali picchi, alle risorse hardware disponibili e al loro costo, alla ridondanza geografica, ecc.
 {.is-info}
 
@@ -87,7 +87,7 @@ Mashery può essere deployato in tre diverse modalità:
 - [Local Hybrid](#hybrid)
 - [Local Untethered](#untethered)
 
-> Tibco considera Mashery in modalità *Cloud* quasi come fosse un prodotto separato ([*Tibco Cloud Mashery*](https://docs.tibco.com/products/tibco-cloud-mashery)) categorizzandolo come uno dei tanti servizi messi a disposizione nella sua offerta cloud. Analogamente la modalità *Local* ([*Tibco Mashery Local*](https://docs.tibco.com/products/tibco-mashery-local-5-3-0)) ha documentazione e supporto dedicati. Ciò non toglie che sotto al cofano Mashery è un'unica piattaforma e un cliente può benissimo utilizzare il prodotto contemporaneamente in entrambe le modalità con la stessa sottoscrizione (a patto che abbia le opportune licenze).
+> Tibco considera Mashery in modalità *Cloud* quasi come fosse un prodotto separato ([*Tibco Cloud Mashery*](https://docs.tibco.com/products/tibco-cloud-mashery)) categorizzandolo come uno dei tanti servizi messi a disposizione nella sua offerta cloud. Analogamente la modalità *Local* ([*Tibco Mashery Local*](https://docs.tibco.com/products/tibco-mashery-local)) ha documentazione e supporto dedicati. Ciò non toglie che sotto al cofano Mashery è un'unica piattaforma e un cliente può benissimo utilizzare il prodotto contemporaneamente in entrambe le modalità con la stessa sottoscrizione (a patto che abbia le opportune licenze).
 {.is-info}
 
 ## Cloud
