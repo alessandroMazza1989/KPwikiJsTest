@@ -2,7 +2,7 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-05-06T16:32:55.687Z
+date: 2020-05-07T13:39:47.166Z
 tags: mashery, tibco, api gateway
 ---
 
@@ -57,9 +57,14 @@ La sezione dedicata ai [Reports](http://docs.mashery.com/analyze/GUID-98A019E2-0
 I principali svantaggi di questa dashboard fornita out-of-the-box sono la lentezza di caricamento delle singole view e l'impossibilità di esportare i dati integralmente (è solo possibile scaricare i dati di ogni singola view). Inoltre la GUI è decisamente spartana e non è dato customizzare la dashboard in alcun modo: si è limitati a quello che Tibco mette a disposizione.
 
 ### Piattaforme di Log Management
-Mashery fornisce nativamente la possibilità di instradare puntualmente i log di prodotto a piattaforme di log management (elastic, splunk, ...) sia in un deployment [Cloud](/integration/tibcomashery/architecture#cloud) che [Local](/integration/tibcomashery/architecture#local). 
-Nel caso di un gateway cloud ciò è implementabile in maniera sincrona tramite la funzionalità di [Call Log Streams](http://docs.mashery.com/analyze/GUID-A085F6A2-AE7A-4D8F-9CA7-63D0DEBE2512.html) che trasmette puntualmente ogni log ad un endpoint di ingestion per mezzo di un WebSocket.
-Nel caso invece di un deployment local
+Mashery fornisce nativamente la possibilità di instradare puntualmente i log di prodotto a piattaforme di log management (elastic, splunk, ...) sia in un deployment [Cloud](/integration/tibcomashery/architecture#cloud) che [Local](/integration/tibcomashery/architecture#local).
+
+Nel caso di un gateway cloud o local (purché hybrid/tethered) ciò è implementabile in maniera sincrona tramite la funzionalità di [Call Log Streams](http://docs.mashery.com/analyze/GUID-A085F6A2-AE7A-4D8F-9CA7-63D0DEBE2512.html) che trasmette puntualmente ogni log ad un endpoint di ingestion per mezzo di un WebSocket. Sono tuttavia possibili ritardi anche di svariati minuti tra una chiamata e la trasmissione del corrispondente log in formato JSON.
+
+>![wss_logs.jpg](/mashery/wss_logs.jpg)
+> *Esempio di logs catturati tramite un WebSocket client di test*
+
+Nel caso invece di un deployment local, sia untethered che hybrid,
 
 ## Filtraggio delle chiamate
 stabilire e far rispettare regole che stabiliscono quali client possono accedere ai servizi e quali no
