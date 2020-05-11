@@ -2,7 +2,7 @@
 title: Introduzione e oggetti di Mashery
 description: 
 published: true
-date: 2020-05-07T16:45:49.592Z
+date: 2020-05-11T12:57:34.713Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -228,3 +228,8 @@ L'adapter si abilita esclusivamente sull'oggetto [endpoint](#endpoint), va quind
 
 >![adapter.jpg](/mashery/adapter.jpg)
 > *Schermata di configurazione degli adapter di un endpoint*
+
+Poiché è possibile che su un dato endpoint siano richieste funzionalità fornite da più adapter diversi è anche possibile effettuare il cosiddetto [*chaining*](http://docs.mashery.com/connectorsguide/GUID-8CB3A085-4F25-4294-8756-E730191C1D46.html), cioè di configurarli in cascata.
+
+> Gli adapter forniti da Tibco (cioè i connector, seguendo la nomenclatura ufficiale) sono immediatamente disponibili su tutti i Traffic Manager cloud previa configurazione dell'endpoint. Per parte di questi connector sono state anche rilasciate le classi Java, a fine 2019, ed è quindi possibile l'installazione sui TM local. Al contrario tutti i connector più recenti sono ad oggi (maggio 2020) disponibili esclusivamente in cloud.
+{.is-info}
