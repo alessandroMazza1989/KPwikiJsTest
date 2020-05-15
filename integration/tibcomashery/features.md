@@ -2,7 +2,7 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-05-15T12:30:57.614Z
+date: 2020-05-15T13:29:25.905Z
 tags: mashery, tibco, api gateway
 ---
 
@@ -77,7 +77,10 @@ Uno schermo di sicurezza aggiuntivo, che a onor del vero Mashery non fornisce ou
 
 Ad esempio è possibile permettere accesso solo a determinati IP ([IP Whitelisting Connector](http://docs.mashery.com/connectorsguide/GUID-1BEA3681-0C40-4398-8FED-1CB4F4A52942.html)) oppure al contrario negare accesso agli IP indesiderati ([IP Blocking Connector](http://docs.mashery.com/connectorsguide/GUID-3290F176-44C5-4D95-9DA1-4141B85B7FB7.html)). Alcuni adapter consentono anche di implementare filtri basati sulla chiamata stessa, ad esempio il [Whitelisting Connector](http://docs.mashery.com/connectorsguide/GUID-F3B0C216-9D0B-4BE1-A6A1-C789FD7576CA.html) e il [Block API Connector](http://docs.mashery.com/connectorsguide/GUID-74511B0B-CFB7-42AA-BAA8-C66F10E06151.html).
 
-La stragrande maggioranza dei connettori forniti da Tibco può essere configurata esclusivamente tramite configurazioni associate all'oggetto [endpoint](/integration/tibcomashery/intro#endpoint). Ciò significa che le logiche possono essere implementate "in toto" su tutte le chiamate in ingresso a un determinato endpoint e non, ad esempio, basandosi sull'identità del chiamante (per fare ciò occorrerebbe che il connettore leggesse informazioni dalla [chiave](/integration/tibcomashery/intro#chiave)/[piano](/integration/tibcomashery/intro#piano)/[package](/integration/tibcomashery/intro#pacchetti) associati alla chiamata).
+> La stragrande maggioranza dei connettori forniti da Tibco può essere configurata esclusivamente tramite configurazioni associate all'oggetto [endpoint](/integration/tibcomashery/intro#endpoint). Ciò significa che le logiche verranno implementate "in toto" su tutte le chiamate in ingresso a un determinato endpoint e non, ad esempio, basandosi sull'identità del chiamante (per fare ciò occorrerebbe che il connettore leggesse informazioni dalla [chiave](/integration/tibcomashery/intro#chiave), [piano](/integration/tibcomashery/intro#piano) o [pacchetto](/integration/tibcomashery/intro#pacchetto) associato alla chiamata).
+Un workaround a questo limite è l'utilizzo degli [EAV](#inserire-link) (Extended Attribute Values).
+{.is-warning}
+
 
 ## Throttling
 ## Notifiche di eventi
