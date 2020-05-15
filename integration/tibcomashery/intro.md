@@ -2,7 +2,7 @@
 title: Introduzione e oggetti di Mashery
 description: 
 published: true
-date: 2020-05-11T12:57:34.713Z
+date: 2020-05-15T13:17:59.806Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -15,10 +15,15 @@ Un API Gateway si occupa di fare da proxy tra i client che vogliono accedere all
 Ovviamente questa è una visione semplicistica: lo strumento mette a disposizione una serie di [funzionalità](/integration/tibcomashery/features) aggiuntive.
 
 # Oggetti
-L'organizzazione logica interna di Mashery si basa su una serie di oggetti. Semplificando questi oggetti possono essere visti come record di tabelle di un database. Ogni oggetto ha degli attributi configurabili ed è collegato gerarchicamente ad altri oggetti.
+L'organizzazione logica interna di Mashery si basa su una serie di oggetti. Ogni oggetto ha degli attributi configurabili ed è collegato gerarchicamente ad altri oggetti.
 
 >![objects.jpg](/mashery/objects.jpg)
 > *Alcuni degli oggetti di Mashery con le rispettive relazioni*
+
+Questi oggetti possono essere visti (poiché in effetti lo sono) come record di tabelle di un database.
+
+>![ml_object.jpg](/mashery/ml_object.jpg)
+> *Esempio di struttura di un oggetto Mashery, in questo caso il [Plan](#piano)*
 
 Nei paragrafi seguenti verranno illustrati gli oggetti più importanti.
 
@@ -224,7 +229,7 @@ I connector sono modulari e conferiscono al prodotto una elasticità di utilizzo
 
 Sottolineiamo tuttavia che gli adapter non hanno come unica applicazione la trasformazione del payload ma possono anche effettuare processing di altro tipo (autenticazione custom, arricchimento/modifica degli headers, instradamento condizionale, ...). Queste elaborazioni possono essere effettuate sia durante il transito della chiamata dal client verso il backend (in questo caso si parla di *pre-processing*) che durante il transito della risposta dal backend verso il client (*post-processing*).
 
-L'adapter si abilita esclusivamente sull'oggetto [endpoint](#endpoint), va quindi abilitato più volte in caso lo si voglia applicare a un intera [API](#api). Se necessario è possibile anche specificare dei dati di configurazione aggiuntivi da fornire come input all'adapter stesso.
+L'adapter si abilita esclusivamente sull'oggetto [endpoint](#endpoint), va quindi abilitato più volte in caso lo si voglia applicare a un intera [API](#api). Se necessario è possibile anche specificare, sempre associandoli all'endpoint, dei dati di configurazione aggiuntivi da fornire come input all'adapter stesso.
 
 >![adapter.jpg](/mashery/adapter.jpg)
 > *Schermata di configurazione degli adapter di un endpoint*
@@ -233,3 +238,16 @@ Poiché è possibile che su un dato endpoint siano richieste funzionalità forni
 
 > Gli adapter forniti da Tibco (cioè i connector, seguendo la nomenclatura ufficiale) sono immediatamente disponibili su tutti i Traffic Manager cloud previa configurazione dell'endpoint. Per parte di questi connector sono state anche rilasciate le classi Java, a fine 2019, ed è quindi possibile l'installazione sui TM local. Al contrario tutti i connector più recenti sono ad oggi (maggio 2020) disponibili esclusivamente in cloud.
 {.is-info}
+
+## Extended Attribute Values (EAVs)
+
+Gli EAV sono una feature (ad oggi) completamente non documentata da Tibco che permette di estendere considerevolmente la funzionalità di un adapter. Ci sono riferimenti alla loro esistenza nella documentazione dei vari connector ma non ne viene mai spiegata la natura o il funzionamento. Ciò è dovuto presumibilmente alla volontà più o meno esplicita di Tibco di mantenere *in-house* le conoscenze necessarie per sviluppare connectors più avanzati e/o allo scarso numero di clienti che hanno la capacità e la determinazione necessaria per fare lo stesso.
+
+Un EAV è semplicemente uno dei campi (di tipo stringa) degli [oggetti](#oggetti) interni al gateway che permette di associare informazioni aggiuntive all'oggetto stesso. All'interno del campo Tibco ha previsto una struttura XML in modo da poter racchiudere più informazioni nel campo stesso senza dover modificare la struttura della tabella oggetto.
+
+| id      | area_id | app_id  | package_id | plan_id | apikey                   | secret | rate_limit_ceiling | rate_limit_exempt | qps_limit_ceiling | qps_limit_exempt | status  | created | updated             | handle | eav| uuid |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1583562 |    5800 | 1504887 |      38460 |   86785 | ms7q5anrq9zn97muvusz3yek | NULL   |                  0 |                 0 |                 0 |                0 | deleted | NULL    | 2020-02-20 05:55:38 | NULL   | <eav>    <whitelisted_hostnames>http://gennybello.com</whitelisted_hostnames>    <whitelisted_ips>10.203.144.2-10.203.144.127</whitelisted_ips></eav>| NULL |
+> *Esempio di EAV associato ad una [chiave](#chiave). In questo caso l'EAV è stato utilizzato per racchiudere una whitelist di hostname e IP associati alla chiave stessa*
+
+Come già spiegato un adapter, di base, può accedere esclusivamente alle informazioni configurate sull'[endpoint](#endpoint); tramite l'utilizzo degli EAV invece l'adapter può estrarre informazioni da altri oggetti e utilizzarle per implementare logiche più complesse.
