@@ -2,7 +2,7 @@
 title: Introduzione e oggetti di Mashery
 description: 
 published: true
-date: 2020-05-15T14:00:01.567Z
+date: 2020-05-15T14:03:51.049Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -258,6 +258,6 @@ L'aggiunta di EAV in modalità [cloud](/integration/tibcomashery/architecture#cl
 Una volta creato l'EAV sarà visibile e modificabile dalla sezione del CC dedicata all'oggetto corrispondente.
 
 >![eav_config_example.jpg](/mashery/eav_config_example.jpg)
-> *Esempio di schermata di configurazione degli EAV di una chiave*
+> *Esempio di schermata di configurazione degli EAV di una chiave: come evidente da un confronto con lo screenshot precedente Tibco ha utilizzato il Name al posto della Label e ha ignorato la Description fornita*
 
 L'aggiunta e la gestione deli EAV in caso di modalità [untethered](/integration/tibcomashery/architecture#untethered) va invece gestita andando ad operare direttamente sul mysqlDB di prodotto.
