@@ -2,7 +2,7 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-05-15T16:33:00.210Z
+date: 2020-05-15T16:33:29.424Z
 tags: mashery, tibco, api gateway
 ---
 
@@ -118,7 +118,7 @@ Il Throttle può anche essere impostato sulla [API](/integration/tibcomashery/in
 >![api_rate_limits.jpg](/mashery/api_rate_limits.jpg)
 > *Schermata di configurazione del throttle sulla [API](/integration/tibcomashery/intro#api)*
 
-*Valori di default impostati da Smashery*
+***Valori di default impostati da Smashery ed esempio di limite plan vs limite api
 
 ## Notifiche di eventi
 ## Caching
