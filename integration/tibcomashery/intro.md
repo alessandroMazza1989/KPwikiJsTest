@@ -2,7 +2,7 @@
 title: Introduzione e oggetti di Mashery
 description: 
 published: true
-date: 2020-05-15T13:17:59.806Z
+date: 2020-05-15T13:53:12.184Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -243,11 +243,19 @@ Poiché è possibile che su un dato endpoint siano richieste funzionalità forni
 
 Gli EAV sono una feature (ad oggi) completamente non documentata da Tibco che permette di estendere considerevolmente la funzionalità di un adapter. Ci sono riferimenti alla loro esistenza nella documentazione dei vari connector ma non ne viene mai spiegata la natura o il funzionamento. Ciò è dovuto presumibilmente alla volontà più o meno esplicita di Tibco di mantenere *in-house* le conoscenze necessarie per sviluppare connectors più avanzati e/o allo scarso numero di clienti che hanno la capacità e la determinazione necessaria per fare lo stesso.
 
-Un EAV è semplicemente uno dei campi (di tipo stringa) degli [oggetti](#oggetti) interni al gateway che permette di associare informazioni aggiuntive all'oggetto stesso. All'interno del campo Tibco ha previsto una struttura XML in modo da poter racchiudere più informazioni nel campo stesso senza dover modificare la struttura della tabella oggetto.
+Gli EAV sono racchiusi in uno dei campi (di tipo stringa) associati agli [oggetti](#oggetti) interni al gateway e permettono di associare informazioni aggiuntive all'oggetto stesso. All'interno dal campo Tibco ha previsto una struttura XML in modo da poter inserire EAV multipli senza dover modificare la struttura della tabella oggetto.
 
-| id      | area_id | app_id  | package_id | plan_id | apikey                   | secret | rate_limit_ceiling | rate_limit_exempt | qps_limit_ceiling | qps_limit_exempt | status  | created | updated             | handle | eav| uuid |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1583562 |    5800 | 1504887 |      38460 |   86785 | ms7q5anrq9zn97muvusz3yek | NULL   |                  0 |                 0 |                 0 |                0 | deleted | NULL    | 2020-02-20 05:55:38 | NULL   | <eav>    <whitelisted_hostnames>http://gennybello.com</whitelisted_hostnames>    <whitelisted_ips>10.203.144.2-10.203.144.127</whitelisted_ips></eav>| NULL |
-> *Esempio di EAV associato ad una [chiave](#chiave). In questo caso l'EAV è stato utilizzato per racchiudere una whitelist di hostname e IP associati alla chiave stessa*
+>![eav_example.jpg](/mashery/eav_example.jpg)
+> *Esempio di EAV associato ad una [chiave](#chiave): in questo caso l'EAV è stato utilizzato per racchiudere una whitelist di hostname e IP associati alla chiave stessa*
 
-Come già spiegato un adapter, di base, può accedere esclusivamente alle informazioni configurate sull'[endpoint](#endpoint); tramite l'utilizzo degli EAV invece l'adapter può estrarre informazioni da altri oggetti e utilizzarle per implementare logiche più complesse.
+Come già accennato un adapter, di base, può accedere esclusivamente alle informazioni configurate sull'[endpoint](#endpoint); tramite l'utilizzo degli EAV invece l'adapter può estrarre informazioni da altri oggetti e utilizzarle per implementare logiche più complesse.
+
+L'aggiunta di EAV in modalità [cloud](/integration/tibcomashery/architecture#cloud) o [tethered](/integration/tibcomashery/architecture#hybrid) richiede obbligatoriamente il passaggio da Tibco poiché tutte le configurazioni, incluso il popolamento degli EAV, vengono effettuate sul CC (e quindi sincronizzate con il local, in caso di modalità tethered).
+
+>![eav_creation_info_example.jpg](/mashery/eav_creation_info_example.jpg)
+> *Lista delle informazioni che possono essere fornite a Tibco in fase di creazione di un EAV*
+
+Una volta creato l'EAV sarà visibile e modificabile dalla sezione del CC dedicata all'oggetto corrispondente.
+
+>![eav_config_example.jpg](/mashery/eav_config_example.jpg)
+> *Esempio di schermata di configurazione degli EAV: come si può notare Tibco ha ignorato la descrizione fornita*
