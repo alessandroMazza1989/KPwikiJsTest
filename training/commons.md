@@ -2,7 +2,7 @@
 title: Common Topics
 description: Indice degli argomenti comuni
 published: true
-date: 2020-04-28T13:47:41.451Z
+date: 2020-05-15T07:13:27.548Z
 tags: commons, software versioning, git, networking, pattern, design, web services, unix, shell, wsdl, soap, rest, server, algoritmi, databases, sql, relational, lifecycle, log
 ---
 
@@ -534,24 +534,9 @@ Lab
 
 ### RESTful
 - **Obiettivi**
-1. Web service definition
-2. Elements of a wsdl (types, message, operation, portType, binding)
-3. Definition of data types using xml schema
-4. Definition of messagges
-5. Definition of operations
-6. Definition of portType
-7. Definition of binding
-8. abstract wsdl vs concrete wsdl
-9. The usage of SOAP as an applicative protocol 
-10. SOAP syntax
-11. SOAP Envelope
-12. SOAP Header
-13. SOAP Body
-14. SOAP Fault
-- **Link Utili**
-[w3 school xml_services](https://www.w3schools.com/xml/xml_services.asp)
-[guide to restful web services](https://www.html.it/guide/restful-web-services-la-guida/)
-[rest vs soap](https://www.html.it/pag/19612/differenze-tra-web-service-rest-e-soap/)
+1. [What is REST](https://www.codecademy.com/articles/what-is-rest)
+1. [Guide](https://restfulapi.net/resource-naming/)
+
 - **Tools & Lab**
 [Tool: Download Postman](https://www.getpostman.com/downloads/)
 [Tool: Download Swagger]( https://swagger.io/tools/swagger-editor/download/)
