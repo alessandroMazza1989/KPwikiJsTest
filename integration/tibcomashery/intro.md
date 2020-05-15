@@ -2,7 +2,7 @@
 title: Introduzione e oggetti di Mashery
 description: 
 published: true
-date: 2020-05-15T14:03:51.049Z
+date: 2020-05-15T14:10:19.620Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -241,9 +241,12 @@ Poiché è possibile che su un dato endpoint siano richieste funzionalità forni
 
 ## Extended Attribute Values (EAVs)
 
-Gli EAV sono una feature (ad oggi) completamente non documentata da Tibco che permette di estendere considerevolmente la funzionalità di un adapter. Ci sono riferimenti alla loro esistenza nella documentazione dei vari connector ma non ne viene mai spiegata la natura o il funzionamento. Ciò è dovuto presumibilmente alla volontà più o meno esplicita di Tibco di mantenere *in-house* le conoscenze necessarie per sviluppare connectors più avanzati e/o allo scarso numero di clienti che hanno la capacità e la determinazione necessaria per fare lo stesso.
+Gli EAV sono una feature (ad oggi) completamente non documentata da Tibco che permette di estendere considerevolmente la funzionalità di un adapter. 
 
-Gli EAV sono racchiusi in uno dei campi (di tipo stringa) associati agli [oggetti](#oggetti) interni al gateway e permettono di associare informazioni aggiuntive all'oggetto stesso. All'interno dal campo Tibco ha previsto una struttura XML in modo da poter inserire EAV multipli senza dover modificare la struttura della tabella oggetto.
+> Ci sono riferimenti all'esistenza degli EAV nella documentazione dei vari connector ma non ne viene mai spiegata la natura o il funzionamento. Ciò è dovuto presumibilmente alla volontà più o meno esplicita di Tibco di mantenere *in-house* le conoscenze necessarie per sviluppare connectors più avanzati e/o allo scarso numero di clienti che ne fanno uso.
+{.is-info}
+
+Gli EAV sono racchiusi in uno dei campi (di tipo *longtext*) associati agli [oggetti](#oggetti) interni al gateway e permettono di attribuire informazioni aggiuntive all'oggetto stesso. All'interno dal campo Tibco ha previsto una struttura XML in modo da poter inserire EAV multipli senza dover aggiungere altri campi all'oggetto.
 
 >![eav_example.jpg](/mashery/eav_example.jpg)
 > *Esempio di EAV associato ad una [chiave](#chiave): in questo caso l'EAV è stato utilizzato per racchiudere una whitelist di hostname e IP associati alla chiave stessa*
@@ -253,7 +256,7 @@ Come già accennato un adapter, di base, può accedere esclusivamente alle infor
 L'aggiunta di EAV in modalità [cloud](/integration/tibcomashery/architecture#cloud) o [tethered](/integration/tibcomashery/architecture#hybrid) richiede obbligatoriamente il passaggio da Tibco poiché tutte le configurazioni, incluso il popolamento degli EAV, vengono effettuate sul CC (e quindi sincronizzate con il local, in caso di modalità tethered).
 
 >![eav_creation_info_example.jpg](/mashery/eav_creation_info_example.jpg)
-> *Lista delle informazioni che possono essere fornite a Tibco in fase di creazione di un EAV*
+> *Lista delle informazioni che devono/possono essere fornite a Tibco in fase di creazione di un EAV*
 
 Una volta creato l'EAV sarà visibile e modificabile dalla sezione del CC dedicata all'oggetto corrispondente.
 
