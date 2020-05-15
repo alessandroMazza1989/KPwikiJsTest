@@ -2,7 +2,7 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-05-15T13:29:25.905Z
+date: 2020-05-15T16:33:00.210Z
 tags: mashery, tibco, api gateway
 ---
 
@@ -73,16 +73,53 @@ Nel caso invece di un deployment local, sia untethered che hybrid, è il compone
 {.is-info}
 
 ## Filtro delle chiamate
-Uno schermo di sicurezza aggiuntivo, che a onor del vero Mashery non fornisce out-of-the-box ma solamente tramite l'utilizzo di [adapters](/integration/tibcomashery/intro#connectors-adapters), prevede la possibilità di permettere o negare l'accesso ai servizi implementando logiche di business. Questo filtro può essere impostato in aggiunta all'[autenticazione](#autenticazione-autorizzazione) oppure stand-alone (in questo caso gli endpoint tecnicamente saranno non autenticati, cioè in [*noauth*](#inserire-link)).
+Uno schermo di sicurezza aggiuntivo, che in realtà Mashery non fornisce out-of-the-box ma solamente tramite l'utilizzo di [adapters](/integration/tibcomashery/intro#connectors-adapters), prevede la possibilità di permettere o negare l'accesso ai servizi implementando logiche di business. Questo filtro si può aggiungere all'[autenticazione](#autenticazione-autorizzazione) oppure essere stand-alone (in questo caso gli endpoint tecnicamente saranno non autenticati, cioè in [*noauth*](#inserire-link)).
 
-Ad esempio è possibile permettere accesso solo a determinati IP ([IP Whitelisting Connector](http://docs.mashery.com/connectorsguide/GUID-1BEA3681-0C40-4398-8FED-1CB4F4A52942.html)) oppure al contrario negare accesso agli IP indesiderati ([IP Blocking Connector](http://docs.mashery.com/connectorsguide/GUID-3290F176-44C5-4D95-9DA1-4141B85B7FB7.html)). Alcuni adapter consentono anche di implementare filtri basati sulla chiamata stessa, ad esempio il [Whitelisting Connector](http://docs.mashery.com/connectorsguide/GUID-F3B0C216-9D0B-4BE1-A6A1-C789FD7576CA.html) e il [Block API Connector](http://docs.mashery.com/connectorsguide/GUID-74511B0B-CFB7-42AA-BAA8-C66F10E06151.html).
+È possibile permettere accesso solo a determinati IP ([IP Whitelisting Connector](http://docs.mashery.com/connectorsguide/GUID-1BEA3681-0C40-4398-8FED-1CB4F4A52942.html)) oppure al contrario negare accesso agli IP indesiderati ([IP Blocking Connector](http://docs.mashery.com/connectorsguide/GUID-3290F176-44C5-4D95-9DA1-4141B85B7FB7.html)). Alcuni connectors consentono anche di implementare filtri basati sulla chiamata stessa, ad esempio il [Whitelisting Connector](http://docs.mashery.com/connectorsguide/GUID-F3B0C216-9D0B-4BE1-A6A1-C789FD7576CA.html) e il [Block API Connector](http://docs.mashery.com/connectorsguide/GUID-74511B0B-CFB7-42AA-BAA8-C66F10E06151.html).
 
-> La stragrande maggioranza dei connettori forniti da Tibco può essere configurata esclusivamente tramite configurazioni associate all'oggetto [endpoint](/integration/tibcomashery/intro#endpoint). Ciò significa che le logiche verranno implementate "in toto" su tutte le chiamate in ingresso a un determinato endpoint e non, ad esempio, basandosi sull'identità del chiamante (per fare ciò occorrerebbe che il connettore leggesse informazioni dalla [chiave](/integration/tibcomashery/intro#chiave), [piano](/integration/tibcomashery/intro#piano) o [pacchetto](/integration/tibcomashery/intro#pacchetto) associato alla chiamata).
-Un workaround a questo limite è l'utilizzo degli [EAV](#inserire-link) (Extended Attribute Values).
+> La stragrande maggioranza dei connettori forniti da Tibco può recepire input configurati esclusivamente sull'oggetto [endpoint](/integration/tibcomashery/intro#endpoint). Ciò significa che le logiche saranno implementate *in toto* su tutte le chiamate in ingresso a un determinato endpoint e non, ad esempio, basandosi sull'identità del chiamante (per fare ciò occorrerebbe che il connettore leggesse informazioni dalla [chiave](/integration/tibcomashery/intro#chiave) associata alla chiamata).
+Un workaround a questo limite è lo sviluppo di adapter custom che sfruttino gli [EAV](/integration/tibcomashery/intro#extended-attribute-values-eavs) (Extended Attribute Values).
 {.is-warning}
 
+## Rate Limiting
+Mashery prevede due attributi separati per gestire il flusso delle chiamate: il **Throttle** e la **Quota**. 
 
-## Throttling
+>![plan_rate_limits.jpg](/mashery/plan_rate_limits.jpg)
+> *Schermata di configurazione di throttle e quota sul [piano](/integration/tibcomashery/intro#piano)*
+
+### Throttle
+Il **Throttle** permette di impostare un limite sulle QPS (*Queries Per Second*), cioè sulle chiamate al secondo servite. Si tratta quindi di un vincolo sul *burst* concepito per evitare di sottoporre a un carico eccessivo sia il gateway stesso che, soprattutto, il backend che eroga il servizio.
+Se un client supera il limite di QPS consentite riceverà una risposta di errore a tutte le chiamate in eccesso effettuate in quel dato secondo. Il secondo successivo il contatore verrà azzerato e potranno di nuovo essere effettuate chiamate.
+
+>![over_qps_error.jpg](/mashery/over_qps_error.jpg)
+> *Esempio di risposta di errore restituita dal gateway in caso di superamento del limite di QPS*
+
+### Quota
+La **Quota** è un limite customizzabile di chiamate consentite nell'unità di tempo, che può essere *minuto*, *ora*, *giorno*, *mese*. Si tratta di un vincolo concepito per regolare il numero di chiamate che uno specifico client può effettuare, specialmente in ottica di monetizzazione dei servizi.
+Se il client supera la quota a lui allocata riceverà una risposta di errore XXX e dovrà attendere prima di effettuare con successo ulteriori chiamate.
+
+>![over_quota_error.jpg](/mashery/over_quota_error.jpg)
+> *Esempio di risposta di errore restituita dal gateway in caso di superamento della quota*
+
+> Le chiamate bloccate per superamento del limite di QPS non vengono conteggiate tra quelle consentite nella quota.
+{.is-info}
+
+### Gerarchia
+I valori di throttle e quota possono essere configurati:
+
+- sul [piano](/integration/tibcomashery/intro#api), andando così ad avere effetto su tutte le chiavi associate al piano stesso 
+- sulla singola [chiave](/integration/tibcomashery/intro#chiave), andando a sovrascrivere, per la chiave in questione, i valori definiti nel piano
+
+>![key_rate_limits.jpg](/mashery/key_rate_limits.jpg)
+> *Schermata di configurazione di throttle e quota sulla [chiave](/integration/tibcomashery/intro#chiave)*
+
+Il Throttle può anche essere impostato sulla [API](/integration/tibcomashery/intro#api), andando a limitare il volume di traffico globale in ingresso a tutti gli endpoint del servizio.
+
+>![api_rate_limits.jpg](/mashery/api_rate_limits.jpg)
+> *Schermata di configurazione del throttle sulla [API](/integration/tibcomashery/intro#api)*
+
+*Valori di default impostati da Smashery*
+
 ## Notifiche di eventi
 ## Caching
 ## Processing delle chiamate
