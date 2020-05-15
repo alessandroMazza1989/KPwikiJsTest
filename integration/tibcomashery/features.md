@@ -2,7 +2,7 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-05-15T16:33:29.424Z
+date: 2020-05-15T16:37:15.236Z
 tags: mashery, tibco, api gateway
 ---
 
@@ -88,15 +88,15 @@ Mashery prevede due attributi separati per gestire il flusso delle chiamate: il 
 > *Schermata di configurazione di throttle e quota sul [piano](/integration/tibcomashery/intro#piano)*
 
 ### Throttle
-Il **Throttle** permette di impostare un limite sulle QPS (*Queries Per Second*), cioè sulle chiamate al secondo servite. Si tratta quindi di un vincolo sul *burst* concepito per evitare di sottoporre a un carico eccessivo sia il gateway stesso che, soprattutto, il backend che eroga il servizio.
+Il **throttle** permette di impostare un limite sulle QPS (*Queries Per Second*), cioè sulle chiamate al secondo servite. Si tratta quindi di un vincolo sul *burst* concepito per evitare di sottoporre a un carico eccessivo sia il gateway stesso che, soprattutto, il backend che eroga il servizio.
 Se un client supera il limite di QPS consentite riceverà una risposta di errore a tutte le chiamate in eccesso effettuate in quel dato secondo. Il secondo successivo il contatore verrà azzerato e potranno di nuovo essere effettuate chiamate.
 
 >![over_qps_error.jpg](/mashery/over_qps_error.jpg)
 > *Esempio di risposta di errore restituita dal gateway in caso di superamento del limite di QPS*
 
 ### Quota
-La **Quota** è un limite customizzabile di chiamate consentite nell'unità di tempo, che può essere *minuto*, *ora*, *giorno*, *mese*. Si tratta di un vincolo concepito per regolare il numero di chiamate che uno specifico client può effettuare, specialmente in ottica di monetizzazione dei servizi.
-Se il client supera la quota a lui allocata riceverà una risposta di errore XXX e dovrà attendere prima di effettuare con successo ulteriori chiamate.
+La **quota** è un limite customizzabile di chiamate consentite nell'unità di tempo, che può essere *minuto*, *ora*, *giorno*, *mese* se configurata sul piano oppure obbligatoriamente *giorno* se configurata sulla singola chiave. Si tratta di un vincolo concepito per regolare il numero di chiamate che uno specifico client può effettuare, specialmente in ottica di monetizzazione dei servizi.
+Se il client supera la quota a lui allocata riceverà una risposta di errore e dovrà attendere lo scadere dell'unità di tempo configurata prima di effettuare con successo ulteriori chiamate.
 
 >![over_quota_error.jpg](/mashery/over_quota_error.jpg)
 > *Esempio di risposta di errore restituita dal gateway in caso di superamento della quota*
@@ -104,10 +104,10 @@ Se il client supera la quota a lui allocata riceverà una risposta di errore XXX
 > Le chiamate bloccate per superamento del limite di QPS non vengono conteggiate tra quelle consentite nella quota.
 {.is-info}
 
-### Gerarchia
+### Gerarchia dei limiti
 I valori di throttle e quota possono essere configurati:
 
-- sul [piano](/integration/tibcomashery/intro#api), andando così ad avere effetto su tutte le chiavi associate al piano stesso 
+- sul [piano](/integration/tibcomashery/intro#api), andando così ad avere effetto sulle chiamate autenticate con tutte le chiavi associate al piano stesso 
 - sulla singola [chiave](/integration/tibcomashery/intro#chiave), andando a sovrascrivere, per la chiave in questione, i valori definiti nel piano
 
 >![key_rate_limits.jpg](/mashery/key_rate_limits.jpg)
