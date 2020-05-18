@@ -2,7 +2,7 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-05-15T16:37:15.236Z
+date: 2020-05-18T13:36:11.833Z
 tags: mashery, tibco, api gateway
 ---
 
@@ -104,7 +104,7 @@ Se il client supera la quota a lui allocata riceverà una risposta di errore e d
 > Le chiamate bloccate per superamento del limite di QPS non vengono conteggiate tra quelle consentite nella quota.
 {.is-info}
 
-### Gerarchia dei limiti
+### Gerarchia delle configurazioni
 I valori di throttle e quota possono essere configurati:
 
 - sul [piano](/integration/tibcomashery/intro#api), andando così ad avere effetto sulle chiamate autenticate con tutte le chiavi associate al piano stesso 
@@ -118,9 +118,23 @@ Il Throttle può anche essere impostato sulla [API](/integration/tibcomashery/in
 >![api_rate_limits.jpg](/mashery/api_rate_limits.jpg)
 > *Schermata di configurazione del throttle sulla [API](/integration/tibcomashery/intro#api)*
 
-***Valori di default impostati da Smashery ed esempio di limite plan vs limite api
+> Mashery non imposta alcun limite predefinito sulla API. Vengono invece impostati un throttle di **2 QPS** e una quota di **5000 chiamate al giorno** sul piano al momento della creazione. Ogni nuova chiave è configurata di default per rispettare i limiti impostati sul piano. 
+{.is-warning}
 
 ## Notifiche di eventi
+### Notifiche developer
+Ogni [utente](/integration/tibcomashery/intro#utente) registrato riceve una mail di notifica:
+
+- al momento della registrazione, con un link di conferma per finalizzare la creazione della sua utenza.
+- in caso di richiesta di reset della password, con un link
+Una [mail](http://docs.mashery.com/manage/GUID-B28B2B09-BAD3-464F-882A-5F58050AFECE.html) viene inviata all'[utente](/integration/tibcomashery/intro#utente) al momento della registrazione con un link di conferma. 
+
+
+Inoltre se l'utente crea una nuova [applicazione](/integration/tibcomashery/intro#applicazione)  (e contestualmente una [chiave](/integration/tibcomashery/intro#chiave)) riceverà immediatamente una mail di dettaglio.
+### Notifiche via email
+ Si tratta di un ottimo metodo per gli amministratori di monitorare l
+### Notifiche amministrative
+### Notifiche di utilizzo
 ## Caching
 ## Processing delle chiamate
 ## Documentazione e divulgazione delle API
