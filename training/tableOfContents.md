@@ -2,8 +2,8 @@
 title: Training table of contents
 description: List of training course arguments and useful liks 
 published: true
-date: 2020-01-27T17:48:27.908Z
-tags: Training, training, contents, getting started
+date: 2020-05-19T10:22:19.157Z
+tags: training, contents, getting started
 ---
 
 
