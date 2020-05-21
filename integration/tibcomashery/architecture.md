@@ -2,7 +2,7 @@
 title: Architettura e Deployment di Mashery
 description: 
 published: true
-date: 2020-05-07T13:52:33.214Z
+date: 2020-05-21T17:21:47.274Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
@@ -47,7 +47,7 @@ Il [Developer Portal](http://docs.mashery.com/manage/GUID-FFE293BA-7DD7-4A3A-925
 
 
 ## Mashery API
-La [API](https://developer.mashery.com/docs/read/mashery_api) di prodotto Mashery permette di effettuare operazioni di tipo CRUD (Create Read Update Delete) su quasi tutti gli oggetti/risorse del gateway. In questo modo è possibile eseguire programmaticamente la stragrande maggioranza delle operazioni amministrative disponibili sul CC.
+La [API](https://developer.mashery.com/docs/read/mashery_api) di prodotto Mashery permette di effettuare operazioni di tipo CRUD (Create Read Update Delete) su quasi tutti gli [oggetti](/integration/tibcomashery/intro#oggetti) del gateway. In questo modo è possibile eseguire programmaticamente la stragrande maggioranza delle operazioni amministrative disponibili sul CC.
 
 >![mashery_api.jpg](/mashery/mashery_api.jpg)
 > *Parte dello [swagger](https://developer.mashery.com/io-docs) della API V3 di prodotto*
