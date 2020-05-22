@@ -2,7 +2,7 @@
 title: Architettura e Deployment di Mashery
 description: 
 published: true
-date: 2020-05-22T14:30:41.513Z
+date: 2020-05-22T14:55:15.095Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
@@ -55,8 +55,7 @@ La [API](https://developer.mashery.com/docs/read/mashery_api) di prodotto Masher
 > Esistono due versioni della API (V2 e V3) ma la V3 è quella più moderna e più facilmente utilizzabile poiché segue il paradigma REST. La V2 ha un'autenticazione alquanto bizantina; permette tuttavia di agire con un'unica chiamata su attributi relativi a risorse diverse (supporta un linguaggio simil-SQL) quindi esistono casi limite in cui può essere più efficiente della V3.
 {.is-info}
 
->[Qui](https://documenter.getpostman.com/view/4885521/RzfcKqGJ?version=latest) e/o [qui](/mashery/mashery_api.postman_collection.json) è reperibile una collection postman per effettuare chiamate all'API.
-{.is-info}
+Una guida all'utilizzo dell'API di prodotto è disponibile [qui](/integration/tibcomashery/objmanagement#utilizzo-dellapi-mashery).
 
 ## Gateway
 Il gateway vero e proprio è il motore di Mashery ed è *container based*. È cioè composto da [componenti separati](https://docs.tibco.com/pub/mash-local/latest/doc/html/GUID-B454FA7F-9A50-488D-AF3C-0DD15E83C7EB.html) eseguiti all'interno di container Docker dedicati. Un container Docker può essere visto, semplificando, come una piccola Virtual Machine con overhead molto ridotto. I container sono per loro stessa natura effimeri e velocemente sostituibili e devono essere gestiti da un orchestratore (eg. Kubernetes, Swarm, OpenShift, ...) andando a formare un *cluster*. 
