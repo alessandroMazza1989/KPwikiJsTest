@@ -2,7 +2,7 @@
 title: Architettura e Deployment di Mashery
 description: 
 published: true
-date: 2020-05-21T17:21:47.274Z
+date: 2020-05-22T14:30:41.513Z
 tags: mashery, tibco, api gateway, architecture, control center, developer portal
 ---
 
