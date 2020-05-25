@@ -2,7 +2,7 @@
 title: Configurazione e gestione degli oggetti
 description: 
 published: true
-date: 2020-05-25T10:48:48.350Z
+date: 2020-05-25T13:12:24.157Z
 tags: 
 ---
 
@@ -22,7 +22,7 @@ Una volta creata l'applicazione verranno staccati una [chiave](/integration/tibc
 
 L'autenticazione è di tipo [oauth2](/integration/tibcomashery/features#oauth2) con grant type [*password*](https://www.oauth.com/oauth2-servers/access-tokens/password-grant/), richiede quindi che venga staccato un token d'accesso. Il token endpoint è *https://api.mashery.com/v3/token* e nella chiamata devono essere passati:
 - chiave e secret come *username* e *password* della basic authentication
-- UUID dell'area, nome utente e password all'interno di parametri url-encoded nel body (rispettivamente *scope*, *username*, *password*)
+- UUID dell'area, nome utente e password dell'utenza Mashery all'interno di parametri url-encoded nel body (rispettivamente *scope*, *username*, *password*)
 
 > ![mashery_api_token.jpg](/mashery/mashery_api_token.jpg)
 > *Esempio di chiamata di fetch di un token per l'API di prodotto*
