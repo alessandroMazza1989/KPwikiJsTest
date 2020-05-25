@@ -2,7 +2,7 @@
 title: Configurazione e gestione degli oggetti
 description: 
 published: true
-date: 2020-05-25T10:12:25.156Z
+date: 2020-05-25T10:12:31.427Z
 tags: 
 ---
 
@@ -37,5 +37,5 @@ A questo punto le chiamate alle risorse andranno autenticate passando l'access t
 
 TODO: **SERVICEACCOUNT** (qui e nella sezione utente)
 
->[Qui](https://documenter.getpostman.com/view/4885521/RzfcKqGJ?version=latest) e/o [qui](/mashery/mashery_api.postman_collection.json) è reperibile una collection postman per effettuare chiamate alla API.
+>[Qui](https://documenter.getpostman.com/view/4885521/RzfcKqGJ?version=latest) e [qui](/mashery/mashery_api.postman_collection.json) è reperibile una collection postman per effettuare chiamate alla API.
 {.is-info}
