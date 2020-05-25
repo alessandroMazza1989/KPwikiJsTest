@@ -2,7 +2,7 @@
 title: Configurazione e gestione degli oggetti
 description: 
 published: true
-date: 2020-05-25T10:47:14.987Z
+date: 2020-05-25T10:48:48.350Z
 tags: 
 ---
 
@@ -30,7 +30,7 @@ L'autenticazione è di tipo [oauth2](/integration/tibcomashery/features#oauth2) 
 A questo punto le chiamate alle risorse andranno autenticate passando l'access token ricevuto come bearer token nell'header *authorization*.
 
 > ![mashery_api_get_svcs.jpg](/mashery/mashery_api_get_svcs.jpg)
-> *Esempio di chiamata per recuperare l'elenco dei servizi esposti*
+> *Esempio di chiamata di fetch dell'elenco dei servizi esposti*
 
 > Di default nella response vengono passati solo alcuni degli attributi disponibili. Per ottenere più informazioni (o al contrario per limitare l'output e la dimensione della risposta) occorre specificare tramite il query parameter *values* i campi desiderati, ad esempio *https://api.mashery.com/v3/rest/members?fields=email,lastLogin* restituirà esclusivamente la mail di registrazione e la data di ultimo accesso di tutti gli utenti registrati all'area. L'elenco degli attributi specificabili è disponibile nella [documentazione](https://developer.mashery.com/docs/read/mashery_api/30/resources) di ogni risorsa.
 {.is-info}
