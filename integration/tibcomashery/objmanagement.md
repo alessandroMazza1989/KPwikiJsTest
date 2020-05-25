@@ -2,7 +2,7 @@
 title: Configurazione e gestione degli oggetti
 description: 
 published: true
-date: 2020-05-22T15:24:06.661Z
+date: 2020-05-25T10:11:55.338Z
 tags: 
 ---
 
@@ -32,7 +32,7 @@ A questo punto le chiamate alle risorse andranno autenticate passando l'access t
 > ![mashery_api_get_svcs.jpg](/mashery/mashery_api_get_svcs.jpg)
 > *Esempio di chiamata per recuperare l'elenco dei servizi esposti*
 
-> Di default nella response vengono passati solo alcuni degli attributi disponibili. Per ottenere più informazioni (o al contrario per limitare l'output e la dimensione della risposta) occorre specificare nel query tramite il query parameter *values* i campi desiderati, ad esempio *https://api.mashery.com/v3/rest/members?fields=email,lastLogin* restituirà esclusivamente la mail di registrazione e la data di ultimo accesso di tutti gli utenti registrati all'area. L'elenco degli attributi specificabili è disponibile nella [documentazione](https://developer.mashery.com/docs/read/mashery_api/30/resources) di ogni risorsa.
+> Di default nella response vengono passati solo alcuni degli attributi disponibili. Per ottenere più informazioni (o al contrario per limitare l'output e la dimensione della risposta) occorre specificare tramite il query parameter *values* i campi desiderati, ad esempio *https://api.mashery.com/v3/rest/members?fields=email,lastLogin* restituirà esclusivamente la mail di registrazione e la data di ultimo accesso di tutti gli utenti registrati all'area. L'elenco degli attributi specificabili è disponibile nella [documentazione](https://developer.mashery.com/docs/read/mashery_api/30/resources) di ogni risorsa.
 {.is-info}
 
 TODO: **SERVICEACCOUNT** (qui e nella sezione utente)
