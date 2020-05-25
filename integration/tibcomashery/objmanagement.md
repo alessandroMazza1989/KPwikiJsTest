@@ -2,7 +2,7 @@
 title: Configurazione e gestione degli oggetti
 description: 
 published: true
-date: 2020-05-25T10:12:31.427Z
+date: 2020-05-25T10:47:14.987Z
 tags: 
 ---
 
@@ -11,7 +11,7 @@ tags:
 > L'API di prodotto di Mashery è esposta a sua volta da un gateway Mashery.
 {.is-info}
 
-Per invocare l'API di Mashery è necessario accedere al sito developer.mashery.com e creare una [applicazione](/integration/tibcomashery/intro#applicazione) client. L'[utenza](/integration/tibcomashery/intro#utente) con la quale si accede deve essere profilata con un [ruolo](/integration/tibcomashery/intro#ruolo) adatto sull'[area](/integration/tibcomashery/intro#area) (o le aree) sulle quali si vuole andare ad agire tramite API.
+Per invocare l'API di Mashery è necessario accedere al sito developer.mashery.com e creare una [applicazione](/integration/tibcomashery/intro#applicazione) client. L'[utenza](/integration/tibcomashery/intro#utente) con la quale si accede deve essere profilata con un [ruolo](/integration/tibcomashery/intro#ruolo) che abbia i necessari privilegi sull'[area](/integration/tibcomashery/intro#area) (o le aree) sulle quali si vuole andare ad agire tramite API. Per il dettaglio dei privilegi di ogni ruolo si faccia riferimento alla relativa [documentazione](http://docs.mashery.com/manage/GUID-BC63BAB0-7BFE-4F0E-887F-CF32342F8F9E.html).
 Una volta creata l'applicazione verranno staccati una [chiave](/integration/tibcomashery/intro#chiave) e un [secret](/integration/tibcomashery/intro#secret) da usare per autenticare le chiamate. La chiave sarà inizialmente in stato *waiting* fino all'approvazione da parte di Tibco.
 
 > ![mashery_api_register.jpg](/mashery/mashery_api_register.jpg)
