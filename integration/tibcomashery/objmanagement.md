@@ -2,14 +2,14 @@
 title: Configurazione e gestione degli oggetti
 description: 
 published: true
-date: 2020-05-26T12:34:08.205Z
+date: 2020-05-26T12:35:45.003Z
 tags: 
 ---
 
 ## Utilizzo dell'API Mashery
 
-> La API di prodotto Mashery è esposta a sua volta da un gateway Mashery. 
 > ![tenor.gif](/mashery/tenor.gif)
+> La API di prodotto Mashery è esposta a sua volta da un gateway Mashery.
 {.is-info}
 
 Per invocare la API di Mashery è necessario accedere al sito developer.mashery.com e creare una [applicazione](/integration/tibcomashery/intro#applicazione) client.
