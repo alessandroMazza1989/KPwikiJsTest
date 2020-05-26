@@ -2,7 +2,7 @@
 title: Introduzione e oggetti di Mashery
 description: 
 published: true
-date: 2020-05-25T14:55:50.989Z
+date: 2020-05-26T11:57:00.428Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -116,7 +116,7 @@ L'utilizzo dei metodi è opzionale in Mashery e si adatta particolarmente bene a
 Un oggetto [**utente**](http://docs.mashery.com/manage/GUID-7D08A6AC-E20B-43A5-B5E2-B3E5551087C6.html) viene creato:
 - al momento della registrazione di un nuovo membro sul [Dev Portal](/integration/tibcomashery/architecture#developer-portal)
 - manualmente da un amministratore nel [Control Center](/integration/tibcomashery/architecture#control-center).
-- manualmente da un amministratore nell'area cloud Tibco (in questo caso si parla di utenza *cloud*)
+- manualmente da un amministratore nell'area cloud Tibco (in questo caso si parla di *utenza cloud*)
 
 L'utente è legato indissolubilmente a un indirizzo mail, tuttavia è concesso creare più utenti associati allo stesso indirizzo. Dopo la registrazione, se effettuata in *self-service*, verrà inviata una mail con un link di conferma prima di finalizzare la creazione.
 
@@ -126,14 +126,14 @@ L'utente è legato indissolubilmente a un indirizzo mail, tuttavia è concesso c
 > La differenziazione tra utenze cloud e utenze "standard" nasce dal fatto che Mashery è stato integrato con l'area cloud Tibco solo successivamente all'acquisizione del prodotto. Le utenze cloud, contrariamente alle altre, possono essere configurate in [Single Sign-On](https://en.wikipedia.org/wiki/Single_sign-on) con la base utenti esistente del cliente ed hanno di default accesso al [Control Center](/integration/tibcomashery/architecture#control-center). Per questo motivo sono generalmente utilizzate come utenze amministrative.
 {.is-info}
 
-> Le utenze cloud presentano alcuni limiti, ad esempio essendo l'utenza "importata" nell'ecosistema Mashery le verrà assegnata come nome utente una stringa randomica che ne rende difficile l'identificazione rapida. Per ovviare a ciò si può utilizzare l'indirizzo mail come riferimento. Inoltre le utenze cloud **non** possono essere utilizzate per invocare la [API di prodotto](/integration/tibcomashery/architecture#mashery-api), con l'unica eccezione del *serviceaccount* creato da Tibco.
+> Le utenze cloud presentano alcuni limiti, ad esempio se l'utenza viene "importata" via SSO nell'ecosistema Mashery le verrà assegnata come nome utente una stringa randomica che ne rende difficile l'identificazione rapida. Per ovviare a ciò si può utilizzare l'indirizzo mail come riferimento. **Inoltre le utenze cloud non possono essere utilizzate per invocare la [API di prodotto](/integration/tibcomashery/architecture#mashery-api), con l'unica eccezione del *serviceaccount* creato da Tibco.**
 {.is-warning}
 
-> Le utenze "standard" dal canto loro **non** possono essere impostate come amministratori a livello dell'intera area, ma solo su una o più [organizzazioni](/integration/tibcomashery/intro#organizzazione). Sono quindi limitate nella loro visibilità degli oggetti sia sul CC che nelle invocazioni alla API Mashery.
+> **Le utenze "standard", invece, non possono avere privilegi di amministrazione a livello dell'intera area, ma solo su una o più [organizzazioni](/integration/tibcomashery/intro#organizzazione).** Sono quindi limitate nella loro visibilità degli oggetti sia sul CC che nelle invocazioni alla API Mashery.
 {.is-warning}
 
 > ![user_cloud_vs_cc.png](/mashery/user_cloud_vs_cc.png)
-> *La stessa utenza cloud vista dal Tibco Cloud e dal Control Center dell'area; nel CC si possono notare lo username randomico e l'impossibilità di eliminazione*
+> *La stessa utenza cloud vista dal Tibco Cloud e dal Control Center dell'area; si possono notare lo username randomico e l'impossibilità di eliminarla dal CC*
 
 > Una particolarità degli utenti Mashery è che sono salvati in uno spazio condiviso tra le aree dei vari clienti. Ciò significa che il campo *Username* deve essere necessariamente univoco sull'intero ambito del cloud Tibco, in caso contrario la creazione fallirà.
 {.is-info}
