@@ -2,7 +2,7 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-05-26T13:37:49.128Z
+date: 2020-05-26T13:43:34.178Z
 tags: mashery, tibco, api gateway
 ---
 
@@ -132,7 +132,7 @@ Ogni [sviluppatore](/integration/tibcomashery/intro#utente) registrato al [porta
 - al momento della creazione di una nuova [applicazione](/integration/tibcomashery/intro#applicazione) e contestuale richiesta di una [chiave](/integration/tibcomashery/intro#chiave).
 >![new_app_mail.jpg](/mashery/new_app_mail.jpg)
 
-Il testo delle mail è personalizzabile (eccetto per quelle di reset e recupero credenziali), così come l'indirizzo di provenienza (ma solo dopo l'approvazione di Tibco del nuovo indirizzo).
+Il testo delle mail è personalizzabile (eccetto per quelle di reset e recupero credenziali), così come l'indirizzo di provenienza (ma solo previa approvazione di Tibco del nuovo indirizzo).
 
 ### Notifiche amministrative
 Gli amministratori del gateway possono scegliere di ricevere notifiche quando si verificano alcuni eventi rilevanti. Per l'elenco degli eventi riferirsi alla [documentazione](http://docs.mashery.com/manage/GUID-F23492B4-F99C-447B-B83A-06189667A6F7.html).
