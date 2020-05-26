@@ -2,7 +2,7 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-05-18T13:36:11.833Z
+date: 2020-05-26T13:37:49.128Z
 tags: mashery, tibco, api gateway
 ---
 
@@ -123,18 +123,33 @@ Il Throttle può anche essere impostato sulla [API](/integration/tibcomashery/in
 
 ## Notifiche di eventi
 ### Notifiche developer
-Ogni [utente](/integration/tibcomashery/intro#utente) registrato riceve una mail di notifica:
+Ogni [sviluppatore](/integration/tibcomashery/intro#utente) registrato al [portale](/integration/tibcomashery/architecture#developer-portal) riceve una [mail](http://docs.mashery.com/manage/GUID-B28B2B09-BAD3-464F-882A-5F58050AFECE.html) di notifica:
 
 - al momento della registrazione, con un link di conferma per finalizzare la creazione della sua utenza.
-- in caso di richiesta di reset della password, con un link
-Una [mail](http://docs.mashery.com/manage/GUID-B28B2B09-BAD3-464F-882A-5F58050AFECE.html) viene inviata all'[utente](/integration/tibcomashery/intro#utente) al momento della registrazione con un link di conferma. 
+>![new_user_mail.jpg](/mashery/new_user_mail.jpg)
+- in caso di richiesta di reset della password o recupero dell'username, con un link per completare l'operazione.
+>![reset_password_mail.jpg](/mashery/reset_password_mail.jpg)
+- al momento della creazione di una nuova [applicazione](/integration/tibcomashery/intro#applicazione) e contestuale richiesta di una [chiave](/integration/tibcomashery/intro#chiave).
+>![new_app_mail.jpg](/mashery/new_app_mail.jpg)
 
+Il testo delle mail è personalizzabile (eccetto per quelle di reset e recupero credenziali), così come l'indirizzo di provenienza (ma solo dopo l'approvazione di Tibco del nuovo indirizzo).
 
-Inoltre se l'utente crea una nuova [applicazione](/integration/tibcomashery/intro#applicazione)  (e contestualmente una [chiave](/integration/tibcomashery/intro#chiave)) riceverà immediatamente una mail di dettaglio.
-### Notifiche via email
- Si tratta di un ottimo metodo per gli amministratori di monitorare l
 ### Notifiche amministrative
+Gli amministratori del gateway possono scegliere di ricevere notifiche quando si verificano alcuni eventi rilevanti. Per l'elenco degli eventi riferirsi alla [documentazione](http://docs.mashery.com/manage/GUID-F23492B4-F99C-447B-B83A-06189667A6F7.html).
+
+> ![new_app_adm_mail.jpg](/mashery/new_app_adm_mail.jpg)
+> *Esempio di notifica amministrativa per la creazione di una nuova applicazione*
+
 ### Notifiche di utilizzo
+Sul [pacchetto](/integration/tibcomashery/intro#pacchetto) è possibile abilitare delle mail di notifica, sia per i developer che per gli amministratori, in caso il [rate limiting](#rate-limiting) venga oltrepassato o sia in procinto di esserlo.
+La [documentazione](http://docs.mashery.com/design/GUID-AEDA788C-A160-4311-AF3C-04390228E984.html) a riguardo è chiara e completa, quindi si rimanda a quella per ulteriori approfondimenti.
+
+
+
+Anche in questo caso è possibile [personalizzare](http://docs.mashery.com/design/GUID-2E5BD78C-4D01-492B-AD0A-128CCD93038B.html) i template delle mail, associandoli ad ogni singolo [piano](/integration/tibcomashery/intro#piano).
+
+### Event Trigger API
+
 ## Caching
 ## Processing delle chiamate
 ## Documentazione e divulgazione delle API
