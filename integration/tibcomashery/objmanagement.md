@@ -2,7 +2,7 @@
 title: Configurazione e gestione degli oggetti
 description: 
 published: true
-date: 2020-05-25T13:12:24.157Z
+date: 2020-05-26T12:02:00.454Z
 tags: 
 ---
 
@@ -35,7 +35,13 @@ A questo punto le chiamate alle risorse andranno autenticate passando l'access t
 > Di default nella response vengono passati solo alcuni degli attributi disponibili. Per ottenere più informazioni (o al contrario per limitare l'output e la dimensione della risposta) occorre specificare tramite il query parameter *values* i campi desiderati, ad esempio *https://api.mashery.com/v3/rest/members?fields=email,lastLogin* restituirà esclusivamente la mail di registrazione e la data di ultimo accesso di tutti gli utenti registrati all'area. L'elenco degli attributi specificabili è disponibile nella [documentazione](https://developer.mashery.com/docs/read/mashery_api/30/resources) di ogni risorsa.
 {.is-info}
 
-TODO: **SERVICEACCOUNT** (qui e nella sezione utente)
+> A causa delle limitazioni sulle utenze (un'utenza cloud non può autenticarsi alla API di prodotto e un'utenza local non può avere privilegi sull'intera area cliente) Tibco ha introdotto un'utenza tecnica, il ***service account***. 
+> 
+> Il service account:
+> · è una speciale utenza cloud utilizzabile per autenticarsi alla API di prodotto con visibilità su tutti gli oggetti dell'area cliente.
+> · viene predisposto in fase di creazione dell'area stessa e associato alla mail dell'account owner (il manager a cui nome è stata effettuata la sottoscrizione al cloud Tibco).
+> · viene solitamente creato con username *nomeareacliente_serviceaccount*
+{.is-warning}
 
 >[Qui](https://documenter.getpostman.com/view/4885521/RzfcKqGJ?version=latest) e [qui](/mashery/mashery_api.postman_collection.json) è reperibile una collection postman per effettuare chiamate alla API.
 {.is-info}
