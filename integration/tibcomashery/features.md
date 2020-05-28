@@ -2,7 +2,7 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-05-26T13:43:34.178Z
+date: 2020-05-28T10:10:46.533Z
 tags: mashery, tibco, api gateway
 ---
 
@@ -138,13 +138,13 @@ Il testo delle mail è personalizzabile (eccetto per quelle di reset e recupero 
 Gli amministratori del gateway possono scegliere di ricevere notifiche quando si verificano alcuni eventi rilevanti. Per l'elenco degli eventi riferirsi alla [documentazione](http://docs.mashery.com/manage/GUID-F23492B4-F99C-447B-B83A-06189667A6F7.html).
 
 > ![new_app_adm_mail.jpg](/mashery/new_app_adm_mail.jpg)
-> *Esempio di notifica amministrativa per la creazione di una nuova applicazione*
+> *Esempio di notifica amministrativa alla creazione di una nuova applicazione*
 
 ### Notifiche di utilizzo
 Sul [pacchetto](/integration/tibcomashery/intro#pacchetto) è possibile abilitare delle mail di notifica, sia per i developer che per gli amministratori, in caso il [rate limiting](#rate-limiting) venga oltrepassato o sia in procinto di esserlo.
 La [documentazione](http://docs.mashery.com/design/GUID-AEDA788C-A160-4311-AF3C-04390228E984.html) a riguardo è chiara e completa, quindi si rimanda a quella per ulteriori approfondimenti.
 
-
+(TODO: inserire screenshot mail di notifica)
 
 Anche in questo caso è possibile [personalizzare](http://docs.mashery.com/design/GUID-2E5BD78C-4D01-492B-AD0A-128CCD93038B.html) i template delle mail, associandoli ad ogni singolo [piano](/integration/tibcomashery/intro#piano).
 
