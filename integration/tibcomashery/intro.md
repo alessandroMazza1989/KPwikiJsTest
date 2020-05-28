@@ -2,7 +2,7 @@
 title: Introduzione e oggetti di Mashery
 description: 
 published: true
-date: 2020-05-28T10:23:18.521Z
+date: 2020-05-28T10:43:22.338Z
 tags: mashery, api, tibco, api gateway
 ---
 
