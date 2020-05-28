@@ -2,7 +2,7 @@
 title: Introduzione e oggetti di Mashery
 description: 
 published: true
-date: 2020-05-26T11:57:00.428Z
+date: 2020-05-28T10:11:16.472Z
 tags: mashery, api, tibco, api gateway
 ---
 
@@ -50,7 +50,7 @@ In ogni organizzazione è possibile definire sotto-organizzazioni che funzionano
 
 
 ## Ruolo
-I **ruoli** assegnati all'utente Mashery determinano quali oggetti esso può vedere e/o modificare sia nel [Control Center](/integration/tibcomashery/architecture#control-center) che nel [Dev Portal](/integration/tibcomashery/architecture#developer-portal).
+I **ruoli** assegnati all'utente Mashery determinano quali oggetti esso può vedere e/o modificare sia nel [Control Center](/integration/tibcomashery/architecture#control-center) che nel [Dev Portal](/integration/tibcomashery/architecture#developer-portal) che tramite [API di prodotto](#mashery-api).
 
 #### Control Center Roles
 Questi [ruoli](http://docs.mashery.com/manage/GUID-BC63BAB0-7BFE-4F0E-887F-CF32342F8F9E.html) riguardano esclusivamente il CC e possono essere definiti "Area Level" poiché regolano la visibilità a livello dell'intera area cliente. (https://docs.mashery.com/manage/GUID-C3515849-9ADF-4673-9D02-EC3E54A22134.html).
