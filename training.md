@@ -2,7 +2,7 @@
 title: training
 description: lista dei training aziendali
 published: true
-date: 2020-06-04T11:56:19.488Z
+date: 2020-06-04T11:58:45.514Z
 tags: training
 ---
 
@@ -13,4 +13,6 @@ tags: training
 - [Getting started *System integration training topics and resources*](/training/gettingStarted)
 {.links-list}
 - [Tibco *Guidelines to TIBCO resources and official doc*](/training/tibco)
+{.links-list}
+- [Containers and Orchestration *Docker & Kubernetes training*](/training/containers)
 {.links-list}
