@@ -2,8 +2,10 @@
 title: Common Topics
 description: Indice degli argomenti comuni
 published: true
-date: 2020-05-19T10:23:34.797Z
+date: 2021-01-04T18:03:28.705Z
 tags: commons, software versioning, git, networking, pattern, design, web services, unix, shell, wsdl, soap, rest, server, algoritmi, databases, sql, relational, lifecycle, log
+editor: markdown
+dateCreated: 2020-04-20T15:05:52.694Z
 ---
 
 In questa sezione verranno trattati i principali argomenti che rappresentano la base di una formazione specialistica.
@@ -540,6 +542,7 @@ Lab
 - **Tools & Lab**
 [Tool: Download Postman](https://www.getpostman.com/downloads/)
 [Tool: Download Swagger]( https://swagger.io/tools/swagger-editor/download/)
+[Lab: Try Any API](https://any-api.com/)
 
 # Design e Architectural Patterns
 ### Basic
