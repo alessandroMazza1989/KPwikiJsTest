@@ -2,8 +2,10 @@
 title: wiki
 description: howto wiki
 published: true
-date: 2020-02-25T14:21:54.976Z
+date: 2021-01-19T08:15:00.265Z
 tags: 
+editor: markdown
+dateCreated: 2020-01-31T12:44:42.952Z
 ---
 
 In questa sezione sono disponibili i concetti generali alla base della wiki, nonchè alcune indicazioni per contribuire al mantenitmento di questo asset aziendale nella maniera corretta.
@@ -13,7 +15,7 @@ Gli utenti della wiki KP possono appartenere ad uno dei seguenti gruppi
 - **Contributor** - utenti che contribuiscono all'arricchimento della wiki. Creazione di nuovi contenuti, aggiornamento e validazione dei contenuti
 - **Consumer** - utente base che può consultare i contenuti
 ## Categorie
-Le wiki sono organizzate in categorie generiche per area tematica (Training, Cloud, Integration, Digita, ecc.). E' possibile proporre ulteriori categorie confrontandosi con il gruppo Admnistrator.
+Le wiki sono organizzate in categorie generiche per area tematica (Training, Cloud, Integration, Digital, ecc.). E' possibile proporre ulteriori categorie confrontandosi con il gruppo Admnistrator.
 ## Profilazione
 Le wiki sono aperte a tutti i gruppi. Fanno eccezione alcuni contenuti che sono profilati.
 E' possibile, quindi, che utenti Consumer non abbiamo visibilità di determinati contenuti.
