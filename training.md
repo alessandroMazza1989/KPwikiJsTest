@@ -2,9 +2,10 @@
 title: training
 description: lista dei training aziendali
 published: true
-date: 2020-07-06T08:42:15.971Z
+date: 2021-02-02T13:55:40.185Z
 tags: training
 editor: markdown
+dateCreated: 2020-01-31T09:15:42.614Z
 ---
 
 - [Training organization *Struttura dei moduli dei training*](/training/tableOfContents)
@@ -14,4 +15,6 @@ editor: markdown
 - [Tibco *Guidelines to TIBCO resources and official doc*](/training/tibco)
 {.links-list}
 - [Containers and Orchestration *Docker & Kubernetes training*](/training/containers)
+{.links-list}
+- [System Integration *System integration training course*](/training/integration)
 {.links-list}
