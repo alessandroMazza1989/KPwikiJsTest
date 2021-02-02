@@ -1,8 +1,8 @@
 ---
 title: System integration training course
-description: Index
+description: 
 published: true
-date: 2021-02-02T17:32:39.353Z
+date: 2021-02-02T17:33:29.944Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-02T17:32:39.353Z
