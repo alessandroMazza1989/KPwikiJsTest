@@ -2,7 +2,7 @@
 title: SQL - DML
 description: Data Manipulation Language concepts
 published: true
-date: 2021-02-03T16:53:47.733Z
+date: 2021-02-03T16:57:36.253Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-03T11:51:22.423Z
@@ -124,4 +124,39 @@ dateCreated: 2021-02-03T11:51:22.423Z
 | [where \| having] AttrExpr <in\|not in><br>    ( <valueSet \| SQLQuery...>       	| in: predicate is true if there is at least one row in the nested query satisfying AttrExpr.<br>(“in” equivalent to: “= any”)<br>not in: true if there are no rows in the nested query satisfying AttrExpr.<br>(“not in” equivalent to: “<> all”)<br>⚠️Schemas in in/not-in statement must be compatible! 	|
 | where exists (SQLQuery...                                                        	| Returns true if there are elements in the subquery.  
 
+- Nested queries that check multiple attributes at once require use of a Tuple Constructor:
+	- where (Attr1, Attr2, ...) in ( select Attr1, Attr2, ... from ... );
+- in|not in can also match multiple AttrExpr directly with a set of different values (equivalent to an OR):
+	- where Attr1 in (1,4,5,...);
 
+# Buckets
+### CASE-WHEN-THEN-ELSE-END-AS
+
+| COMMAND                                                                                                                                                        	| DESCRIPTION                                                                                                	|
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------	|------------------------------------------------------------------------------------------------------------	|
+| select Attr <br>    case when (condition1) then “value1”<br>    case when (condition2) then “value2”<br>    else “defaultValue”<br>    end<br>as newColumnName 	| Adds in the result a column to the data retrieved containing the element declared after the matching THEN. 	|
+
+# Window Functions
+### OVER - PARTITION BY
+
+- Window functions are functions that, for each row from a query, perform a calculation using rows related to that row. In other words they perform aggregate-like operations on a set of query rows. However, while an aggregate function groups query rows into a single result row, a window function produces a result for each query row.
+
+# DML: Editing Commands
+### INSERT, DELETE, UPDATE
+
+- All commands can operate on sets of tuples (set-oriented). Commands conditions can reference external tables.
+
+| COMMAND                                                                                                                                                                                 	| DESCRIPTION                                                                                                                                                                                                                        	|
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| insert into TableName <br>    [(Attr1, Attr2)]<br>    < values (ValuesList1) \| SQLQuery1 ><br>    < values (ValuesList2) \| SQLQuery2 >                                                	| Values are matched via positional notation.<br>Without AttributeList all attributes are considered.<br>If AttributeList doesn’t contain all attributes, the others are set to default (if there is a default) or null.             	|
+| delete from TableName [where Condition]                                                                                                                                                 	| Deletes all (cascaded) tuples that satisfy the condition.<br>Without the where statement, all tuples are deleted.                                                                                                                  	|
+| update TableName set<br>    Attribute1 = <val\|SQLQuery\|null\|default>,<br>    ...<br>    [where Condition]                                                                            	| ⚠️Order of commands is significant, them being executed sequentially. There can be attributes updated twice! Where condition is necessary for selecting which rows to update.                                                       	|
+| update TableName set<br>    Attribute1 = AttrExpr containing “X.Attr”,<br>    Attribute2 = AttrExpr containing “X.Attr”<br>    ...<br>    from (SQLQuery) as X<br>    [where Condition] 	| When using an SQL subquery to gather a value which you’ll need to calculate the new values to set on the attributes, if the attributes are many and the subquery is always the same, you can make the subquery only once, like so. 	|
+
+- EMPTYING A TABLE: To empty a table without deleting it there are two ways:
+	- by using “delete from TableName“ without any other specification: however, any serialized (or auto-incremented) index will resume from its latest value, and won’t be reset.
+	- by using “truncate table TableName” which actually erases all memory of the table leaving only its structure, making it as new and resetting auto-incrementers. ⚠️truncate actually belongs to the DDL!
+  
+# Practical Notes of DML
+
+- COMMITTING CHANGES: In some db-environments and languages (like Oracle) it might be necessary to always commit all DML commands in order for them to take effect by using the command: “commit”.
