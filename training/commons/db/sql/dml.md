@@ -2,7 +2,7 @@
 title: SQL - DML
 description: Data Manipulation Language concepts
 published: true
-date: 2021-02-03T16:47:59.823Z
+date: 2021-02-03T16:48:35.575Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-03T11:51:22.423Z
@@ -47,7 +47,7 @@ dateCreated: 2021-02-03T11:51:22.423Z
 
 |                       COMMAND                       	|                               DESCRIPTION                              	|
 |:---------------------------------------------------:	|:----------------------------------------------------------------------:	|
-| FROM Table1 [AS T1] [type] JOIN Table2 [AS T2] < ON T1.attr = T2.attr \| WHERE T1.attr = T2.attr >      	| Needs an ON statement or a WHERE matching. Otherwise use NATURAL JOIN. 	|
+| FROM Table1 [AS T1] [type] JOIN Table2 [AS T2] <br> < ON T1.attr = T2.attr \| WHERE T1.attr = T2.attr >      	| Needs an ON statement or a WHERE matching. Otherwise use NATURAL JOIN. 	|
 
 <br>
 
