@@ -2,7 +2,7 @@
 title: SQL - DML
 description: Data Manipulation Language concepts
 published: true
-date: 2021-02-03T16:46:20.192Z
+date: 2021-02-03T16:47:59.823Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-03T11:51:22.423Z
@@ -67,7 +67,8 @@ dateCreated: 2021-02-03T11:51:22.423Z
 # Aggregate Functions
 ### count, sum, max, min, avg
 
-|-------	|-----------------------------------	|-------------------------------------------------------------------------------	|
+| COMMAND         	| DESCRIPTION                                                	| NOTES                                       	|
+|-----------------	|------------------------------------------------------------	|---------------------------------------------	|
 | count 	| ( * \| [distinct\|all] AttrList ) 	| all: will only count non-null values.                                         	|
 | sum   	| ( [distinct\|all] AttrList )      	| all: will only count non-null values.<br>distinct: useful only in sum or avg. 	|
 | max   	| ( [distinct\|all] AttrList )      	| all: will only count non-null values.<br>distinct: useful only in sum or avg. 	|
