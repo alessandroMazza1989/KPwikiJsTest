@@ -2,7 +2,7 @@
 title: SQL - DML
 description: Data Manipulation Language concepts
 published: true
-date: 2021-02-03T16:48:52.872Z
+date: 2021-02-03T16:53:47.733Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-03T11:51:22.423Z
@@ -108,3 +108,20 @@ dateCreated: 2021-02-03T11:51:22.423Z
 - ⚠️Selected attributes are matched by positional notation! Attributes should correspond in both queries!
 
 	- Only the first query’s attribute names are the ones labelling the resulting table. Possible Mismatch!
+  
+
+# Nested Queries
+### ANY, ALL, IN, EXISTS
+
+- Inside where or having there can be predicates that operate on another SQL query, but there can also be subqueries within selections, or, more commonly, in from statements.
+
+| COMMAND                                                                          	| DESCRIPTION                                                                                                                                                                                                                                                                                             	|
+|----------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| select Attr1, Attr2, (SQLQuery...                                                	| Useful if you want to emulate a join.                                                                                                                                                                                                                                                                   	|
+| select Attr1, Attr2, <br>    from (SQLQuery...                                   	| More common use of subquery.                                                                                                                                                                                                                                                                            	|
+| [where \| having] AttrExpr <=\|<>\|<\|<=\|>\|>=> <br>    (SQLQuery...            	| Confronts AttrExpr directly with the SQLQuery.                                                                                                                                                                                                                                                          	|
+| [where \| having] AttrExp <=\|<>\|<\|<=\|>\|>=> <any\|all>  <br>    (SQLQuery... 	| any: predicate is true if at least one row of the query’s result satisfies the comparison.<br>all: predicate is true if all the rows of the query’s result satisfy the comparison.<br>(“>= all” finds only the maximum value)                                                                           	|
+| [where \| having] AttrExpr <in\|not in><br>    ( <valueSet \| SQLQuery...>       	| in: predicate is true if there is at least one row in the nested query satisfying AttrExpr.<br>(“in” equivalent to: “= any”)<br>not in: true if there are no rows in the nested query satisfying AttrExpr.<br>(“not in” equivalent to: “<> all”)<br>⚠️Schemas in in/not-in statement must be compatible! 	|
+| where exists (SQLQuery...                                                        	| Returns true if there are elements in the subquery.  
+
+
