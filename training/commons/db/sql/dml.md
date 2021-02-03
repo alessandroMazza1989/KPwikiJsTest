@@ -2,7 +2,7 @@
 title: SQL - DML
 description: Data Manipulation Language concepts
 published: true
-date: 2021-02-03T16:57:36.253Z
+date: 2021-02-03T16:58:09.113Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-03T11:51:22.423Z
@@ -141,7 +141,7 @@ dateCreated: 2021-02-03T11:51:22.423Z
 
 - Window functions are functions that, for each row from a query, perform a calculation using rows related to that row. In other words they perform aggregate-like operations on a set of query rows. However, while an aggregate function groups query rows into a single result row, a window function produces a result for each query row.
 
-# DML: Editing Commands
+# Editing Commands
 ### INSERT, DELETE, UPDATE
 
 - All commands can operate on sets of tuples (set-oriented). Commands conditions can reference external tables.
@@ -157,6 +157,6 @@ dateCreated: 2021-02-03T11:51:22.423Z
 	- by using “delete from TableName“ without any other specification: however, any serialized (or auto-incremented) index will resume from its latest value, and won’t be reset.
 	- by using “truncate table TableName” which actually erases all memory of the table leaving only its structure, making it as new and resetting auto-incrementers. ⚠️truncate actually belongs to the DDL!
   
-# Practical Notes of DML
+# Practical Notes
 
 - COMMITTING CHANGES: In some db-environments and languages (like Oracle) it might be necessary to always commit all DML commands in order for them to take effect by using the command: “commit”.
