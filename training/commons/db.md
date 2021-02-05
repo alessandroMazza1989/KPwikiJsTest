@@ -2,13 +2,13 @@
 title: Database
 description: Database concepts, DBMS, SQL DML and SQL DDL
 published: true
-date: 2021-02-03T17:17:16.855Z
+date: 2021-02-05T15:16:56.069Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-03T11:14:41.290Z
 ---
 
-# Databases
+# Database
 ### Basic
 - **Goals**
    1. RDBMS: definition 
