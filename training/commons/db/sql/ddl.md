@@ -2,7 +2,7 @@
 title: SQL - DDL
 description: Data Definition Language concepts
 published: true
-date: 2021-02-05T14:03:47.421Z
+date: 2021-02-05T14:47:54.935Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-03T17:01:17.748Z
@@ -13,7 +13,7 @@ dateCreated: 2021-02-03T17:01:17.748Z
 - CREATE SCHEMA [Name] [ [authorization] Auth ] {*SchemaElementDefinition*}
 
 - A schema:
-	- Contains: Domains, Tables, Indexes, Assertions, Views, Privileges.
+	- **Contains:** Domains, Tables, Indexes, Assertions, Views, Privileges.
 	- Has a Name and Owner.
 
 # Domains
@@ -48,16 +48,16 @@ dateCreated: 2021-02-03T17:01:17.748Z
 |                              	|                                                                        	|                                                                                                                                                                   	|                                  	|
 
 ---
-^1^**SERIAL** in PostgreSQL
+^1^ **SERIAL** in PostgreSQL
 
 ## User-Defined Domains
 
 - CREATE DOMAIN DomainName as DataType [default <GenericValue|user|null>] [Constraints]
 
 - Default values: 
-	- **GenericValue**: can be a value compatible with the domain, like a constant or an expression.
-	- **user**: the login user name of the user that issues the command
-	- **null**: is the polymorphic value null
+	- **GenericValue:** can be a value compatible with the domain, like a constant or an expression.
+	- **user:** the login user name of the user that issues the command
+	- **null:** is the polymorphic value null
   
 ## Table Creation, Deletion, Clearing
 ### CREATE, DROP, TRUNCATE
@@ -85,15 +85,18 @@ dateCreated: 2021-02-03T17:01:17.748Z
 | PRIMARY KEY       	| Defines primary key. <br>⚠️Only one (set) per table! <br>⚠️Implies not null! Can also be foreign. 	|
 | CHECK (Condition) 	| Checks if a particular property is satisfied.                                           	|
 
-- **Example**:
+- **Example:**
 	- CREATE TABLE Employee(
   ID CHAR(6) PRIMARY KEY,
   Name VARCHAR(20) NOT NULL,
   Surname VARCHAR (20) NOT NULL,
 	Pay FLOAT DEFAULT 0.0,
-	Supervisor CHAR(6) CHECK (ID LIKE “1%” OR Department in (SQLquery...)),
+	Supervisor CHAR(6) CHECK (ID LIKE “1%”^2^ OR Department in (SQLquery...)),
 	UNIQUE(Name, Surname));
   
+---
+^2^ Like checks if it satisfies the regular expression. The 1% means “any set of characters after 1”
+
 ## Constraints Between Relations
 ### Referential Integrity
 
@@ -102,3 +105,38 @@ dateCreated: 2021-02-03T17:01:17.748Z
 | FOREIGN KEY                 	| Declares the element as referencing another table.                    	|
 | REFERENCES Table(Attribute) 	| Declares the reference to another table. <br>⚠️Implies it’s a FOREIGN KEY. 	|
 
+- ⚠️The Master Table’s attribute that is referenced must also be UNIQUE (or a PRIMARY KEY)!
+- ⚠️If an attribute is a PRIMARY KEY it can already act as a FOREIGN KEY, so there’s no need to declare it as such. It will still need the REFERENCES constraint if it is referenced, however.
+- ⚠️A separate REFERENCES statement is necessary for each external table!
+
+- **Example:**
+	- CREATE TABLE Employee( 
+		ID CHAR(6) PRIMARY KEY,
+		Name VARCHAR(20) NOT NULL, Surname VARCHAR (20) NOT NULL,
+		DepartmentName VARCHAR (15) REFERENCES Department(DepartmentName),
+		FOREIGN KEY(Name, Surname) REFERENCES Registry(Name, Surname) );
+
+## Constraints Defined Outside
+### Assertions
+
+- CREATE ASSERTION AssertionName check (Condition)
+
+## Conditions
+
+- Some special conditions can be: 
+	- EXISTS SQLQuery, NOT EXISTS SQLQuery, Attr LIKE “string[%]”, … 
+  
+## Constraint Violations
+### Internal Table Violations (Slave)
+
+- Violations that introduce values in a Slave Table that have no counterpart in the Master Table.
+- Such violations can occur when:
+	- Updating the value of an attribute that references another table’s attribute.
+	- Adding a new line.
+- Such operations are simply blocked.
+
+### External Table Violations (Master)
+
+- Such violations occur when the external table (the table with the “original” values) is edited in these two ways:
+	- **ON UPDATE:** when a referenced attribute is modified.
+	- **ON DELETE:** when a referenced row is deleted.
