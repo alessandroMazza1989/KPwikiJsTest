@@ -2,7 +2,7 @@
 title: SQL - DDL
 description: Data Definition Language concepts
 published: true
-date: 2021-02-05T09:38:14.478Z
+date: 2021-02-05T14:03:47.421Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-03T17:01:17.748Z
@@ -32,7 +32,7 @@ dateCreated: 2021-02-03T17:01:17.748Z
 |              Bit             	|                                 varbit                                 	| [(Length)]                                                                                                                                                        	| varying means variable length.   	|
 |         Exact Numeric        	|                                 numeric                                	| [(Precision [, Scale])]                                                                                                                                           	|                                  	|
 |        Exact   Numeric       	|                                 decimal                                	| [(Precision [, Scale])]                                                                                                                                           	|                                  	|
-|        Exact   Numeric       	|                      integer \| int \|   smallint                      	|                                                                      [(Precision [, Scale])]                                                                      	|         [AUTO_INCREMENT]         	|
+|        Exact   Numeric       	|                      integer \| int \|   smallint                      	|                                                                      [(Precision [, Scale])]                                                                      	|         [AUTO_INCREMENT]^1^         	|
 |     Approximate   Numeric    	| float [(Precision)]                                                    	|                                                                                                                                                                   	|                                  	|
 |     Approximate   Numeric    	| real                                                                   	|                                                                                                                                                                   	|                                  	|
 |     Approximate   Numeric    	| double precision                                                       	|                                                                                                                                                                   	|                                  	|
@@ -46,3 +46,59 @@ dateCreated: 2021-02-03T17:01:17.748Z
 |            Others            	|                                  CLOB                                  	|                                                                                                                                                                   	| Character Large Object           	|
 |                              	|                                                                        	|                                                                                                                                                                   	|                                  	|
 |                              	|                                                                        	|                                                                                                                                                                   	|                                  	|
+
+---
+^1^**SERIAL** in PostgreSQL
+
+## User-Defined Domains
+
+- CREATE DOMAIN DomainName as DataType [default <GenericValue|user|null>] [Constraints]
+
+- Default values: 
+	- **GenericValue**: can be a value compatible with the domain, like a constant or an expression.
+	- **user**: the login user name of the user that issues the command
+	- **null**: is the polymorphic value null
+  
+## Table Creation, Deletion, Clearing
+### CREATE, DROP, TRUNCATE
+
+|                                                                   COMMAND                                                                  	|                                                     INFO                                                     	|
+|:------------------------------------------------------------------------------------------------------------------------------------------:	|:------------------------------------------------------------------------------------------------------------:	|
+| CREATE TABLE TableName (<br>    AttributeName AttributeType [DefaultValue] [AttributeConstraint],<br>    ...,<br>    TableConstraints<br>) 	|                                                                                                              	|
+| DROP TABLE TableName cascade                                                                                                               	| It’s always prudent to use cascading option with deletion.                                                   	|
+| TRUNCATE TABLE TableName                                                                                                                   	| Erases all memory of the table leaving only its structure, making it as new and resetting auto-incrementers. 	|
+
+# Constraints
+
+- Can be expressed in two ways:
+|                   COMMAND                   	|                          INFO                         	|
+|:-------------------------------------------:	|:-----------------------------------------------------:	|
+| ElementName ElementType Constraint          	| Inline with declaration.                              	|
+| Constraint(ElementName1, ElementName2, ...) 	| As a separate assertion at the end. Batch definition. 	|
+
+## Constraints Within Relations
+
+|      KEYWORD      	|                                           INFO                                          	|
+|:-----------------:	|:---------------------------------------------------------------------------------------:	|
+| NOT NULL          	| Imposes that the field cannot be null.                                                  	|
+| UNIQUE            	| Makes element unique. Defines possible key candidates.                                  	|
+| PRIMARY KEY       	| Defines primary key. <br>⚠️Only one (set) per table! <br>⚠️Implies not null! Can also be foreign. 	|
+| CHECK (Condition) 	| Checks if a particular property is satisfied.                                           	|
+
+- **Example**:
+	- CREATE TABLE Employee(
+  ID CHAR(6) PRIMARY KEY,
+  Name VARCHAR(20) NOT NULL,
+  Surname VARCHAR (20) NOT NULL,
+	Pay FLOAT DEFAULT 0.0,
+	Supervisor CHAR(6) CHECK (ID LIKE “1%” OR Department in (SQLquery...)),
+	UNIQUE(Name, Surname));
+  
+## Constraints Between Relations
+### Referential Integrity
+
+|           KEYWORD           	|                                  INFO                                 	|
+|:---------------------------:	|:---------------------------------------------------------------------:	|
+| FOREIGN KEY                 	| Declares the element as referencing another table.                    	|
+| REFERENCES Table(Attribute) 	| Declares the reference to another table. <br>⚠️Implies it’s a FOREIGN KEY. 	|
+
