@@ -2,7 +2,7 @@
 title: SQL - DDL
 description: Data Definition Language concepts
 published: true
-date: 2021-02-05T14:47:54.935Z
+date: 2021-02-05T14:51:26.928Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-03T17:01:17.748Z
@@ -140,3 +140,52 @@ dateCreated: 2021-02-03T17:01:17.748Z
 - Such violations occur when the external table (the table with the “original” values) is edited in these two ways:
 	- **ON UPDATE:** when a referenced attribute is modified.
 	- **ON DELETE:** when a referenced row is deleted.
+
+### Violation Management Policies
+
+|   KEYWORD   	|                                                                                                 INFO                                                                                                 	|
+|:-----------:	|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
+| CASCADE     	| - if ON UPDATE: All internal tables’ values are updated with the new value. <br>- if ON DELETE: All corresponding internal tables’ rows are also deleted.<br>(Use when inbound cardinality is (0,n)) 	|
+| SET NULL    	| All internal tables’ attributes that reference this one are set to null, regardless of deletion or update.                                                                                           	|
+| SET DEFAULT 	| All internal tables’ attributes that reference this one are set to their default values, regardless of deletion or update.                                                                           	|
+| NO ACTION   	| Update or deletion are blocked. (Use when inbound cardinality is (1,n))                                                                                                                              	|
+
+- **Example:**
+	- CREATE TABLE Employee( 
+		ID CHAR(6) PRIMARY KEY,
+		Name VARCHAR(20) NOT NULL,
+		Surname VARCHAR (20) NOT NULL,
+		DepartmentName VARCHAR (15) REFERENCES Department(DepartmentName),
+		FOREIGN KEY(Name, Surname) REFERENCES Registry(Name, Surname)
+		ON DELETE CASCADE,
+		ON UPDATE NO ACTION );
+
+## Schema Modification
+### ALTER TABLE
+
+
+|                         COMMAND                        	|                  INFO                 	|
+|:------------------------------------------------------:	|:-------------------------------------:	|
+| ALTER TABLE TableName ADD ColumnName DataType          	| Adds a column to the table.           	|
+| ALTER TABLE TableName DROP COLUMN ColumnName           	| Deletes a column (Cascading required) 	|
+| ALTER TABLE TableName ALTER COLUMN ColumnName DataType 	| Edits a column (Cascading required)   	|
+
+## Views
+### CREATE VIEW
+
+- They offer a virtual table defined by a query. 
+- They can be queried themselves, which also allows the creation of views from other views.
+- Editing them edits the relative values in the original tables, assuming the edit does not create ambiguities.
+	- ⚠️However, applying edits directly on views is NOT RECOMMENDED!!! 
+  
+|                                                  COMMAND                                                 	|                                                                                                         INFO                                                                                                        	|
+|:--------------------------------------------------------------------------------------------------------:	|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
+| CREATE VIEW ViewName [(AttributeList)] as <br>    SQLQuery <br>    [with [local\|cascaded] check option] 	| - check option: intervenes when a view’s content is updated by verifying the consistency of the update.<br>- local: check is performed only on this view. <br>- cascaded: check is performed on all related views.  	|
+
+
+- **Example:**
+	- CREATE VIEW Client7Orders as 
+		select *
+		from Orders
+		where ClientID = ‘7’
+		with local check option
