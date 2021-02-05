@@ -2,7 +2,7 @@
 title: SQL - DDL
 description: Data Definition Language concepts
 published: true
-date: 2021-02-05T14:52:49.583Z
+date: 2021-02-05T14:54:00.558Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-03T17:01:17.748Z
@@ -69,6 +69,7 @@ dateCreated: 2021-02-03T17:01:17.748Z
 # Constraints
 
 - Can be expressed in two ways:
+
 |                   COMMAND                   	|                          INFO                         	|
 |:-------------------------------------------:	|:-----------------------------------------------------:	|
 | ElementName ElementType Constraint          	| Inline with declaration.                              	|
