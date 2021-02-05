@@ -2,8 +2,8 @@
 title: Database
 description: Database concepts, DBMS, SQL DML and SQL DDL
 published: true
-date: 2021-02-05T15:16:56.069Z
-tags: 
+date: 2021-02-05T15:23:26.286Z
+tags: database, db
 editor: markdown
 dateCreated: 2021-02-03T11:14:41.290Z
 ---
