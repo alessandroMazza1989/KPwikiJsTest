@@ -2,7 +2,7 @@
 title: XML
 description: eXtensible Markup Language
 published: true
-date: 2021-02-05T18:09:09.191Z
+date: 2021-02-05T18:12:32.913Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-05T18:05:11.602Z
@@ -48,3 +48,10 @@ dateCreated: 2021-02-05T18:05:11.602Z
     	\<table xmlns="defaultNameSpaceURL">
 	- **Note:** Attributes can have prefixes too!
 - **Escaped Text:** <[!CDATA[ ... ]]>
+
+---
+- **External Links**
+[w3School XML Reference](http://www.w3schools.com/xml/)
+[namespaces](https://www.html.it/articoli/il-misterioso-mondo-dei-namespaces/)
+- **Tools & Lab**
+Tool [Online XML - XSD formatter](http://www.freeformatter.com/)
