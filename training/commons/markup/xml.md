@@ -2,7 +2,7 @@
 title: XML
 description: eXtensible Markup Language
 published: true
-date: 2021-02-05T18:05:11.602Z
+date: 2021-02-05T18:05:59.163Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-05T18:05:11.602Z
@@ -36,7 +36,7 @@ dateCreated: 2021-02-05T18:05:11.602Z
 	- Prefer attributes when storing METADATA about elements.
 		- attributes are best suited to creating IDs with which to easily identify element tags.
 - The Omonimous Tags Problem: how to differentiate omonimously tagged elements?
-	- Step 1: Prefixes: for example: <ns1:table> and <ns2:table>
+	- Step 1: Prefixes: for example: \<ns1:table> and \<ns2:table>
 	- Step 2: Namespaces: prefixes must be defined within a namespace, so as to be reusable.
 		- Prefixed namespaces can be defined:
 		- With the xmlns attribute in the start tag of an element:
