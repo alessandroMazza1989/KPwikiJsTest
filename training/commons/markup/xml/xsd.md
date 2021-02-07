@@ -2,7 +2,7 @@
 title: XSD
 description: Xml Schema Definition
 published: true
-date: 2021-02-07T15:06:20.411Z
+date: 2021-02-07T15:07:41.294Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-07T14:56:02.960Z
@@ -47,8 +47,8 @@ dateCreated: 2021-02-07T14:56:02.960Z
 	- **Types of Types:**
 		- **Built-In:** string, normalizedString, token, boolean, integer, decimal, date, time, dateTime, duration, anyURI, ID, IDREF...
 		- **User-Defined:** (Have the scope of the definition.)
-			- \<xs:simpleType name=“...”> ... </xs:simpleType>
+			\<xs:simpleType name=“...”> ... </xs:simpleType>
 	- **Type Derivation By:**
 		- **Restrictions:** facet or pattern-based restriction with a base type.
-			- \<xs:restriction base=“baseType”> ... </xs:restriction>
+			\<xs:restriction base=“baseType”> ... </xs:restriction>
 			- **Facets:** \<xs:facetName value=“...”/>
