@@ -2,7 +2,7 @@
 title: XSD
 description: Xml Schema Definition
 published: true
-date: 2021-02-07T15:08:57.654Z
+date: 2021-02-07T15:09:14.455Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-07T14:56:02.960Z
@@ -53,7 +53,7 @@ dateCreated: 2021-02-07T14:56:02.960Z
 			\<xs:restriction base=“baseType”> ... </xs:restriction>
 			- **Facets:** \<xs:facetName value=“...”/>
       
-      |         RESTRICTION         	|                                                            INFO                                                            	|
+	|         RESTRICTION         	|                                                            INFO                                                            	|
 |:---------------------------:	|:--------------------------------------------------------------------------------------------------------------------------:	|
 | enumeration                 	| Defines a list of acceptable values                                                                                        	|
 | fractionDigits              	| Specifies the maximum number of decimal places allowed. Must be equal to or greater than zero                              	|
