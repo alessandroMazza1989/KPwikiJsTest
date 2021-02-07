@@ -2,7 +2,7 @@
 title: XSD
 description: Xml Schema Definition
 published: true
-date: 2021-02-07T15:09:25.120Z
+date: 2021-02-07T15:10:27.450Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-07T14:56:02.960Z
@@ -63,3 +63,14 @@ dateCreated: 2021-02-07T14:56:02.960Z
 | maxLength / minLength       	| Specifies the maximum/minimum number of characters or list items allowed. Must be equal to or greater than zero            	|
 | totalDigits                 	| Specifies the exact number of digits. Must be greater than zero                                                            	|
 | whiteSpace                  	| Specifies how white space (line feeds, tabs, spaces, and carriage returns) is handled. (“replace”, “preserve”, “collapse”) 	|
+
+			- **Patterns:** \<xsd:pattern value=“regex”/>
+Regex: (here “a” refers to a simple type)
+Classics: a? , a+ , a* .
+[abcd]/(a|b|c|d)	→ 	a, b, c, d
+[a-z]			→ 	a, b, c, …, z
+a{2,4}		→ 	aa, aaa, aaaa
+[^0-9]+		→ 	sequence of non digits
+Union: <xs:union memberTypes=“typeName1 typeName2 ...”/>
+List: <xs:list itemType=“typeName”/>
+Valid example with integer typeName: <value>1 2 34 88</value>
