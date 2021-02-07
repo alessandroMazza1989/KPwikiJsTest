@@ -2,7 +2,7 @@
 title: XSD
 description: Xml Schema Definition
 published: true
-date: 2021-02-07T15:16:45.775Z
+date: 2021-02-07T15:17:26.996Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-07T14:56:02.960Z
@@ -52,7 +52,7 @@ dateCreated: 2021-02-07T14:56:02.960Z
 		- **Restrictions:** facet or pattern-based restriction with a base type.
 			\<xs:restriction base=“baseType”> ... </xs:restriction>
 			- **Facets:** \<xs:facetName value=“...”/>
-      - **Patterns:** \<xsd:pattern value=“regex”/>
+			- **Patterns:** \<xsd:pattern value=“regex”/>
 				- Regex: (here “a” refers to a simple type)
 					- Classics: a? , a+ , a* .
 					- \[abcd]/(a|b|c|d)	→ 	a, b, c, d
