@@ -2,7 +2,7 @@
 title: XSD
 description: Xml Schema Definition
 published: true
-date: 2021-02-07T14:59:25.500Z
+date: 2021-02-07T15:06:20.411Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-07T14:56:02.960Z
@@ -26,4 +26,29 @@ dateCreated: 2021-02-07T14:56:02.960Z
 	- **xmlns**						→ Default namespace
 	- **elementFormDefault="qualified"**		→ All elements must be namespace qualified
 
+- **How to reference a schema in an XML:**
 
+|                                                                                                DTD                                                                                                	|                                                                                                                                    XSD                                                                                                                                    	|
+|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
+| \<?xml version="1.0"?><br>\<!DOCTYPE note SYSTEM ".../note.dtd"><br>\<note><br>  \<to>Tove\</to><br>  \<from>Jani\</from><br>  \<heading>Reminder\</heading><br>  \<body>Don't forget me!\</body><br>\</note> 	| \<?xml version="1.0"?><br>\<note xmlns="https://www.w3schools.com"<br>xmlns:xsi=".../XMLSchema-instance"<br>xsi:schemaLocation=".../xml note.xsd"><br>  \<to>Tove\</to><br>  \<from>Jani\</from><br>  \<heading>Reminder\</heading><br>  \<body>Don't forget me!\</body><br>\</note> 	|
+
+- **ELEMENTS:** They represent an XML tag.
+	- Definition by name uses the name “attribute”:
+		\<xs:element name = “...” type = “xs:...” />
+	- Definition by reference (ref) to another element:
+		\<xs:element ref = “...” type = “xs:...” />
+- **ATTRIBUTES:** They represent the attributes of the relative xml tag.
+									\<xs:attribute name = “...” type = “xs:...” />
+- **Default and Fixed Elements or Attributes:**
+	- **Default:**	\<xs:el/attr name = “...” type = “xs:...” default = ”...” />
+	- **Fixed:**		\<xs:el/attr name = “...” type = “xs:...” fixed = ”...” />
+- **TYPES:** They represent the validation rule.
+- **SIMPLE TYPES:** (No attributes or markup. Only #PCDATA or CDATA.)
+	- **Types of Types:**
+		- **Built-In:** string, normalizedString, token, boolean, integer, decimal, date, time, dateTime, duration, anyURI, ID, IDREF...
+		- **User-Defined:** (Have the scope of the definition.)
+			- \<xs:simpleType name=“...”> ... </xs:simpleType>
+	- **Type Derivation By:**
+		- **Restrictions:** facet or pattern-based restriction with a base type.
+			- \<xs:restriction base=“baseType”> ... </xs:restriction>
+			- **Facets:** \<xs:facetName value=“...”/>
