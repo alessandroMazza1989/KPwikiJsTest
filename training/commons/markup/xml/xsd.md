@@ -2,7 +2,7 @@
 title: XSD
 description: Xml Schema Definition
 published: true
-date: 2021-02-07T15:36:06.837Z
+date: 2021-02-07T15:43:33.588Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-07T14:56:02.960Z
@@ -109,9 +109,9 @@ dateCreated: 2021-02-07T14:56:02.960Z
 		- Attribute types other than ID or IDREF are not understood, and become CDATA.
 		- No distinction between synonymous elements.
 		- Cannot declare who is the root of the document.
-- **Validation Example:**
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 XSD                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 	|                                                                                                                                           Valid XML                                                                                                                                          	|
-|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
-| \<xs:schema xmlns:xs="URI"> <br>  \<xs:simpleType name="carattere"><br>    \<xs:restriction base="xs:string"><br>      \<xs:pattern value="[A-Z]"></xs:pattern> <br>    </xs:restriction><br>  </xs:simpleType><br>  <br>  \<xs:simpleType name="cifra"><br>    \<xs:restriction base="xs:string"><br>      \<xs:pattern value="[0-9]"></xs:pattern><br>    </xs:restriction><br>  </xs:simpleType><br>  <br>  \<xs:complexType name="Tesercizio"><br>    \<xs:sequence><br>      \<xs:element ref="car" minOccurs="6" maxOccurs="6"/><br>      \<xs:element ref="num" minOccurs="2" maxOccurs="2"/><br>      \<xs:element ref="car"/><br>      \<xs:element ref="num" minOccurs="2" maxOccurs="2"/><br>      \<xs:element ref="car"/><br>      \<xs:element ref="num" minOccurs="3" maxOccurs="3"/><br>      \<xs:element ref="car"/><br>    </xs:sequence><br>  </xs:complexType><br>  \<xs:element name="esercizio" type="Tesercizio"/><br>  \<xs:element name="num" type="cifra"/><br>  \<xs:element name="car" type="carattere"/><br></xs:schema> 	| \<esercizio> <br>	\<car>A\</car><br>	\<car>A\</car><br>	\<car>A\</car><br>	\<car>A\</car><br>	\<car>A\</car><br>	\<car>A\</car><br>	\<num>2\</num><br>	\<num>2\</num><br>	\<car>A\</car><br>	\<num>2\</num><br>	\<num>2\</num><br>	\<car>A\</car><br>	\<num>2\</num><br>	\<num>2\</num><br>	\<num>2\</num><br>	\<car>A\</car><br>\</esercizio> 	|
-
+- **External Links**
+[w3School XSD Schema Reference](https://www.w3schools.com/xml/schema_intro.asp)
+- **Tools & Lab**
+[Tool: Online XML - XSD formatter](http://www.freeformatter.com/)
+[**Lab**: KP xsd exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfaEJXMktIQW5ROFE)
