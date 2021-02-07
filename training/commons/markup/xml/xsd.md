@@ -2,7 +2,7 @@
 title: XSD
 description: Xml Schema Definition
 published: true
-date: 2021-02-07T15:17:26.996Z
+date: 2021-02-07T15:24:59.995Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-07T14:56:02.960Z
@@ -49,9 +49,11 @@ dateCreated: 2021-02-07T14:56:02.960Z
 		- **User-Defined:** (Have the scope of the definition.)
 			\<xs:simpleType name=“...”> ... </xs:simpleType>
 	- **Type Derivation By:**
-		- **Restrictions:** facet or pattern-based restriction with a base type.
-			\<xs:restriction base=“baseType”> ... </xs:restriction>
-			- **Facets:** \<xs:facetName value=“...”/>
+		- **Union:** \<xs:union memberTypes=“typeName1 typeName2 ...”/>
+		- **List:** \<xs:list itemType=“typeName”/>
+			- Valid example with integer typeName: \<value>1 2 34 88\</value>
+ 		- **Restrictions:** facet or pattern-based restriction with a base type.
+												\<xs:restriction base=“baseType”> ... </xs:restriction>
 			- **Patterns:** \<xsd:pattern value=“regex”/>
 				- Regex: (here “a” refers to a simple type)
 					- Classics: a? , a+ , a* .
@@ -59,6 +61,16 @@ dateCreated: 2021-02-07T14:56:02.960Z
 					- \[a-z]			→ 	a, b, c, …, z
 					- a{2,4}		→ 	aa, aaa, aaaa
 					- \[^0-9]+		→ 	sequence of non digits
-		- **Union:** \<xs:union memberTypes=“typeName1 typeName2 ...”/>
-		- **List:** \<xs:list itemType=“typeName”/>
-			- Valid example with integer typeName: \<value>1 2 34 88\</value>
+			- **Facets:** \<xs:facetName value=“...”/>
+      
+|         RESTRICTION         	|                                                            INFO                                                            	|
+|:---------------------------:	|:--------------------------------------------------------------------------------------------------------------------------:	|
+| enumeration                 	| Defines a list of acceptable values                                                                                        	|
+| fractionDigits              	| Specifies the maximum number of decimal places allowed. Must be equal to or greater than zero                              	|
+| length                      	| Specifies the exact number of characters or list items allowed. Must be equal to or greater than zero                      	|
+| maxExclusive / minExclusive 	| Specifies the upper/lower bounds for numeric values excludingthe edge values.                                              	|
+| maxInclusive / minInclusive 	| Specifies the upper/lower bounds for numeric values including the edge values.                                             	|
+| maxLength / minLength       	| Specifies the maximum/minimum number of characters or list items allowed. Must be equal to or greater than zero            	|
+| totalDigits                 	| Specifies the exact number of digits. Must be greater than zero                                                            	|
+| whiteSpace                  	| Specifies how white space (line feeds, tabs, spaces, and carriage returns) is handled. (“replace”, “preserve”, “collapse”) 	|
+
