@@ -2,7 +2,7 @@
 title: XSD
 description: Xml Schema Definition
 published: true
-date: 2021-02-07T15:10:27.450Z
+date: 2021-02-07T15:14:20.683Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-07T14:56:02.960Z
