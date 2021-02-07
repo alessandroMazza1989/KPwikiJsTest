@@ -2,7 +2,7 @@
 title: XSD
 description: Xml Schema Definition
 published: true
-date: 2021-02-07T15:25:57.435Z
+date: 2021-02-07T15:36:06.837Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-07T14:56:02.960Z
@@ -73,4 +73,45 @@ dateCreated: 2021-02-07T14:56:02.960Z
 | maxLength / minLength       	| Specifies the maximum/minimum number of characters or list items allowed. <br>Must be equal to or greater than zero            	|
 | totalDigits                 	| Specifies the exact number of digits. Must be greater than zero                                                            	|
 | whiteSpace                  	| Specifies how white space (line feeds, tabs, spaces, and carriage returns) is handled. <br>(“replace”, “preserve”, “collapse”) 	|
+
+- **COMPLEX ELEMENTS:** a complex element contains other elements and/or attributes.
+												\<xs:complexType name="...">
+	- **Definition:** \<xs:element name = “...”/>
+										\<xs:complexType name=“elem”> ...Element Content... </…> </…>
+	- **ANY:**	<xs:element name=“elem” type = “xs:anyType”/>
+		- **\<any> Element:** allows us to extend the XML with unspecified elements.
+													\<xs:any minOccurs="0"/> //Allows in its place anything or nothing.<<
+		- **\<anyAttribute> Element:** allows us to extend the XML with unspecified attributes.
+	- **EMPTY:** \<xs:element name=“elem” type = “xs:empty”/>
+	- **Element Content:**
+		- **SEQUENCE:** Sequence of elements (A, B, …).
+									\<xs:sequence> elem1, elem2, ... </xs:sequence>
+		- **CHOICE:** Choice of elements (A | B | ...).
+									\<xs:choice> elem1, elem2, ... </xs:choice>
+		- **SET/ALL:** Like a sequence but without constraints on the order .
+									\<xs:all> elem1, elem2, ... </xs:all> 
+			- If you also add minoccurs and/or maxoccurs you can also repeat the elements.
+		- **CARDINALITY of elem1, elem2, ...:**  (DEFAULT is 1 for both min and maxOccur.)
+			- A? → \<xs:element ... minOccurs= “0”/>
+			- A+ → \<xs:element ... maxOccurs= “unbounded”/>
+			- A* → \<xs:element ... maxOccurs= “unbounded” minOccurs= “0”/>
+		- **COMPLEX CONTENT ELEMENT:** defines extensions or restrictions on a complex type that contains mixed content or elements only:
+
+|                                                                                                                                                                                             EXTENSION                                                                                                                                                                                             	|                                                                                                                                                RESTRICTION                                                                                                                                                	|
+|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
+| \<xs:complexType name="fullpersoninfo"><br>  \<xs:complexContent><br>    \<xs:extension base="personinfo"><br>      \<xs:sequence><br>       \<xs:element name="address" type="xs:string"/><br>       \<xs:element name="city" type="xs:string"/><br>       \<xs:element name="country" type="xs:string"/><br>      </xs:sequence><br>    </xs:extension><br>  </xs:complexContent><br></xs:complexType> 	| \<product prodid="1345" /><br><br>\<xs:element name="product"><br>  \<xs:complexType><br>   \<xs:complexContent><br>     \<xs:restriction base="xs:integer"><br>      \<xs:attribute name="prodid" type="xs:int"/><br>     </xs:restriction><br>   </xs:complexContent><br>  </xs:complexType><br></xs:element> 	|
+
+- **MIXED CONTENT:** “Mixed” attribute allows text between subelements.
+	- \<xs:complexType name=“textType” mixed=“true”> ... \<xs:complexType/>
+- **Translating XSD Languages to DTD:**
+	- When 2 elements have the same name, DTD cannot distinguish them, thus **elements  and all non-shared attributes between the two become optional in DTD.**
+	- **Approximations:**
+		- Attribute types other than ID or IDREF are not understood, and become CDATA.
+		- No distinction between synonymous elements.
+		- Cannot declare who is the root of the document.
+- **Validation Example:**
+
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 XSD                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 	|                                                                                                                                           Valid XML                                                                                                                                          	|
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
+| \<xs:schema xmlns:xs="URI"> <br>  \<xs:simpleType name="carattere"><br>    \<xs:restriction base="xs:string"><br>      \<xs:pattern value="[A-Z]"></xs:pattern> <br>    </xs:restriction><br>  </xs:simpleType><br>  <br>  \<xs:simpleType name="cifra"><br>    \<xs:restriction base="xs:string"><br>      \<xs:pattern value="[0-9]"></xs:pattern><br>    </xs:restriction><br>  </xs:simpleType><br>  <br>  \<xs:complexType name="Tesercizio"><br>    \<xs:sequence><br>      \<xs:element ref="car" minOccurs="6" maxOccurs="6"/><br>      \<xs:element ref="num" minOccurs="2" maxOccurs="2"/><br>      \<xs:element ref="car"/><br>      \<xs:element ref="num" minOccurs="2" maxOccurs="2"/><br>      \<xs:element ref="car"/><br>      \<xs:element ref="num" minOccurs="3" maxOccurs="3"/><br>      \<xs:element ref="car"/><br>    </xs:sequence><br>  </xs:complexType><br>  \<xs:element name="esercizio" type="Tesercizio"/><br>  \<xs:element name="num" type="cifra"/><br>  \<xs:element name="car" type="carattere"/><br></xs:schema> 	| \<esercizio> <br>	\<car>A\</car><br>	\<car>A\</car><br>	\<car>A\</car><br>	\<car>A\</car><br>	\<car>A\</car><br>	\<car>A\</car><br>	\<num>2\</num><br>	\<num>2\</num><br>	\<car>A\</car><br>	\<num>2\</num><br>	\<num>2\</num><br>	\<car>A\</car><br>	\<num>2\</num><br>	\<num>2\</num><br>	\<num>2\</num><br>	\<car>A\</car><br>\</esercizio> 	|
 
