@@ -2,7 +2,7 @@
 title: XSD
 description: Xml Schema Definition
 published: true
-date: 2021-02-07T15:07:41.294Z
+date: 2021-02-07T15:08:57.654Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-07T14:56:02.960Z
@@ -52,3 +52,14 @@ dateCreated: 2021-02-07T14:56:02.960Z
 		- **Restrictions:** facet or pattern-based restriction with a base type.
 			\<xs:restriction base=“baseType”> ... </xs:restriction>
 			- **Facets:** \<xs:facetName value=“...”/>
+      
+      |         RESTRICTION         	|                                                            INFO                                                            	|
+|:---------------------------:	|:--------------------------------------------------------------------------------------------------------------------------:	|
+| enumeration                 	| Defines a list of acceptable values                                                                                        	|
+| fractionDigits              	| Specifies the maximum number of decimal places allowed. Must be equal to or greater than zero                              	|
+| length                      	| Specifies the exact number of characters or list items allowed. Must be equal to or greater than zero                      	|
+| maxExclusive / minExclusive 	| Specifies the upper/lower bounds for numeric values excludingthe edge values.                                              	|
+| maxInclusive / minInclusive 	| Specifies the upper/lower bounds for numeric values including the edge values.                                             	|
+| maxLength / minLength       	| Specifies the maximum/minimum number of characters or list items allowed. Must be equal to or greater than zero            	|
+| totalDigits                 	| Specifies the exact number of digits. Must be greater than zero                                                            	|
+| whiteSpace                  	| Specifies how white space (line feeds, tabs, spaces, and carriage returns) is handled. (“replace”, “preserve”, “collapse”) 	|
