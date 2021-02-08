@@ -2,7 +2,7 @@
 title: XML
 description: XML Navigation
 published: true
-date: 2021-02-08T09:46:59.352Z
+date: 2021-02-08T10:36:39.997Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-08T09:35:36.543Z
@@ -123,3 +123,8 @@ dateCreated: 2021-02-08T09:35:36.543Z
 | ancestor-or-self::book 	| Selects all book ancestors of the current node - and the current as well if it is a book node 	|
 | child:: */child::price  	| Selects all price grandchildren of the current node                                           	|
 
+- **External Links**
+[W3 school Xpath reference](https://www.w3schools.com/xml/xpath_intro.asp)
+- **Tools & Lab**
+[Tool: Online XML - XSD formatter XPath tester](http://www.freeformatter.com/xpath-tester.html)
+[**Lab**: KP Xpath exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfRG5iN0ctV0VLbXM)
