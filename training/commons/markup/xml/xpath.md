@@ -2,7 +2,7 @@
 title: XML
 description: XML Navigation
 published: true
-date: 2021-02-08T09:35:36.543Z
+date: 2021-02-08T09:45:36.806Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-08T09:35:36.543Z
@@ -30,6 +30,7 @@ dateCreated: 2021-02-08T09:35:36.543Z
 | node()              	| Matches any tag node                                                                                                                                                      	|
 | \|                  	| Multiple path selection (Logical OR, ie: selects one path AND the other if present.)                                                                                      	|
 
+---
 
 |           PREDICATES           	|                                                                INFO                                                                	|
 |:------------------------------:	|:----------------------------------------------------------------------------------------------------------------------------------:	|
@@ -46,3 +47,79 @@ dateCreated: 2021-02-08T09:35:36.543Z
 | /store/book[price > 35.00]/title 	| Selects all the title elements of the book elements of the store element that have a price element with a value greater than 35.00 	|
 | //title[@*]                    	| Selects all title elements which have at least one attribute of any kind                                                           	|
 | //title[n][m]                  	| Of the n-th element you can select the m-th element like so.                                                                       	|
+
+- **OPERATORS: **
+	- **Classic Operators:** |, +, -, *, div, =, !=, <, <=, >, >=, or, and, mod.
+	- **Comparison Operators:**
+		- **Value Comparison:** Value comparison can be used only to compare exactly one item to exactly one other item.
+		- **General Comparison:** While value comparison operators can compare only one thing on the 																left to one thing on the right, general comparison operators can have 															one or more items on either side of the comparison.
+
+| Value Op. 	| General Op. 	|          Meaning         	|
+|:---------:	|:-----------:	|:------------------------:	|
+|     eq    	|      =      	| Equal to                 	|
+|     ne    	|      !=     	| Not equal to             	|
+|     gt    	|      >      	| Greater than             	|
+|     ge    	|      >=     	| Greater than or equal to 	|
+|     lt    	|      <      	| Less than                	|
+|     le    	|      <=     	| Less than or equal to    	|
+
+***NOTE:* General operators can flexibly compare many to many: this means that the X=Y returns true if any of the elements of X is in Y.**
+
+- **FUNCTIONS:** (For more: https://www.w3schools.com/xml/xsl_functions.asp)
+
+| FUNCTION              	| DESCRIPTION                                                                                                                                                                                         	|
+|-----------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| choose(boolean,X,Y)   	| returns one of the specified objects based on a boolean parameter. Replaces the “if()”                                                                                                              	|
+| distinct-values(arg+) 	| removes duplicates from a set of values. (Often used with count.)                                                                                                                                   	|
+| concat(arg+)          	| concatenates two or more strings and returns the resulting string                                                                                                                                   	|
+| string(arg)           	| converts the given argument (in parentheses) or the resulting query (at the end) to a string                                                                                                        	|
+| contains(X,Y)         	| determines whether the X  string contains theY string and returns boolean true or false.                                                                                                            	|
+| count()               	| counts the number of nodes in a node-set and returns an integer.                                                                                                                                    	|
+| sum()                 	| returns a number that is the sum of the numeric values of each node in a given node-set.                                                                                                            	|
+| avg()                 	|                                                                                                                                                                                                     	|
+| max() / min()         	|                                                                                                                                                                                                     	|
+| current()             	| can be used to get the context node in an XSLT instruction                                                                                                                                          	|
+| last()                	| returns an integer equal to the context size from the expression evaluation context.<br>This is often used with the position() function to determine if a particular node is the last in a node-set 	|
+| position()            	| returns a number equal to the context position from the expression evaluation context.                                                                                                              	|
+| text()                	| selects the text from the node/s.                                                                                                                                                                   	|
+| name()                	| returns a string representing the full name of the node                                                                                                                                             	|
+| local-name([nodeset]) 	| returns a string representing the local name of the first node in a given node-set [OPTIONAL] ignoring the namespace prefixes!                                                                      	|
+
+- **AXES:** An axis represents a relationship to the current node, used to locate nodes relative to that node.
+
+| FUNCTION              	| DESCRIPTION                                                                                                                    	|
+|-----------------------	|--------------------------------------------------------------------------------------------------------------------------------	|
+| ancestor              	| Selects all ancestors (parent, grandparent, etc.) of the current node                                                          	|
+| ancestor-of-self      	| Selects all ancestors of the current node and the current node itself                                                          	|
+| attribute             	| Selects all attributes of the current node                                                                                     	|
+| child                 	| Selects all children of the current node                                                                                       	|
+| descendant            	| Selects all descendants of the current node                                                                                    	|
+| descendant-of-self    	| Selects all descendants of the current node and the current node itself                                                        	|
+| following             	| Selects everything in the document after the closing tag of the current node                                                   	|
+| following-sibling     	| Selects all siblings after the current node                                                                                    	|
+| namespace             	| Selects all namespace nodes of the current node                                                                                	|
+| parent                	| Selects the parent of the current node                                                                                         	|
+| preceding             	| all nodes before the current node, except ancestors, attribute nodes and namespace nodes                                       	|
+| preceding-sibling     	| Selects all siblings before the current node                                                                                   	|
+| self                  	| Selects the current node                                                                                                       	|
+| name()                	| returns a string representing the full name of the node                                                                        	|
+| local-name([nodeset]) 	| returns a string representing the local name of the first node in a given node-set [OPTIONAL] ignoring the namespace prefixes! 	|
+
+- **Location Path Expression for Axes:**
+	- **Absolute vs Relative Paths:** Absolute:**/step/step/...** Relative: **step/step/...**
+	- **A step consists of:** an axis (defines the tree-relationship between the selected and current 														nodes), a node-test (identifies a node within an axis), zero or more 															predicates (to further refine the selected node-set).
+- **Step syntax:** axisname::nodetest[predicate]
+
+| FUNCTION               	| DESCRIPTION                                                                                   	|
+|------------------------	|-----------------------------------------------------------------------------------------------	|
+| child::book            	| Selects all book nodes that are children of the current node                                  	|
+| attribute::lang        	| Selects the lang attribute of the current node                                                	|
+| child::*               	| Selects all element children of the current node                                              	|
+| attribute::*           	| Selects all attributes of the current node                                                    	|
+| child::text()          	| Selects all text node children of the current node                                            	|
+| child::node()          	| Selects all children of the current node                                                      	|
+| descendant::book       	| Selects all book descendants of the current node                                              	|
+| ancestor::book         	| Selects all book ancestors of the current node                                                	|
+| ancestor-or-self::book 	| Selects all book ancestors of the current node - and the current as well if it is a book node 	|
+| child::*/child::price  	| Selects all price grandchildren of the current node                                           	|
+
