@@ -2,7 +2,7 @@
 title: XSD
 description: Xml Schema Definition
 published: true
-date: 2021-02-07T15:43:33.588Z
+date: 2021-02-09T11:57:47.850Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-07T14:56:02.960Z
@@ -109,6 +109,8 @@ dateCreated: 2021-02-07T14:56:02.960Z
 		- Attribute types other than ID or IDREF are not understood, and become CDATA.
 		- No distinction between synonymous elements.
 		- Cannot declare who is the root of the document.
+
+---
 
 - **External Links**
 [w3School XSD Schema Reference](https://www.w3schools.com/xml/schema_intro.asp)
