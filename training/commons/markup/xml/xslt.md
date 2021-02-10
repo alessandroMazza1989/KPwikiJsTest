@@ -2,7 +2,7 @@
 title: XSLT
 description: eXtensible Stylesheet Language Transformations
 published: true
-date: 2021-02-10T13:20:03.752Z
+date: 2021-02-10T13:22:51.776Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-08T13:20:22.556Z
@@ -10,18 +10,6 @@ dateCreated: 2021-02-08T13:20:22.556Z
 
 # XSLT
 
-- **Goals**
-1. XSLT document definition
-2. &lt;stylesheet> and &lt;transform> elements
-3. &lt;template> element
-4. &lt;value-of> element
-5. &lt;for-each> element
-6. &lt;sort> element
-7. &lt;if> element
-8. &lt;choose> element
-9. &lt;apply-templates> element
-
----
 
 - Used to transform an XML document into another XML document (usually an HTML, but not necessarily). 
 - **Style Sheet Declaration:** \<xsl:stylesheet> or \<xsl:transform>
