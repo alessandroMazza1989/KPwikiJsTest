@@ -2,7 +2,7 @@
 title: Network Protocols
 description: HTTP, HTTPS, TLS, SSH, SCP, FTP
 published: true
-date: 2021-02-10T16:49:47.771Z
+date: 2021-02-10T16:55:16.472Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-10T16:49:47.770Z
@@ -41,7 +41,7 @@ TO DO
 	- Sending a large amount of data to the server (POST has no size limitations).
 	- Sending user input, POST is more robust and secure than GET.
 - **Request structure:** 
-	- full-request :- request-line	*(	general-header 	| request-header 	|entity-header) 	CRLF	[entity-body]
+	- full-request :- request-line	*( general-header | request-header | entity-header) 	CRLF	[entity-body]
 	- request-line :- method SP URL SP version CRLF
 		- Example of request line: GET /pub/papers/pap101.html HTTP/1.0
 - **Request headers:** (an incomplete list) (multiple elements are comma-separated)
@@ -67,3 +67,40 @@ TO DO
 		- Example: 348
 	- **date:** The date and time that the message was sent.
 		- Example: Date: Tue, 15 Nov 1994 08:12:31 GMT
+    
+### HTTP Responses
+
+- **Status codes:**
+ 	- **1xx :** Information
+ 	- **2xx :** Success
+ 	- **3xx :** Redirection
+ 	- **4xx :** Client error
+ 	- **5xx :** Server error
+- **Response structure:** 
+	- full-response :- status-line *(	general-header | request-header | entity-header) 	CRLF	[entity-body]
+	- status-line :- version SP STATUS SP message CRLF
+		- Example of status line: HTTP 404 - File not found
+- **Response headers:** (an incomplete list) (multiple elements are comma-separated)
+	- **accept-ranges:** What partial content range types this server supports.
+		- Example: bytes
+	- **age:** The age the object has been in a proxy cache in seconds.
+	- **cache-control:** Set the caching rules. Measured in seconds
+		- Example: max-age=3600
+	- **connection:** Control options for the current connection. Deprecated in HTTP/2
+		- Example: keep-alive or close
+	- **content-language:** The language the content is in.
+	- **content-length:** The length of the response body in octets (8-bit bytes).
+	- **content-location:** An alternate location for the returned data.
+		- Example: /index.htm
+	- **content-type:** The MIME type of this content.
+		- Example: text/html; charset=utf-8
+	- **date:** The date and time that the message was sent.
+		- Example: Date: Tue, 15 Nov 1994 08:12:31 GMT
+	- **expires:** Gives the date/time after which the response is considered stale.
+		- Example: Date: Tue, 15 Nov 1994 08:12:31 GMT
+	- **last-modified:** The last modified date for the requested object in RFC 2822.
+		- Example: Date: Tue, 15 Nov 1994 08:12:31 GMT
+
+## HTTPS - HyperText Transfer Protocol Secure
+
+TO DO
