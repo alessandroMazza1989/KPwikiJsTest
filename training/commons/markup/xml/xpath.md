@@ -2,13 +2,25 @@
 title: XML
 description: XML Navigation
 published: true
-date: 2021-02-08T10:36:39.997Z
+date: 2021-02-10T13:18:28.590Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-08T09:35:36.543Z
 ---
 
 # XPATH
+
+- **Goals**
+1. XPath Terminology  (Nodes, Atomic values, Items)
+2. Relationships between the nodes (Parent, Children, Sibling, Ancestors, Descendants)
+3. XPath Syntax 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Selecting nodes 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Predicates
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Wildcards 
+4. XPath Axes concept
+5. XPath operators 
+
+---
 
 - **Used to navigate through elements and attributes in an XML document**
 - **NODES:** XML documents are treated as trees of nodes. There are 7 node types: element, attribute, text, namespace, processing-instruction, comment, and document nodes.
@@ -122,6 +134,8 @@ dateCreated: 2021-02-08T09:35:36.543Z
 | ancestor::book         	| Selects all book ancestors of the current node                                                	|
 | ancestor-or-self::book 	| Selects all book ancestors of the current node - and the current as well if it is a book node 	|
 | child:: */child::price  	| Selects all price grandchildren of the current node                                           	|
+
+---
 
 - **External Links**
 [W3 school Xpath reference](https://www.w3schools.com/xml/xpath_intro.asp)
