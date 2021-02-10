@@ -1,8 +1,8 @@
 ---
 title: training
-description: lista dei training aziendali
+description: Key Partner training courses
 published: true
-date: 2021-02-02T13:55:40.185Z
+date: 2021-02-10T09:02:12.022Z
 tags: training
 editor: markdown
 dateCreated: 2020-01-31T09:15:42.614Z
