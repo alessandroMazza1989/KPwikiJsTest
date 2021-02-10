@@ -2,7 +2,7 @@
 title: Database
 description: Database concepts, DBMS, SQL DML and SQL DDL
 published: true
-date: 2021-02-05T15:23:26.286Z
+date: 2021-02-10T08:56:55.776Z
 tags: database, db
 editor: markdown
 dateCreated: 2021-02-03T11:14:41.290Z
@@ -29,6 +29,7 @@ dateCreated: 2021-02-03T11:14:41.290Z
    16. Create DB
    17. Create Table 
    18. Constrains 
+---
 - **External Links**
 [w3school SQL reference](http://www.w3schools.com/sql/default.asp)
 [html.it guida al linguaggio SQL](http://www.html.it/guide/guida-linguaggio-sql/)
@@ -36,6 +37,8 @@ dateCreated: 2021-02-03T11:14:41.290Z
 - **Tools & Lab**
 Tool [PostgreSQL](http://www.postgresql.org/download/)
 Lab [KP drive SQL exercises](https://drive.google.com/open?id=0BydghG4Au4Hfd1E0b3pQQlhvNk0)
+
+---
 
 ### Advanced
 - **Goals**
