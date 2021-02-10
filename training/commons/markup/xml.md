@@ -2,13 +2,27 @@
 title: XML
 description: eXtensible Markup Language
 published: true
-date: 2021-02-05T18:12:32.913Z
+date: 2021-02-10T09:27:22.894Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-05T18:05:11.602Z
 ---
 
 # XML
+
+- **Goals**
+  1. XML:Definition
+  2. Use cases 
+  3. hierarchical structure of an XML 
+  4. Sintax
+  5. XML tags 
+  6. XML attributes
+  7. Namespaces
+  8. Encoding
+  9. XML Doctypes
+  10. XML Schema (XSD): Definition
+
+---
 
 - **Structure:** (XML is tree-structured)
 	- **Prolog (optional):** defines the XML version and the character encoding: 
