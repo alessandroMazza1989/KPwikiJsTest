@@ -2,7 +2,7 @@
 title: XSD
 description: Xml Schema Definition
 published: true
-date: 2021-02-09T11:57:47.850Z
+date: 2021-02-10T13:16:54.217Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-07T14:56:02.960Z
@@ -10,6 +10,24 @@ dateCreated: 2021-02-07T14:56:02.960Z
 
 # XSD
 
+- **Goals**
+1. XML Schema document: definition
+2. Why using an XSD document
+3. How to reference a XSD document from within a XML document
+4. &lt;xs:schema> tag's attributes
+5. Simple types 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Elements
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Attributes
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Constrains
+6. Complex Types 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> a. Elements
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> b. Empty elements
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Types with only elements 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Types with only text
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Indicators (choice, sequence, all)
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. &lt;any> e &lt;anyAttribute> tags 
+7. Include ed Import schema
+---
 - **Uses:** XSD is a more advanced definition language than DTD for validating an XML document.
 	- Unlike DTD, XSD is written itself in XML, so it’s extensible.
 - **How to include:** by designating an XSD prefix and its relative namespace in the schema root.
