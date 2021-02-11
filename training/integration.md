@@ -2,7 +2,7 @@
 title: System integration training course
 description: 
 published: true
-date: 2021-02-10T09:25:09.800Z
+date: 2021-02-11T10:41:17.027Z
 tags: integration
 editor: markdown
 dateCreated: 2021-02-02T17:32:39.353Z
@@ -20,4 +20,6 @@ Finally, the last part of the flow generally is chosen in agreement with the tut
 2. [Markup Languages *XML, DOM, DTD, XSD, XPATH, XSLT*](/training/commons/markup)
 {.links-list}
 3. [Networking *OSI model, LAN/MAN/WAN, DNS, Routing, Subnet, NAT, Firewall, Cloud, HTTP/HTTPs*](/training/commons/networking)
+{.links-list}
+4. [Operative Systems *Unix*](/training/commons/os)
 {.links-list}
