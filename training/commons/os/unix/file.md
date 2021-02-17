@@ -1,14 +1,14 @@
 ---
-title: File
+title: File Management
 description: Redirection and Piping, Navigation and File Management
 published: true
-date: 2021-02-17T15:39:48.578Z
+date: 2021-02-17T15:48:20.355Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-17T15:39:01.010Z
 ---
 
-# File
+# File Management
 
 ## Redirection and Piping
 
