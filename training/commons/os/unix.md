@@ -2,7 +2,7 @@
 title: Unix
 description: Concepts and Commands
 published: true
-date: 2021-02-17T15:25:05.733Z
+date: 2021-02-17T15:49:26.145Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-12T12:35:07.436Z
@@ -64,7 +64,7 @@ Lab [KP Unix/Linux exercises folder](https://drive.google.com/open?id=0BydghG4Au
 15 Networking	12
 16 Session Management Programs	13
 
-1. [Shell *Basic Shell Concepts, Help and Manuals, Shell Management*](/training/commons/os/unix/shell)
+1. [Shell Management *Basic Shell Concepts, Help and Manuals*](/training/commons/os/unix/shell)
 {.links-list}
-2. [File *Redirection and Piping, Navigation and File Management*](/training/commons/os/unix/file)
+2. [File Management *Redirection and Piping, Navigation and File Management*](/training/commons/os/unix/file)
 {.links-list}
