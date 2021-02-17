@@ -2,7 +2,7 @@
 title: Database
 description: Database concepts, DBMS, SQL DML and SQL DDL
 published: true
-date: 2021-02-10T08:56:55.776Z
+date: 2021-02-17T14:16:04.943Z
 tags: database, db
 editor: markdown
 dateCreated: 2021-02-03T11:14:41.290Z
@@ -53,6 +53,9 @@ Lab [KP drive SQL exercises](https://drive.google.com/open?id=0BydghG4Au4Hfd1E0b
    9. NULL functions
    10. DATA types (RDBS dependant)
   
-- **Wiki Links**
-[SQL-DML](/training/commons/db/sql/dml)
-[SQL-DDL](/training/commons/db/sql/ddl)
+---
+
+1. [DML *Data Manipulation Language concepts*](/training/commons/db/sql/dml)
+{.links-list}
+2. [DDL *Data Definition Language concepts*](/training/commons/db/sql/ddl)
+{.links-list}
