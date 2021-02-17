@@ -1,14 +1,14 @@
 ---
-title: Shell
-description: Basic Shell Concepts, Help and Manuals, Shell Management
+title: Shell Management
+description: Basic Shell Concepts, Help and Manuals
 published: true
-date: 2021-02-17T15:13:11.780Z
+date: 2021-02-17T15:47:34.743Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-17T15:13:11.780Z
 ---
 
-# Shell
+# Shell Management
 
 ## Basic Shell Concepts
 
