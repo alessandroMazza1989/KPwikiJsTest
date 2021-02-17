@@ -2,7 +2,7 @@
 title: Unix
 description: Concepts and Commands
 published: true
-date: 2021-02-17T15:51:32.035Z
+date: 2021-02-17T15:59:37.568Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-12T12:35:07.436Z
@@ -47,26 +47,11 @@ Lab [KP Unix/Linux exercises folder](https://drive.google.com/open?id=0BydghG4Au
 
 ---
 
-1 Basic Shell Concepts	2
-2 Help and Manuals	2
-3 Shell Management	3
-4 I/O Redirection and Piping	3
-5 Navigation and File Management	4
-6 Displaying Files and Text	5
-7 Searching, Sorting, Counting, Parsing, and Batch Text Manipulation	6
-8 Text Editing Programs	7
-9 Process Handling and Running	8
-10 System Management	9
-11 Permissions and Privileges	10
-12 Environment and Shell Variables	11
-13 Shell Scripting	12
-14 Installing and Managing Applications	12
-15 Networking	12
-16 Session Management Programs	13
-
 1. [Shell Management *Basic Shell Concepts, Help and Manuals*](/training/commons/os/unix/shell)
 {.links-list}
 2. [File Management *Redirection and Piping, Navigation and File Management*](/training/commons/os/unix/file)
 {.links-list}
 3. [Process Management *Process Handling and Running*](/training/commons/os/unix/process)
+{.links-list}
+4. [System Management *Commands, Permissions and Privileges, Environment and Shell Variables*](/training/commons/os/unix/system)
 {.links-list}
