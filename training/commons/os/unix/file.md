@@ -2,7 +2,7 @@
 title: File
 description: Redirection and Piping, Navigation and File Management
 published: true
-date: 2021-02-17T15:39:01.010Z
+date: 2021-02-17T15:39:48.578Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-17T15:39:01.010Z
@@ -147,3 +147,11 @@ dateCreated: 2021-02-17T15:39:01.010Z
 		- Prints lines from 3 to 6, numbering them. 
 	- **Ex3:** awk '{if (length($0) > max) max = length($0)} END {print max}' file.txt
 		- Find the length of the longest line present in the file.
+    
+## Text Editing Programs
+
+- **Editing programs and tools**
+	- vim
+	- nano
+	- gedit
+	- emacs
