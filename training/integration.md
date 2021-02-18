@@ -2,7 +2,7 @@
 title: System integration training course
 description: 
 published: true
-date: 2021-02-11T10:41:17.027Z
+date: 2021-02-18T11:46:17.683Z
 tags: integration
 editor: markdown
 dateCreated: 2021-02-02T17:32:39.353Z
@@ -22,4 +22,6 @@ Finally, the last part of the flow generally is chosen in agreement with the tut
 3. [Networking *OSI model, LAN/MAN/WAN, DNS, Routing, Subnet, NAT, Firewall, Cloud, HTTP/HTTPs*](/training/commons/networking)
 {.links-list}
 4. [Operative Systems *Unix*](/training/commons/os)
+{.links-list}
+5. [Software Versioning *General Concepts, GIT, SVN*](/training/commons/versioning)
 {.links-list}
