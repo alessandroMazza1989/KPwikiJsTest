@@ -2,7 +2,7 @@
 title: System Management
 description: Commands, Permissions and Privileges, Environment and Shell Variables
 published: true
-date: 2021-02-18T11:30:20.351Z
+date: 2021-02-18T11:34:23.089Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-17T16:00:26.604Z
@@ -88,6 +88,35 @@ dateCreated: 2021-02-17T16:00:26.604Z
 	- -R			→ Recurse through subdirectories (apply to all subdirectories).
 
 ## Environment and Shell Variables
+
+- **Environment variables** (UPPERCASE)
+	- **Common variables**
+   	- $SHELL 	→ Path of the shell currently running, which should be "/bin/bash".
+   	- $HOME 		→ Path of the home directory.
+   	- $PWD 		→ Path of the working directory.
+   	- $PATH		→ Set of paths which contain the applications referenced by commands.
+   	- $USER		→ User’s name.
+   	- $TERM		→ Info on the current terminal.
+   	- $SHLVL		→ Shell level. Reports on the nesting level of the current shell.
+	- **Commands**
+   	- setenv			→ Sets an environment variable.
+   	- unsetenv		→ Un-sets an environment variable.
+   	- printenv		→ Prints all variables and their values.
+   	- printenv or env	→ Prints all variables and their values.
+   	- export name=value	→ Sets a variable so that children processes can see it. 
+    	- export varname	→ If the value is already set. 
+- **Shell variables** (lowercase)
+ 	- **Common variables**
+  	- $cwd		→ Current working directory.
+  	- $home		→ History of all entered commands.
+  	- $path		→ The directories the shell should search to find a command.
+  	- $prompt	→ Text string used to prompt for interactive commands to your login shell.
+  	- $history	→ Number of elements in history of all entered commands.
+	- **Commands**
+  	- set		→ Displays or sets a shell variable.
+  	- unset		→ Un-sets a shell variable.
+
+**Note:** Some variables are permanently linked between shell and environment, so changing the one also changes the other (like path and PATH).
 
 ## Installing and Managing Applications
 
