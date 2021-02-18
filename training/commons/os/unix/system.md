@@ -2,7 +2,7 @@
 title: System Management
 description: Commands, Permissions and Privileges, Environment and Shell Variables
 published: true
-date: 2021-02-18T11:37:15.126Z
+date: 2021-02-18T11:40:54.543Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-17T16:00:26.604Z
@@ -133,3 +133,45 @@ dateCreated: 2021-02-17T16:00:26.604Z
 		- sudo dnf install app	→ Installs application app.
 
 ## Networking Commands
+
+- **Connecting and Connection Stats**
+	- netcat or nc → Utility for reading from and writing to network connections using TCP or UDP
+		- -l 		→ Listening mode
+	- netstat 	→ Display network connections for TCP and Ports + routing tables and interfaces.
+		- -t		→ TCP
+		- -u		→ UDP
+		- -l 		→ Show only listening sockets.
+		- -p		→ Show the PID and name of the program to which each socket belongs.
+		- -n		→ Show numerical addresses instead of trying to determine symbolic names.
+		- -a 		→ TODO
+		- Most used: -anp	→ TODO
+		- Most used: -punta	→ TODO
+	- telnet 	→ Connecting to and managing a remote machine (shell).
+		- Accessing console: use escape character ^] which is CTRL+] then press enter.
+		- Quitting: type quit in the telnet console
+	- ip addr 	→ Prints a report on the system's network interfaces.
+	- ifconfig 	→ Displays the status of the currently active interfaces including IP and MAC addresses.
+		- -a	→ Returns the local address.
+	- ping 		→ Tests the reachability of a host on an Internet Protocol (IP) network.
+	- nslookup 	→ Allows you to query DNS servers for resource records.
+	- tracert/traceroute
+		- Diagnostic commands for displaying possible routes and measuring transit delays of 			packets
+- **Data transfer**
+	- wget 		→ Retrieves files using HTTP, HTTPS, FTP and FTPS.
+	- curl 		→ Transfers data to or from a server, using any of the supported protocols 								(HTTP, FTP, IMAP, POP3, SCP, SFTP, SMTP, TFTP, TELNET, LDAP or FILE)
+- **Remote Machines**
+	- SSH: Secure Shell (like telnet, but through an encrypted tunnel)
+		- ssh username@remotehost
+			- -p		→ specifies a different port
+			- remotehost 	→ can be the hostname or IP.	
+			- without username it will enter the current user’s name in the OS
+			- TCP Standard Port: 22
+			- -p option specifies a different port
+			- Logout: ^D
+	- SCP:
+
+- **Local DNS:** Matching etc/hosts
+
+- **Checking free port:** netstat + grep
+
+- lsof
