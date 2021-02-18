@@ -2,7 +2,7 @@
 title: Unix
 description: Concepts and Commands
 published: true
-date: 2021-02-17T15:59:37.568Z
+date: 2021-02-18T11:44:22.187Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-12T12:35:07.436Z
@@ -44,6 +44,12 @@ dateCreated: 2021-02-12T12:35:07.436Z
 - **Tools & Lab**
 Tool [Virtual box VM guide and references](https://docs.google.com/document/d/1OSbQtX0NoG31UhdtxFlawpnaja8KeDzXd8wushVZzdk/edit?usp=sharing)
 Lab [KP Unix/Linux exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfUzFobUxTU0wtV1E)
+
+### Advanced
+- **Obiettivi**
+1. Shell scripting
+- **Link Utili**
+[Unix shell scripting (sections from 1 to 10)](https://www.html.it/guide/shell-scripting-la-guida/)
 
 ---
 
