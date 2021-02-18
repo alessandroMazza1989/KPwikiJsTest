@@ -2,7 +2,7 @@
 title: System Management
 description: Commands, Permissions and Privileges, Environment and Shell Variables
 published: true
-date: 2021-02-18T11:36:02.847Z
+date: 2021-02-18T11:37:15.126Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-17T16:00:26.604Z
@@ -119,5 +119,17 @@ dateCreated: 2021-02-17T16:00:26.604Z
 **Note:** Some variables are permanently linked between shell and environment, so changing the one also changes the other (like path and PATH).
 
 ## Installing and Managing Applications
+
+- **Ubuntu/Debian:**
+	- apt / apt-get	→ Package manager.
+		- sudo apt update 		→ Updates the package repository cache. (Run this first)
+		- sudo apt install app	→ Installs application app.
+			- Run if you encounter the error “unable to locate package package_name”
+- **RedHat/Fedora:** 
+	- yum			→ Package manager.
+		- sudo yum update 		→ Updates the package repository cache. (Run this first)
+		- sudo yum install app 	→ Installs application app.
+	- dnf			→ Package manager.
+		- sudo dnf install app	→ Installs application app.
 
 ## Networking Commands
