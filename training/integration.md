@@ -2,7 +2,7 @@
 title: System integration training course
 description: 
 published: true
-date: 2021-02-18T17:16:31.673Z
+date: 2021-02-22T09:07:01.819Z
 tags: integration
 editor: markdown
 dateCreated: 2021-02-02T17:32:39.353Z
@@ -25,5 +25,7 @@ Finally, the last part of the flow generally is chosen in agreement with the tut
 {.links-list}
 5. [Software Versioning *General Concepts, GIT, SVN*](/training/commons/versioning)
 {.links-list}
-5. [TIBCO *FOM*](/training/integration/tibco)
+6. [EAI *Enterprise Application Integration*](/training/integration/eai)
+{.links-list}
+7. [TIBCO *FOM*](/training/integration/tibco)
 {.links-list}
