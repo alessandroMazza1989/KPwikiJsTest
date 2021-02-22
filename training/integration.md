@@ -2,7 +2,7 @@
 title: System integration training course
 description: 
 published: true
-date: 2021-02-22T09:46:44.828Z
+date: 2021-02-22T10:55:01.973Z
 tags: integration
 editor: markdown
 dateCreated: 2021-02-02T17:32:39.353Z
@@ -31,5 +31,7 @@ Finally, the last part of the flow generally is chosen in agreement with the tut
 {.links-list}
 8. [SOA *Service Oriented Architecture*](/training/integration/soa)
 {.links-list}
-9. [TIBCO *FOM*](/training/integration/tibco)
+9. [WebServices *WSDL, SOAP, REST, RDF*](/training/integration/ws)
+{.links-list}
+10. [TIBCO *FOM*](/training/integration/tibco)
 {.links-list}
