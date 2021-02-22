@@ -2,13 +2,13 @@
 title: XPath
 description: XML Navigation
 published: true
-date: 2021-02-22T13:35:32.337Z
+date: 2021-02-22T13:35:41.625Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-08T09:35:36.543Z
 ---
 
-# XPATH
+# XPath
 
 - **Goals**
 1. XPath Terminology  (Nodes, Atomic values, Items)
