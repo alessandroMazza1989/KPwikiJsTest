@@ -2,13 +2,24 @@
 title: REST
 description: REpresentational State Transfer
 published: true
-date: 2021-02-22T13:26:29.839Z
+date: 2021-02-22T13:27:28.219Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-22T13:26:29.839Z
 ---
 
 # REST
+
+- **Goals and External Links**
+1. [What is REST](https://www.codecademy.com/articles/what-is-rest)
+2. [Guide](https://restfulapi.net/resource-naming/)
+
+- **Tools & Lab**
+[Tool: Download Postman](https://www.getpostman.com/downloads/)
+[Tool: Download Swagger]( https://swagger.io/tools/swagger-editor/download/)
+[Lab: Try Any API](https://any-api.com/)
+
+---
 
 ## Definition
 
