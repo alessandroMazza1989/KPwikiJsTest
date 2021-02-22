@@ -2,7 +2,7 @@
 title: System integration training course
 description: 
 published: true
-date: 2021-02-22T09:07:01.819Z
+date: 2021-02-22T09:46:44.828Z
 tags: integration
 editor: markdown
 dateCreated: 2021-02-02T17:32:39.353Z
@@ -27,5 +27,9 @@ Finally, the last part of the flow generally is chosen in agreement with the tut
 {.links-list}
 6. [EAI *Enterprise Application Integration*](/training/integration/eai)
 {.links-list}
-7. [TIBCO *FOM*](/training/integration/tibco)
+7. [JMS *Java Message Service*](/training/integration/messaging/jms)
+{.links-list}
+8. [SOA *Service Oriented Architecture*](/training/integration/soa)
+{.links-list}
+9. [TIBCO *FOM*](/training/integration/tibco)
 {.links-list}
