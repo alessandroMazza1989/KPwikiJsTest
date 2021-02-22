@@ -1,8 +1,8 @@
 ---
-title: XML
+title: XPath
 description: XML Navigation
 published: true
-date: 2021-02-10T13:18:28.590Z
+date: 2021-02-22T13:35:32.337Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-08T09:35:36.543Z
@@ -19,6 +19,12 @@ dateCreated: 2021-02-08T09:35:36.543Z
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> c. Wildcards 
 4. XPath Axes concept
 5. XPath operators 
+
+- **External Links**
+[W3 school Xpath reference](https://www.w3schools.com/xml/xpath_intro.asp)
+- **Tools & Lab**
+[Tool: Online XML - XSD formatter XPath tester](http://www.freeformatter.com/xpath-tester.html)
+[**Lab**: KP Xpath exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfRG5iN0ctV0VLbXM)
 
 ---
 
@@ -134,11 +140,3 @@ dateCreated: 2021-02-08T09:35:36.543Z
 | ancestor::book         	| Selects all book ancestors of the current node                                                	|
 | ancestor-or-self::book 	| Selects all book ancestors of the current node - and the current as well if it is a book node 	|
 | child:: */child::price  	| Selects all price grandchildren of the current node                                           	|
-
----
-
-- **External Links**
-[W3 school Xpath reference](https://www.w3schools.com/xml/xpath_intro.asp)
-- **Tools & Lab**
-[Tool: Online XML - XSD formatter XPath tester](http://www.freeformatter.com/xpath-tester.html)
-[**Lab**: KP Xpath exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfRG5iN0ctV0VLbXM)
