@@ -2,7 +2,7 @@
 title: XSD
 description: Xml Schema Definition
 published: true
-date: 2021-02-10T13:16:54.217Z
+date: 2021-02-22T13:34:58.976Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-07T14:56:02.960Z
@@ -27,6 +27,13 @@ dateCreated: 2021-02-07T14:56:02.960Z
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Indicators (choice, sequence, all)
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> f. &lt;any> e &lt;anyAttribute> tags 
 7. Include ed Import schema
+
+- **External Links**
+[w3School XSD Schema Reference](https://www.w3schools.com/xml/schema_intro.asp)
+- **Tools & Lab**
+[Tool: Online XML - XSD formatter](http://www.freeformatter.com/)
+[**Lab**: KP xsd exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfaEJXMktIQW5ROFE)
+
 ---
 - **Uses:** XSD is a more advanced definition language than DTD for validating an XML document.
 	- Unlike DTD, XSD is written itself in XML, so it’s extensible.
@@ -127,11 +134,3 @@ dateCreated: 2021-02-07T14:56:02.960Z
 		- Attribute types other than ID or IDREF are not understood, and become CDATA.
 		- No distinction between synonymous elements.
 		- Cannot declare who is the root of the document.
-
----
-
-- **External Links**
-[w3School XSD Schema Reference](https://www.w3schools.com/xml/schema_intro.asp)
-- **Tools & Lab**
-[Tool: Online XML - XSD formatter](http://www.freeformatter.com/)
-[**Lab**: KP xsd exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfaEJXMktIQW5ROFE)
