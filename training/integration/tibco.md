@@ -2,11 +2,14 @@
 title: TIBCO
 description: TIBCO Products
 published: true
-date: 2021-02-22T14:27:13.982Z
+date: 2021-02-22T14:49:54.175Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T17:17:00.925Z
 ---
+
+The following section treats some of the main Tibco products used into system integration world.
+This part doesn't substitute the official doc (https://docs.tibco.com/) that remains the best way to achieve the deeper knowledge about all Tibco products.
 
 # Tibco
 
