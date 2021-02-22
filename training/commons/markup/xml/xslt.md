@@ -2,7 +2,7 @@
 title: XSLT
 description: eXtensible Stylesheet Language Transformations
 published: true
-date: 2021-02-10T13:23:25.921Z
+date: 2021-02-22T13:36:02.577Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-08T13:20:22.556Z
@@ -20,6 +20,12 @@ dateCreated: 2021-02-08T13:20:22.556Z
 7. &lt;if> element
 8. &lt;choose> element
 9. &lt;apply-templates> element
+
+- **External Links**
+[W3 school Xsl reference](https://www.w3schools.com/xml/xsl_intro.asp)
+- **Tools & Lab**
+[Tool: Online XML - XSD formatter xsl tranformer](http://www.freeformatter.com/xsl-transformer.html)
+[**Lab**: KP Xsl exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfWkpkNk1wTmNlRkE)
 
 ---
 
@@ -66,11 +72,3 @@ dateCreated: 2021-02-08T13:20:22.556Z
 		\<xmlTag attribute="{XPATH_expression}">
 	- Alternatively, under the relative xmlTag add: The attribute element:
 		\<xsl:attribute name="attributeName" select="XPATH_expression">
-
----
-
-- **External Links**
-[W3 school Xsl reference](https://www.w3schools.com/xml/xsl_intro.asp)
-- **Tools & Lab**
-[Tool: Online XML - XSD formatter xsl tranformer](http://www.freeformatter.com/xsl-transformer.html)
-[**Lab**: KP Xsl exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfWkpkNk1wTmNlRkE)
