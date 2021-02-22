@@ -2,7 +2,7 @@
 title: Unix
 description: Concepts and Commands
 published: true
-date: 2021-02-18T11:44:22.187Z
+date: 2021-02-22T13:37:07.307Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-12T12:35:07.436Z
@@ -39,16 +39,16 @@ dateCreated: 2021-02-12T12:35:07.436Z
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> d. Wget
 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> e. Curl
 24. Finding your own IP 
-- **Link Utili**
+- **External Links**
 [Unix guide (required content extends till tutorial number 6)](http://www.ee.surrey.ac.uk/Teaching/Unix/)
 - **Tools & Lab**
 Tool [Virtual box VM guide and references](https://docs.google.com/document/d/1OSbQtX0NoG31UhdtxFlawpnaja8KeDzXd8wushVZzdk/edit?usp=sharing)
 Lab [KP Unix/Linux exercises folder](https://drive.google.com/open?id=0BydghG4Au4HfUzFobUxTU0wtV1E)
 
 ### Advanced
-- **Obiettivi**
+- **Goals**
 1. Shell scripting
-- **Link Utili**
+- **External Links**
 [Unix shell scripting (sections from 1 to 10)](https://www.html.it/guide/shell-scripting-la-guida/)
 
 ---
