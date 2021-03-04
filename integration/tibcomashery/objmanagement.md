@@ -2,8 +2,10 @@
 title: Configurazione e gestione degli oggetti
 description: 
 published: true
-date: 2020-05-26T12:35:45.003Z
+date: 2021-03-04T10:21:17.348Z
 tags: 
+editor: markdown
+dateCreated: 2020-05-22T14:34:07.101Z
 ---
 
 ## Utilizzo dell'API Mashery
