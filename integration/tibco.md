@@ -2,7 +2,7 @@
 title: TIBCO
 description: TIBCO Products
 published: true
-date: 2021-03-04T10:05:27.756Z
+date: 2021-03-04T10:06:52.829Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T17:17:00.925Z
@@ -13,11 +13,11 @@ This part doesn't substitute the official doc (https://docs.tibco.com/) that rem
 
 # Tibco Products
 
-1. [EMS *Enterprise Message Service*](/training/integration/tibco/ems)
+1. [EMS *Enterprise Message Service*](/integration/tibco/ems)
 {.links-list}
-2. [BW *BusinessWorks*](/training/integration/tibco/bw)
+2. [BW *BusinessWorks*](/integration/tibco/bw)
 {.links-list}
-3. [FOS *Fulfillment Order Suite*](/training/integration/tibco/fos)
+3. [FOS *Fulfillment Order Suite*](/integration/tibco/fos)
 {.links-list}
-4. [Tibco Mashery *Installazione e amministrazione dell'API Gateway Mashery*](/integration/tibcomashery)
+4. [Tibco Mashery *Installazione e amministrazione dell'API Gateway Mashery*](/integration/tibco/mashery)
 {.links-list}
