@@ -2,8 +2,10 @@
 title: Introduzione e oggetti di Mashery
 description: 
 published: true
-date: 2020-05-28T10:43:22.338Z
+date: 2021-03-04T10:21:49.465Z
 tags: mashery, api, tibco, api gateway
+editor: markdown
+dateCreated: 2020-04-17T13:19:15.299Z
 ---
 
 # Cosa è un API Gateway
