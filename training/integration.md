@@ -2,7 +2,7 @@
 title: System integration training course
 description: 
 published: true
-date: 2021-03-04T10:08:52.449Z
+date: 2021-03-04T15:56:38.673Z
 tags: integration
 editor: markdown
 dateCreated: 2021-02-02T17:32:39.353Z
@@ -34,4 +34,6 @@ Finally, the last part of the flow generally is chosen in agreement with the tut
 9. [WebServices *WSDL, SOAP, REST, RDF*](/training/integration/ws)
 {.links-list}
 10. [TIBCO *EMS, BW, FOM, Mashery*](/integration/tibco)
+{.links-list}
+11. [Talend *ETL*](/integration/talend)
 {.links-list}
