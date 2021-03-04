@@ -2,8 +2,10 @@
 title: Funzionalità di prodotto
 description: 
 published: true
-date: 2020-05-28T10:10:46.533Z
+date: 2021-03-04T10:21:01.434Z
 tags: mashery, tibco, api gateway
+editor: markdown
+dateCreated: 2020-04-29T14:29:52.621Z
 ---
 
 Nelle sezioni successive sono dettagliate le macro funzionalità che Tibco Mashery mette a disposizione di un cliente per implementare la sua API governance.
