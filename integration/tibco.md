@@ -2,7 +2,7 @@
 title: TIBCO
 description: TIBCO Products
 published: true
-date: 2021-03-04T10:18:34.211Z
+date: 2021-03-04T16:04:29.471Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T17:17:00.925Z
@@ -20,4 +20,8 @@ This part doesn't substitute the official doc (https://docs.tibco.com/) that rem
 3. [FOS *Fulfillment Order Suite*](/integration/tibco/fos)
 {.links-list}
 4. [Mashery *Installazione e amministrazione dell'API Gateway Mashery*](/integration/tibco/mashery)
+{.links-list}
+5. [MFT *Managed File Transfer*](/integration/tibco/mft)
+{.links-list}
+6. [Hawk *Application Monitoring*](/integration/tibco/hawk)
 {.links-list}
