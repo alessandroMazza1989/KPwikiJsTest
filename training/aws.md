@@ -2,7 +2,7 @@
 title: AWS
 description: 
 published: true
-date: 2021-03-08T11:21:31.357Z
+date: 2021-03-08T11:31:17.931Z
 tags: aws, cloud, networking, security
 editor: markdown
 dateCreated: 2021-03-08T10:00:58.038Z
