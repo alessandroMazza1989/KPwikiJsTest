@@ -1,8 +1,8 @@
 ---
 title: AWS
 description: 
-published: true
-date: 2021-03-08T15:51:26.962Z
+published: false
+date: 2021-03-08T16:50:50.968Z
 tags: aws, cloud, devops, compute
 editor: markdown
 dateCreated: 2021-03-08T11:05:47.679Z
