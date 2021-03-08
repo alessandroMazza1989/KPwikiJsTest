@@ -2,7 +2,7 @@
 title: Logs and Observability
 description: 
 published: true
-date: 2021-03-08T16:54:49.772Z
+date: 2021-03-08T16:54:55.050Z
 tags: cloud, devops, logs, observability
 editor: markdown
 dateCreated: 2021-03-08T14:09:05.187Z
