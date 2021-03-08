@@ -1,8 +1,8 @@
 ---
 title: GCP
 description: 
-published: true
-date: 2021-03-08T14:05:22.983Z
+published: false
+date: 2021-03-08T16:57:35.302Z
 tags: cloud, devops, gcp, delivery, messaging
 editor: markdown
 dateCreated: 2021-03-08T14:01:48.453Z
