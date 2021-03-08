@@ -1,8 +1,8 @@
 ---
 title: GCP
 description: 
-published: true
-date: 2021-03-08T14:33:31.018Z
+published: false
+date: 2021-03-08T17:01:02.769Z
 tags: cloud, gcp, automation
 editor: markdown
 dateCreated: 2021-03-08T13:27:24.774Z
