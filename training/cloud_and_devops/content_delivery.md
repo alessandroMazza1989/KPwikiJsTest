@@ -2,16 +2,22 @@
 title: Content Delivery
 description: 
 published: true
-date: 2021-03-08T14:28:49.423Z
+date: 2021-03-08T16:48:06.474Z
 tags: cloud, devops, content delivery
 editor: markdown
 dateCreated: 2021-03-08T14:24:39.375Z
 ---
 
 # Content Delivery
-- [AWS](/training/cloud_and_devops/content_delivery/aws)
+
+## Amazon Web Services
+- [CloudFront](/training/aws/cloudfront)
 {.links-list}
-- [Azure](/training/cloud_and_devops/content_delivery/azure)
+
+## Microsoft Azure
+- [Azure CDN](/training/azure/azure_cdn)
 {.links-list}
-- [GCP](/training/cloud_and_devops/content_delivery/gcp)
+
+## Google Cloud Platform
+- [Cloud CDN](/training/gcp/cloud_cdn)
 {.links-list}
