@@ -2,7 +2,7 @@
 title: Azure
 description: 
 published: true
-date: 2021-03-08T11:22:00.810Z
+date: 2021-03-08T11:32:05.812Z
 tags: cloud, networking, security, azure
 editor: markdown
 dateCreated: 2021-03-08T10:16:39.453Z
