@@ -2,7 +2,7 @@
 title: AWS
 description: 
 published: true
-date: 2021-03-08T10:53:44.913Z
+date: 2021-03-08T10:55:01.459Z
 tags: aws, cloud, networking, security
 editor: markdown
 dateCreated: 2021-03-08T10:00:58.038Z
@@ -13,7 +13,7 @@ dateCreated: 2021-03-08T10:00:58.038Z
 {.links-list}
 - [Subnets](/training/aws/subnets)
 {.links-list}
-- [IAM](/training/cloud_and_devops/network_and_security/aws/iam)
+- [IAM](/training/aws/iam)
 {.links-list}
 - [ACL](/training/cloud_and_devops/network_and_security/aws/acl)
 {.links-list}
