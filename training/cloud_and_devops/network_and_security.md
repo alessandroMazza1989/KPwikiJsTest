@@ -2,7 +2,7 @@
 title: Network And Security
 description: 
 published: true
-date: 2021-03-08T11:21:09.887Z
+date: 2021-03-08T11:22:54.410Z
 tags: cloud, networking, security
 editor: markdown
 dateCreated: 2021-03-08T09:38:37.118Z
@@ -15,9 +15,9 @@ dateCreated: 2021-03-08T09:38:37.118Z
 {.links-list}
 - [Key Cryptography](/training/commons/key_cryptography)
 {.links-list}
-- [AWS](/training/cloud_and_devops/network_and_security/aws)
+- [AWS](/training/aws)
 {.links-list}
-- [Azure](/training/cloud_and_devops/network_and_security/azure)
+- [Azure](/training/azure)
 {.links-list}
-- [GCP](/training/cloud_and_devops/network_and_security/gcp)
+- [GCP](/training/gcp)
 {.links-list}
