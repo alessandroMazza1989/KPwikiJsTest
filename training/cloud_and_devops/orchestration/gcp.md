@@ -2,7 +2,7 @@
 title: GCP
 description: 
 published: true
-date: 2021-03-08T14:09:38.816Z
+date: 2021-03-08T14:32:48.457Z
 tags: cloud, gcp, orchestration
 editor: markdown
 dateCreated: 2021-03-08T14:09:38.816Z
