@@ -2,7 +2,7 @@
 title: Data Persistence
 description: 
 published: true
-date: 2021-03-08T11:49:44.846Z
+date: 2021-03-08T13:39:40.576Z
 tags: cloud, devops, data persistence
 editor: markdown
 dateCreated: 2021-03-08T11:49:44.846Z
