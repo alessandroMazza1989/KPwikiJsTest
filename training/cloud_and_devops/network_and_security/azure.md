@@ -2,20 +2,20 @@
 title: Azure
 description: 
 published: true
-date: 2021-03-08T10:21:50.866Z
+date: 2021-03-08T10:59:47.603Z
 tags: cloud, networking, security, azure
 editor: markdown
 dateCreated: 2021-03-08T10:16:39.453Z
 ---
 
 # Azure
-- [Azure Bastion](/training/cloud_and_devops/network_and_security/azure/azure_bastion)
+- [Azure Bastion](/training/azure/azure_bastion)
 {.links-list}
-- [Azure Load Balancer](/training/cloud_and_devops/network_and_security/azure/azure_load_balancer)
+- [Azure Load Balancer](/training/azure/azure_load_balancer)
 {.links-list}
-- [Virtual Network](/training/cloud_and_devops/network_and_security/azure/virtual_network)
+- [Virtual Network](/training/azure/virtual_network)
 {.links-list}
-- [Gateway VPN](/training/cloud_and_devops/network_and_security/azure/gateway_vpn)
+- [Gateway VPN](/training/azure/gateway_vpn)
 {.links-list}
-- [Azure Active Directory](/training/cloud_and_devops/network_and_security/azure/azure_active_directory)
+- [Azure Active Directory](/training/azure/azure_active_directory)
 {.links-list}
