@@ -1,8 +1,8 @@
 ---
 title: Azure
 description: 
-published: true
-date: 2021-03-08T14:32:03.083Z
+published: false
+date: 2021-03-08T16:53:52.609Z
 tags: cloud, devops, azure, data persistence
 editor: markdown
 dateCreated: 2021-03-08T13:14:54.632Z
