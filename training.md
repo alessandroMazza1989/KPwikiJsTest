@@ -2,7 +2,7 @@
 title: Training
 description: Key Partner training courses
 published: true
-date: 2021-02-10T09:21:55.758Z
+date: 2021-03-08T08:41:54.174Z
 tags: training
 editor: markdown
 dateCreated: 2020-01-31T09:15:42.614Z
@@ -23,4 +23,6 @@ It's important to not consider these paths as an academic papers, rather a list 
 - [Containers and Orchestration *Docker & Kubernetes training*](/training/containers)
 {.links-list}
 - [System Integration *System integration training course*](/training/integration)
+{.links-list}
+- [Cloud and DevOps *Learning path*](/training/cloud_and_devops)
 {.links-list}
