@@ -2,7 +2,7 @@
 title: Containers
 description: 
 published: true
-date: 2021-03-08T11:28:22.922Z
+date: 2021-03-08T11:35:49.462Z
 tags: cloud, containers
 editor: markdown
 dateCreated: 2021-03-08T09:45:55.563Z
@@ -13,9 +13,9 @@ dateCreated: 2021-03-08T09:45:55.563Z
 {.links-list}
 - [Nexus](/training/cloud_and_devops/tbd)
 {.links-list}
-- [AWS](/training/aws)
+- [AWS](/training/cloud_and_devops/containers/aws)
 {.links-list}
-- [Azure](/training/azure)
+- [Azure](/training/cloud_and_devops/containers/azure)
 {.links-list}
-- [Gcp](/training/gcp)
+- [Gcp](/training/cloud_and_devops/containers/gcp)
 {.links-list}
