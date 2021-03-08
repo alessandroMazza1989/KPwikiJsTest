@@ -1,8 +1,8 @@
 ---
 title: GCP
 description: 
-published: true
-date: 2021-03-08T14:42:44.742Z
+published: false
+date: 2021-03-08T17:00:11.012Z
 tags: cloud, containers, gcp
 editor: markdown
 dateCreated: 2021-03-08T11:44:09.031Z
