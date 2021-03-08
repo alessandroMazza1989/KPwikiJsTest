@@ -2,13 +2,15 @@
 title: Cloud and DevOps
 description: Cloud and DevOps
 published: true
-date: 2021-03-08T09:47:11.378Z
+date: 2021-03-08T10:46:06.960Z
 tags: cloud, devops
 editor: markdown
 dateCreated: 2021-03-08T08:40:26.339Z
 ---
 
 # Cloud and DevOps
+- [TBD *To be defined*](/training/cloud_and_devops/tbd)
+{.links-list}
 - [Network and Security *Learning path*](/training/cloud_and_devops/network_and_security)
 {.links-list}
 - [Containers *Learning path*](/training/cloud_and_devops/containers)
