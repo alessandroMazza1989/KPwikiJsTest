@@ -2,7 +2,7 @@
 title: Orchestration
 description: 
 published: true
-date: 2021-03-08T16:58:16.117Z
+date: 2021-03-08T16:58:28.411Z
 tags: cloud, orchestration
 editor: markdown
 dateCreated: 2021-03-08T13:32:23.571Z
@@ -39,4 +39,4 @@ Brief
 {.links-list}
 ## Google Cloud Platform
 - [Google Kubernetes Engine](/training/gcp/google_kubernetes_engine)
-{.links-list
+{.links-list}
