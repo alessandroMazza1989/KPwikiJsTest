@@ -2,7 +2,7 @@
 title: AWS
 description: 
 published: true
-date: 2021-03-08T14:27:03.820Z
+date: 2021-03-08T14:27:32.394Z
 tags: aws, cloud, governance
 editor: markdown
 dateCreated: 2021-03-08T14:26:12.093Z
