@@ -2,7 +2,7 @@
 title: Automation
 description: 
 published: true
-date: 2021-03-08T16:52:05.352Z
+date: 2021-03-08T16:52:24.771Z
 tags: cloud, automation
 editor: markdown
 dateCreated: 2021-03-08T13:17:41.816Z
@@ -26,10 +26,5 @@ Brief
 - [Azure Pipelines](/training/aws/azure_pipelines)
 {.links-list}
 ## Google Cloud Platform
-
-- [AWS *Learning path*](/training/cloud_and_devops/automation/aws)
-{.links-list}
-- [Azure *Learning path*](/training/cloud_and_devops/automation/azure)
-{.links-list}
-- [GCP *Learning path*](/training/cloud_and_devops/automation/gcp)
+- [Code Build](/training/gcp/code_build)
 {.links-list}
