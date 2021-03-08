@@ -2,7 +2,7 @@
 title: Compute
 description: 
 published: true
-date: 2021-03-08T11:03:49.922Z
+date: 2021-03-08T14:30:37.638Z
 tags: cloud, devops, compute
 editor: markdown
 dateCreated: 2021-03-08T11:03:49.922Z
