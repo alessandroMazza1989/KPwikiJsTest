@@ -2,14 +2,14 @@
 title: AWS
 description: 
 published: true
-date: 2021-03-08T13:58:25.719Z
+date: 2021-03-08T13:59:26.735Z
 tags: aws, cloud, orchestration
 editor: markdown
 dateCreated: 2021-03-08T13:58:25.719Z
 ---
 
 # AWS
-- [StepFunction](/training/aws/stepfuntion)
+- [StepFunction](/training/aws/stepfunction)
 {.links-list}
 - [ECS](/training/aws/ecs)
 {.links-list}
