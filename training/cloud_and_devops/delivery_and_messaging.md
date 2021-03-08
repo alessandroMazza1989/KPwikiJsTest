@@ -2,7 +2,7 @@
 title: Delivery and Messaging
 description: 
 published: true
-date: 2021-03-08T13:45:01.431Z
+date: 2021-03-08T13:56:04.498Z
 tags: cloud, devops, delivery, messaging
 editor: markdown
 dateCreated: 2021-03-08T13:45:01.431Z
