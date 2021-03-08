@@ -2,7 +2,7 @@
 title: DevOps, VCS, SDLC
 description: 
 published: true
-date: 2021-03-08T13:49:06.852Z
+date: 2021-03-08T13:49:52.801Z
 tags: cloud, devops, vcs, sdlc
 editor: markdown
 dateCreated: 2021-03-08T13:47:53.595Z
@@ -27,9 +27,9 @@ dateCreated: 2021-03-08T13:47:53.595Z
 {.links-list}
 - [Trello](/training/cloud_and_devops/tbd)
 {.links-list}
-- [AWS](/training/cloud_and_devops/aws)
+- [AWS](/training/cloud_and_devops/devops_vcs_sdlc/aws)
 {.links-list}
-- [Azure](/training/cloud_and_devops/azure)
+- [Azure](/training/cloud_and_devops/devops_vcs_sdlc/azure)
 {.links-list}
-- [GCP](/training/cloud_and_devops/gcp)
+- [GCP](/training/cloud_and_devops/devops_vcs_sdlc/gcp)
 {.links-list}
