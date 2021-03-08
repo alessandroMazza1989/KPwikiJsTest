@@ -2,7 +2,7 @@
 title: Azure
 description: 
 published: true
-date: 2021-03-08T14:03:53.300Z
+date: 2021-03-08T14:32:36.184Z
 tags: cloud, azure, orchestration
 editor: markdown
 dateCreated: 2021-03-08T14:03:53.300Z
