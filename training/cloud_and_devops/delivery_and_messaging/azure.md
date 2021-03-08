@@ -1,8 +1,8 @@
 ---
 title: Azure
 description: 
-published: true
-date: 2021-03-08T13:59:02.323Z
+published: false
+date: 2021-03-08T16:56:50.030Z
 tags: cloud, devops, azure, delivery, messaging
 editor: markdown
 dateCreated: 2021-03-08T13:57:17.939Z
