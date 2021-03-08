@@ -2,13 +2,15 @@
 title: DevOps, VCS, SDLC
 description: 
 published: true
-date: 2021-03-08T14:29:16.410Z
+date: 2021-03-08T16:58:49.454Z
 tags: cloud, devops, vcs, sdlc
 editor: markdown
 dateCreated: 2021-03-08T13:47:53.595Z
 ---
 
 # DevOps, VCS, SDLC
+
+## Commons
 - [OpenShift](/training/cloud_and_devops/tbd)
 {.links-list}
 - [Git](/training/cloud_and_devops/tbd)
@@ -27,9 +29,19 @@ dateCreated: 2021-03-08T13:47:53.595Z
 {.links-list}
 - [Trello](/training/cloud_and_devops/tbd)
 {.links-list}
-- [AWS](/training/cloud_and_devops/devops_vcs_sdlc/aws)
+
+## Amazon Web Services
+- [OpsWorks](/training/aws/opsworks)
 {.links-list}
-- [Azure](/training/cloud_and_devops/devops_vcs_sdlc/azure)
+- [CodeCommit](/training/aws/codecommit)
 {.links-list}
-- [GCP](/training/cloud_and_devops/devops_vcs_sdlc/gcp)
+
+## Microsoft Azure
+- [Azure Boards](/training/azure/azure_boards)
+{.links-list}
+- [Azure Repos](/training/azure/azure_repos)
+{.links-list}
+
+## Google Cloud Platform
+- [Cloud Source Repositories](/training/gcp/cloud_source_repositories)
 {.links-list}
