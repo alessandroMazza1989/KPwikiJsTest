@@ -1,8 +1,8 @@
 ---
 title: AWS
 description: 
-published: true
-date: 2021-03-08T14:31:53.862Z
+published: false
+date: 2021-03-08T16:53:17.117Z
 tags: aws, cloud, devops, data persistence
 editor: markdown
 dateCreated: 2021-03-08T11:53:50.219Z
