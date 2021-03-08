@@ -1,8 +1,8 @@
 ---
 title: GCP
 description: 
-published: true
-date: 2021-03-08T13:39:18.759Z
+published: false
+date: 2021-03-08T16:54:32.217Z
 tags: cloud, devops, gcp, data persistence
 editor: markdown
 dateCreated: 2021-03-08T13:27:36.895Z
