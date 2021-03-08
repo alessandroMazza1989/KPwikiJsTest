@@ -2,7 +2,7 @@
 title: AWS
 description: 
 published: true
-date: 2021-03-08T14:11:06.603Z
+date: 2021-03-08T14:15:04.839Z
 tags: aws, cloud, devops, logs, observability
 editor: markdown
 dateCreated: 2021-03-08T14:11:06.603Z
