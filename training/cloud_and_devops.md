@@ -2,7 +2,7 @@
 title: Cloud and DevOps
 description: Cloud and DevOps
 published: true
-date: 2021-03-08T13:40:00.956Z
+date: 2021-03-08T14:07:05.614Z
 tags: cloud, devops
 editor: markdown
 dateCreated: 2021-03-08T08:40:26.339Z
@@ -29,7 +29,7 @@ dateCreated: 2021-03-08T08:40:26.339Z
 {.links-list}
 - [Devops, VCS, SDLC *Learning path*](/training/cloud_and_devops/devops_vcs_sdlc)
 {.links-list}
-- [Logs and Observability *Learning path*](/training/cloud_and_devops/devops_vcs_sdlc)
+- [Logs and Observability *Learning path*](/training/cloud_and_devops/logs_and_observability)
 {.links-list}
 - [Governance *Learning path*](/training/cloud_and_devops/governance)
 {.links-list}
