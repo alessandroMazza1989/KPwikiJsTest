@@ -2,7 +2,7 @@
 title: AWS
 description: 
 published: true
-date: 2021-03-08T13:48:45.228Z
+date: 2021-03-08T13:55:45.025Z
 tags: aws, cloud, devops, delivery, messaging
 editor: markdown
 dateCreated: 2021-03-08T13:48:45.228Z
