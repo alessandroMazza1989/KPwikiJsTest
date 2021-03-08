@@ -2,7 +2,7 @@
 title: GCP
 description: 
 published: true
-date: 2021-03-08T11:04:08.771Z
+date: 2021-03-08T11:22:26.961Z
 tags: cloud, networking, security, gcp, google cloud platform
 editor: markdown
 dateCreated: 2021-03-08T10:30:32.493Z
