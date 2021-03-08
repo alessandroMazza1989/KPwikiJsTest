@@ -2,14 +2,14 @@
 title: Cloud and DevOps
 description: Cloud and DevOps
 published: true
-date: 2021-03-08T09:42:46.160Z
+date: 2021-03-08T09:47:11.378Z
 tags: cloud, devops
 editor: markdown
 dateCreated: 2021-03-08T08:40:26.339Z
 ---
 
 # Cloud and DevOps
-- [Network And Security *Learning path*](/training/cloud_and_devops/network_and_security)
+- [Network and Security *Learning path*](/training/cloud_and_devops/network_and_security)
 {.links-list}
 - [Containers *Learning path*](/training/cloud_and_devops/containers)
 {.links-list}
@@ -18,4 +18,18 @@ dateCreated: 2021-03-08T08:40:26.339Z
 - [Orchestration *Learning path*](/training/cloud_and_devops/orchestration)
 {.links-list}
 - [Service Proxy, Discovery and Mesh *Learning path*](/training/cloud_and_devops/service_proxy_discovery_mesh)
+{.links-list}
+- [Compute *Learning path*](/training/cloud_and_devops/compute)
+{.links-list}
+- [Data Persistence *Learning path*](/training/cloud_and_devops/data_persistence)
+{.links-list}
+- [Delivery and Messaging *Learning path*](/training/cloud_and_devops/delivery_and_messaging)
+{.links-list}
+- [Devops, VCS, SDLC *Learning path*](/training/cloud_and_devops/devops_vcs_sdlc)
+{.links-list}
+- [Logs and Observability *Learning path*](/training/cloud_and_devops/devops_vcs_sdlc)
+{.links-list}
+- [Governance *Learning path*](/training/cloud_and_devops/governance)
+{.links-list}
+- [Content Delivery *Learning path*](/training/cloud_and_devops/content_delivery)
 {.links-list}
