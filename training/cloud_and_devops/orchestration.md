@@ -2,7 +2,7 @@
 title: Orchestration
 description: 
 published: true
-date: 2021-03-08T13:52:05.517Z
+date: 2021-03-08T13:52:57.485Z
 tags: cloud, orchestration
 editor: markdown
 dateCreated: 2021-03-08T13:32:23.571Z
@@ -19,5 +19,5 @@ dateCreated: 2021-03-08T13:32:23.571Z
 {.links-list}
 - [Azure *Learning path*](/training/cloud_and_devops/orchestration/azure)
 {.links-list}
-- [GCP *Learning path*](/training/cloud_and_devops/gcp)
+- [GCP *Learning path*](/training/cloud_and_devops/orchestration/gcp)
 {.links-list}
