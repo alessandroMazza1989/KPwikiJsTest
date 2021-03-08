@@ -2,7 +2,7 @@
 title: Containers
 description: 
 published: true
-date: 2021-03-08T16:48:41.049Z
+date: 2021-03-08T16:49:10.565Z
 tags: cloud, containers
 editor: markdown
 dateCreated: 2021-03-08T09:45:55.563Z
@@ -20,6 +20,8 @@ dateCreated: 2021-03-08T09:45:55.563Z
 - [Azure Container Registry](/training/azure/azure_container_registry)
 {.links-list}
 ## Google Cloud Platform
+- [Container Registry *Learning path*](/training/container_registry)
+{.links-list}
 - [AWS](/training/cloud_and_devops/containers/aws)
 {.links-list}
 - [Azure](/training/cloud_and_devops/containers/azure)
