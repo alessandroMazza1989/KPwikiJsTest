@@ -2,7 +2,7 @@
 title: Training
 description: Key Partner training courses
 published: true
-date: 2021-03-08T08:41:54.174Z
+date: 2021-03-08T08:47:03.845Z
 tags: training
 editor: markdown
 dateCreated: 2020-01-31T09:15:42.614Z
