@@ -2,14 +2,14 @@
 title: AWS
 description: 
 published: true
-date: 2021-03-08T13:22:22.770Z
+date: 2021-03-08T13:22:40.333Z
 tags: aws, cloud, automation
 editor: markdown
 dateCreated: 2021-03-08T13:22:22.770Z
 ---
 
 # AWS
-- [Code Pipeline *Learning path*](/training/aws/code_pipeline)
+- [Code Pipeline](/training/aws/code_pipeline)
 {.links-list}
-- [Code Build *Learning path*](/training/aws/code_build)
+- [Code Build](/training/aws/code_build)
 {.links-list}
