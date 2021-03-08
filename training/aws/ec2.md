@@ -2,8 +2,8 @@
 title: AWS EC2
 description: 
 published: true
-date: 2021-03-08T11:06:36.551Z
-tags: aws, cloud, devops, compute, ec2
+date: 2021-03-08T14:44:08.966Z
+tags: aws, cloud, compute, ec2
 editor: markdown
 dateCreated: 2021-03-08T11:06:36.551Z
 ---
