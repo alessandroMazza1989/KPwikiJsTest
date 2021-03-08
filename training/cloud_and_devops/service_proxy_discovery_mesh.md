@@ -2,7 +2,7 @@
 title: Service Proxy, Discovery and Mesh
 description: 
 published: true
-date: 2021-03-08T10:48:44.670Z
+date: 2021-03-08T16:49:24.597Z
 tags: cloud, service proxy, discovery, mesh
 editor: markdown
 dateCreated: 2021-03-08T09:49:26.145Z
@@ -15,9 +15,30 @@ dateCreated: 2021-03-08T09:49:26.145Z
 {.links-list}
 - [3Scale](/training/cloud_and_devops/tbd)
 {.links-list}
-- [AWS](/training/cloud_and_devops/service_proxy_discovery_mesh/aws)
+
+## Amazon Web Services
+
+- [App Mesh](/training/aws/app_mesh)
 {.links-list}
-- [Azure](/training/cloud_and_devops/service_proxy_discovery_mesh/azure)
+- [API Gateway](/training/aws/api_gateway)
 {.links-list}
-- [GCP](/training/cloud_and_devops/service_proxy_discovery_mesh/gcp)
+- [Cloud Map](/training/aws/cloud_map)
+{.links-list}
+- [Route 53](/training/aws/route_53)
+{.links-list}
+
+## Microsoft Azure
+
+- [Azure DNS](/training/azure/azure_dns)
+{.links-list}
+- [Application Gateway](/training/azure/applicaton_gateway)
+{.links-list}
+- [Azure Spring Cloud Service Registry](/training/azure/azure_spring_cloud_service_registry)
+{.links-list}
+
+## Google Cloud Platform
+
+- [Cloud DNS](/training/gcp/cloud_dns)
+{.links-list}
+- [API Gateway](/training/gcp/api_gateway)
 {.links-list}
