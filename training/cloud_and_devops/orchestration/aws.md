@@ -2,7 +2,7 @@
 title: AWS
 description: 
 published: true
-date: 2021-03-08T13:59:26.735Z
+date: 2021-03-08T14:32:25.441Z
 tags: aws, cloud, orchestration
 editor: markdown
 dateCreated: 2021-03-08T13:58:25.719Z
