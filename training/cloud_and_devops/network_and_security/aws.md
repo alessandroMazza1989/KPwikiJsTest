@@ -2,7 +2,7 @@
 title: AWS
 description: 
 published: true
-date: 2021-03-08T10:55:01.459Z
+date: 2021-03-08T10:55:19.367Z
 tags: aws, cloud, networking, security
 editor: markdown
 dateCreated: 2021-03-08T10:00:58.038Z
@@ -15,9 +15,9 @@ dateCreated: 2021-03-08T10:00:58.038Z
 {.links-list}
 - [IAM](/training/aws/iam)
 {.links-list}
-- [ACL](/training/cloud_and_devops/network_and_security/aws/acl)
+- [ACL](/training/aws/acl)
 {.links-list}
-- [Security Groups](/training/cloud_and_devops/network_and_security/aws/security_groups)
+- [Security Groups](/training/aws/security_groups)
 {.links-list}
 - [Elastic Load Balancer](/training/cloud_and_devops/network_and_security/aws/elastic_load_balancer)
 {.links-list}
