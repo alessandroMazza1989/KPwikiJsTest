@@ -2,7 +2,7 @@
 title: DevOps, VCS, SDLC
 description: 
 published: true
-date: 2021-03-08T13:48:17.677Z
+date: 2021-03-08T13:49:06.852Z
 tags: cloud, devops, vcs, sdlc
 editor: markdown
 dateCreated: 2021-03-08T13:47:53.595Z
