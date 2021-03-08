@@ -2,7 +2,7 @@
 title: Automation
 description: 
 published: true
-date: 2021-03-08T16:51:15.083Z
+date: 2021-03-08T16:51:19.042Z
 tags: cloud, automation
 editor: markdown
 dateCreated: 2021-03-08T13:17:41.816Z
@@ -21,7 +21,7 @@ Brief
 
 ## Microsoft Azure
 
-# Google Cloud Platform
+##Google Cloud Platform
 
 - [AWS *Learning path*](/training/cloud_and_devops/automation/aws)
 {.links-list}
