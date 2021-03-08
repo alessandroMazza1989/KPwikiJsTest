@@ -2,13 +2,16 @@
 title: Service Proxy, Discovery and Mesh
 description: 
 published: true
-date: 2021-03-08T16:49:24.597Z
+date: 2021-03-08T16:54:52.163Z
 tags: cloud, service proxy, discovery, mesh
 editor: markdown
 dateCreated: 2021-03-08T09:49:26.145Z
 ---
 
 # Service Proxy, Discovery and Mesh
+
+## Commons
+
 - [Nginx](/training/cloud_and_devops/tbd)
 {.links-list}
 - [Linkerd](/training/cloud_and_devops/tbd)
