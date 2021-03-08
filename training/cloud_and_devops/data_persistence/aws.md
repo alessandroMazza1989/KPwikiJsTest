@@ -2,7 +2,7 @@
 title: AWS
 description: 
 published: true
-date: 2021-03-08T11:53:50.219Z
+date: 2021-03-08T12:11:06.335Z
 tags: aws, cloud, devops, data persistence
 editor: markdown
 dateCreated: 2021-03-08T11:53:50.219Z
@@ -19,7 +19,7 @@ dateCreated: 2021-03-08T11:53:50.219Z
 {.links-list}
 - [Redshift](/training/aws/redshift)
 {.links-list}
-- [EBS](/training/aws/s3)
+- [EBS](/training/aws/ebs)
 {.links-list}
-- [EFS](/training/aws/s3)
+- [EFS](/training/aws/efs)
 {.links-list}
