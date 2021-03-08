@@ -2,7 +2,7 @@
 title: Containers
 description: 
 published: true
-date: 2021-03-08T14:29:58.242Z
+date: 2021-03-08T16:47:56.118Z
 tags: cloud, containers
 editor: markdown
 dateCreated: 2021-03-08T09:45:55.563Z
@@ -13,6 +13,9 @@ dateCreated: 2021-03-08T09:45:55.563Z
 {.links-list}
 - [Nexus](/training/cloud_and_devops/tbd)
 {.links-list}
+## Amazon Web Services
+## Microsoft Azure
+## Google Cloud Platform
 - [AWS](/training/cloud_and_devops/containers/aws)
 {.links-list}
 - [Azure](/training/cloud_and_devops/containers/azure)
