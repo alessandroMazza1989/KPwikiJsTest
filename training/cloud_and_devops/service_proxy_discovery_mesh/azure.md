@@ -1,8 +1,8 @@
 ---
 title: Azure
 description: 
-published: true
-date: 2021-03-08T10:58:40.423Z
+published: false
+date: 2021-03-08T17:02:45.217Z
 tags: cloud, devops, service proxy, discovery, mesh, azure
 editor: markdown
 dateCreated: 2021-03-08T10:08:26.887Z
