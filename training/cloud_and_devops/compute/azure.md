@@ -1,8 +1,8 @@
 ---
 title: Azure
 description: 
-published: true
-date: 2021-03-08T14:31:14.395Z
+published: false
+date: 2021-03-08T16:51:10.948Z
 tags: cloud, devops, azure, compute
 editor: markdown
 dateCreated: 2021-03-08T11:23:10.370Z
