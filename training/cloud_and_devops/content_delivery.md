@@ -2,7 +2,7 @@
 title: Content Delivery
 description: 
 published: true
-date: 2021-03-08T14:24:39.375Z
+date: 2021-03-08T14:28:49.423Z
 tags: cloud, devops, content delivery
 editor: markdown
 dateCreated: 2021-03-08T14:24:39.375Z
