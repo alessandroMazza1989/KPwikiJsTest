@@ -2,7 +2,7 @@
 title: Containers
 description: 
 published: true
-date: 2021-03-08T11:23:49.321Z
+date: 2021-03-08T11:23:54.200Z
 tags: cloud, containers
 editor: markdown
 dateCreated: 2021-03-08T09:45:55.563Z
@@ -17,5 +17,5 @@ dateCreated: 2021-03-08T09:45:55.563Z
 {.links-list}
 - [Nexus](/training/azure)
 {.links-list}
-- [Nexus](/training/gcp
+- [Nexus](/training/gcp)
 {.links-list}
