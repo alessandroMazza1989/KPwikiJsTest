@@ -2,7 +2,7 @@
 title: Orchestration
 description: 
 published: true
-date: 2021-03-08T16:55:16.334Z
+date: 2021-03-08T16:56:44.035Z
 tags: cloud, orchestration
 editor: markdown
 dateCreated: 2021-03-08T13:32:23.571Z
@@ -37,13 +37,8 @@ Brief
 {.links-list}
 - [Azure Spring Cloud](/training/azure/azure_spring_cloud)
 {.links-list}
-## Google Cloud Platform
-- [Google Kubernetes Engine](/training/gcp/google_kubernetes_engine)
-{.links-list}
 
-- [AWS *Learning path*](/training/cloud_and_devops/orchestration/aws)
-{.links-list}
-- [Azure *Learning path*](/training/cloud_and_devops/orchestration/azure)
-{.links-list}
+## Google Cloud Platform
+
 - [GCP *Learning path*](/training/cloud_and_devops/orchestration/gcp)
 {.links-list}
