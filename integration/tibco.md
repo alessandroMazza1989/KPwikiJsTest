@@ -2,7 +2,7 @@
 title: TIBCO
 description: TIBCO Products
 published: true
-date: 2021-03-05T09:50:42.503Z
+date: 2021-03-11T16:09:26.518Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T17:17:00.925Z
@@ -26,4 +26,6 @@ This part doesn't substitute the official doc (https://docs.tibco.com/) that rem
 6. [Hawk *Application Monitoring*](/integration/tibco/hawk)
 {.links-list}
 7. [BPM *Business Process Management*](/integration/tibco/bpm)
+{.links-list}
+8. [Scribe *Guidelines and reference to TIBCO resources and official doc*](/integration/tibco/scribe)
 {.links-list}
