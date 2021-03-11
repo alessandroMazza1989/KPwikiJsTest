@@ -2,8 +2,10 @@
 title: Scribe
 description: Scribe introduction
 published: true
-date: 2020-02-25T16:03:22.711Z
+date: 2021-03-11T16:09:18.566Z
 tags: 
+editor: markdown
+dateCreated: 2020-02-25T14:06:27.024Z
 ---
 
 # **TIBCO Scribe® Online**
