@@ -2,7 +2,7 @@
 title: Training
 description: Key Partner training courses
 published: true
-date: 2021-03-11T16:07:27.436Z
+date: 2021-03-11T16:10:32.586Z
 tags: training
 editor: markdown
 dateCreated: 2020-01-31T09:15:42.614Z
@@ -14,11 +14,7 @@ It's important to not consider these paths as an academic papers, rather a list 
 **Don't limit your knowledge!**
 <p>&nbsp;</p>
 
-- [Training organization *Struttura dei moduli dei training*](/training/tableOfContents)
-{.links-list}
 - [Common Topics Old *Argomenti comuni*](/training/commonsold)
-{.links-list}
-- [Tibco *Guidelines to TIBCO resources and official doc*](/training/tibco)
 {.links-list}
 - [Containers and Orchestration *Docker & Kubernetes training*](/training/containers)
 {.links-list}
