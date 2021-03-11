@@ -2,7 +2,7 @@
 title: Training
 description: Key Partner training courses
 published: true
-date: 2021-03-11T16:11:05.369Z
+date: 2021-03-11T16:13:02.122Z
 tags: training
 editor: markdown
 dateCreated: 2020-01-31T09:15:42.614Z
@@ -16,7 +16,7 @@ It's important to not consider these paths as an academic papers, rather a list 
 
 - [Common Topics Old *Argomenti comuni*](/training/commonsold)
 {.links-list}
-- [Common Topics *KP Common Topics*](/training/commons)
+- [Common Topics *Training Common Topics*](/training/commons)
 {.links-list}
 - [Containers and Orchestration *Docker & Kubernetes training*](/training/containers)
 {.links-list}
