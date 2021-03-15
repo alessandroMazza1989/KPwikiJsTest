@@ -2,7 +2,7 @@
 title: Digital Applications
 description: 
 published: true
-date: 2021-03-15T09:59:53.953Z
+date: 2021-03-15T15:21:45.157Z
 tags: webapp
 editor: markdown
 dateCreated: 2021-03-15T09:39:21.436Z
@@ -21,4 +21,8 @@ dateCreated: 2021-03-15T09:39:21.436Z
 - [ExpressJS *Learning path*](/training/digital/express)
 {.links-list}
 - [Java Spring *Learning path*](/training/digital/spring)
+{.links-list}
+
+---
+- [GIT *Learning path*](/training/common/spring)
 {.links-list}
