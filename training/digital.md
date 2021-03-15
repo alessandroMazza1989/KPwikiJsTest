@@ -2,7 +2,7 @@
 title: Digital Applications
 description: 
 published: true
-date: 2021-03-15T15:21:45.157Z
+date: 2021-03-15T15:23:51.098Z
 tags: webapp
 editor: markdown
 dateCreated: 2021-03-15T09:39:21.436Z
@@ -24,5 +24,5 @@ dateCreated: 2021-03-15T09:39:21.436Z
 {.links-list}
 
 ---
-- [GIT *Learning path*](/training/common/spring)
+- [GIT *Basic and Advanced Concepts*](/training/commons/versioning/git)
 {.links-list}
