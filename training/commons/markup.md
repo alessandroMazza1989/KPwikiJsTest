@@ -2,7 +2,7 @@
 title: Markup Languages
 description: XML, DOM, DTD, XSD, XPATH, XSLT
 published: true
-date: 2021-02-05T15:20:51.182Z
+date: 2021-03-15T15:12:02.497Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-05T15:20:51.182Z
@@ -23,4 +23,6 @@ A markup language is a computer language that uses tags to define elements withi
 5. [XPATH *XML Navigation*](/training/commons/markup/xml/xpath)
 {.links-list}
 6. [XSLT *eXtensible Stylesheet Language Transformations*](/training/commons/markup/xml/xslt)
+{.links-list}
+7. [HTML *HyperText Markup Language*](/training/commons/markup/html)
 {.links-list}
