@@ -2,7 +2,7 @@
 title: Angular
 description: 
 published: true
-date: 2021-03-16T08:53:39.762Z
+date: 2021-03-16T08:55:58.964Z
 tags: angular
 editor: markdown
 dateCreated: 2021-03-16T08:36:22.463Z
@@ -41,4 +41,5 @@ Angular is a modular client framework for building scalable single-page applicat
 - **External Links**
 [Angular documentation](http://angular.io/docs)
 [Bootcamp project](https://gitlab.com/BU7/learning/kp-angular-bootcamp-fe)
-[TypeScript language](https://www.typescriptlang.org/)
+[TypeScript language](http://www.typescriptlang.org/)
+[RxJS Library](http://rxjs-dev.firebaseapp.com/guide/overview)
