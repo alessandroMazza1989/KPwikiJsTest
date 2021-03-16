@@ -1,8 +1,8 @@
 ---
 title: Digital Applications
-description: 
+description: Technologies for Web Applications
 published: true
-date: 2021-03-16T08:57:17.042Z
+date: 2021-03-16T08:59:05.635Z
 tags: webapp
 editor: markdown
 dateCreated: 2021-03-15T09:39:21.436Z
