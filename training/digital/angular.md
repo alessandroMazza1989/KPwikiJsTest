@@ -2,21 +2,22 @@
 title: Angular
 description: 
 published: true
-date: 2021-03-16T08:36:22.463Z
+date: 2021-03-16T08:53:39.762Z
 tags: angular
 editor: markdown
 dateCreated: 2021-03-16T08:36:22.463Z
 ---
 
-# Angular
-short description here
----
+Angular is a modular client framework for building scalable single-page applications (SPA). Developed by Google in TypeScript, Angular is open-source and available under the MIT license.
+<p>&nbsp;</p>
+
 ### Intro
 - **Goals**
    1. Web Applications and Single Page Applications
    2. Create and run an Angular project
    3. Structure of an Angular project
    4. Role of components and services
+   5. Package.json and project dependencies
 
 ### Basic concepts
 - **Goals**
@@ -30,10 +31,9 @@ short description here
    8. RxJS Observables
    9. Communication with back-end services
 
-### Additional concepts
+### Additional tools
 - **Goals**
-   1. Package.json and project dependencies
-   2. Interceptors and guards
+   1. Interceptors and guards
    3. Local storage and session storage
    4. RxJS Subjects
 
