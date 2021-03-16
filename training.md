@@ -2,7 +2,7 @@
 title: Training
 description: Key Partner training courses
 published: true
-date: 2021-03-15T15:26:38.924Z
+date: 2021-03-16T08:33:20.521Z
 tags: training
 editor: markdown
 dateCreated: 2020-01-31T09:15:42.614Z
@@ -24,5 +24,5 @@ It's important to not consider these paths as an academic papers, rather a list 
 {.links-list}
 - [Cloud and DevOps *Learning path*](/training/cloud_and_devops)
 {.links-list}
-- [Digital Applications *Learning paths*](/training/digital)
+- [Digital Applications *Technologies for Web Applications*](/training/digital)
 {.links-list}
