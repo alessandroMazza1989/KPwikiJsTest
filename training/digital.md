@@ -2,13 +2,11 @@
 title: Digital Applications
 description: 
 published: true
-date: 2021-03-15T15:23:51.098Z
+date: 2021-03-16T08:57:17.042Z
 tags: webapp
 editor: markdown
 dateCreated: 2021-03-15T09:39:21.436Z
 ---
-
-# Digital Applications
 
 - [Angular *Learning path*](/training/digital/angular)
 {.links-list}
