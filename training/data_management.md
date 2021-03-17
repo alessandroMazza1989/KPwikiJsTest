@@ -2,7 +2,7 @@
 title: Data Management
 description: 
 published: true
-date: 2021-03-17T10:25:08.071Z
+date: 2021-03-17T10:25:45.709Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-17T10:19:06.913Z
@@ -25,5 +25,5 @@ INTRO
 {.links-list}
 7. [TIBCO Spotfire *General concept and usage*](/training/data_management/tibcospotfire )
 {.links-list}
-8. [Datagog *General concept and usage*](/training/data_management/datadog )
+8. [Datadog *General concept and usage*](/training/data_management/datadog )
 {.links-list}
