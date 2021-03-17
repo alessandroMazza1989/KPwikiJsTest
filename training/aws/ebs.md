@@ -2,7 +2,7 @@
 title: EBS
 description: 
 published: true
-date: 2021-03-17T16:55:30.320Z
+date: 2021-03-17T16:58:04.987Z
 tags: aws, cloud, data persistence, ebs, block storage
 editor: markdown
 dateCreated: 2021-03-08T12:11:56.140Z
@@ -62,7 +62,7 @@ In fase di ripristino, il volume viene subito avviato ma i dati vengono trasferi
 
 Amazon EBS offre supporto nativo all’encryption dei dati, su tutte le tipologie di volume.
 
-Quando si lancia un volume criptato, AWS usa il servizio **KMS** (Key Management Service) per gestire le chiavi.
+Quando si lancia un volume criptato, AWS usa il servizio **KMS** (Key Management Service) per gestire le chiavi di cifratura.
 
 L’encryption è trasparente, l’accesso ai dati rimane lo stesso e le performance sono le stesse (minima latency). Gli snapshot fatti su istanze criptate sono criptati, così come i relativi volumi restored.
 
