@@ -2,7 +2,7 @@
 title: Amazon EC2
 description: 
 published: true
-date: 2021-03-17T15:58:26.955Z
+date: 2021-03-17T16:12:38.303Z
 tags: aws, cloud, compute, ec2, auto-scaling, auto scaling
 editor: markdown
 dateCreated: 2021-03-08T11:06:36.551Z
@@ -149,6 +149,32 @@ EC2 è un servizio che si paga per ogni ora in cui un’istanza è attiva. Ci so
   	- il cliente la termina;
     - il prezzo supera quanto dichiarato dall’utente;
     - non c’è la necessaria capacità inutilizzata per il carico di lavoro;
+
+### Tenancy Options
+Ci sono diverse opzioni per la locazione delle istanze EC2:
+
+- **Shared tenancy**: è la locazione di default per tutte le istanze EC2. Significa che una singola macchina host può ospitare più istanze di customer differenti;
+- **Dedicated Instances**: girano su hardware dedicato a un **singolo customer** (tutte le istanze dedicate di uno stesso customer gireranno sulla stessa macchina). Ad ogni modo, le dedicated instances possono condividere hardware con altre istanze dello stesso account AWS che non sono dichiarate come dedicated instances;
+- **Dedicated Host**: è un server fisico con capacità completamente dedicata a un singolo customer. Può aiutare nella gestione di costi di licenza;
+
+### Placement Groups
+
+Sono raggruppamenti logici di istanze all’interno di una singola Availability Zone e abilitano le istanza a partecipare a una rete a 10Gbs con bassissima latenza. Ovviamente le istanze devono essere in grado di avere network performance avanzate.
+
+## Instance Stores
+
+Un instance store fornisce uno storage block-level **temporaneo** ad un’istanza.
+Questo storage è localizzato nel disco attached all’host. E’ ideale per memorizzazioni temporanee che cambiano di frequente.
+La dimensione e il tipo di instance store dipende dal tipo di istanza.
+I suoi costi sono inclusi nel costo dell’istanza. Il concetto chiave è che però sono dati temporanei, e vengono **persi** quando:
+
+- si verifica un failure nel driver del disco;
+- l’istanza viene stoppata (in caso di reboot invece viene mantenuto);
+- l’istanza viene terminata;
+
+## Elastic Block Storage (EBS)
+
+[EBS](/training/aws/ebs)
 
 ### References
 
