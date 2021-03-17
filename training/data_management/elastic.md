@@ -2,7 +2,7 @@
 title: Elastic
 description: 
 published: true
-date: 2021-03-17T13:51:54.641Z
+date: 2021-03-17T13:57:00.860Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-17T13:24:58.693Z
@@ -12,8 +12,8 @@ dateCreated: 2021-03-17T13:24:58.693Z
 - **Goals**
 1. Install and configure the Elastic Stack (Elasticsearch, Kibana, Logstash, Beats) components
 2. Implement an ETL flow using the Elastic Stack
-	 a) Beats => Elasticsearch
-   b) Beats => Logstash => Elasticsearch
+	 a) Beats => Elasticsearch ( Using Elasticsearch Ingest Pipelines )
+   b) Beats => Logstash => Elasticsearch ( Using Logstash Pipelines )
 3. Gather data from different data sources outside the Elastic Stack
 4. Use basic Ruby programming language to implement advanced data enrichment 
 5. Advanced configuration in Elastic Stack:
