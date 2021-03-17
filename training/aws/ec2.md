@@ -2,7 +2,7 @@
 title: Amazon EC2
 description: 
 published: true
-date: 2021-03-17T11:57:36.897Z
+date: 2021-03-17T15:58:26.955Z
 tags: aws, cloud, compute, ec2, auto-scaling, auto scaling
 editor: markdown
 dateCreated: 2021-03-08T11:06:36.551Z
@@ -119,6 +119,36 @@ Ci sono diversi aspetti che possono essere modificati dopo il lancio:
 Quando un’istanza non serve più, lo stato può essere messo a “Terminated”. In questo modo l’istanza viene spenta e rimossa dall’infrastruttura AWS.
 Per evitare episodi non propriamente voluti, è possibile abilitare la **Termination Protection** sulle istanze EC2.
 In questo modo ogni tentativo di mettere lo stato a “terminated” fallirà.
+
+## Options
+
+E’ possibile configurare diverse opzioni in EC2 per efficientare i costi, gestire la sicurezza e le performance.
+
+### Pricing Options
+
+EC2 è un servizio che si paga per ogni ora in cui un’istanza è attiva. Ci sono però 3 fasce di prezzo che si possono applicare, in base alla modalità con cui si è deciso di lanciare un’istanza:
+
+- **On Demand Instances**: il prezzo pubblicato sul website di AWS si riferisce alle istanze on-demand. E’ il pricing più flessibile che c’è, il cliente sa perfettamente quanto pagherà e può lanciare e terminare istanze a suo piacimento. E’ il meno conveniente dei piani se si guarda ad un consumo orario, ma la sua _flessibilità_ consente agli utenti di risparmiare fornendo risorse di calcolo variabili per _carichi di lavoro imprevedibili_;
+-  **Reserved Instances**: consente ai clienti di avere risorse riservate per carichi di lavoro previsti. Rispetto al piano on demand, consente di risparmiare fino al 75% sulla tariffa oraria, ma il cliente deve prenotarne l’utilizzo in anticipo. Ci sono due fattori che determinano il prezzo:
+	- **term committment**: cioè la durata della prenotazione (più è grande, maggiore è lo sconto);
+	- **le payment options**:
+           ▪ **all upfront**: tutto subito;
+           ▪ **partial upfront**: una parte subito e poi frazionata mensilmente per la durata della reservation;
+            ▪ **no upfront**: tutto mensilmente;
+	_Lo sconto applicato è maggiore tanto più è grande la cifra pagata upfront_.
+  
+	- E’ possibile anche modificare la Reserved Instance e continuare a beneficiare dei 
+		benefit della prenotazione. Non può essere fatta relativamente alla durata della 
+		prenotazione ma può riguardare:
+    	- la modifica della availability zone all’interno della stessa region;
+    	- modificare da VPC a EC2-classic;
+    	- modificare l’instance type all’interno della stessa family (solo per Linux);
+
+- **Spot Instances**: per carichi di lavoro che non sono time-critical e che possono anche tollerare interruzioni, le istanze Spot sono quelle che garantiscono il _massimo risparmio_. Il cliente sceglie quanto è disposto a pagare per avere un certo tipo di istanza. Quando il prezzo dell’istanza Spot (che dipende dalla domanda e dalla disponibilità di risorse inutilizzate) è al di sotto di quanto ha dichiarato il cliente, allora il cliente riceve l’istanza e inizia a pagare hourly.
+	L’istanza rimarrà avviata fino a che:
+  	- il cliente la termina;
+    - il prezzo supera quanto dichiarato dall’utente;
+    - non c’è la necessaria capacità inutilizzata per il carico di lavoro;
 
 ### References
 
