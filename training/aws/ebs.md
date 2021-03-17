@@ -2,7 +2,7 @@
 title: EBS
 description: 
 published: true
-date: 2021-03-17T16:37:38.260Z
+date: 2021-03-17T16:55:30.320Z
 tags: aws, cloud, data persistence, ebs, block storage
 editor: markdown
 dateCreated: 2021-03-08T12:11:56.140Z
@@ -51,9 +51,20 @@ Sono i volumi da scegliere in casi di applicazioni come:
 
 ### Backup/Recovery (Snapshots)
 
-I volumi EBS possono essere backuppati tramite la creazione di snapshots. Gli snapshots sono incrementali, ossia ogni volta vengono effettuati solo sulle nuove modifiche rispetto ai precedenti. E’ possibile eseguire snapshot in maniera manuale (Console, CLI, API) oppure in modo schedulato. 
-Gli snapshots vengono memorizzati in Amazon S3 (non del proprio account ma gestito da AWS). L’azione in se non si paga, ma si paga lo storage dello snapshot. Possono essere utilizzati come punto di ricovero solo all’interno della stessa region in cui sono stati creati. Se si ha bisogno di restorare un volume in un altra region, va copiato lo snapshot nell’altra region e poi usato come recovery.
-In fase di recovery, il volume viene subito tirato su ma i dati vengono trasferiti in modalità lazy load, ossia alla prima richiesta di accesso ai dati. E’ best practice inizializzare un volume creato da uno snapshot accedendo a tutti i suoi blocchi in modo da caricare tutti i dati.
+I volumi EBS possono essere soggetti a backup tramite la creazione di **snapshots**. Gli snapshots sono **incrementali**, ossia ogni volta vengono effettuati solo sulle nuove modifiche rispetto ai precedenti. E’ possibile eseguire snapshot in maniera manuale (Console, CLI, API) oppure in modo schedulato.
+
+Gli snapshots vengono memorizzati in Amazon S3 (non del proprio account ma gestito da AWS). L’azione in se non si paga, ma si paga lo storage dello snapshot. Possono essere utilizzati come punto di ripristino solo all’interno della stessa regione in cui sono stati creati. 
+Se si ha bisogno di ripristinare un volume in un altra region, va copiato lo snapshot nell’altra region e poi usato come recovery.
+
+In fase di ripristino, il volume viene subito avviato ma i dati vengono trasferiti in modalità **lazy load**, ossia alla prima richiesta di accesso ai dati. E’ _best practice_ inizializzare un volume creato da uno snapshot accedendo a tutti i suoi blocchi in modo da caricare tutti i dati.
+
+### Encryption
+
+Amazon EBS offre supporto nativo all’encryption dei dati, su tutte le tipologie di volume.
+
+Quando si lancia un volume criptato, AWS usa il servizio **KMS** (Key Management Service) per gestire le chiavi.
+
+L’encryption è trasparente, l’accesso ai dati rimane lo stesso e le performance sono le stesse (minima latency). Gli snapshot fatti su istanze criptate sono criptati, così come i relativi volumi restored.
 
 ## References
 
