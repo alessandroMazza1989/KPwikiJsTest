@@ -2,7 +2,7 @@
 title: Elastic
 description: 
 published: true
-date: 2021-03-18T17:19:49.266Z
+date: 2021-03-18T17:23:01.077Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-17T13:24:58.693Z
@@ -18,7 +18,7 @@ dateCreated: 2021-03-17T13:24:58.693Z
 4. Use basic Ruby programming language to implement advanced data enrichment 
 5. Advanced configuration in Elastic Stack:
 	 a) Configure Security and Data Encryption
-   b) Configure Kibana HA (High Availability)
+   b) Configure Kibana Multi Tenancy
    c) Configure Hot-Warm-Cold Architecture
    d) Configure the data lifecycle policy using ILM (Index Lifecycle Management)
    e) Configure data types and index settings using mappings and index templates
@@ -33,7 +33,7 @@ dateCreated: 2021-03-17T13:24:58.693Z
   
   
 
-## Training Path ( 17 work days )
+## Training Path ( 20 work days )
 
 1. Elastic Stack Overview:
    Install and run [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html)    and [Kibana](https://www.elastic.co/guide/en/kibana/current/targz.html) from tar.gz archive in single node    mode using the default configuration and navigate Kibana exploring the sample data. ( 1 day )
@@ -46,7 +46,7 @@ dateCreated: 2021-03-17T13:24:58.693Z
 5. Test (ETL + Visualization):
    ( 3 day )
 6. Logstash Level Up ( Server configuration, Advanced plugins):
-   ( 1 day )
+   ( 1.5 day )
 7. Kibana Level Up ( Server configuration, Kibana features ):
    ( 1 day )
 8. Elasticsearch Server Configuration:
@@ -55,7 +55,11 @@ dateCreated: 2021-03-17T13:24:58.693Z
    ( 3 day )
 10. Configuring Security in Elastic:
    ( 2 day )
+11. Configure Alerts in Elastic:
+    ( 1 day )
 11. Observability with Elastic:
    ( 0.5 day )
 12. Opensource Plugins Overview:
    ( 1 day )
+13. Elastic Alternatives Overview:
+   ( 0.5 day )
