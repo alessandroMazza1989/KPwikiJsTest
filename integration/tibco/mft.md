@@ -2,7 +2,7 @@
 title: MFT
 description: Managed File Transfer
 published: true
-date: 2021-03-18T09:07:43.330Z
+date: 2021-03-18T09:07:57.445Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-04T16:05:23.250Z
@@ -10,7 +10,7 @@ dateCreated: 2021-03-04T16:05:23.250Z
 
 # Managed File Transfer
 
-1. [Installation](/integration/tibco/mft/Installation)
+1. [Overview](/integration/tibco/mft/Overview)
 {.links-list}
 2. [Installation](/integration/tibco/mft/Installation)
 {.links-list}
