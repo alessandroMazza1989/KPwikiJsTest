@@ -2,7 +2,7 @@
 title: Users Configuration
 description: 
 published: true
-date: 2021-03-18T10:51:53.694Z
+date: 2021-03-18T12:29:42.581Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-18T10:34:09.845Z
@@ -11,6 +11,9 @@ dateCreated: 2021-03-18T10:34:09.845Z
 # Users and Segregation
 
 MFT offers the possibility to expand the user network and implement segregation strategies. The admin user is actually the "super admin", the only user who has full powers and who can first create other users. He cannot be part of any department and is the only one who can create departments, servers and modify system and infrastructure configurations. In summary, he is the only user who can do everything that is possible in MFT.
+
+Documentation can help, chech this out!!
+https://docs.tibco.com/pub/mftcc/8.3.0/doc/pdf/TIB_mftcc_8.3_users_guide.pdf?id=1
 
 ## Departments
 
