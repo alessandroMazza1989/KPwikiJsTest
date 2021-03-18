@@ -2,7 +2,7 @@
 title: Users Configuration
 description: 
 published: true
-date: 2021-03-18T10:50:50.366Z
+date: 2021-03-18T10:51:53.694Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-18T10:34:09.845Z
@@ -29,7 +29,7 @@ A department can be assigned transfers, users, servers and jobs; in this case on
 
 Groups are used to enable multiple users to be able to perform file transfer functions on a single transfer definition. After entering the Required Group Properties, you can then assign one or more users to the group. When you create a transfer definition, you can authorize a user and/or a group for that transfer. If you authorize a group, then every member of the group will have access to the transfer definition.
 
-# Users
+## Users
 
 Users can be assigned or not to groups or departments, it is convenient to create technical users and customer's users.
 Technical users can be used to perform all the transfers configured by the corporate team: for example is useful creating a secific user for every projet, this will help in the maintenance and the search of audits.
