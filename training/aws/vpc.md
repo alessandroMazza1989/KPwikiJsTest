@@ -2,7 +2,7 @@
 title: Amazon Virtual Private Cloud (VPC)
 description: 
 published: true
-date: 2021-03-18T09:49:49.019Z
+date: 2021-03-18T10:39:25.405Z
 tags: aws, cloud, networking, security, vpc
 editor: markdown
 dateCreated: 2021-03-08T10:04:18.916Z
@@ -81,6 +81,22 @@ Da ricordare:
 - ogni subnet ha la **propria** route table. Se non si specifica una route table specifica, AWS gli **associa la main table della VPC**;
 - è possibile **sostituire** la main route table con una custom in modo che in automatico venga associata ad ogni nuova subnet;
 - ogni rotta in una table specifica una destinazione CIDR e un target. Per esempio, il traffico destinato verso 172.16.0.0/12 è diretto verso il VPG;
+
+## Internet Gateways
+
+Un **Internet Gateway (IGW)** è un componente opzionale che consente la comunicazione tra istanze all’interno di una VPC e Internet. Un IGW è quindi un target all’interno di una VPC verso il quale **instradare tutto il traffico diretto verso Internet**. 
+
+Si occupa dell’**address translation** per le istanze alle quali è stato assegnato un IP pubblico.
+
+Le istanze EC2 all’interno di una VPC conoscono solo il loro indirizzo privato. Quando il traffico viene inviato da un’istanza verso Internet, l’ IGW traduce l’indirizzo di risposta nell’indirizzo pubblico dell’istanza (o EIP) e **mantiene il mapping tra indirizzo privato e indirizzo pubblico**.
+
+Quando quindi viene ricevuto traffico per quell’ istanza, IGW traduce l’indirizzo destinazione nell’indirizzo privato dell’istanza e inoltra verso l’istanza il traffico.
+
+Per creare un IGW si deve:
+1. Associare un IGW alla VPC;
+2. Creare una subnet route table per inviare tutto il traffico non locale (0.0.0.0/0) verso l’IGW;
+3. Configurare eventuali ACLs e security group per consentire solo il traffico desiderato da e verso la rete;
+4. Assegnare un IP pubblico (o un EIP) all’istanza che deve comunicare con l’esterno;
 
 ## References
 - https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
