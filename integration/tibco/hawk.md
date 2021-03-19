@@ -2,7 +2,7 @@
 title: Hawk
 description: Application Monitoring
 published: true
-date: 2021-03-19T14:39:28.897Z
+date: 2021-03-19T15:55:41.726Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-04T16:07:13.675Z
@@ -44,5 +44,7 @@ Appspace configuration:
 > bw.hawk.hma.rv.network=;"network"
 
 Restart appspace to make the changes effective: from now on, a microagent will be available for each appnode, it will be used fot monitoring.
+
+## External variable tip for rule management
 
 
