@@ -2,7 +2,7 @@
 title: Amazon Virtual Private Cloud (VPC)
 description: 
 published: true
-date: 2021-03-19T15:21:10.732Z
+date: 2021-03-19T15:48:05.885Z
 tags: aws, cloud, networking, security, vpc
 editor: markdown
 dateCreated: 2021-03-08T10:04:18.916Z
@@ -107,6 +107,27 @@ AWS in automatico **crea e associa un DHCP ad una VPC** quando essa viene creata
 - domain-name (defaulted to the domain name for your region)
 
 **AmazonProvidedDNS** è un DNS server di AWS che abilita il DNS per le istanze che devono comunicare tramite IGW.
+
+## Elastic IP Addresses (EIPs)
+
+AWS conserva un **pool di indirizzi IP pubblici** in ogni regione e li rende disponibili per essere associati alle risorse all’interno di una VPC.
+
+Un **Elastic IP address (EIP)** è un **indirizzo IP statico e pubblico** che può essere associato e rilasciato. Consente di mantenere un set fisso di IP addresses nonostante l’infrastruttura sottostante possa variare.
+
+Da ricordare:
+- prima di associare un EIP ad un’istanza esso va creato;
+- EIPs sono specifici di una regione (_non possono essere assegnati ad istanze in regioni diverse da quella dove è stato creato_);
+- C’è una relazione _one-to-one_ tra **network interface e EIP**;
+- E’ possibile muovere un EIP da un’istanza ad un’altra, anche tra diverse VPC ma purché siano all’interno della stessa regione;
+- EIP rimane associato **fino a che non viene esplicitamente rilasciato**;
+- EIP **hanno un costo** quando sono associati ad un’istanza _non attiva_;
+
+## Elastic Network Interfaces (ENIs)
+
+Un **ENI** è una **interfaccia di rete virtuale** che può essere collegata ad una subnet di una VPC.
+Può avere **un solo indirizzo IP pubblico** e diversi indirizzi privati, uno dei quali è il cosiddetto **primario**.
+
+Consentono di creare una rete gestita, di utilizzare strumenti di networking e sicurezza nella VPC, creare istanze dual-homed, etc.
 
 ## References
 - https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
