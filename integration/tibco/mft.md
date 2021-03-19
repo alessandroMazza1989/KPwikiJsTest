@@ -2,7 +2,7 @@
 title: MFT
 description: Managed File Transfer
 published: true
-date: 2021-03-18T10:51:23.299Z
+date: 2021-03-19T10:38:29.885Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-04T16:05:23.250Z
@@ -10,17 +10,21 @@ dateCreated: 2021-03-04T16:05:23.250Z
 
 # Managed File Transfer
 
-1. [Overview](/integration/tibco/mft/Overview)
+1. [Overview](/integration/tibco/mft/overview)
 {.links-list}
-2. [Installation](/integration/tibco/mft/Installation)
+2. [Installation](/integration/tibco/mft/installation)
 {.links-list}
-3. [Users Configuration](/integration/tibco/mft/UsersConfiguration)
+3. [System Configuration](/integration/tibco/mft/systemConfiguration)
 {.links-list}
-4. [Servers Configuration](/integration/tibco/mft/ServersConfiguration)
+4. [Users Configuration](/integration/tibco/mft/usersConfiguration)
 {.links-list}
-5. [Transfer Configuration](/integration/tibco/mft/TransferConfiguration)
+5. [Servers Configuration](/integration/tibco/mft/serversConfiguration)
 {.links-list}
-6. [Job Configuration](/integration/tibco/mft/JobConfiguration)
+6. [Transfer Configuration](/integration/tibco/mft/transferConfiguration)
 {.links-list}
-7. [DNI Configuration](/integration/tibco/mft/DNIConfiguration)
+7. [Job Configuration](/integration/tibco/mft/jobConfiguration)
+{.links-list}
+8. [DNI Configuration](/integration/tibco/mft/dniConfiguration)
+{.links-list}
+9. [Job/DNI Pros and Cons](/integration/tibco/mft/jobdni)
 {.links-list}
