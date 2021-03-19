@@ -2,7 +2,7 @@
 title: Elastic
 description: 
 published: true
-date: 2021-03-19T12:16:53.328Z
+date: 2021-03-19T12:21:12.725Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-17T13:24:58.693Z
@@ -10,18 +10,18 @@ dateCreated: 2021-03-17T13:24:58.693Z
 
 # Elastic Stack
 ## **Goals**
-1. Install and configure the Elastic Stack (Elasticsearch, Kibana, Logstash, Beats) components
-2. Implement an ETL flow using the Elastic Stack
+1. *Install and configure the Elastic Stack (Elasticsearch, Kibana, Logstash, Beats) components*
+2. *Implement an ETL flow using the Elastic Stack*
 	 a) Beats => Elasticsearch ( Using Elasticsearch Ingest Pipelines )
    b) Beats => Logstash => Elasticsearch ( Using Logstash Pipelines )
-3. Gather data from different data sources outside the Elastic Stack
-4. Advanced configuration in Elastic Stack:
+3. *Gather data from different data sources outside the Elastic Stack*
+4. *Advanced configuration in Elastic Stack:*
 	 a) Configure Security and Data Encryption
    b) Configure Kibana Multi Tenancy
    c) Configure Hot-Warm-Cold Architecture
    d) Configure the data lifecycle policy using ILM (Index Lifecycle Management)
    e) Configure data types and index settings using mappings and index templates
-5. Use Kibana to visualize data
+5. *Use Kibana to visualize data*
 
 - *Useful Links*
   [**Elastic Free Training**](https://www.elastic.co/training/)
