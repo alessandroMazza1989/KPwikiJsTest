@@ -2,7 +2,7 @@
 title: DNI Configuration
 description: 
 published: true
-date: 2021-03-19T10:30:23.116Z
+date: 2021-03-19T10:32:40.374Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-19T10:30:23.116Z
@@ -28,5 +28,9 @@ Backup the DNIConfig.cfg file and modify the following parameters:
 - ListenIPPort: 		(default 47777)
 - AcceptIPAddress:	Ip Address of the CC
 
-Run the perl command DNIDaemon.pl c: DNIConfig.cfg encrypt and enter UserID and password where required. Then the perl command DNIDaemon.pl c: DNIConfig.cfg
+Run the perl command 
+- 		DNIDaemon.pl c: DNIConfig.cfg encrypt 
+and enter UserID and password where required. Then run the perl command 
+-		DNIDaemon.pl c: DNIConfig.cfg
 In the Platform Server settings, update the section shown in the following image.
+
