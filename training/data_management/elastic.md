@@ -2,7 +2,7 @@
 title: Elastic
 description: 
 published: true
-date: 2021-03-18T17:23:01.077Z
+date: 2021-03-19T11:00:30.284Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-17T13:24:58.693Z
@@ -40,11 +40,14 @@ dateCreated: 2021-03-17T13:24:58.693Z
 2. Regex and Grok patterns:
    Understanding what the [Regular Expressions](https://blog.chalda.it/guida-alla-sintassi-delle-espressioni-regolari-217.html#gruppi ) (RegEx) are and understand their implementaion in [Grok](https://grokdebug.herokuapp.com/patterns#) patterns used both in Logstash and Elasticsearch ( 1.5 day )
 3. Basic ETL using Beats and Logstash:
-   ( 1.5 day )
+   Understanding of what a [ETL](https://www.youtube.com/watch?v=a5C-Bw8y9gM) (Extract Transform Load) flow is. Understanding of what a [Logstash](https://www.elastic.co/guide/en/logstash/current/getting-started-with-logstash.html) pipeline is and basic tests with Grok filter plugin. Overview of [Elastic Beats](https://www.elastic.co/guide/en/beats/libbeat/current/beats-reference.html) and [Elastic Agent](https://www.elastic.co/guide/en/fleet/current/index.html). Use of [Filebeat](https://www.elastic.co/guide/en/beats/filebeat/current/index.html) to ingest data from log files and using Logstash to parse data and send them to Elasticsearch.
+   ( 2 day )
 4. Basic Kibana usage:
-   ( 0.5 day )
+Overview of [Kibana](https://www.elastic.co/guide/en/kibana/current/introduction.html). Creation of an [index pattern](https://www.elastic.co/guide/en/kibana/current/index-patterns.html) to search data. Overview of the basic visualization and basic [Dashboard building](https://www.elastic.co/guide/en/kibana/current/dashboard.html). ( 1 day )
+- Video Resources [Getting started with Kibana](https://www.elastic.co/webinars/getting-started-kibana)
+   
 5. Test (ETL + Visualization):
-   ( 3 day )
+Implement an ETL flow Filebeat->Logstash->Elasticsearch and visualize data on Kibana dashboard; using new filter plugins. This tests the previously studied concepts and the ability to search in the docs for new features. ( 3 day )
 6. Logstash Level Up ( Server configuration, Advanced plugins):
    ( 1.5 day )
 7. Kibana Level Up ( Server configuration, Kibana features ):
