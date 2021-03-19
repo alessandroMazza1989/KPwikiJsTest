@@ -2,7 +2,7 @@
 title: Appendixes
 description: Tibco BW 6 Appendixes
 published: true
-date: 2021-03-19T10:54:59.477Z
+date: 2021-03-19T11:10:59.062Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-17T17:05:10.291Z
@@ -18,5 +18,5 @@ dateCreated: 2021-03-17T17:05:10.291Z
 {.links-list}
 4. [Appendix 4 *Installing Apache Maven and Maven Plugin for BW6.6.1*](/integration/tibco/bw/6/appendix/4)
 {.links-list}
-4. [Appendix 5 *Zero downtime upgrade approach for BW6*](/integration/tibco/bw/6/appendix/5)
+5. [Appendix 5 *Zero downtime upgrade approach for BW6*](/integration/tibco/bw/6/appendix/5)
 {.links-list}
