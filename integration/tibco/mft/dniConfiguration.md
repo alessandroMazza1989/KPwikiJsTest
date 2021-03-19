@@ -2,7 +2,7 @@
 title: DNI Configuration
 description: 
 published: true
-date: 2021-03-19T10:34:04.074Z
+date: 2021-03-19T10:37:16.545Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-19T10:30:23.116Z
@@ -17,6 +17,7 @@ There are two types of configurable DNI: DNI send and DNI receive.
 - DNI send: it reads in the predefined local folders and in the presence of added or modified files sends these ones to the remote system
 - DNI receive: through the Platform Server instance of the Internet Server it extracts the list of the files in the remote folder and, as in the previous case, downloads the files to the local Platform Server
 
+For more information, see TIBCO Perl Directory Named Initiation (DNI) Installation and Operations Guide contained within the dni.tar file, which is located in the MFTPS_install/dni directory.
 
 ---
 To enable the Platform Server on the Internet Server, go to *Administration/System Configuration/Platform Server/Configure Platform Server* (default port: 46464).
