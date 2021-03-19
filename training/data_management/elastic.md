@@ -2,7 +2,7 @@
 title: Elastic
 description: 
 published: true
-date: 2021-03-19T11:00:30.284Z
+date: 2021-03-19T12:06:35.236Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-17T13:24:58.693Z
@@ -49,20 +49,23 @@ Overview of [Kibana](https://www.elastic.co/guide/en/kibana/current/introduction
 5. Test (ETL + Visualization):
 Implement an ETL flow Filebeat->Logstash->Elasticsearch and visualize data on Kibana dashboard; using new filter plugins. This tests the previously studied concepts and the ability to search in the docs for new features. ( 3 day )
 6. Logstash Level Up ( Server configuration, Advanced plugins):
-   ( 1.5 day )
+Deepen knowledge of Logstash server [configuration files](https://www.elastic.co/guide/en/logstash/current/config-setting-files.html) expecially [logstash.yml](https://www.elastic.co/guide/en/logstash/current/logstash-settings-file.html) file for advanced configuration. Run logstash in background. Run logstash using the pipelines.yml file.
+Overview of all logstash plugins ([input](https://www.elastic.co/guide/en/logstash/current/input-plugins.html), [filter](https://www.elastic.co/guide/en/logstash/current/filter-plugins.html), [output](https://www.elastic.co/guide/en/logstash/current/output-plugins.html)) deepen on the ones used previously in the training for advanced use. (1.5 day)
 7. Kibana Level Up ( Server configuration, Kibana features ):
-   ( 1 day )
+Overview of Kibana Server configuration file ([kibana.yml](https://www.elastic.co/guide/en/kibana/current/settings.html)). Understanding of the most important Kibana features ([Spaces](https://www.elastic.co/guide/en/kibana/current/xpack-spaces.html),[Field Management](https://www.elastic.co/guide/en/kibana/current/managing-fields.html),[Saved Objects](https://www.elastic.co/guide/en/kibana/current/managing-saved-objects.html)). Run Kibana in background. Advanced visualizations tools. (2 day)
+- Video resources [Kibana Dashboards Level-up](https://www.elastic.co/webinars/kibana-dashboards-level-up) | [Introduction to Kibana Spaces](https://www.elastic.co/webinars/kibana-security-access-management-spaces-and-feature-controls)
 8. Elasticsearch Server Configuration:
-   ( 1 day )
+Deepen Elasticsearch server configuration ([elasticsearch.yml](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html)) to start Elasticsearch in not-trivial mode (e.g. change the binding host and port, change the data and logs location, change the JVM heap).
+Start Elasticsearch in cluster mode using 3 AWS EC2 instances ([here](https://drive.google.com/file/d/1EyC2Br9khxiKPMtYSPxTXRPuc7V_kqJh/view?usp=sharing) the guide to set up the environment). (3 day)
 9. Elastic Advanced Features:
-   ( 3 day )
-10. Configuring Security in Elastic:
-   ( 2 day )
-11. Configure Alerts in Elastic:
-    ( 1 day )
-11. Observability with Elastic:
-   ( 0.5 day )
-12. Opensource Plugins Overview:
-   ( 1 day )
-13. Elastic Alternatives Overview:
-   ( 0.5 day )
+Understanding of [Index settings](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules.html) configuration to control the resource usage and the [Mappings](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html) to handle data types. Understanding of what an [Ingest Pipeline](https://www.elastic.co/guide/en/elasticsearch/reference/current/ingest.html) is and the difference with a Logstash pipeline. Understanding of [ILM](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-lifecycle-management.html)(Index Lifecycle Policy) to handle time based retetion of data. Usage of [Index templates](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-templates.html) to automatically configure the previous feature for an index. (3 day)
+10. Querying data in Elasticsearch:
+Basic CRUD operations in Elasticsearch([Create](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-index_.html),[Read](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-get.html),[Update](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-update.html),[Delete](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-delete.html)).
+[Query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html)(Domain Specific Language) for Elasticsearch data, focusing on: [Full Text queries](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html), [Term-level queries](https://www.elastic.co/guide/en/elasticsearch/reference/current/term-level-queries.html) and [Bool compound queries](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-bool-query.html) usage.
+Understand [Aggregations](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html) and [nested](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations.html#run-sub-aggs) aggregations; understanding the difference between Bucket, Metrics and Pipeline aggregation. Overview of the available aggregations for each type focusing on: [Terms](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket-terms-aggregation.html), [Date Histogram](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket-datehistogram-aggregation.html), [Histogram](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket-histogram-aggregation.html), [Range](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket-range-aggregation.html). (2 day)
+11. Configuring Security in Elastic:
+(2 day)
+12. Configure Alerts in Elastic:
+(1 day)
+13. Opensource Plugins Overview:
+(1 day)
