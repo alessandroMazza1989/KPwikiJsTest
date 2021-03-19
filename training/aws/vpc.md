@@ -2,7 +2,7 @@
 title: Amazon Virtual Private Cloud (VPC)
 description: 
 published: true
-date: 2021-03-19T15:48:05.885Z
+date: 2021-03-19T17:26:44.103Z
 tags: aws, cloud, networking, security, vpc
 editor: markdown
 dateCreated: 2021-03-08T10:04:18.916Z
@@ -128,6 +128,38 @@ Un **ENI** è una **interfaccia di rete virtuale** che può essere collegata ad 
 Può avere **un solo indirizzo IP pubblico** e diversi indirizzi privati, uno dei quali è il cosiddetto **primario**.
 
 Consentono di creare una rete gestita, di utilizzare strumenti di networking e sicurezza nella VPC, creare istanze dual-homed, etc.
+
+## Endpoints
+
+Un Amazon VPC Endpoint consente di creare una connessione privata tra la VPC e altri servizi AWS **senza passare da Internet** e quindi senza richiedere una NAT instance, una VPN, etc.
+
+E’ possibile creare **endpoint multipli** anche per lo stesso servizio, ed è possibile definire nelle route table regole ad hoc in modo da **raggiungere lo stesso servizio in modo diverso in base al mittente**, per gestire policy di accesso diverse.
+
+
+Per creare un VPC endpoint:
+- Specificare la VPC;
+- Specificare il servizio (```com.amazonaws.region.service```);
+- Specificare la policy (allow full access o creare una custom policy);
+- Specificare la route table (una route verrà aggiunta sulla route table specificata);
+
+Esempio:
+
+```10.0.0.0/16 - Local``` → traffico locale
+```0.0.0.0/0 - igw-1a2b3c4d``` → traffico verso internet
+```pl-1a2b3c4d - vpce-11bb22cc``` → traffico destinato all’ S3 della region inoltrato verso l’endpoint VPC (tutto il resto, compreso il traffico verso S3 in altre regioni, va verso internet)
+
+## Peering
+
+Una **VPC Peering connection** è una connessione di rete tra due Amazon VPC che abilita la comunicazione tra istanze situate su diverse VPC.
+E’ possibile creare connessioni tra due VPC dello stesso account, o di altri account. L’importante è che siano all’interno della stessa regione.
+
+Vengono create tramite protocollo request/access: l’owner della richiedente invia una richiesta di peering connection all’owner destinazione, che ha 1 week per accettarla prima che scada.
+Una VPC può avere diverse peering connection, ma il peering è una relazione one-to-one tra VPC. Questo vuol dire che:
+    • due VPC non possono avere due peering connection tra di loro;
+    • le peering connection non sono transitive;
+Da ricordare:
+    • non è possibile creare una peering connection tra Amazon VPC che hanno blocchi CIDR sovrapposti o corrispondenti;
+    • non è possibile creare peering connection tra VPC in diverse regioni;
 
 ## References
 - https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
