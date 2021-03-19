@@ -2,7 +2,7 @@
 title: DNI Configuration
 description: 
 published: true
-date: 2021-03-19T10:32:40.374Z
+date: 2021-03-19T10:34:04.074Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-19T10:30:23.116Z
@@ -34,3 +34,6 @@ and enter UserID and password where required. Then run the perl command
 -		DNIDaemon.pl c: DNIConfig.cfg
 In the Platform Server settings, update the section shown in the following image.
 
+![dni.png](/dni.png)
+
+Finally, in the *Management/Manage DNI Daemons* section, complete the DNI configuration on the Platform Server
