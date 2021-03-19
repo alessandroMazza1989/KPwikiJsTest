@@ -2,7 +2,7 @@
 title: Amazon Virtual Private Cloud (VPC)
 description: 
 published: true
-date: 2021-03-18T10:39:25.405Z
+date: 2021-03-19T15:21:10.732Z
 tags: aws, cloud, networking, security, vpc
 editor: markdown
 dateCreated: 2021-03-08T10:04:18.916Z
@@ -97,6 +97,16 @@ Per creare un IGW si deve:
 2. Creare una subnet route table per inviare tutto il traffico non locale (0.0.0.0/0) verso l’IGW;
 3. Configurare eventuali ACLs e security group per consentire solo il traffico desiderato da e verso la rete;
 4. Assegnare un IP pubblico (o un EIP) all’istanza che deve comunicare con l’esterno;
+
+## Dynamic Host Configuration Protocol (DHCP) Option Sets
+
+**DHCP** offre uno standard per passare informazioni sugli hosts in una rete TCP/IP.
+
+AWS in automatico **crea e associa un DHCP ad una VPC** quando essa viene creata e setta le due seguenti opzioni:
+- domain-name-servers (defaulted to AmazonProvidedDNS)
+- domain-name (defaulted to the domain name for your region)
+
+**AmazonProvidedDNS** è un DNS server di AWS che abilita il DNS per le istanze che devono comunicare tramite IGW.
 
 ## References
 - https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
