@@ -2,7 +2,7 @@
 title: Hawk
 description: Application Monitoring
 published: true
-date: 2021-03-19T12:30:22.644Z
+date: 2021-03-19T14:39:28.897Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-04T16:07:13.675Z
@@ -27,6 +27,8 @@ RVD transport configurations:
 
 Hawk agent configuration:
 - Follow the documentation and update file /TIBCO_HOME/tibco/cfgmgmt/hawk/bin/hawkagent.cfg
+
+
 
 Hawk console configuration:
 - Follow the documentation and update file 
