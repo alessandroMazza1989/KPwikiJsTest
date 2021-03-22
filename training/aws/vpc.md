@@ -2,7 +2,7 @@
 title: Amazon Virtual Private Cloud (VPC)
 description: 
 published: true
-date: 2021-03-22T09:03:14.258Z
+date: 2021-03-22T09:48:13.095Z
 tags: aws, cloud, networking, security, vpc
 editor: markdown
 dateCreated: 2021-03-08T10:04:18.916Z
@@ -194,6 +194,24 @@ Cose da fare per creare un NAT Gateway:
 E’ possibile connettere un data center esistente ad una Amazon VPC utilizzando le **VPN Connections**, che consentono sostanzialmente vedere una VPC come **estensione** di una rete esterna.
 
 Amazon offre due modalità per connettersi ad una rete esterna:
+
+- **Virtual Private Gateway (VPG)**: è il concentratore della VPN lato AWS;
+- **Customer Gateway (CGW)**: rappresenta un device fisico o un’applicazione software lato customer;
+
+Dopo che questi due elementi sono stati creati, si deve creare il **VPN tunnel**.
+
+Quando si crea la VPN, si deve specificare il tipo di **routing** che si pianifica di utilizzare: se il CGW supporta il **Border Gateway Protocol (BGP)** allora si può configurare la VPN per un **routing dinamico**.
+
+Altrimenti configurare la connessione per **routing statico** indicando le rotte per la rete che dovranno essere comunicate al VPG per instradare la comunicazione da e verso la rete customer.
+
+Amazon VPC supporta anche CGW multipli, ognuno con una VPN Connection verso un singolo VPG.
+
+Da ricordare:
+- Il VPG è **l’endpoint** lato AWS della VPN;
+- il CGW rappresenta l’hardware o il software **lato customer** della VPN;
+- Il tunnel VPN va iniziato **dal CGW al VPG**;
+- VPG supporta **dynamic o static routing**;
+- VPN connections consistono di 2 tunnel per **high availability**;
 
 ## References
 - https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
