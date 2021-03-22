@@ -2,7 +2,7 @@
 title: Amazon Virtual Private Cloud (VPC)
 description: 
 published: true
-date: 2021-03-22T08:07:35.865Z
+date: 2021-03-22T08:11:25.289Z
 tags: aws, cloud, networking, security, vpc
 editor: markdown
 dateCreated: 2021-03-08T10:04:18.916Z
@@ -137,15 +137,18 @@ Esempio:
 ## Peering
 
 Una **VPC Peering connection** è una connessione di rete tra due Amazon VPC che abilita la comunicazione tra istanze situate su diverse VPC.
-E’ possibile creare connessioni tra due VPC dello stesso account, o di altri account. L’importante è che siano all’interno della stessa regione.
+E’ possibile creare connessioni tra due VPC dello stesso account, o di altri account. L’importante è che siano **all’interno della stessa regione**.
 
-Vengono create tramite protocollo request/access: l’owner della richiedente invia una richiesta di peering connection all’owner destinazione, che ha 1 week per accettarla prima che scada.
+Vengono create tramite **protocollo request/access**: l’owner della richiedente invia una richiesta di peering connection all’owner destinazione, che ha 1 week per accettarla prima che scada.
+
 Una VPC può avere diverse peering connection, ma il peering è una relazione one-to-one tra VPC. Questo vuol dire che:
-    • due VPC non possono avere due peering connection tra di loro;
-    • le peering connection non sono transitive;
+- due VPC _non possono avere due peering connection tra di loro_;
+- le peering connection _non sono transitive_;
+
 Da ricordare:
-    • non è possibile creare una peering connection tra Amazon VPC che hanno blocchi CIDR sovrapposti o corrispondenti;
-    • non è possibile creare peering connection tra VPC in diverse regioni;
+
+- non è possibile creare una peering connection tra Amazon VPC che hanno _blocchi CIDR sovrapposti o corrispondenti_;
+- non è possibile creare peering connection tra _VPC in diverse regioni_;
 
 ## References
 - https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
