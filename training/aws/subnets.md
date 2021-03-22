@@ -2,7 +2,7 @@
 title: Subnets
 description: 
 published: true
-date: 2021-03-22T08:05:41.753Z
+date: 2021-03-22T08:06:43.082Z
 tags: aws, cloud, networking, security, subnets
 editor: markdown
 dateCreated: 2021-03-08T10:04:59.321Z
@@ -22,6 +22,9 @@ Le subnet possono essere classificate come:
 - **Pubbliche**: la route table associata dirige il traffico della subnet verso l’IGW della VPC; 
 - **Private**: la route table associata NON dirige il traffico della subnet verso l’IGW della VPC;
 - **VPN-only**: la route table associata dirige il traffico della subnet verso il VPG della VPC e non esistono rotte verso l’IGW;
+
+Indipendentemente dalla tipologia, gli indirizzi IP di una subnet **sono sempre privati**.
+La VPC di default contiene una subnet pubblica in ogni Availability Zone di ogni singola region, con una netmask di /20.
 
 ## References
 - https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html
