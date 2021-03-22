@@ -2,7 +2,7 @@
 title: Elastic Load Balancer
 description: 
 published: true
-date: 2021-03-22T10:23:46.445Z
+date: 2021-03-22T10:23:51.860Z
 tags: aws, cloud, networking, security, elastic load balancer, load balancer
 editor: markdown
 dateCreated: 2021-03-08T10:08:28.825Z
@@ -35,8 +35,6 @@ ELB supporta inoltre la **gestione dei certificati SSL**.
 
 ### Application Load Balancer
 
-Un **Application Load Balancer** seleziona l'instradamento **a livello di applicazione (HTTP/HTTPS)**, supporta l'instradamento in base al percorso e può instradare le richieste **a una o più porte** su ogni istanza di container nel cluster.
-I sistemi Application Load Balancer supportano la **mappatura dinamica delle porte dell'host**.
 
 
 
