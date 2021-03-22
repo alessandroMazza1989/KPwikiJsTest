@@ -2,7 +2,7 @@
 title: Amazon Virtual Private Cloud (VPC)
 description: 
 published: true
-date: 2021-03-22T09:48:13.095Z
+date: 2021-03-22T09:48:35.986Z
 tags: aws, cloud, networking, security, vpc
 editor: markdown
 dateCreated: 2021-03-08T10:04:18.916Z
@@ -211,7 +211,7 @@ Da ricordare:
 - il CGW rappresenta l’hardware o il software **lato customer** della VPN;
 - Il tunnel VPN va iniziato **dal CGW al VPG**;
 - VPG supporta **dynamic o static routing**;
-- VPN connections consistono di 2 tunnel per **high availability**;
+- VPN connections consistono di _2 tunnel_ per **high availability**;
 
 ## References
 - https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
