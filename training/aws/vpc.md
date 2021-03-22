@@ -2,7 +2,7 @@
 title: Amazon Virtual Private Cloud (VPC)
 description: 
 published: true
-date: 2021-03-22T08:34:06.025Z
+date: 2021-03-22T08:59:50.288Z
 tags: aws, cloud, networking, security, vpc
 editor: markdown
 dateCreated: 2021-03-08T10:04:18.916Z
@@ -157,6 +157,43 @@ Da ricordare:
 ## Network Access Control Lists (ACLs)
 
 [ACLs](/training/aws/acl)
+
+## Network Address Translation (NAT) Instances and NAT Gateways
+
+Di default, un istanza che viene lanciata **in una subnet privata** in una VPC non è in grado di comunicare con Internet tramite IGW. 
+
+Questo è problematico se le istanze all’interno delle subnet private devono connettersi a internet per scaricare patch, aggiornamento di sistema, etc.
+
+AWS a questo scopo offre la possibilità di utilizzare le **NAT Instances** e i **NAT Gateways** in modo di _consentire alle istanze all’interno di una subnet privata di accedere a Internet_.
+
+Le best practice _suggeriscono_ l’uso di **NAT Gateway** rispetto a NAT Instance (più semplice gestire e più affidabile).
+
+### NAT Instance
+
+Si tratta di una **Amazon Linux Instance** progettata per accettare traffico da istanze di una subnet privata, **tradurre il loro IP nell’IP pubblico di se stessa** (NAT Instance) e **inoltrare il traffico verso internet** (facendo al contrario al ritorno).
+
+Per creare una NAT Instance:
+
+- Creare un **security group** per la NAT Instance che consenta l’uscita verso gli indirizzi Internet che si vuole abilitare;
+	- NB.: questa configurazione consente di aprire le rotte _solo verso alcune destinazioni_ Internet (patch, download, etc.)
+- Lanciare l’istanza NAT **in una public subnet** e _associarla_ con il **security group**;
+- Disabilitare **Source/Destination check attribute** per l’istanza NAT;
+- Configurare **una route table** _associata con la subnet privata_ per redirigere il traffico diretto a Internet **verso la NAT instance**;
+- **Allocare un EIP** e _associarlo_ con la **NAT Instance**;
+
+### NAT Gateway
+
+E’ una **risorsa gestita da Amazon** per operare _allo stesso modo_ in cui si opera con una NAT Instance, ma è più semplice da gestire e altamente disponibile all’interno di una AZ.
+
+Cose da fare per creare un NAT Gateway:
+- Configurare la **route table della subnet privata** per dirigere traffico diretto a internet **verso il NAT Gateway**;
+- Allocare un **EIP** e _associarlo_ con il **NAT Gateway**;
+
+## Virtual Private Gateways (VPGs), Customer Gateways (CGWs) and Virtual Private Networks (VPNs)
+
+E’ possibile connettere un data center esistente ad una Amazon VPC utilizzando le VPN Connections, che consentono sostanzialmente vedere una VPC come una estensione di una rete esterna.
+
+Amazon offre due modalità per connettersi ad una rete esterna:
 
 ## References
 - https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
