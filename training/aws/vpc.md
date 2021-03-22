@@ -2,7 +2,7 @@
 title: Amazon Virtual Private Cloud (VPC)
 description: 
 published: true
-date: 2021-03-22T08:11:25.289Z
+date: 2021-03-22T08:34:06.025Z
 tags: aws, cloud, networking, security, vpc
 editor: markdown
 dateCreated: 2021-03-08T10:04:18.916Z
@@ -149,6 +149,14 @@ Da ricordare:
 
 - non è possibile creare una peering connection tra Amazon VPC che hanno _blocchi CIDR sovrapposti o corrispondenti_;
 - non è possibile creare peering connection tra _VPC in diverse regioni_;
+
+## Security Groups
+
+[Security Groups](/training/aws/security_groups)
+
+## Network Access Control Lists (ACLs)
+
+[ACLs](/training/aws/acl)
 
 ## References
 - https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html
