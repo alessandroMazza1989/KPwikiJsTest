@@ -2,7 +2,7 @@
 title: Amazon Virtual Private Cloud (VPC)
 description: 
 published: true
-date: 2021-03-22T08:59:50.288Z
+date: 2021-03-22T09:03:14.258Z
 tags: aws, cloud, networking, security, vpc
 editor: markdown
 dateCreated: 2021-03-08T10:04:18.916Z
@@ -191,7 +191,7 @@ Cose da fare per creare un NAT Gateway:
 
 ## Virtual Private Gateways (VPGs), Customer Gateways (CGWs) and Virtual Private Networks (VPNs)
 
-E’ possibile connettere un data center esistente ad una Amazon VPC utilizzando le VPN Connections, che consentono sostanzialmente vedere una VPC come una estensione di una rete esterna.
+E’ possibile connettere un data center esistente ad una Amazon VPC utilizzando le **VPN Connections**, che consentono sostanzialmente vedere una VPC come **estensione** di una rete esterna.
 
 Amazon offre due modalità per connettersi ad una rete esterna:
 
