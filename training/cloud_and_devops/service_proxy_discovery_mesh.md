@@ -2,7 +2,7 @@
 title: Service Proxy, Discovery and Mesh
 description: 
 published: true
-date: 2021-03-08T16:54:52.163Z
+date: 2021-03-23T16:04:00.726Z
 tags: cloud, service proxy, discovery, mesh
 editor: markdown
 dateCreated: 2021-03-08T09:49:26.145Z
@@ -16,7 +16,7 @@ dateCreated: 2021-03-08T09:49:26.145Z
 {.links-list}
 - [Linkerd](/training/cloud_and_devops/tbd)
 {.links-list}
-- [3Scale](/training/cloud_and_devops/tbd)
+- [3Scale](/training/cloud_and_devops/service_proxy_discovery_mesh/3scale)
 {.links-list}
 
 ## Amazon Web Services
