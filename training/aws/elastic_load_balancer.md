@@ -2,7 +2,7 @@
 title: Elastic Load Balancer
 description: 
 published: true
-date: 2021-03-23T16:39:24.089Z
+date: 2021-03-23T16:59:18.854Z
 tags: aws, cloud, networking, security, elastic load balancer, load balancer
 editor: markdown
 dateCreated: 2021-03-08T10:08:28.825Z
@@ -65,6 +65,22 @@ Un Gateway Load Balancer opera al **terzo livello** del modello _OSI (Open Syste
 
 Ascolta i **pacchetti IP** su tutte le porte e inoltra il traffico al gruppo di destinazione specificato nella regola del listener.
 
+## Configuring Elastic Load Balancing
+
+ELB consente di configurare molti aspetti del balancer, che vediamo di seguito.
+
+### Idle Connection Timeout
+
+Per ogni richiesta che un client fa verso un load balancer, il balancer mantiene **2 connessioni**: una con il client e l’altra con l’istanza di backend.
+
+Per ogni connessione, il balancer gestisce un **“idle timeout”** che viene triggerato se non viene ricevuto alcun dato su quella connessione per uno specifico periodo di tempo. Superato questo limite, il balancer termina la connessione.
+
+Di default ELB imposta il timeout a 60 secondi per entrambe le connessioni. Se una richiesta HTTP non riceve risposta entro questo tempo, il balancer butta giù la connessione anche se ci sono dati che sono ancora in trasferimento. E’ possibile ovviamente modificare l’impostazione.
+
+Se si utilizzano listener HTTP o HTTPS, si raccomanda di utilizzare l’opzione **“keep-alive”** sui web server delle istanze EC2. 
+
+Quando abilitato, consente al load balancer di riusare le connessioni verso le istanze di backend in modo da ridurre il consumo di CPU.
+NB.: assicurarsi che il valore “keep-alive” sia maggiore del valore di “idle-timeout”.
 
 ## References
 - https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html
