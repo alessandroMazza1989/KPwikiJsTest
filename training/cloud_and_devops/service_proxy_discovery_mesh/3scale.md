@@ -2,7 +2,7 @@
 title: 3Scale
 description: 
 published: true
-date: 2021-03-23T16:10:01.972Z
+date: 2021-03-23T16:10:40.259Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T16:04:28.894Z
@@ -78,8 +78,7 @@ It creates all the Openshift resources, including liveness and readiness probe s
 Both of the above methods make it possible to __customize the installation__ in order to install the platform with or without the Apicast gateway deployed directly on Openshift.
 
 The __best installation scenario__ is when the _Apicast/Apigateway, the 3 Scale Api Management Platform, and all the needed backend services are deployed on Openshift Container Platform_.
-
-![3SCALE OCP](./ALL-OCP.png "3SCALE OCP")
+![all-ocp.png](/all-ocp.png)
 
 ## 3. Architecture
 
