@@ -2,7 +2,7 @@
 title: 3Scale
 description: 
 published: true
-date: 2021-03-23T16:12:44.829Z
+date: 2021-03-23T16:12:51.023Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T16:04:28.894Z
@@ -239,7 +239,6 @@ The following relations occurs:
 - USERS - objects that represents end users of application that belong to Developer Account, can be admin or users
 - SERVICE SUBSCRIPTION - it's a contract or plan, between account and service, applications and applications plans are used to enforce contract for the service <br/>
 ![3scale-account-data-model.png](/3scale-account-data-model.png)
-![3SCALE ACCOUNT DATA MODEL](./3Scale-Account-Data-Model.png "3SCALE API ACCOUNT MODEL")
 
 ## 7. Web Portals
 
