@@ -2,7 +2,7 @@
 title: Elastic Load Balancer
 description: 
 published: true
-date: 2021-03-23T16:23:15.647Z
+date: 2021-03-23T16:39:24.089Z
 tags: aws, cloud, networking, security, elastic load balancer, load balancer
 editor: markdown
 dateCreated: 2021-03-08T10:08:28.825Z
@@ -34,7 +34,7 @@ ELB supporta inoltre la **gestione dei certificati SSL**.
 
 ### Application Load Balancer
 
-Un **Application Load Balancer** funziona a **livello di applicazione**, il settimo livello del modello _Open Systems Interconnection (OSI)_.
+Un **Application Load Balancer** funziona a **livello di applicazione**, il **settimo livello** del modello _Open Systems Interconnection (OSI)_.
 
 Una volta che il sistema di bilanciamento del carico ha ricevuto una richiesta, valuta le **regole del listener** in ordine di _priorità_ per determinare quale di esse applicare, quindi seleziona un target dal gruppo di target per l'operazione della regola.
 
@@ -47,7 +47,7 @@ L'algoritmo di instradamento predefinito è **round robin**;
 
 ### Network Load Balancer
 
-**Network Load Balancer** funziona al quarto livello del modello _Open Systems Interconnection (OSI)_.
+**Network Load Balancer** funziona al **quarto livello** del modello _Open Systems Interconnection (OSI)_.
 
 È in grado di gestire **milioni di richieste al secondo**. Dopo aver ricevuto una richiesta di connessione, il sistema di bilanciamento del carico seleziona un target dal gruppo target per la regola predefinita. 
 
@@ -61,6 +61,9 @@ Se attivi il bilanciamento del carico su più zone, ogni nodo di bilanciamento d
 
 ### Gateway Load Balancer
 
+Un Gateway Load Balancer opera al **terzo livello** del modello _OSI (Open Systems Interconnection)_, il livello di rete. Ascolta tutti i pacchetti IP su tutte le porte e inoltra il traffico al gruppo di destinazione specificato nella regola del listener.
+
+Ascolta i **pacchetti IP** su tutte le porte e inoltra il traffico al gruppo di destinazione specificato nella regola del listener.
 
 
 ## References
