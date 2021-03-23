@@ -2,7 +2,7 @@
 title: 3Scale
 description: 
 published: true
-date: 2021-03-23T16:06:53.179Z
+date: 2021-03-23T16:07:05.490Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T16:04:28.894Z
