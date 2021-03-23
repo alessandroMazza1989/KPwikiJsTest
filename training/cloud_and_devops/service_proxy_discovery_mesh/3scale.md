@@ -2,7 +2,7 @@
 title: 3Scale
 description: 
 published: true
-date: 2021-03-23T16:11:24.238Z
+date: 2021-03-23T16:12:02.864Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T16:04:28.894Z
@@ -228,8 +228,8 @@ The following relations occurs:
 - APPLICATION - entity whose credentials are attached to each request
 - APPLICATION KEY - is the credential to the application
 - SERVICE PLAN - like application plan but is applied at service level to apply to all applications globally for the service
-- USER PLAN - is optional and user plan that derives from application plan can apply limits to individual users
-
+- USER PLAN - is optional and user plan that derives from application plan can apply limits to individual users <br/>
+![3scale-api-data-model.png](/3scale-api-data-model.png)
 ![3SCALE API DATA MODEL](./3Scale-API-Data-Model.png "3SCALE API DATA MODEL")
 
 ### Account Data Model
