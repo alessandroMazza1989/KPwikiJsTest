@@ -2,7 +2,7 @@
 title: ecr
 description: 
 published: true
-date: 2021-03-23T16:29:07.935Z
+date: 2021-03-23T16:29:29.154Z
 tags: aws, cloud, containers, ecr
 editor: markdown
 dateCreated: 2021-03-08T11:38:32.170Z
@@ -37,12 +37,11 @@ Puoi eseguire il push e il pull delle immagini del contenitore nei tuoi reposito
 ## Caratteristiche di Amazon ECR
 Amazon ECR fornisce le seguenti funzionalità:
 
-- Le policy del ciclo di vita aiutano a gestire il ciclo di vita delle immagini nei tuoi repository. Si definiscono le regole che comportano la pulizia delle immagini inutilizzate. Puoi testare le regole prima di applicarle al tuo repository. Per ulteriori informazioni, vedere Criteri del ciclo di vita .
+- Le policy del ciclo di vita aiutano a gestire il ciclo di vita delle immagini nei tuoi repository. Si definiscono le regole che comportano la pulizia delle immagini inutilizzate. Puoi testare le regole prima di applicarle al tuo repository. 
 
-- La scansione delle immagini aiuta a identificare le vulnerabilità del software nelle immagini del contenitore. Ogni repository può essere configurato per eseguire la scansione su push . Ciò garantisce che ogni nuova immagine inviata al repository venga sottoposta a scansione. È quindi possibile recuperare i risultati della scansione dell'immagine. Per ulteriori informazioni, vedere Scansione di immagini .
+- La scansione delle immagini aiuta a identificare le vulnerabilità del software nelle immagini del contenitore. Ogni repository può essere configurato per eseguire la scansione su push . Ciò garantisce che ogni nuova immagine inviata al repository venga sottoposta a scansione. È quindi possibile recuperare i risultati della scansione dell'immagine. 
 
-- La replica su più regioni e su più account ti consente di avere più facilmente le tue immagini dove ne hai bisogno. Questa è configurata come un'impostazione del Registro di sistema ed è per regione. Per ulteriori informazioni, vedere Impostazioni del registro privato .
-
+- La replica su più regioni e su più account ti consente di avere più facilmente le tue immagini dove ne hai bisogno. Questa è configurata come un'impostazione del Registro di sistema ed è per regione. 
 
 ## References
 - https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html
