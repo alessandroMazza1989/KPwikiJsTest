@@ -2,7 +2,7 @@
 title: 3Scale
 description: 
 published: true
-date: 2021-03-23T16:12:22.433Z
+date: 2021-03-23T16:12:44.829Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T16:04:28.894Z
@@ -237,8 +237,8 @@ The following relations occurs:
 - ACCOUNT SUBSCRIPTION - relates to API PROVIDER account (this is the account to login to 3scale and manage APIs)
 - DEVELOPER ACCOUNTS - Accounts subscribed to a particular API, are the parents of the applications (when a new developer subscribe to API an application is automatically created that allows developers make calls to that API)
 - USERS - objects that represents end users of application that belong to Developer Account, can be admin or users
-- SERVICE SUBSCRIPTION - it's a contract or plan, between account and service, applications and applications plans are used to enforce contract for the service
-
+- SERVICE SUBSCRIPTION - it's a contract or plan, between account and service, applications and applications plans are used to enforce contract for the service <br/>
+![3scale-account-data-model.png](/3scale-account-data-model.png)
 ![3SCALE ACCOUNT DATA MODEL](./3Scale-Account-Data-Model.png "3SCALE API ACCOUNT MODEL")
 
 ## 7. Web Portals
