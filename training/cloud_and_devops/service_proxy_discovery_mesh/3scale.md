@@ -2,7 +2,7 @@
 title: 3Scale
 description: 
 published: true
-date: 2021-03-23T16:12:51.023Z
+date: 2021-03-23T16:14:26.056Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T16:04:28.894Z
@@ -62,7 +62,7 @@ The benefits of utilizing 3 Scale AMP are multiple:
 - __Performance__ - It allows for Massive throughput of API calls and the costumer can deploy as many APIcast gateways as needed
 - __Automation__ - 3 Scale exposes all APIs in the API Management Platform, so it is possible to automate the cycle of an API
 - __Flexibility and Integration__ - Best of class in reliability/uptime (No single point of failure), Flexible deployment options (Software-as-a-Service (SaaS) or self-managed (on-premise/cloud)), API and infrastructure security, Extensibility of individual components (APIcast gateway, developer portal, billing, etc.) <br/>
-![3scale-account-data-model.png](/3scale-account-data-model.png)
+![amp-overwiev.png](/amp-overwiev.png)
 
 ## 2. Installation
 3 scale is offered as __Software-as-a-Service (SaaS)__ or __self-managed (on-premise/cloud)__.
