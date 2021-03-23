@@ -2,7 +2,7 @@
 title: 3Scale
 description: 
 published: true
-date: 2021-03-23T16:10:47.229Z
+date: 2021-03-23T16:11:24.238Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T16:04:28.894Z
@@ -88,9 +88,8 @@ The main components of the architecture are:
 - API Gateway / API Cast
 - API Manager (3 Scale AMP)
     - Admin Portal
-    - Developer portal
-
-![3SCALE ARCHITECTURE](./3Scale-Architecture-Detailed.png "3SCALE ARCHITECTURE")
+    - Developer portal <br/>
+![3scale-architecture-detailed.png](/3scale-architecture-detailed.png)
 
 ### API Gateway / API Cast
 The __API Gateway handles the API traffic and API policy execution__.
