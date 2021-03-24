@@ -2,7 +2,7 @@
 title: Datadog
 description: 
 published: true
-date: 2021-03-24T15:34:00.103Z
+date: 2021-03-24T15:34:28.407Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-17T13:26:28.269Z
@@ -36,7 +36,7 @@ dateCreated: 2021-03-17T13:26:28.269Z
 ## Training Path ( 7 (?) working days )
 
 1. *Elastic Stack Overview:*
-Install and run [Datadod Agent](https://docs.datadoghq.com/agent/) on supported operating systems, verify the success of the operation through the logs and the [DataDoG SaaS](https://app.datadoghq.eu/). **(2 days)**
+Install and run [Datadod Agent](https://docs.datadoghq.com/agent/) on supported operating systems, verify the success of the operation through the logs and the [DataDog SaaS](https://app.datadoghq.eu/). **(2 days)**
 
 2. *Basic DataDog SaaS usage:*
 Overview of DataDog SaaS. Creation of a simple [Dashboard](https://docs.datadoghq.com/dashboards/) to view [System Metrics](https://docs.datadoghq.com/integrations/system/) collected and hosts connected to the Saas. **(2 days)**
