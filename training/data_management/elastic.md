@@ -2,7 +2,7 @@
 title: Elastic
 description: 
 published: true
-date: 2021-03-24T16:41:10.197Z
+date: 2021-03-24T16:47:22.947Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-17T13:24:58.693Z
@@ -10,6 +10,8 @@ dateCreated: 2021-03-17T13:24:58.693Z
 
 # Elastic Stack
 ## **Goals**
+The main goal is to train a Junior Elastic Consultant. The resource will be introduced at the entire Elastic Stack. At the end of the training path the resource is supposed to be able to implement a basic Elastic Stack solution and support a Senior Consultant in daily tasks.
+## **Objectives**
 - *Install and configure the Elastic Stack (Elasticsearch, Kibana, Logstash, Beats) components*
 - *Implement an ETL flow using the Elastic Stack*
 	 a) Beats => Elasticsearch ( Using Elasticsearch Ingest Pipelines )
@@ -32,7 +34,7 @@ dateCreated: 2021-03-17T13:24:58.693Z
   
   
 
-## Training Path ( 20 working days )
+## Training Path ( 5 weeks )
 
 1. *Elastic Stack Overview:*
 Install and run [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html)    and [Kibana](https://www.elastic.co/guide/en/kibana/current/targz.html) from tar.gz archive in single node    mode using the default configuration and navigate Kibana exploring the sample data. **(1 days)**
