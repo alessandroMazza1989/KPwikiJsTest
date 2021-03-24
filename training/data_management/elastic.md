@@ -2,7 +2,7 @@
 title: Elastic
 description: 
 published: true
-date: 2021-03-24T15:54:26.984Z
+date: 2021-03-24T16:29:42.881Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-17T13:24:58.693Z
@@ -62,7 +62,7 @@ Understand [Aggregations](https://www.elastic.co/guide/en/elasticsearch/referenc
 10. *Configuring Security in Elastic:*
 Overview of [Elastic Security](https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-security.html). [Configuring security](https://www.elastic.co/guide/en/elasticsearch/reference/current/configuring-security.html) in a single-node installation using the [node-to-node encryption](https://www.elastic.co/guide/en/elasticsearch/reference/current/configuring-tls.html#tls-transport) only. Enable [HTTP-layer encryption](https://www.elastic.co/guide/en/elasticsearch/reference/current/configuring-tls.html#tls-http) and connect Logstash and Kibana via https to Elasticsearch.
 Enable communications encryption in an Elasticsearch cluster and deepen on the advanced configuration like node specific certificate.
-Deepen on [RBAC](https://www.elastic.co/guide/en/elasticsearch/reference/current/setting-up-authentication.html) (Role Based Access Control) in Elasticsearch and users authentication and authorization
+Deepen on [RBAC](https://www.elastic.co/guide/en/elasticsearch/reference/current/setting-up-authentication.html) (Role Based Access Control) in Elasticsearch and users authentication and authorization.
 **(3 days)**
 11. *Configure Alerts in Elastic:*
 **(1 days)**
