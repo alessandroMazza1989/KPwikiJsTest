@@ -2,7 +2,7 @@
 title: Elastic
 description: 
 published: true
-date: 2021-03-24T16:37:33.704Z
+date: 2021-03-24T16:41:10.197Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-17T13:24:58.693Z
@@ -68,4 +68,6 @@ Deepen on [RBAC](https://www.elastic.co/guide/en/elasticsearch/reference/current
 Overview of [Elastic Watchers](https://www.elastic.co/guide/en/elasticsearch/reference/current/xpack-alerting.html). Understanding of basic Watcher structure ( [inputs](https://www.elastic.co/guide/en/elasticsearch/reference/current/input.html), [conditions](https://www.elastic.co/guide/en/elasticsearch/reference/current/condition.html), [actions](https://www.elastic.co/guide/en/elasticsearch/reference/current/actions.html) )
 **(1 days)**
 12. *Opensource Plugins Overview:*
+Overview of the most popular alternatives for X-Pack: Capabilities and Limitations.
+[Opendistro](https://opendistro.github.io/for-elasticsearch/) - [Searchguard](https://search-guard.com/) 
 **(1 days)**
