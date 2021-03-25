@@ -2,7 +2,7 @@
 title: Elastic Certifications
 description: 
 published: true
-date: 2021-03-25T18:01:41.321Z
+date: 2021-03-25T18:01:56.896Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-22T11:03:16.730Z
@@ -64,7 +64,6 @@ Define and use an ingest pipeline that satisfies a given set of requirements, in
 ## Elastic Certified Analyst
 ### Topics
 - **Searching Data**
-
     Define an index pattern with or without a Time Filter field
     Set the time filter to a specified date or time range
     Use the Kibana Query Language (KQL) in the search bar to display only documents that match a specified criteria
