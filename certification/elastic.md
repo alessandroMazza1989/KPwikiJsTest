@@ -2,7 +2,7 @@
 title: Elastic Certifications
 description: 
 published: true
-date: 2021-03-25T17:58:32.695Z
+date: 2021-03-25T18:01:41.321Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-22T11:03:16.730Z
@@ -62,6 +62,40 @@ Define and use an ingest pipeline that satisfies a given set of requirements, in
 - [Preparation Webinar](https://www.youtube.com/watch?v=hsaLZSKCkF0)
 - [Drive Folder](https://drive.google.com/drive/folders/1jPRbZBfNBYDI5lKwcsC0n4c9spAWOx4O?usp=sharing)
 ## Elastic Certified Analyst
+### Topics
+- **Searching Data**
+
+    Define an index pattern with or without a Time Filter field
+    Set the time filter to a specified date or time range
+    Use the Kibana Query Language (KQL) in the search bar to display only documents that match a specified criteria
+    Create and pin a filter based on a search criteria
+    Apply a search criteria to a visualization or dashboard
+
+- **Visualizing Data**
+    Create a Metric or Gauge visualization that displays a value satisfying a given criteria
+    Create a Lens visualization that satisfies a given criteria
+    Create an Area, Line, Pie, Vertical Bar or Horizontal Bar visualization that satisfies a given criteria
+    Split a visualization using sub-bucket aggregations
+    Create a visualization that computes a moving average, derivative, or serial diff aggregation
+    Customize the format and colors of a line chart or bar chart
+    Using geo data, create an Elastic map that satisfies a given criteria
+    Create a visualization using the Time Series Visual Builder (TSVB) that satisfies a given set of criteria
+    Define multiple line or bar charts on a single TSVB visualization
+    Create a chart that displays a filter ratio, moving average, or mathematical computation of two fields
+    Define a metric, gauge, table or Top N visualization in TSVB
+    Define a TSVB chart from the data of an ML job
+    Create a Tag Cloud visualization on a keyword field of an index
+    Create a Data Table visualization that satisfies a given criteria
+    Create a Markdown visualization
+    Define and use an Option List or Range Slider control
+    Create a Dashboard that consists of a collection of visualizations
+
+- **Analyzing Data**
+    Answer questions about a given dataset using search and visualizations
+    Use visualizations to find anomalies in a dataset
+    Define a single metric, multi-metric, or population Machine Learning job
+    Define and use a scripted field for an index
+    Define and use a Space in Kibana
 ### Certified Consultants
 - [Alessio Creo](https://certified.elastic.co/3cb0b8df-6edf-4cb8-8f39-0e57b0953efe#gs.x4r8zz)
 - [Loris De Bellis](https://certified.elastic.co/5845bf8b-ec8c-4307-89c4-e53fb833ac6f#gs.x4r9mx)
