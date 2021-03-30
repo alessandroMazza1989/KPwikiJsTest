@@ -2,7 +2,7 @@
 title: System integration training course
 description: 
 published: true
-date: 2021-03-22T11:24:00.970Z
+date: 2021-03-30T14:09:54.572Z
 tags: integration
 editor: markdown
 dateCreated: 2021-02-02T17:32:39.353Z
@@ -35,5 +35,5 @@ Finally, the last part of the flow generally is chosen in agreement with the tut
 {.links-list}
 10. [TIBCO *Tibco Products*](/integration/tibco)
 {.links-list}
-11. [Talend *ETL*](/integration/talend)
+11. [Talend *Talend Products*](/integration/talend)
 {.links-list}
