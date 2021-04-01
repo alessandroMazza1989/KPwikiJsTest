@@ -2,7 +2,7 @@
 title: Elastic
 description: 
 published: true
-date: 2021-03-24T16:47:22.947Z
+date: 2021-04-01T08:52:59.045Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-17T13:24:58.693Z
@@ -56,7 +56,7 @@ Overview of Kibana Server configuration file ([kibana.yml](https://www.elastic.c
 Deepen Elasticsearch server configuration ([elasticsearch.yml](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup.html)) to start Elasticsearch in not-trivial mode (e.g. change the binding host and port, change the data and logs location, change the JVM heap).
 Start Elasticsearch in cluster mode using 3 AWS EC2 instances ([here](https://drive.google.com/file/d/1EyC2Br9khxiKPMtYSPxTXRPuc7V_kqJh/view?usp=sharing) the guide to set up the environment). **(3 days)**
 8. *Elastic Advanced Features:*
-Understanding of [Index settings](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules.html) configuration to control the resource usage and the [Mappings](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html) to handle data types. Understanding of what an [Ingest Pipeline](https://www.elastic.co/guide/en/elasticsearch/reference/current/ingest.html) is and the difference with a Logstash pipeline. Overview of the X-Pack Plugin features. Understanding of [ILM] (https://www.elastic.co/guide/en/elasticsearch/reference/current/index-lifecycle-management.html)(Index Lifecycle Policy) to handle time based retetion of data. Usage of [Index templates](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-templates.html) to automatically configure the previous feature for an index. **(3 days)**
+Understanding of [Index settings](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules.html) configuration to control the resource usage and the [Mappings](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html) to handle data types. Understanding of what an [Ingest Pipeline](https://www.elastic.co/guide/en/elasticsearch/reference/current/ingest.html) is and the difference with a Logstash pipeline. Overview of the X-Pack Plugin features. Understanding of [ILM](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-lifecycle-management.html)(Index Lifecycle Policy) to handle time based retetion of data. Usage of [Index templates](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-templates.html) to automatically configure the previous feature for an index. **(3 days)**
 9. *Querying data in Elasticsearch:*
 Basic CRUD operations in Elasticsearch([Create](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-index_.html),[Read](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-get.html),[Update](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-update.html),[Delete](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-delete.html)).
 [Query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html)(Domain Specific Language) for Elasticsearch data, focusing on: [Full Text queries](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html), [Term-level queries](https://www.elastic.co/guide/en/elasticsearch/reference/current/term-level-queries.html) and [Bool compound queries](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-bool-query.html) usage.
