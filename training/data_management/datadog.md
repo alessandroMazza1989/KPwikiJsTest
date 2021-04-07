@@ -2,7 +2,7 @@
 title: Datadog
 description: 
 published: true
-date: 2021-04-07T16:11:00.398Z
+date: 2021-04-07T16:11:10.772Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-17T13:26:28.269Z
