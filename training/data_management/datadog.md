@@ -2,7 +2,7 @@
 title: Datadog
 description: 
 published: true
-date: 2021-04-07T16:08:06.904Z
+date: 2021-04-07T16:10:42.033Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-17T13:26:28.269Z
@@ -37,9 +37,9 @@ TBD
 	[Wikipedia - Datadog](https://en.wikipedia.org/wiki/Datadog)
 	[DataDog Learning Center](https://learn.datadoghq.com/)
   
-## Training Path ( 7 (?) working days )
+## Training Path ( 9 working days )
 
-1. *Elastic Stack Overview:*
+1. *Agent installation:*
 Install and run [Datadod Agent](https://docs.datadoghq.com/agent/) on supported operating systems, verify the success of the operation through the logs and the [DataDog SaaS](https://app.datadoghq.eu/). **(2 days)**
 
 2. *Basic DataDog SaaS usage:*
@@ -51,11 +51,8 @@ Creation and management of [Monitors](https://docs.datadoghq.com/monitors/). **(
 4. *Log Management:*
 [Log Collection](https://docs.datadoghq.com/logs/log_collection/?tab=host). through the DataDog Agent and parsing of known application logs and custom logs  **(2 days)**
 
-5. *APM:*
-???? [APM](https://docs.datadoghq.com/tracing/)
-
-6. *Integrations:*
-???? [Integration](https://docs.datadoghq.com/getting_started/integrations/)
+5. *Simple Integrations:*
+TBD [Integration](https://docs.datadoghq.com/getting_started/integrations/)
 
 
 
