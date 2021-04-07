@@ -2,16 +2,19 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-07T15:51:20.408Z
+date: 2021-04-07T16:15:07.753Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
 ---
 
-# Business Container Edition
+# BWCE
 
-## General Concepts
+## 1.0 Getting Started
+- ### 1.1 Building bwce image
+- ### 1.2 Plugins installation
 
-## Getting Started
+## 2.0 Application Development
 
-test dimitri
+## 3.0 Docker utility
+
