@@ -2,7 +2,7 @@
 title: Datadog
 description: 
 published: true
-date: 2021-03-24T15:34:28.407Z
+date: 2021-04-07T16:08:06.904Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-17T13:26:28.269Z
@@ -10,6 +10,10 @@ dateCreated: 2021-03-17T13:26:28.269Z
 
 # DataDog
 ## **Goals**
+TBD
+
+
+## **Objectives**
 - *Install and configure the DataDog agent*
 	a) Solve any connectivity problems with the SAS
 	b) TAG definition
