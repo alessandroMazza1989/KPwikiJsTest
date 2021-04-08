@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T08:53:28.887Z
+date: 2021-04-08T08:54:08.527Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -63,7 +63,7 @@ COPY * .zip / resources / addons / plugins
 
 ![building_base_image(1).png](/bwce/building_base_image(1).png)
   
- Finally, create the image
+ Finally, create the image with the following command
 ```
 docker build -t tibco/bwce .
 ```
