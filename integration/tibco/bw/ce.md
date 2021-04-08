@@ -2,13 +2,13 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T14:57:30.312Z
+date: 2021-04-08T14:57:37.529Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
 ---
 
-# BusinessWorks™ Container Edition
+# BusinessWorks Container Edition
 
 ## 1.0 Getting Started
 - ### 1.1 Creating the bwce base image
