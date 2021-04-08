@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T08:49:34.011Z
+date: 2021-04-08T08:51:02.652Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -84,7 +84,8 @@ docker build -t tibco/bwce .
 ## 2.0 Application Development
 - ### 2.1 Lab 1: Creating a REST API 
 - ### 2.2 Lab 2: Comunicating between containers
-- ### 2.3 Lab 3: Monitoring with postgres
+- ### 2.3 Lab 3: Managing the filsystem
+- ### 2.4 Lab 4: Monitoring with postgres
 
 ## 3.0 Docker utility
 
