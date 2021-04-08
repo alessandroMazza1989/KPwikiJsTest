@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T09:27:45.050Z
+date: 2021-04-08T09:37:40.974Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -145,6 +145,11 @@ docker run bwce/chiamaserviziorest
 ![lab2.3.png](/bwce/lab2.3.png)
 
 - ### 2.3 Lab 3: Managing the filsystem
+The files to test the application are available at the following link: https://drive.google.com/open?id=185i9v15uf4U5BkmzWaLdtxp-Bl73IyW0
+
+Useful Links: https://docs.docker.com/storage/volumes/
+
+
 - ### 2.4 Lab 4: Monitoring with postgres
 
 ## 3.0 Docker utility
