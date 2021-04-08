@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T08:54:08.527Z
+date: 2021-04-08T08:55:21.888Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -44,7 +44,7 @@ Now we need to create the base image for bwce. Within the docker folder, run the
 ```
 docker build -t [image name] .
 ```
-[building_base_image(1).png](/bwce/building_base_image(1).png)
+![building_base_image(1).png](/bwce/building_base_image(1).png)
 
 - ### 1.2 Plugins installation 
 	<br/> 
@@ -61,7 +61,7 @@ To install PSGLog in docker you need:
 1. Open the Dockerfile and write the following statement:
 COPY * .zip / resources / addons / plugins
 
-![building_base_image(1).png](/bwce/building_base_image(1).png)
+![psglog_dockerfile.png](/bwce/psglog_dockerfile.png)!
   
  Finally, create the image with the following command
 ```
