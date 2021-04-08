@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T10:20:13.894Z
+date: 2021-04-08T10:37:10.955Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -29,15 +29,10 @@ mv bwce-runtime-2.4.4.zip /bwce/<version_number>/docker/resources/bwce-runtime
 ```
 Open the Dockerfile and replace its contents with:
 ```
-FROM debian:stretch-slim
+FROM centos:7
 LABEL maintainer="TIBCO Software Inc."
 ADD . /
-RUN chmod 755 /scripts/*.sh && apt-get update && apt-get --no-install-recommends -y install unzip ssh net-tools && apt-get clean && rm -rf /var/lib/apt/lists/*
-RUN groupadd -g 2001 bwce \
-&& useradd -m -d /home/bwce -r -u 2001 -g bwce bwce
-USER bwce
-ENV LANG C.UTF-8
-ENV LC_ALL C.UTF-8
+RUN chmod 755 /scripts/*.sh && yum -y update && yum -y install unzip ssh net-tools
 ENTRYPOINT ["/scripts/start.sh"]
 ```
 Now we need to create the base image for bwce. Within the docker folder, run the command to create an image:
@@ -217,7 +212,36 @@ Build the BWCE Application Monitor
 ```
 docker build -t bwce/monitoring:latest .
 ```
-
-
+We can monitor any application contained in an image:
+```
+docker run -d -p AppPort:AppPort -e BW_APP_MONITORING_CONFIG='{"url":"http://IPdockerMonitor:portMonitor"}'  [image]
+```
 ## 3.0 Docker utility
+- ### 3.1 Docker installation on Centos
+Run the following command:
+```
+  sudo yum install docker
+```
+Once Docker is installed you need to start it with the command:
+```
+ systemctl start docker
+```
+To make sure Docker has been started correctly, you need to check its status
+```
+systemctl status docker
+```
+To activate Docker
+```
+  systemctl enable docker
+```
+To turn off Docker
+
+```
+ systemctl stop docker
+```
+List of docker commands
+
+```
+docker --help
+```
 
