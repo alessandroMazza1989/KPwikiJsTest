@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T12:35:23.055Z
+date: 2021-04-08T12:51:02.236Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -247,3 +247,22 @@ docker --help
 - ### 3.2 Docker basic commands
 
 - ### 3.3 Networking
+Useful Links: https://docs.docker.com/engine/tutorials/networkingcontainers/
+
+Even at the networking level, containers are in some ways isolated.
+
+![utility-1.png](/bwce/utility-1.png)
+
+Docker includes support for networking containers through the use of network drivers. By default, Docker provides two network drivers for you, the bridge and the overlay drivers. You can also write a network driver plugin so that you can create your own drivers but that is an advanced task.
+
+Each Docker Engine installation automatically includes three default networks:
+
+![utility-2.png](/bwce/utility-2.png)
+
+The network called bridge is a special network. Unless a user-defined bridge is specified, Docker always launches containers on this network.
+
+It is possible to inspect the network to obtain the IP address of the containers that are part of it, through the command:
+```
+docker network inspect [nome_network]
+```
+
