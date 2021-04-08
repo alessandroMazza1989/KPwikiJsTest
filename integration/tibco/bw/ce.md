@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T14:17:04.896Z
+date: 2021-04-08T14:37:29.372Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -75,6 +75,7 @@ COPY . /resources/addons/jars
 ```
 docker build -t tibco/bwce .
 ```
+#### <span style="color:red">SAP</span>
 
 ## 2.0 Application Development
   
