@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T07:27:34.337Z
+date: 2021-04-08T07:57:07.598Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -11,7 +11,8 @@ dateCreated: 2021-04-07T15:42:58.144Z
 # BWCE
 
 ## 1.0 Getting Started
-- ### 1.1 Building bwce image
+- ### 1.1 Creating the bwce base image
+
 Useful Links: https://docs.tibco.com/pub/bwce/2.4.4/doc/html/GUID-91EA80AA-08EF-4CB3-A6A7-E8551A441AC11.html 
 \
 Download bwce: https://drive.google.com/open?id=1QpOpVLPp8lHzQgT4UDBSPH7K9p9feqyJ
@@ -19,8 +20,8 @@ Download bwce: https://drive.google.com/open?id=1QpOpVLPp8lHzQgT4UDBSPH7K9p9feqy
 On Linux, create the bwce folder inside TIBCO_HOME and move the bwce-runtime- 	2.4.4.zip installation file to it:
 ```
 	mkdir /bwce
-	mv bwce-runtime-2.6.1.zip /bwce/.
-	unzip bwce-runtime-2.6.1.zip -d bwce-runtime-2.6.1
+	mv bwce-runtime-2.4.4.zip /bwce/.
+	unzip bwce-runtime-2.4.4.zip -d bwce-runtime-2.4.4
 ```
 Move the bwce-runtime-2.4.4.zip file to the following path:
 ```
@@ -39,8 +40,21 @@ ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
 ENTRYPOINT ["/scripts/start.sh"]
 ```
+Now we need to create the base image for bwce. Within the docker folder, run the command to create an image:
+```
+docker build -t [image name] .
+```
+![building_base_image.png](/bwce/building_base_image.png)
 
-- ### 1.2 Plugins installation
+- ### 1.2 Plugins installation 
+	<br/> 
+#### <span style="color:red">PSGLog</span>
+Before installing the PSGLog we need to customize the logs, following these steps:
+1. Create the custom-logback directory within: TIBCO_HOME/bwce/bwce-runtime-<version>/tibco.home/bwce/2.4/docker/resources/addons/
+1. Add the appropriately modified logback.xml file to the custom-logback directory
+1. Now you need to create a new base image that includes the changes to the logback file. From the docker folder run the docker build -t tibco / bwcetest command.
+
+1. At runtime, use the -e option CUSTOM_LOGBACK = "true"
 
 ## 2.0 Application Development
 
