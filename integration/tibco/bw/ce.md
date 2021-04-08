@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T09:37:40.974Z
+date: 2021-04-08T09:43:22.087Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -148,6 +148,19 @@ docker run bwce/chiamaserviziorest
 The files to test the application are available at the following link: https://drive.google.com/open?id=185i9v15uf4U5BkmzWaLdtxp-Bl73IyW0
 
 Useful Links: https://docs.docker.com/storage/volumes/
+
+At the filesystem level, each container is completely isolated from the underlying system and from that of all other containers. For this reason, when you want to access a file on the host from the container, you need to use the volume drivers.
+  
+![lab3.1.png](/bwce/lab3.1.png)
+
+Let's create a Studio application that reads the file.txt  on the host and writes its contents to the fileModified.txt. Finally, every time the fileModified.txt is written, we notify through a filePoller.
+
+![lab3.2.png](/bwce/lab3.2.png)
+
+![lab3.3.png](/bwce/lab3.3.png)
+
+![lab3.4.png](/bwce/lab3.4.png)
+
 
 
 - ### 2.4 Lab 4: Monitoring with postgres
