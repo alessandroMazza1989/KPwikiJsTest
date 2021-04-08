@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T13:29:56.894Z
+date: 2021-04-08T13:43:28.160Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -164,7 +164,6 @@ This command is used to build an image from a specified docker file
 ```
 Usage: docker build <path to docker file>
 ```
-
 
 - ### 3.3 Networking
 Useful Links: https://docs.docker.com/engine/tutorials/networkingcontainers/
