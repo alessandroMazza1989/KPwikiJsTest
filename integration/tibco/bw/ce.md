@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T10:03:29.063Z
+date: 2021-04-08T10:11:44.789Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -188,6 +188,10 @@ Accessing the hostVolume directory we will see the file.txt and fileModified.txt
 ![lab3.6.png](/bwce/lab3.6.png)
 
 - ### 2.4 Lab 4: Monitoring with postgres
+
+Useful Link: https://hackernoon.com/dont-install-postgres-docker-pull-postgres-bee20e200198
+
+Doc pag. 15: https://docs.tibco.com/pub/bwce/2.4.1/doc/pdf/TIB_bwce_2.4.1_application_monitoring_and_troubleshooting.pdf?_ga=2.228605596.101666866.1561367010-1826608602.1558077978
 
 
 
