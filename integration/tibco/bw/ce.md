@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T13:15:03.857Z
+date: 2021-04-08T13:28:56.724Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -113,11 +113,56 @@ To turn off Docker
  systemctl stop docker
 ```
 List of docker commands
-
 ```
 docker --help
 ```
 - ### 3.2 Docker basic commands
+- **Docker version**
+This command is used to get the currently installed version of docker
+```
+docker-version
+```
+- **Docker run**
+This command is used to create a container from an image
+```
+docker run <image name>
+```
+- **Docker ps**
+This command is used to list the running containers
+```
+docker ps
+```
+- **Docker exec**
+This command is used to access the running container
+```
+docker exec -it <container id> /bin/bash
+```
+- **Docker stop**
+This command stops a running container
+```
+docker stop <container id>
+```
+- **Docker kill**
+This command kills the container by stopping its execution immediately.
+```
+docker kill <container id>
+```
+- **Docker rm**
+This command is used to delete a stopped container
+```
+docker rm <container id>
+```
+- **Docker rmi**
+This command is used to delete an image from local storage
+```
+docker rmi <image-id>
+```
+- **Docker build**
+This command is used to build an image from a specified docker file
+```
+Usage: docker build <path to docker file>
+```
+
 
 - ### 3.3 Networking
 Useful Links: https://docs.docker.com/engine/tutorials/networkingcontainers/
