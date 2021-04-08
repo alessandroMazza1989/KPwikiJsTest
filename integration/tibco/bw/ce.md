@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T13:28:56.724Z
+date: 2021-04-08T13:29:56.894Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -117,6 +117,8 @@ List of docker commands
 docker --help
 ```
 - ### 3.2 Docker basic commands
+
+Useful link: https://docs.docker.com/engine/reference/commandline/docker/
 - **Docker version**
 This command is used to get the currently installed version of docker
 ```
