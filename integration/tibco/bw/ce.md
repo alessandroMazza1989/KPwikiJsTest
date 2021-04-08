@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T14:37:29.372Z
+date: 2021-04-08T14:41:30.391Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -64,6 +64,7 @@ docker build -t tibco/bwce .
 ```
 
 #### <span style="color:red">EMS</span>
+Useful Link: https://docs.tibco.com/pub/bwce/2.2.0/doc/html/GUID-19DDF2EF-EC3C-4A33-8E3F-30761C12C130.html
 To add the TIBCO Enterprise Message Service™ client libraries to the TIBCO BusinessWorks™ Container Edition runtime environment:
 1. Copy the TIBCO Enterprise Message Service™ OSGi client libraries from <EMS-HOME>/components/1.0/plugins into a temporary folder. ![emslibraries.png](/bwce/emslibraries.png)
 1. From the temporary folder use the Docker file given below to copy these jars into the base Docker image:
@@ -76,7 +77,7 @@ COPY . /resources/addons/jars
 docker build -t tibco/bwce .
 ```
 #### <span style="color:red">SAP</span>
-
+Useful Links: https://docs.tibco.com/pub/bwpluginsap/8.2.0/doc/html/GUID-0CE4BF32-EADF-43FB-B692-8929604A032F.html
 ## 2.0 Application Development
   
 1. [Lab 1 *Creating a REST API*](/integration/tibco/bw/bwce/Lab/1)
