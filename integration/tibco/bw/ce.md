@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T09:13:25.366Z
+date: 2021-04-08T09:15:29.925Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -116,8 +116,11 @@ docker run -p 12000:12000 bwce/serviziorest
 
 Through Postman, I call the service with the function of **GET** at
 **http: // hostIP: 12000 / resource**
+![lab1.7.png](/bwce/lab1.7.png)
 
 - ### 2.2 Lab 2: Comunicating between containers
+
+
 - ### 2.3 Lab 3: Managing the filsystem
 - ### 2.4 Lab 4: Monitoring with postgres
 
