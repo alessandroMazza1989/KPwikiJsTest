@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T09:15:29.925Z
+date: 2021-04-08T09:25:13.938Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -102,7 +102,7 @@ On Linux:
 	- add the .ear file: ADD testRest_1.0.0.ear /
 	- save the Dockerfile
 ![lab1.1.png](/bwce/lab1.1.png)
-5. within the ServizioREST directory, create the new image that contains the application: docker build -t bwce / serviziorest.
+5. within the ServizioREST directory, create the new image that contains the application: **docker build -t bwce / serviziorest.**
 ![lab1.2.png](/bwce/lab1.2.png)
 6. Once the new bwce / serviziorest image has been created, we can run the application. For this example, the application exposes the service on port 12000, so at run time it is necessary to specify the host and container ports to tune to. Alternatively, within Dockefile you can specify the port with the **EXPOSE** command. The command to execute is :
 ```
@@ -120,6 +120,29 @@ Through Postman, I call the service with the function of **GET** at
 
 - ### 2.2 Lab 2: Comunicating between containers
 
+The files to test the application are available at the following link: https://drive.google.com/open?id=1fgXdo7FDwWBpfAo2D3W2hpj0Rsa6PGDx
+
+In this Lab we are going to create an application that calls the REST API created in Lab 1.
+
+![lab2.1.png](/bwce/lab2.1.png)
+
+![lab2.2.png](/bwce/lab2.2.png)
+
+On Linux:
+1. 	create a new directory  chiamaServizioRest
+1. 	insert the appropriately modified Dockerfile and the application .ear file inside it
+  
+Build the calling service image inside the directory callServizioRest: **docker build -t bwce / callest service.**
+
+  Then fisrt run the image that exposes the REST service: 
+```
+docker run -p 12000:12000 bwce/serviziorest
+```
+Afterwards run the calling image:
+```
+docker run bwce/chiamaserviziorest
+```
+![lab2.3.png](/bwce/lab2.3.png)
 
 - ### 2.3 Lab 3: Managing the filsystem
 - ### 2.4 Lab 4: Monitoring with postgres
