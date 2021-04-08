@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T08:11:45.708Z
+date: 2021-04-08T08:14:18.156Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -68,6 +68,7 @@ COPY * .zip / resources / addons / plugins
 docker build -t tibco/bwce .
 ```
 
+#### <span style="color:red">EMS</span>
   
 ## 2.0 Application Development
 
