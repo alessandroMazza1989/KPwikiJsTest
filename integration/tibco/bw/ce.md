@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T09:43:22.087Z
+date: 2021-04-08T09:55:18.112Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -161,7 +161,20 @@ Let's create a Studio application that reads the file.txt  on the host and write
 
 ![lab3.4.png](/bwce/lab3.4.png)
 
+On Linux: 
+1. 	we create the readFile directory and insert the .ear file and the Dockerfile
+1. create the image: **docker build -t bwce / readfile.**
+1. create in the root a directory called condivisaDocker, which will contain the file.txt to read
 
+To mount a specific directory located on your host as a Docker volume inside the container, add the following argument to the docker run command:
+```
+-v [host directory]:[container directory]
+```
+The host_directory and continer_directory are the absolute paths.  According to the example, the run command will be: 
+
+```
+docker run --name bwce-filesystem -v /condivisaDocker:/hostVolume bwce/readfile
+```
 
 - ### 2.4 Lab 4: Monitoring with postgres
 
