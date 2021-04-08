@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T13:43:28.160Z
+date: 2021-04-08T14:17:04.896Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -85,6 +85,8 @@ docker build -t tibco/bwce .
 3. [Lab 3 *Managing the filsystem*](/integration/tibco/bw/bwce/Lab/3)
 {.links-list}
 4. [Lab 4 *Monitoring with postgres*](/integration/tibco/bw/bwce/Lab/4)
+{.links-list}
+5. [Lab 5 *Consul for Service*](/integration/tibco/bw/bwce/Lab/5)
 {.links-list}
   
 <br/>
