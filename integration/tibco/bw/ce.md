@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T08:55:21.888Z
+date: 2021-04-08T08:56:01.734Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -61,7 +61,7 @@ To install PSGLog in docker you need:
 1. Open the Dockerfile and write the following statement:
 COPY * .zip / resources / addons / plugins
 
-![psglog_dockerfile.png](/bwce/psglog_dockerfile.png)!
+![psglog_dockerfile.png](/bwce/psglog_dockerfile.png)
   
  Finally, create the image with the following command
 ```
