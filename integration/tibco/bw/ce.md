@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T08:33:01.406Z
+date: 2021-04-08T08:44:56.894Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -76,7 +76,11 @@ To add the TIBCO Enterprise Message Service™ client libraries to the TIBCO Bus
 FROM tibco/bwce:latest
 COPY . /resources/addons/jars
 ```
-  
+3.   From the temporary folder, build the Docker image:
+```
+docker build -t tibco/bwce .
+```
+
 ## 2.0 Application Development
 
 ## 3.0 Docker utility
