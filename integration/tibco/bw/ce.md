@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T14:41:30.391Z
+date: 2021-04-08T14:56:13.804Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -78,6 +78,16 @@ docker build -t tibco/bwce .
 ```
 #### <span style="color:red">SAP</span>
 Useful Links: https://docs.tibco.com/pub/bwpluginsap/8.2.0/doc/html/GUID-0CE4BF32-EADF-43FB-B692-8929604A032F.html
+1. From *TIB_bwpluginsap_version_buildnumber_bwce-runtime.zip* Extract the com.tibco.tpshell.sap.jco_3.0.8.002 folder at a temporary location and delete the com.tibco.tpshell.sap.jco_3.0.8.002 folder from the runtime zip.
+1. Copy the libraries into a temporary folder
+1. From the temporary folder use the Docker file given below to copy these jars into the base Docker image:
+```
+FROM tibco/bwce:latest
+COPY . /resources/addons/jars
+```
+NB: EMS libraries have to be present in resources/addons/jars as SAP Activities require JMS.
+
+
 ## 2.0 Application Development
   
 1. [Lab 1 *Creating a REST API*](/integration/tibco/bw/bwce/Lab/1)
