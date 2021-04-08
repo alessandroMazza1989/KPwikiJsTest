@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T08:26:07.658Z
+date: 2021-04-08T08:32:10.056Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -44,7 +44,7 @@ Now we need to create the base image for bwce. Within the docker folder, run the
 ```
 docker build -t [image name] .
 ```
-![building_base_image.png](/bwce/building_base_image.png)
+[building_base_image(1).png](/bwce/building_base_image(1).png)
 
 - ### 1.2 Plugins installation 
 	<br/> 
