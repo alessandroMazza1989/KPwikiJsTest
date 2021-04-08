@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T09:25:13.938Z
+date: 2021-04-08T09:27:45.050Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -118,7 +118,7 @@ Through Postman, I call the service with the function of **GET** at
 **http: // hostIP: 12000 / resource**
 ![lab1.7.png](/bwce/lab1.7.png)
 
-- ### 2.2 Lab 2: Comunicating between containers
+- ### 2.2 Lab 2: Comunicating between applications
 
 The files to test the application are available at the following link: https://drive.google.com/open?id=1fgXdo7FDwWBpfAo2D3W2hpj0Rsa6PGDx
 
