@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T09:05:38.269Z
+date: 2021-04-08T09:09:28.450Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -84,6 +84,12 @@ docker build -t tibco/bwce .
 ## 2.0 Application Development
 - ### 2.1 Lab 1: Creating a REST API 
 The files to test the application are available at the following link: https://drive.google.com/open?id=1ma_3FcGbgFfXZ_69OJoWmPzRkCXyoTSC
+
+![lab1.3.png](/bwce/lab1.3.png)
+
+![lab1.4.png](/bwce/lab1.4.png)
+
+![lab1.5.png](/bwce/lab1.5.png)
 <br/>
 On Linux: 
 1. Within the TIBCO_HOME create the earbwce directory, in which the .ear files of the applications and the related Dockerfiles that specify the image to be created will be inserted.
