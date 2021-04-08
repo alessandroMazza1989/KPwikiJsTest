@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T10:18:56.601Z
+date: 2021-04-08T10:20:13.894Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -212,8 +212,8 @@ docker run --rm --name pg-docker -e POSTGRES_PASSWORD=postgres -d -p 5432:5432 -
 Build the BWCE Application Monitor
 
 1. Download bwce_mon.zip TIBCO BusinessWorks Container Edition monitoring zip file: http://edelivery.tibco.com.
-1. All’interno della TIBCO_HOME creare la directory dockerMonitor ed eseguire l’unzip
-1. costruire l’immagine:
+1. Inside the TIBCO_HOME create the dockerMonitor directory and run the unzip
+1. build the image:
 ```
 docker build -t bwce/monitoring:latest .
 ```
