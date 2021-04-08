@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T09:09:28.450Z
+date: 2021-04-08T09:13:25.366Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -50,16 +50,16 @@ docker build -t [image name] .
 	<br/> 
 #### <span style="color:red">PSGLog</span>
 Before installing the PSGLog we need to customize the logs, following these steps:
-1. Create the custom-logback directory within: TIBCO_HOME/bwce/bwce-runtime-<version>/tibco.home/bwce/2.4/docker/resources/addons/
+1. Create the custom-logback directory within: **TIBCO_HOME/bwce/bwce-runtime-<version>/tibco.home/bwce/2.4/docker/resources/addons/**
 1. Add the appropriately modified logback.xml file to the custom-logback directory
 1. Now you need to create a new base image that includes the changes to the logback file. From the docker folder run the docker build -t tibco / bwcetest command.
 1. At runtime, use the -e option CUSTOM_LOGBACK = "true"
   
 To install PSGLog in docker you need:
-1. Create the PSGLog.zip file containing the lib and runtime directories, located in the path TIBCO_HOME / bw / palettes / PSGLog / 1.0.2 /
+1. Create the PSGLog.zip file containing the lib and runtime directories, located in the path **TIBCO_HOME/bw/palettes/PSGLog/1.0.2/**
 1. Move the zip file to the psglog directory
 1. Open the Dockerfile and write the following statement:
-COPY * .zip / resources / addons / plugins
+**COPY * .zip /resources/addons/plugins**
 
 ![psglog_dockerfile.png](/bwce/psglog_dockerfile.png)
   
@@ -104,7 +104,7 @@ On Linux:
 ![lab1.1.png](/bwce/lab1.1.png)
 5. within the ServizioREST directory, create the new image that contains the application: docker build -t bwce / serviziorest.
 ![lab1.2.png](/bwce/lab1.2.png)
-6. Once the new bwce / serviziorest image has been created, we can run the application. For this example, the application exposes the service on port 12000, so at run time it is necessary to specify the host and container ports to tune to. Alternatively, within Dockefile you can specify the port with the EXPOSE command. The command to execute is :
+6. Once the new bwce / serviziorest image has been created, we can run the application. For this example, the application exposes the service on port 12000, so at run time it is necessary to specify the host and container ports to tune to. Alternatively, within Dockefile you can specify the port with the **EXPOSE** command. The command to execute is :
 ```
 docker run -p hostPort:ContainerPort [image]
 ```
@@ -112,7 +112,10 @@ docker run -p hostPort:ContainerPort [image]
 ```
 docker run -p 12000:12000 bwce/serviziorest
 ```
+![lab1.6.png](/bwce/lab1.6.png)
 
+Through Postman, I call the service with the function of **GET** at
+**http: // hostIP: 12000 / resource**
 
 - ### 2.2 Lab 2: Comunicating between containers
 - ### 2.3 Lab 3: Managing the filsystem
