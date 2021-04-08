@@ -2,7 +2,7 @@
 title: Data Management
 description: 
 published: true
-date: 2021-03-17T10:52:31.596Z
+date: 2021-04-08T10:02:00.823Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-17T10:19:06.913Z
@@ -27,4 +27,6 @@ The consultant will practice with one or more of the foremost programming/script
 7. [TIBCO Spotfire *General concept and usage*](/training/data_management/tibcospotfire )
 {.links-list}
 8. [Datadog *General concept and usage*](/training/data_management/datadog )
+{.links-list}
+9. [Splunk *General concept and usage*](/training/data_management/splunk )
 {.links-list}
