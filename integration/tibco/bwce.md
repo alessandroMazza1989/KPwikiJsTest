@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T07:57:07.598Z
+date: 2021-04-08T08:10:10.023Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -53,9 +53,22 @@ Before installing the PSGLog we need to customize the logs, following these step
 1. Create the custom-logback directory within: TIBCO_HOME/bwce/bwce-runtime-<version>/tibco.home/bwce/2.4/docker/resources/addons/
 1. Add the appropriately modified logback.xml file to the custom-logback directory
 1. Now you need to create a new base image that includes the changes to the logback file. From the docker folder run the docker build -t tibco / bwcetest command.
-
 1. At runtime, use the -e option CUSTOM_LOGBACK = "true"
+  
+To install PSGLog in docker you need:
+1. Create the PSGLog.zip file containing the lib and runtime directories, located in the path TIBCO_HOME / bw / palettes / PSGLog / 1.0.2 /
+1. Move the zip file to the psglog directory
+1. Open the Dockerfile and write the following statement:
+COPY * .zip / resources / addons / plugins
 
+![psglog_dockerfile.png](/bwce/psglog_dockerfile.png)
+  
+ Finally, create the image
+```
+docker build -t tibco/bwce .
+```
+
+  
 ## 2.0 Application Development
 
 ## 3.0 Docker utility
