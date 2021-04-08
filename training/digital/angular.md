@@ -2,7 +2,7 @@
 title: Angular
 description: 
 published: true
-date: 2021-03-16T08:55:58.964Z
+date: 2021-04-08T15:51:03.551Z
 tags: angular
 editor: markdown
 dateCreated: 2021-03-16T08:36:22.463Z
@@ -23,13 +23,15 @@ Angular is a modular client framework for building scalable single-page applicat
 - **Goals**
    1. Modules
    2. Components
-   3. Dependency Injection and services
-   4. Component interaction
-   5. Routing and navigation
-   6. Directives
-   7. Forms and validation
-   8. RxJS Observables
-   9. Communication with back-end services
+   3. Lifecycle hooks
+   4. Dependency Injection and services
+   5. Data binding and event binding
+   6. Component interaction
+   7. Routing and navigation
+   8. Directives
+   9. Forms and validation
+   10. RxJS Observables
+   11. Communication with back-end services
 
 ### Additional tools
 - **Goals**
