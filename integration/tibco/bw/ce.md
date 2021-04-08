@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T12:51:02.236Z
+date: 2021-04-08T13:03:40.268Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -77,6 +77,16 @@ docker build -t tibco/bwce .
 ```
 
 ## 2.0 Application Development
+  
+1. [Lab 1 *Creating a REST API*](/integration/tibco/bw/bwce/Lab/1)
+{.links-list}
+2. [Lab 2 *Comunicating between applications*](/integration/tibco/bw/bwce/Lab/2)
+{.links-list}
+3. [Lab 3 *Managing the filsystem*](/integration/tibco/bw/bwce/Lab/3)
+{.links-list}
+4. [Lab 4 *Monitoring with postgres*](/integration/tibco/bw/bwce/Lab/4)
+{.links-list}
+  
 - ### 2.1 Lab 1: Creating a REST API 
 The files to test the application are available at the following link: https://drive.google.com/open?id=1ma_3FcGbgFfXZ_69OJoWmPzRkCXyoTSC
 
