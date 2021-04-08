@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-08T13:10:52.131Z
+date: 2021-04-08T13:15:03.857Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -137,5 +137,13 @@ The network called bridge is a special network. Unless a user-defined bridge is 
 It is possible to inspect the network to obtain the IP address of the containers that are part of it, through the command:
 ```
 docker network inspect [nome_network]
+```
+Or inspect the info of a container directly
+```
+docker inspect [container_id]
+```
+In addition, it is possible to navigate inside a container
+```
+docker exec -it [container_id] /bin/bash
 ```
 
