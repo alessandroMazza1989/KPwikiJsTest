@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-09T07:16:05.452Z
+date: 2021-04-09T07:19:39.499Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -111,107 +111,4 @@ NB: EMS libraries have to be present in resources/addons/jars as SAP Activities 
 {.links-list}
 7. [3.3 *Networking*](/integration/tibco/bw/bwce/Utility/3)
 {.links-list}
-  
-- ### 3.1 Docker installation on Centos
-Run the following command:
-```
-  sudo yum install docker
-```
-Once Docker is installed you need to start it with the command:
-```
- systemctl start docker
-```
-To make sure Docker has been started correctly, you need to check its status
-```
-systemctl status docker
-```
-To activate Docker
-```
-  systemctl enable docker
-```
-To turn off Docker
-
-```
- systemctl stop docker
-```
-List of docker commands
-```
-docker --help
-```
-- ### 3.2 Docker basic commands
-
-Useful link: https://docs.docker.com/engine/reference/commandline/docker/
-- **Docker version**
-This command is used to get the currently installed version of docker
-```
-docker-version
-```
-- **Docker run**
-This command is used to create a container from an image
-```
-docker run <image name>
-```
-- **Docker ps**
-This command is used to list the running containers
-```
-docker ps
-```
-- **Docker exec**
-This command is used to access the running container
-```
-docker exec -it <container id> /bin/bash
-```
-- **Docker stop**
-This command stops a running container
-```
-docker stop <container id>
-```
-- **Docker kill**
-This command kills the container by stopping its execution immediately.
-```
-docker kill <container id>
-```
-- **Docker rm**
-This command is used to delete a stopped container
-```
-docker rm <container id>
-```
-- **Docker rmi**
-This command is used to delete an image from local storage
-```
-docker rmi <image-id>
-```
-- **Docker build**
-This command is used to build an image from a specified docker file
-```
-Usage: docker build <path to docker file>
-```
-
-- ### 3.3 Networking
-Useful Links: https://docs.docker.com/engine/tutorials/networkingcontainers/
-
-Even at the networking level, containers are in some ways isolated.
-
-![utility-1.png](/bwce/utility-1.png)
-
-Docker includes support for networking containers through the use of network drivers. By default, Docker provides two network drivers for you, the bridge and the overlay drivers. You can also write a network driver plugin so that you can create your own drivers but that is an advanced task.
-
-Each Docker Engine installation automatically includes three default networks:
-
-![utility-2.png](/bwce/utility-2.png)
-
-The network called bridge is a special network. Unless a user-defined bridge is specified, Docker always launches containers on this network.
-
-It is possible to inspect the network to obtain the IP address of the containers that are part of it, through the command:
-```
-docker network inspect [nome_network]
-```
-Or inspect the info of a container directly
-```
-docker inspect [container_id]
-```
-In addition, it is possible to navigate inside a container
-```
-docker exec -it [container_id] /bin/bash
-```
-
+ 
