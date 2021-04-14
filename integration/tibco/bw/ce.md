@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-09T07:22:15.767Z
+date: 2021-04-14T09:53:34.389Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -78,7 +78,10 @@ docker build -t tibco/bwce .
 ```
 #### <span style="color:red">SAP</span>
 Useful Links: https://docs.tibco.com/pub/bwpluginsap/8.2.0/doc/html/GUID-0CE4BF32-EADF-43FB-B692-8929604A032F.html
-1. From *TIB_bwpluginsap_version_buildnumber_bwce-runtime.zip* Extract the com.tibco.tpshell.sap.jco_3.0.8.002 folder at a temporary location and delete the com.tibco.tpshell.sap.jco_3.0.8.002 folder from the runtime zip.
+1. Copy the com.tibco.tpshell.sap.jco_3.0.8.002 wrapper folder with the third party SAP libraries
+present in the bwce_home/palettes/sap/version_number/runtime/plugins, to the resources/
+addons/jars location.
+
 1. Copy the libraries into a temporary folder
 1. From the temporary folder use the Docker file given below to copy these jars into the base Docker image:
 ```
