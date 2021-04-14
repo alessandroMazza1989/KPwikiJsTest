@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-14T09:55:26.495Z
+date: 2021-04-14T09:57:48.387Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -83,7 +83,7 @@ present in the bwce_home/palettes/sap/version_number/runtime/plugins, to the res
 addons/jars location.
 
 1. Copy the zip into a temporary folder
-1. From the temporary folder use the Docker file given below to copy these jars into the base Docker image:
+1. From the temporary folder use the Docker file given below to copy the zip into the base Docker image:
 ```
 FROM tibco/bwce:latest
 COPY . /resources/addons/plugins
