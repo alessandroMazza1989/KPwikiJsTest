@@ -2,7 +2,7 @@
 title: Lab 1
 description: 
 published: true
-date: 2021-04-16T08:02:16.416Z
+date: 2021-04-16T08:15:19.888Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-08T13:05:36.204Z
