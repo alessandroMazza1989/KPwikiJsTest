@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-14T09:57:48.387Z
+date: 2021-04-16T08:01:42.864Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -93,7 +93,7 @@ NB: EMS libraries have to be present in resources/addons/jars as SAP Activities 
 
 ## 2.0 Application Development
   
-1. [Lab 1 *Creating a REST API*](/integration/tibco/bw/bwce/Lab/1)
+1. [Lab 1 *Creating a REST API*](/integration/tibco/bw/bwce/Lab1)
 {.links-list}
 2. [Lab 2 *Comunicating between applications*](/integration/tibco/bw/bwce/Lab/2)
 {.links-list}
