@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-16T08:01:42.864Z
+date: 2021-04-16T08:04:30.710Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -93,25 +93,25 @@ NB: EMS libraries have to be present in resources/addons/jars as SAP Activities 
 
 ## 2.0 Application Development
   
-1. [Lab 1 *Creating a REST API*](/integration/tibco/bw/bwce/Lab1)
+1. [Lab 1 *Creating a REST API*](/integration/tibco/bw/ce/Lab1)
 {.links-list}
-2. [Lab 2 *Comunicating between applications*](/integration/tibco/bw/bwce/Lab/2)
+2. [Lab 2 *Comunicating between applications*](/integration/tibco/bw/ce/Lab/2)
 {.links-list}
-3. [Lab 3 *Managing the filsystem*](/integration/tibco/bw/bwce/Lab/3)
+3. [Lab 3 *Managing the filsystem*](/integration/tibco/bw/ce/Lab/3)
 {.links-list}
-4. [Lab 4 *Monitoring with postgres*](/integration/tibco/bw/bwce/Lab/4)
+4. [Lab 4 *Monitoring with postgres*](/integration/tibco/bwwce/Lab/4)
 {.links-list}
-5. [Lab 5 *Consul for Service*](/integration/tibco/bw/bwce/Lab/5)
+5. [Lab 5 *Consul for Service*](/integration/tibco/bw/ce/Lab/5)
 {.links-list}
   
 <br/>
 
 ## 3.0 Docker utility
   
-5. [3.1 *Docker installation on Centos*](/integration/tibco/bw/bwce/Utility/1)
+5. [3.1 *Docker installation on Centos*](/integration/tibco/bw/ce/Utility/1)
 {.links-list}
-6. [3.2 *Docker basic commands*](/integration/tibco/bw/bwce/Utility/2)
+6. [3.2 *Docker basic commands*](/integration/tibco/bw/ce/Utility/2)
 {.links-list}
-7. [3.3 *Networking*](/integration/tibco/bw/bwce/Utility/3)
+7. [3.3 *Networking*](/integration/tibco/bw/ce/Utility/3)
 {.links-list}
 
