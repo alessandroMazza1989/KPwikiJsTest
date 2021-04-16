@@ -2,7 +2,7 @@
 title: bwce
 description: 
 published: true
-date: 2021-04-16T08:04:30.710Z
+date: 2021-04-16T08:09:36.867Z
 tags: bwce
 editor: markdown
 dateCreated: 2021-04-07T15:42:58.144Z
@@ -108,10 +108,10 @@ NB: EMS libraries have to be present in resources/addons/jars as SAP Activities 
 
 ## 3.0 Docker utility
   
-5. [3.1 *Docker installation on Centos*](/integration/tibco/bw/ce/Utility/1)
+5. [3.1 *Docker installation on Centos*](/integration/tibco/bw/ce/Utility1)
 {.links-list}
-6. [3.2 *Docker basic commands*](/integration/tibco/bw/ce/Utility/2)
+6. [3.2 *Docker basic commands*](/integration/tibco/bw/ce/Utility2)
 {.links-list}
-7. [3.3 *Networking*](/integration/tibco/bw/ce/Utility/3)
+7. [3.3 *Networking*](/integration/tibco/bw/ce/Utility3)
 {.links-list}
 
