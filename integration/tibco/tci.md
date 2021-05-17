@@ -2,7 +2,7 @@
 title: TCI
 description: Tibco Cloud Integration
 published: true
-date: 2021-05-17T07:46:02.428Z
+date: 2021-05-17T07:47:40.709Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:02.428Z
@@ -12,5 +12,5 @@ dateCreated: 2021-05-17T07:46:02.428Z
 
 1. [Integration *BusinessWorks Integration App*](/integration/tibco/tci/integration)
 {.links-list}
-2. [Messaging *eFTL*](/integration/tibco/tci/messagine)
+2. [Messaging *eFTL*](/integration/tibco/tci/messaging)
 {.links-list}
