@@ -2,7 +2,7 @@
 title: TIBCO
 description: TIBCO Products
 published: true
-date: 2021-03-17T16:38:57.853Z
+date: 2021-05-17T07:41:28.967Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T17:17:00.925Z
@@ -30,4 +30,6 @@ This part doesn't substitute the official doc (https://docs.tibco.com/) that rem
 8. [Scribe *Guidelines and reference to TIBCO resources and official doc*](/integration/tibco/scribe)
 {.links-list}
 9. [BC *Business Connect*](/integration/tibco/bc)
+{.links-list}
+10. [TCI *Tibco Cloud Integration*](/integration/tibco/tci)
 {.links-list}
