@@ -2,7 +2,7 @@
 title: Messaging
 description: eFTL
 published: true
-date: 2021-05-18T10:20:21.031Z
+date: 2021-05-18T10:44:07.387Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:47:30.293Z
@@ -45,8 +45,6 @@ This page collects the TIBCO Cloud™ Messaging SDKs (Software Development Kits)
 
 >![tcmdownloads.png](/tcmdownloads.png)
 
-
-
 After having chosen a programming language among those available, start the download to obtain an archive file containing all the resources needed to code.
 
 By clicking on the *Start coding*  link related to the language, you can consult a large number of dedicated tutorials. 
@@ -80,7 +78,22 @@ All the information needed to connect the clients to TIBCO Cloud Messaging are c
 {.is-info}
 
 
+## TIBCO eFTL™ 6.6.0
 
----
+**Useful Links:**
+TIBCO eFTL™ 6.6.0 Documentation (Release 20/11/2021):
+https://docs.tibco.com/pub/eftl/6.6.0/doc/html/
+
+### Sample Project
+
+This sample project contains the following two processes: 
+- **Publisher.bwp:** This process demonstrates how to use the eFTL plug-in to publish messages over the Tibco Cloud Messaging service.
 
 
+>![publisher.png](/publisher.png)
+> *The process *Publisher.bwp**
+
+- **Subscriber.bwp:** This process contains the eFTL Subscriber process starter activity. The eFTL Subscriber activity listens for an incoming message event and starts the job execution on receiving incoming records and writes them to a log.
+
+>![subscriber.png](/subscriber.png)
+> *The process *Subscriber.bwp**
