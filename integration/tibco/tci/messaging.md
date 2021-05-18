@@ -2,7 +2,7 @@
 title: Messaging
 description: eFTL
 published: true
-date: 2021-05-18T13:12:39.200Z
+date: 2021-05-18T14:21:52.342Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:47:30.293Z
@@ -93,6 +93,9 @@ This sample project shows how to use the plug-in to send and receive messages us
 The project contains the following two processes: 
 - **Publisher.bwp:** This process demonstrates how to use the eFTL plug-in to publish messages over the Tibco Cloud Messaging service.
 
+>![guid-cb0a39fd-a427-4b4d-8c78-c5fd98b9ff05-display.png](/guid-cb0a39fd-a427-4b4d-8c78-c5fd98b9ff05-display.png)
+>*This figure describes the design process for eFTL Publisher*
+
 It is composed of a starter activity (*Timer*) and an *eFTLPublisher* activity, which is an asynchronous activity belonging to the eFTL library palette that takes input from the shared resource and publishes or sends messages to the TIBCO Cloud Messaging service.
 
 >![publisher.png](/publisher.png)
@@ -103,7 +106,10 @@ In the general tab it is required to indicate an eFTL Connection, i.e. create an
 >![inkedtcmeftlgeneral_li.jpg](/inkedtcmeftlgeneral_li.jpg)
 
 >![tcmeftlcreateresource.png](/tcmeftlcreateresource.png)
- 
+
+> The eFTL Connector shared resource describes the connection parameters for establishing TIBCO Cloud Messaging connection, and so you must have an active TCM subscription before you create a connection. 
+{.is-info}
+
 To properly configure the eFTL Connection Resource, provide the **Connection URL** and the **Authentication Key** obtained from the YAML file *tcm-config.yaml* (see Authentication Key Section for more details). Then proceed to test the connection. If everything went well, the message "Connection successful" will appear.
 
 >![tcmeftlconnector.png](/tcmeftlconnector.png)
@@ -121,7 +127,28 @@ Through the Input Editor tab you can specify any data structure for the message 
 
 - **Subscriber.bwp:** This process contains the eFTL Subscriber process starter activity. The eFTL Subscriber activity listens for an incoming message event and starts the job execution on receiving incoming records and writes them to a log.
 
+>![guid-fb02dd72-976c-4f24-8598-719c01c6fc2c-display.png](/guid-fb02dd72-976c-4f24-8598-719c01c6fc2c-display.png)
+>*This diagram describes the design process for eFTL Subscriber*
+
 >![subscriber.png](/subscriber.png)
 > *The process *Subscriber.bwp**
 
-**eFTLPublisher**
+As for the *eFTLPublisher* activity, you are asked to specify the eftl connecton resource in order to communicate with a TIBCO Cloud Messaging service. In the General Tab it is also  possible to change the type of subscriber, setting it as *Durable* (default *False*). In this way incoming messages are preserved if the subscriber application fails, and delivered after the subscriber is back online. Note that if you choose this option *Durable Name* and *Durable Type* fields are displayed and must be valorized.
+
+> Currently, only Shared durable subscriber type is supported.
+{.is-info}
+
+Unlike the eFTLPublisher, the destination to which the subscriber is listening must be provided in the General tab. If the *Destination* field is not blank, the eFTLSubscriber will receive only messages with the specific destination set. Otherwise,if left blank, the subscriber receives all messages.
+
+The possibility of using a *Content Matcher* is also given, which, due to the presence of the destination, is less relevant and fundamental than in the case of an FTL subscriber. Nevertheless, it can be useful to perform specialized filtering on messages associated with a specific destination. Specifically, this *Content Matcher* specify the eFTLSubscriber activity's interest in a message by selecting a subset of messages from a message stream according to the fields and values in those messages.
+
+> The data types supported as part of content matcher are string, long, or boolean.
+{.is-info}
+
+Finally,two different acknowledge subscriber messages modes are supported: 
+- **Auto:** eFTL library automatically acknowledges the message when the application callback returns.
+- **Explicit:** Must be used with a Confirm activity in the ActiveMatrix BusinessWorks™ process to explicitly acknowledge the message.
+
+>![tcmeftlsubgeneral.png](/tcmeftlsubgeneral.png)
+
+
