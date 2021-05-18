@@ -2,7 +2,7 @@
 title: Messaging
 description: eFTL
 published: true
-date: 2021-05-18T14:25:09.840Z
+date: 2021-05-18T14:29:16.376Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:47:30.293Z
@@ -84,6 +84,8 @@ All the information needed to connect the clients to TIBCO Cloud Messaging are c
 TIBCO eFTL™ 6.6.0 Documentation (Release 20/11/2021):
 https://docs.tibco.com/pub/eftl/6.6.0/doc/html/
 
+TIBCO ActiveMatrix BusinessWorks™ Plug-in for TIBCO eFTL™ User's Guide
+https://docs.tibco.com/pub/bwplugineftl/6.0.0/doc/html/
 ### Tutorial - Sample Project 
 
 This sample project shows how to use the plug-in to send and receive messages using TIBCO ActiveMatrix BusinessWorks™ Plug-in for TIBCO eFTL™.
