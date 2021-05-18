@@ -2,7 +2,7 @@
 title: Messaging
 description: eFTL
 published: true
-date: 2021-05-18T12:48:49.943Z
+date: 2021-05-18T13:12:39.200Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:47:30.293Z
@@ -86,12 +86,14 @@ https://docs.tibco.com/pub/eftl/6.6.0/doc/html/
 
 ### Tutorial - Sample Project 
 
+This sample project shows how to use the plug-in to send and receive messages using TIBCO ActiveMatrix BusinessWorks™ Plug-in for TIBCO eFTL™.
+
 **PROCESSES:**
 
-This sample project contains the following two processes: 
+The project contains the following two processes: 
 - **Publisher.bwp:** This process demonstrates how to use the eFTL plug-in to publish messages over the Tibco Cloud Messaging service.
 
-It is composed of a starter activity (*Timer*) and an *eFTLPublisher* activity, which is an asynchronous activity that takes input from the shared resource and publishes or sends messages to the TIBCO Cloud Messaging service.
+It is composed of a starter activity (*Timer*) and an *eFTLPublisher* activity, which is an asynchronous activity belonging to the eFTL library palette that takes input from the shared resource and publishes or sends messages to the TIBCO Cloud Messaging service.
 
 >![publisher.png](/publisher.png)
 > *The process *Publisher.bwp**
@@ -110,6 +112,10 @@ To properly configure the eFTL Connection Resource, provide the **Connection URL
 {.is-warning}
 
 
+Through the Input Editor tab you can specify any data structure for the message to be published. Lastly, the Input tab has the following mandatory fields: **Destination**, that is the destination for a message to be sent, and **Message**, which is the data element defined in the Input Editor tab    
+
+
+>![inkedtcmeftlinput_li.jpg](/inkedtcmeftlinput_li.jpg)
 
 
 
