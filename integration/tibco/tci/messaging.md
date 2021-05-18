@@ -2,7 +2,7 @@
 title: Messaging
 description: eFTL
 published: true
-date: 2021-05-17T17:12:15.334Z
+date: 2021-05-18T10:20:21.031Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:47:30.293Z
@@ -18,27 +18,47 @@ The TIBCO Cloud Messaging fully integrated communications solution provides syst
 
 **Useful Links:**
 
-Getting started with TIBCO Cloud™ Messaging: https://account.cloud.tibco.com/cloud/docs/index.html
+Getting started with TIBCO Cloud™ Messaging: 
+https://messaging.cloud.tibco.com/docs/getstarted
 
 Getting Started with TIBCO Cloud™:
-https://messaging.cloud.tibco.com/docs/getstarted/
+https://account.cloud.tibco.com/cloud/docs/index.html
+
+Informations about TIBCO Cloud™ Messaging plans:
+https://www.tibco.com/products/tibco-cloud-messaging/pricing-plans
 
 ## Getting Started
 
-1. Log in to TIBCO Cloud™ Integration [https://cloud.tibco.com/] and select the region 
-2. Choose an organization with a tibco cloud messaging subscription,  then click on the hexagon labeled Messaging 
+1. Log in to TIBCO Cloud™ Integration [https://cloud.tibco.com/] and select the region. 
+2. Choose an organization with a tibco cloud messaging subscription,  then click on the hexagon labeled Messaging. 
 3. TIBCO Cloud Messaging is structured in three main tabs, namely *Status*, *Downloads* and *Authentication Keys*, which allow you to use and manage all the features of this tool. 
 ### Status
 
 The Status section allows you to check and get information about current connections, peak connections and total messages sent in the current month. In addition, the two URLs to be used respectively in eFTL and FTL applications are exposed.
-![tcmstatus.png](/tcmstatus.png) 
+
+>![tcmstatus.png](/tcmstatus.png) 
+> *The TIBCO Cloud Messaging Status page; The green checkmark indicates that the Messaging subscription is active and running*
+
 ### Downloads
 
-[TO DO]
-  
+This page collects the TIBCO Cloud™ Messaging SDKs (Software Development Kits) for TIBCO eFTL™.
+
+>![tcmdownloads.png](/tcmdownloads.png)
+
+
+
+After having chosen a programming language among those available, start the download to obtain an archive file containing all the resources needed to code.
+
+By clicking on the *Start coding*  link related to the language, you can consult a large number of dedicated tutorials. 
+These tutorials require you to have a URL and an authentication key to make a connection. You'll find both on the Authentication Keys page.
 ### Authentication Keys
+
 On the Authentication Keys page you can create authentication key objects that can be used to establish one or more connections to TIBCO Cloud Messaging. They then play the role of a special password associated with the URLs of the eFTL/FTL apps, which are shown at the top of the section (alternatively, these URLs of interest are also shown by selecting the Status tab).
-![tcmauthkeys.png](/tcmauthkeys.png)
+
+Each authentication key can be used to create any number of connections, but it is recommended to separate them for each environment (*Develop*, *Test*, *Pre-Prod*, *Prod*, etc.).
+
+>![tcmauthkeys.png](/tcmauthkeys.png)
+> *The Authentication Keys page of TIBCO Cloud Messaging* 
 
 > These authentication keys do not have any expiration date but there is a limit [10] on the maximum number of keys that can be built for each subscription.
 {.is-info}
@@ -56,7 +76,7 @@ All the information needed to connect the clients to TIBCO Cloud Messaging are c
 - **ftl_application:** The name of the FTL application. Cannot be changed. Used by FTL only.
 - **ftl_certificate:** The certificate to verify the authenticity of your FTL servers. Modified to fit on a single line. Used by FTL only.
 
-> In case you are only interested in the *tcm_authentication_key*, you can also get it by clicking on the 'Copy To Clipboard' icon, without downloading the configuration YAML file
+> In case you are only interested in the *tcm_authentication_key*, you can also get it by clicking on the '**Copy To Clipboard**' icon, without downloading the configuration YAML file
 {.is-info}
 
 
