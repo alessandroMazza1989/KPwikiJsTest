@@ -2,7 +2,7 @@
 title: Messaging
 description: eFTL
 published: true
-date: 2021-05-18T14:29:16.376Z
+date: 2021-05-18T14:38:50.541Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:47:30.293Z
@@ -155,6 +155,11 @@ Finally,two different acknowledge subscriber messages modes are supported:
 
 The Output Editor tab defines the schema to use for incoming messages. The Output is a data element defined according to the XML schema defined in the Output Editor tab.
 >![tcmeftlsuboutput.png](/tcmeftlsuboutput.png)
+
+### Info Notes
+
+> It has been verified that it is possible, once deployed on TIBCO Cloud Integration one or more applications with publishing functions, to correctly receive the messages on any other child organization (if of course the eFTL Connector is correctly configured and the connection is successfully tested).
+{.is-info}
 
 
 ---
