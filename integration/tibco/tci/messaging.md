@@ -2,7 +2,7 @@
 title: Messaging
 description: eFTL
 published: true
-date: 2021-05-18T10:44:07.387Z
+date: 2021-05-18T12:48:49.943Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:47:30.293Z
@@ -84,16 +84,38 @@ All the information needed to connect the clients to TIBCO Cloud Messaging are c
 TIBCO eFTL™ 6.6.0 Documentation (Release 20/11/2021):
 https://docs.tibco.com/pub/eftl/6.6.0/doc/html/
 
-### Sample Project
+### Tutorial - Sample Project 
+
+**PROCESSES:**
 
 This sample project contains the following two processes: 
 - **Publisher.bwp:** This process demonstrates how to use the eFTL plug-in to publish messages over the Tibco Cloud Messaging service.
 
+It is composed of a starter activity (*Timer*) and an *eFTLPublisher* activity, which is an asynchronous activity that takes input from the shared resource and publishes or sends messages to the TIBCO Cloud Messaging service.
 
 >![publisher.png](/publisher.png)
 > *The process *Publisher.bwp**
+
+In the general tab it is required to indicate an eFTL Connection, i.e. create and configure an eFTL Connection Resource (or eventually, if it has already been created, choose it) 
+
+>![inkedtcmeftlgeneral_li.jpg](/inkedtcmeftlgeneral_li.jpg)
+
+>![tcmeftlcreateresource.png](/tcmeftlcreateresource.png)
+ 
+To properly configure the eFTL Connection Resource, provide the **Connection URL** and the **Authentication Key** obtained from the YAML file *tcm-config.yaml* (see Authentication Key Section for more details). Then proceed to test the connection. If everything went well, the message "Connection successful" will appear.
+
+>![tcmeftlconnector.png](/tcmeftlconnector.png)
+
+> The authentication key is managed as a password field. Although you can assign its value to a module property, it is not possible to promote this property at the application level and then import the project to TIBCO Cloud Integration, nor is it possible to deploy it due to security reasons ("*BW App import error: Error while using privacy service*")  
+{.is-warning}
+
+
+
+
 
 - **Subscriber.bwp:** This process contains the eFTL Subscriber process starter activity. The eFTL Subscriber activity listens for an incoming message event and starts the job execution on receiving incoming records and writes them to a log.
 
 >![subscriber.png](/subscriber.png)
 > *The process *Subscriber.bwp**
+
+**eFTLPublisher**
