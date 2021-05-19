@@ -2,7 +2,7 @@
 title: Messaging
 description: eFTL
 published: true
-date: 2021-05-18T14:38:50.541Z
+date: 2021-05-19T12:38:22.468Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:47:30.293Z
@@ -36,7 +36,7 @@ https://www.tibco.com/products/tibco-cloud-messaging/pricing-plans
 
 The Status section allows you to check and get information about current connections, peak connections and total messages sent in the current month. In addition, the two URLs to be used respectively in eFTL and FTL applications are exposed.
 
->![tcmstatus.png](/tcmstatus.png) 
+>![inkedtcmstatus_li.jpg](/inkedtcmstatus_li.jpg) 
 > *The TIBCO Cloud Messaging Status page; The green checkmark indicates that the Messaging subscription is active and running*
 
 ### Downloads
@@ -55,7 +55,7 @@ On the Authentication Keys page you can create authentication key objects that c
 
 Each authentication key can be used to create any number of connections, but it is recommended to separate them for each environment (*Develop*, *Test*, *Pre-Prod*, *Prod*, etc.).
 
->![tcmauthkeys.png](/tcmauthkeys.png)
+>![inkedtcmauthkeys_li.jpg](/inkedtcmauthkeys_li.jpg)
 > *The Authentication Keys page of TIBCO Cloud Messaging* 
 
 > These authentication keys do not have any expiration date but there is a limit [10] on the maximum number of keys that can be built for each subscription.
@@ -114,7 +114,7 @@ In the general tab it is required to indicate an eFTL Connection, i.e. create an
 
 To properly configure the eFTL Connection Resource, provide the **Connection URL** and the **Authentication Key** obtained from the YAML file *tcm-config.yaml* (see Authentication Key Section for more details). Then proceed to test the connection. If everything went well, the message "Connection successful" will appear.
 
->![tcmeftlconnector.png](/tcmeftlconnector.png)
+>![inkedtcmeftlconnector_li.jpg](/inkedtcmeftlconnector_li.jpg)
 
 > The authentication key is managed as a password field. Although you can assign its value to a module property, it is not possible to promote this property at the application level and then import the project to TIBCO Cloud Integration, nor is it possible to deploy it due to security reasons ("*BW App import error: Error while using privacy service*")  
 {.is-warning}
