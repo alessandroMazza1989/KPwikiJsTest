@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-19T14:33:28.228Z
+date: 2021-05-19T15:13:34.474Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -65,16 +65,27 @@ There are basically two possible scenarios for deployment:
 ---
 ###### Manual Push to the Cloud 
 
+**1.** Open TIBCO Business Studio for BusinessWorks.
+**2.** In the Project Explorer, right-click on the application to import on TCI and select **Create Enterprise Archive (EAR).** The EAR Export window appears.
+**3.** Enter an EAR Location. Click **Browse** to change the location. This will create a directory that will contain the EAR archive.
+**4.** Click Finish. The EAR file will be created in the named directory. The deployment archive can now be pushed manually to the cloud at the TIBCO Cloud Integration web page.
 
+>![tciear.png](/tciear.png)
 
+> Through this procedure the manifest.json file can be modified and enriched before the final import to the cloud.  
+{.is-info}
 
+**5.** Log in to TIBCO Cloud™ Integration [https://cloud.tibco.com/] and select the region. Then choose the target organization (or the target child organization).
+**6.** Access to the  TIBCO Cloud Integration web page.
+**7.** Click on the **Create/Import** button at the top right.
 
+>![inkedtciimportbutton_li.jpg](/inkedtciimportbutton_li.jpg)
 
+**8.** Select from the list the app type **Integrate > BusinessWorks**. The click **next**.
 
+>![tciapptype.png](/tciapptype.png)
 
-
-
-
+**9.** Drag and Drop the EAR file and the manifest ( or browse to upload). Lastly, click on the **Import App** button
 
 
 
