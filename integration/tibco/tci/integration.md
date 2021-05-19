@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-19T14:03:42.752Z
+date: 2021-05-19T14:33:28.228Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -48,4 +48,54 @@ The API settings must be configured in order to connect to the cloud. Below is i
 >![tciaccounts.png](/tciaccounts.png)
 
 **4.** Once you connect to the cloud, you can view the API files in the API explorer > API tab. After connecting, you can also view the **cloud applications** and **TIBCO Cloud Mesh services** in the Cloud Applications tab.
+
+### Pushing an Application to the Cloud
+
+The following section discusses the different methods of using TIBCO Business Studio for BusinessWorks to generate deployment archives for a TIBCO BusinessWorks™ App and push the app to the cloud. In fact, after creating and testing your application in TIBCO Business Studio for BusinessWorks, you can push your application to the TIBCO Cloud Integration.
+
+There are basically two possible scenarios for deployment:
+
+- **1.** Deployment archives, which include an EAR archive and optionally a JSON manifest, can be exported from TIBCO Business Studio for BusinessWorks.  
+> This is typically done  for later deployment to the cloud using the TIBCO Cloud™ Integration web page or TIBCO Cloud Command Line Interface (CLI).
+{.is-info}
+
+- **2.** The app can be deployed to the cloud from within TIBCO Business Studio for BusinessWorks.
+> This is typically done when a developer is continuously making changes and testing them in the cloud.
+{.is-info}
+---
+###### Manual Push to the Cloud 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+When an application is pushed to the cloud an archive file is generated along with a descriptive header file. Both files are sent to the TIBCO Cloud Integration platform during a push to create or update the application in the cloud.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
