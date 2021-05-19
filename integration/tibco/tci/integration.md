@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-19T15:34:51.612Z
+date: 2021-05-19T15:45:00.204Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -99,7 +99,11 @@ As mentioned before, you can also push the app to the cloud directly from TIBCO 
 
 >![pushtocloud_thumb_0_0.png](/pushtocloud_thumb_0_0.png).
 
+> In case an application with the same name of the pushed one has already been deployed on the cloud in the target organization, with this pushing mode an automatic replacement will take place.  
+{.is-warning}
 
+> Generally speaking ,there are other methods for Pushing an Application to the Cloud. Here, the most common ones have been listed. For further information refer to the official documentation linked above.
+{.is-info}
 
 
 
