@@ -2,7 +2,7 @@
 title: Messaging
 description: eFTL
 published: true
-date: 2021-05-19T12:38:22.468Z
+date: 2021-05-19T14:47:20.491Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:47:30.293Z
@@ -29,7 +29,7 @@ https://www.tibco.com/products/tibco-cloud-messaging/pricing-plans
 
 ## Getting Started
 
-1. Log in to TIBCO Cloud™ Integration [https://cloud.tibco.com/] and select the region. 
+1. Log in to TIBCO Cloud™  [https://cloud.tibco.com/] and select the region. 
 2. Choose an organization with a tibco cloud messaging subscription,  then click on the hexagon labeled Messaging. 
 3. TIBCO Cloud Messaging is structured in three main tabs, namely *Status*, *Downloads* and *Authentication Keys*, which allow you to use and manage all the features of this tool. 
 ### Status
