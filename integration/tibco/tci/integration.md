@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-19T15:26:23.557Z
+date: 2021-05-19T15:34:51.612Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -91,9 +91,13 @@ There are basically two possible scenarios for deployment:
 
 As mentioned before, you can also push the app to the cloud directly from TIBCO Business Studio for BusinessWorks. When an application is pushed to the cloud an archive file is generated along with a descriptive header file. Both files are sent to the TIBCO Cloud Integration platform during a push to create or update the application in the cloud.
 
-> Before pushing an application to the cloud from TIBCO Business Studio for BusinessWorks, make sure that the API registry for the cloud to which you are pushing the application is set correctly in the Settings dialog of the API Explorer or the Cloud Applications view. [For more informations see the Connecting to TIBCO Cloud section above
+> Before pushing an application to the cloud from TIBCO Business Studio for BusinessWorks, make sure that the API registry for the cloud to which you are pushing the application is set correctly in the Settings dialog of the API Explorer or the Cloud Applications view.
+*[For more informations see the **Connecting to TIBCO Cloud** section]*
 {.is-info}
 
+**1.** Right-click the application and select **Push to Cloud**!
+
+>![pushtocloud_thumb_0_0.png](/pushtocloud_thumb_0_0.png).
 
 
 
