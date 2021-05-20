@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-20T12:28:54.681Z
+date: 2021-05-20T12:47:46.650Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -150,10 +150,19 @@ After pushing an app with the Web UI, it won't initially be running. On the othe
 > To stop an app, scale its number of instances to zero.
 {.is-info}
 
+### Viewing App Endpoints
+
+This section is about how to view the endpoint(s) of an app.
+**1.** Log in to the TIBCO Cloud Integration server.
+**2.** Click the** Apps** tab. Then click the app whose endpoint you want to view.
+**3.** Click the **Endpoints** tab. All endpoints are shown.
+
+>![tciendpoints.png](/tciendpoints.png)
 
 
 
-
+**4.** Click the **Test** button to display the contents of the URL in Swagger in a panel within this tab.
+**5.** You can click methods to expand them and use the Try it out button to test the endpoints.
 
 
 
