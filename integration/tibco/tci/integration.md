@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-20T10:57:50.893Z
+date: 2021-05-20T12:27:16.830Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -110,15 +110,56 @@ This section deals with starting, scaling, and stopping applications deployed to
 
 After pushing an app with the Web UI, it won't initially be running. On the other hand, if the application is pushed directly to the cloud  from TIBCO Business Studio for BusinessWorks, it will start automatically creating by default an instance. **[VERIFICARE]**
 
+> TIBCO Cloud Integration App instances are fault-tolerant; TIBCO Cloud Integration checks if app instances are still running. If it detects that an app instance has failed, it will **automatically restart** a new instance. For example, if an app's desired instance count is two, and one of the instances stops running, a second instance will be automatically started.
+{.is-warning}
+
+
+
+
+###### Starting and Stopping Apps
+
 **1.** On the **Apps** page, find the app whose status you want to change.Then click the app to go to the **App Details** page.
 
 > If there were several more apps on the page, you could click a column heading to sort the list, for example, by clicking Last Modified to find the newest apps.
 {.is-info}
 
-**2.** Find the Instances control at the top right of the page. This shows the target number of instances to run. The status indicator next to it shows if the app is running.
+**2.** Find the **Instances** control at the top right of the page, which  displays the number of instances currently running. The **Status** indicator next to it displays if the app is running, scaling, or stopped.
 
 >![inkedtciappdetailspage_li.jpg](/inkedtciappdetailspage_li.jpg)
 >*Instances control panel in the App Details Page*
+
+**3.** Click **Start** to start an app, or **Stop** to stop a running app. Alternatively, You can  start or stop an app by scaling it up or down from the App Details page, as described below.
+
+>![app-start-stop_thumb_0_0.png](/app-start-stop_thumb_0_0.png)
+
+> If you stop and re-start an app with multiple instances running, it will have one instance running when it is restarted, and you must scale it to start more instances.
+{.is-info}
+
+###### Scaling Apps
+
+**1.** On the **Apps** page, find the app. Then go to the **App Details** page.
+**2.** Find the scaling control in the upper right. 
+**3.** Hover over the number of instances. A pair of up and down arrows appears, which you can click to change the number of instances.
+**4.** Click the up arrow *to add instances* to the app, then click **Scale**.
+
+> If the app is not running, you can start it by adding one or more instances.
+{.is-info}
+
+**5.** You can also remove instances. Click the down arrow, then click **Scale**.
+
+> To stop an app, scale its number of instances to zero.
+{.is-info}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
