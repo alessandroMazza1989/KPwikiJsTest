@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-20T12:59:05.033Z
+date: 2021-05-20T12:59:44.470Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -174,10 +174,11 @@ This section is about how to view the endpoint(s) of an app.
 
 
 
-**7.** You can click methods to expand them and use the **Try it out** button to test the endpoints.
+**8.** You can click methods to expand them and use the **Try it out** button to test the endpoints.
 
 >![tcitest.png](/tcitest.png)
 
+**9.** To copy an app's endpoint URL to the clipboard, click the Copy URL button next to the endpoint.
 
 
 
