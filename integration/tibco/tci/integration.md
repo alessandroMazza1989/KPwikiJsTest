@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-20T13:00:26.993Z
+date: 2021-05-20T13:03:56.877Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -180,10 +180,11 @@ This section is about how to view the endpoint(s) of an app.
 
 **9.** To copy an app's endpoint URL to the clipboard, click the Copy URL button next to the endpoint.
 
+### Viewing Performance Monitoring Statistics
 
+You can monitor the performance statistics of your apps on the Monitoring tab of an App details page. This tab displays process information such as the total number of processes that have completed or failed, and performance metrics such as CPU and memory usage.
 
-
-
+### Viewing Logs
 
 
 
