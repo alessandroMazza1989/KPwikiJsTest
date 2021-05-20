@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-19T15:47:29.964Z
+date: 2021-05-20T10:57:50.893Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -102,16 +102,23 @@ As mentioned before, you can also push the app to the cloud directly from TIBCO 
 > In case an application with the same name of the pushed one has already been deployed on the cloud in the target organization, with this pushing mode an automatic replacement will take place.  
 {.is-warning}
 
-> Generally speaking ,there are other methods for Pushing an Application to the Cloud. Here, the most common ones have been listed. For further information refer to the official documentation linked above.
+> Generally speaking ,there are other methods for pushing an application to the Cloud. Here, the most common ones have been listed. For further information refer to the official documentation linked above.
 {.is-info}
 
+### Starting, Stopping and Scaling Apps
+This section deals with starting, scaling, and stopping applications deployed to TIBCO Cloud Integration and, in particular, a newly pushed application.
 
+After pushing an app with the Web UI, it won't initially be running. On the other hand, if the application is pushed directly to the cloud  from TIBCO Business Studio for BusinessWorks, it will start automatically creating by default an instance. **[VERIFICARE]**
 
+**1.** On the **Apps** page, find the app whose status you want to change.Then click the app to go to the **App Details** page.
 
+> If there were several more apps on the page, you could click a column heading to sort the list, for example, by clicking Last Modified to find the newest apps.
+{.is-info}
 
+**2.** Find the Instances control at the top right of the page. This shows the target number of instances to run. The status indicator next to it shows if the app is running.
 
-
-
+>![inkedtciappdetailspage_li.jpg](/inkedtciappdetailspage_li.jpg)
+>*Instances control panel in the App Details Page*
 
 
 
