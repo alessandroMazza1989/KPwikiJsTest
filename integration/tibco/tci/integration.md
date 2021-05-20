@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-20T12:59:44.470Z
+date: 2021-05-20T13:00:26.993Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -159,14 +159,14 @@ This section is about how to view the endpoint(s) of an app.
 
 >![tciendpoints.png](/tciendpoints.png)
 
-> For public and TIBCO Cloud Mesh endpoints: [see **Changing Endpoint Visibility** section for more details]
+> For *public* and *TIBCO Cloud Mesh* endpoints: [see **Changing Endpoint Visibility** section for more details]
 {.is-warning}
 
 **4.** To download a copy of the API Spec, click the shortcut menu, then click Download spec. 
 **5.** To download a link to the API Spec, click the shortcut menu, then click Copy spec URL.
 **6.** Click **Publish to Mashery** to publish the endpoint to Mashery.
 
-> For public endpoints only:
+> For *public* endpoints only:
 {.is-warning}
 
 **7.** Click the **Test** button to display the contents of the URL in Swagger in a panel within this tab.
