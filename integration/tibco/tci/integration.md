@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-21T13:57:43.248Z
+date: 2021-05-21T13:58:07.717Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -280,7 +280,7 @@ In order to consume a service deployed in TIBCO Cloud Mesh from within BW throug
 >Where the **CloudOrganizationID** is a unique alphanumeric string for each organization or child organization. 
 {.is-warning}
 
-**3.** Add in the **DynamicHeaders** the **Authorization** header valorized as **"Bearer OAuthAccessToken"**
+**3.** Add in the **DynamicHeaders** the ***Authorization*** header valorized as **"Bearer OAuthAccessToken"**
 
 >![tcimeshinvokerestapi.png](/tcimeshinvokerestapi.png)
 
