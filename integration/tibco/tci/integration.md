@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-21T10:59:11.326Z
+date: 2021-05-21T11:02:16.635Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -247,11 +247,11 @@ TIBCO Cloud Mesh endpoints aren't publicly visible, but they can be accessed wit
 You can generate an OAuth token in TIBCO Cloud. Access tokens are time-limited (which can actually be a disadvantage), revocable, Bearer security tokens allowing access to specific domains. They are passed in each REST request in the authorization header by using the Bearer scheme.
 
 
-> `curl -X GET "https://integration.tci-devops.tibcoapps.net/extercom/gsbc/01EV73S4BGTC596M2FB8PYRMXQ/tci/csq64ekzihqnzuomkqu7evg7emkrdlqt/book1/1?query1=david" -H "accept: application/json" -H "Authorization: Bearer CIC~Rk9xZC44-cModboJ6McMFE5D"`
->-
+>curl -X GET "https://integration.tci-devops.tibcoapps.net/extercom/gsbc/01EV73S4BGTC596M2FB8PYRMXQ/tci/csq64ekzihqnzuomkqu7evg7emkrdlqt/book1/1?query1=david" -H "accept: application/json" -H "Authorization: Bearer CIC~Rk9xZC44-cModboJ6McMFE5D"
+>
 >*For example, the above REST call using curl passes an OAuth token in an authorization header to access an endpoint*
 
-**1.**  Generate an OAuth access token: in order to do that, log in to TIBCO Cloud and click **OAuth Access Tokens** on the **Settings** tab in the  menu. To add a new token, click the **Add new token** link. Then, In the **Generate OAuth2 token** window, fill in the token name and select one or more domains for which the access token applies (Integration). Lastly, select a maximum validityand click **Generate**.
+**1.**  Generate an OAuth access token: in order to do that, log in to TIBCO Cloud and click **OAuth Access Tokens** on the **Settings** tab in the **My Profile**  menu. To add a new token, click the **Add new token** link. Then, In the **Generate OAuth2 token** window, fill in the token name and select one or more domains for which the access token applies (Integration). Lastly, select a maximum validityand click **Generate**.
 
 
 
