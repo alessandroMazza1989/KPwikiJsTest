@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-20T14:21:54.984Z
+date: 2021-05-21T09:56:58.157Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -182,13 +182,42 @@ This section is about how to view the endpoint(s) of an app.
 
 ### Viewing Performance Monitoring Statistics
 
-You can monitor the performance statistics of your apps on the Monitoring tab of an App details page. This tab displays process information such as the total number of processes that have completed or failed, and performance metrics such as CPU and memory usage.
+You can monitor the performance statistics of your apps on the **Monitoring** tab of an **App details** page. This tab displays process information such as the total number of processes that have completed or failed, and performance metrics such as CPU and memory usage.
 
 ### Viewing Logs
-TO DO
+
+You can view app logs for your running app to monitor its performance and debug any potential issues by clicking the **Logs** tab in the **App details** page. App logs are shown for the last five minutes by default. You can also display a different time/date range of historical logs, stream real-time logs, or download app logs.
+
+### Configuring Apps
+
+If you needed to change the values of properties in your app that were defined by default, you can late-bind new property values for a TIBCO BusinessWorks App. On the **App details** page, in the **Environment Controls** tab, the current values of app properties can be inspected, modified, or reset to their defaults.
+
+> Saving the new configuration changes will restart the app with the new values. This enables you to modify properties without pushing and building a new EAR file, speeding up changes for moving from test to production, or changing credentials or other variables.
+{.is-info}
+
+### Deleting Apps
+
+**1.** On the **Apps** page, hover over your target app. Click the trash can icon.
+**2.** A confirmation dialog will appear. Click **Delete** app.
+
+## TIBCO Cloud Mesh
+
+The Apps deployed to the cloud can have endpoints visible to the public or TIBCO Cloud Mesh.
+
+- **Public:** The endpoints are available from outside of TIBCO Cloud
+- **TIBCO Cloud Mesh:** The endpoints are exposed only to applications in the TIBCO Cloud. These endpoints cannot be reached by any external system, further they can only be accessed from other clients/applications from within the TIBCO Cloud, and only to users within the same organization/subscription.
+
+> TIBCO Cloud Mesh endpoints were formerly called *private* endpoints. This term is still used in mock apps.
+{.is-info}
 
 
+> By default, an app will be **Public** and unsecured.
+{.is-warning}
+
+**Useful Links:**
+
+TIBCO Cloud Mesh Documentation:
+https://account.cloud.tibco.com/cloud/docs/cloud-mesh/index.html
 
 
-
-
+### Changing Endpoint Visibility
