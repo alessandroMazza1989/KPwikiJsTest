@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-21T09:56:58.157Z
+date: 2021-05-21T10:27:19.559Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -221,3 +221,38 @@ https://account.cloud.tibco.com/cloud/docs/cloud-mesh/index.html
 
 
 ### Changing Endpoint Visibility
+
+This section discusses how to change an app's endpoint visibility from public to TIBCO Cloud Mesh or vice-versa:
+
+**1.** Log in to TIBCO Cloud Integration and click the **Apps** tab.
+**2.** The Set endpoint visibility option is available from an app's shortcut menu on its **App Details** page.
+**3.** Click **Set endpoint visibility** to change from public to TIBCO Cloud Mesh or vice-versa. You are shown a warning that this can cause a service outage for the app. Lastly, click **Update** (or **Cancel**).
+
+Click Update or Cancel.
+
+
+> Also, there is an app visibility icon on the App Details page next to the app name which will either say Public or TIBCO Cloud Mesh. You can click this icon to toggle endpoint visibility.
+{.is-info}
+
+>![tciendpointvisibility2.png](/tciendpointvisibility2.png)
+
+> For non-restful endpoints, the endpoint can't be changed to TIBCO Cloud Mesh.
+{.is-warning}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
