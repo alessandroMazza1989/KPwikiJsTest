@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-21T13:28:51.349Z
+date: 2021-05-21T13:57:43.248Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -263,10 +263,25 @@ You can generate an OAuth token in TIBCO Cloud. Access tokens are time-limited (
 >
 >*For example, the above REST call using curl passes an OAuth token in an authorization header to access an endpoint*
 
-**1.**  Generate an OAuth access token: in order to do that, log in to TIBCO Cloud and click **OAuth Access Tokens** on the **Settings** tab in the **My Profile**  menu. To add a new token, click the **Add new token** link. Then, In the **Generate OAuth2 token** window, fill in the token name and select one or more domains for which the access token applies (Integration). Lastly, select a maximum validityand click **Generate**.
+- **Generating an OAuth access token**
+Log in to TIBCO Cloud and click **OAuth Access Tokens** on the **Settings** tab in the **My Profile**  menu. To add a new token, click the **Add new token** link. Then, In the **Generate OAuth2 token** window, fill in the token name and select one or more domains for which the access token applies (Integration). Lastly, select a maximum validityand click **Generate**.
 
 In order to consume a service deployed in TIBCO Cloud Mesh from within BW through the **Invoke REST API** activity, you can follow this method:
 
+**1.** Similarly to how you would invoke a restful public endpoint, create HTTP Client Resource and set:
+- **Default Host:**  eu-west-1.integration.cloud.tibcoapps.com
+- **Default Port:** 443
 
+**2.** In the **Input** tab of **Invoke REST API** activity, provide the **ResourcePath**.
+
+> Example of TIBCO Mesh Endpoint type: **/extercom/gsbc/CloudOrganizazionID**/public_endpoint
+>>**/extercom/gsbc/02RG4GY1G4KCAPP95W3VFUYC88/tci**/jzq1w3ekvl4qpoiuqbyfxwctdqw7rt7q/api/pi/psi/etl/wrappertalend/v1/tasks/executions 
+>
+>Where the **CloudOrganizationID** is a unique alphanumeric string for each organization or child organization. 
+{.is-warning}
+
+**3.** Add in the **DynamicHeaders** the **Authorization** header valorized as **"Bearer OAuthAccessToken"**
+
+>![tcimeshinvokerestapi.png](/tcimeshinvokerestapi.png)
 
 
