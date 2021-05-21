@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-21T12:58:36.978Z
+date: 2021-05-21T13:24:44.579Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -152,7 +152,8 @@ After pushing an app with the Web UI, it won't initially be running. On the othe
 
 ### Viewing App Endpoints
 
-This section is about how to view the endpoint(s) of an app.
+This section is about how to view the endpoint(s) of an app on TCI.
+
 **1.** Log in to the TIBCO Cloud Integration server.
 **2.** Click the** Apps** tab. Then click the app whose endpoint you want to view.
 **3.** Click the **Endpoints** tab. All endpoints are shown.
@@ -179,6 +180,17 @@ This section is about how to view the endpoint(s) of an app.
 >![tcitest.png](/tcitest.png)
 
 **9.** To copy an app's endpoint URL to the clipboard, click the Copy URL button next to the endpoint.
+
+> Example of Public Endpoint type: **/CloudApplicationID**/your_endpoint
+>>***/jzq1w3ekvl4qpoiuqbyfxwctdqw7rt7q**/api/pi/psi/...*
+>
+> Where the **CloudApplicationID** Is a unique alphanumeric string for each application of each organization or child organization automatically and randomly generated during the deployment of the app itself.
+>
+> Example of TIBCO Mesh Endpoint type: **/extercom/gsbc/CloudOrganizazionID**/public_endpoint
+>>**/extercom/gsbc/02RG4GY1G4KCAPP95W3VFUYC88/tci**/jzq1w3ekvl4qpoiuqbyfxwctdqw7rt7q/api/pi/psi/etl/wrappertalend/v1/tasks/executions 
+>
+>Where the **CloudOrganizationID** is a unique alphanumeric string for each organization or child organization. 
+{.is-warning}
 
 ### Viewing Performance Monitoring Statistics
 
@@ -252,9 +264,6 @@ You can generate an OAuth token in TIBCO Cloud. Access tokens are time-limited (
 >*For example, the above REST call using curl passes an OAuth token in an authorization header to access an endpoint*
 
 **1.**  Generate an OAuth access token: in order to do that, log in to TIBCO Cloud and click **OAuth Access Tokens** on the **Settings** tab in the **My Profile**  menu. To add a new token, click the **Add new token** link. Then, In the **Generate OAuth2 token** window, fill in the token name and select one or more domains for which the access token applies (Integration). Lastly, select a maximum validityand click **Generate**.
-
-
-
 
 
 
