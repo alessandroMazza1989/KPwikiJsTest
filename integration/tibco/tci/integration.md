@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-21T13:24:44.579Z
+date: 2021-05-21T13:28:51.349Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -265,6 +265,7 @@ You can generate an OAuth token in TIBCO Cloud. Access tokens are time-limited (
 
 **1.**  Generate an OAuth access token: in order to do that, log in to TIBCO Cloud and click **OAuth Access Tokens** on the **Settings** tab in the **My Profile**  menu. To add a new token, click the **Add new token** link. Then, In the **Generate OAuth2 token** window, fill in the token name and select one or more domains for which the access token applies (Integration). Lastly, select a maximum validityand click **Generate**.
 
+In order to consume a service deployed in TIBCO Cloud Mesh from within BW through the **Invoke REST API** activity, you can follow this method:
 
 
 
