@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-21T10:32:26.228Z
+date: 2021-05-21T10:32:52.640Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -234,8 +234,6 @@ This section discusses how to change an app's endpoint visibility from public to
 
 > Also, there is an app visibility icon on the App Details page next to the app name which will either say Public or TIBCO Cloud Mesh. You can click this icon to toggle endpoint visibility.
 {.is-info}
-
-
 
 > For non-restful endpoints, the endpoint can't be changed to TIBCO Cloud Mesh.
 {.is-warning}
