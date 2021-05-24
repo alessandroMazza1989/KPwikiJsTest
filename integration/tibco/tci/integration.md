@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-24T10:13:34.816Z
+date: 2021-05-24T10:37:35.808Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -251,8 +251,41 @@ This section discusses how to change an app's endpoint visibility from public to
 {.is-warning}
 
 ### Consuming a Service Deployed in TIBCO Cloud Mesh
-TO DO
-###### Accessing Endpoints Using OAuth Access Tokens
+###### Accessing Mesh Endpoints Using TIBCO Cloud Mesh
+
+This section discusses how to use **TIBCO Cloud Mesh** in an application in the TIBCO Cloud Integration Environment and TIBCO Business Studio client. TIBCO Cloud Mesh allows you to discover any private REST endpoint exposed within TIBCO Cloud domains, in your organization or related organizations.
+
+To use this feature, perform the following steps:
+**1.** Connect to TIBCO Cloud. For information, see **Connecting to TIBCO Cloud** section.
+**2.** Open the **Cloud Applications** view. Under the **Applications** section, find the **TIBCO Cloud Mesh Services** section. Then expand the section to view the services available to you.
+
+> If your organization has related (parent or child) organizations, the screen displays all the related organizations as folders containing the services. Applications with Private endpoints (required to display the applications) are listed in the **TIBCO Cloud Mesh Services** in the **Cloud Servers** view.
+{.is-info}
+
+>![show-files-ss1_thumb_0_0.png](/show-files-ss1_thumb_0_0.png)
+
+**3.** Right-click the mesh service and select **Import**. 
+**4.** In the **Import API** dialog box, choose whether to create a new project and import API to the new project or just import to an existing project.
+
+>![import-apii4_thumb_0_0.png](/import-apii4_thumb_0_0.png)
+
+**5.**  if the latter is the case, click **Browse**. Then select a folder or project and click **OK**.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+###### Accessing Mesh Endpoints Using OAuth Access Tokens
 
 TIBCO Cloud Mesh endpoints aren't publicly visible, but they can be accessed with an **OAuth access token**.
 
