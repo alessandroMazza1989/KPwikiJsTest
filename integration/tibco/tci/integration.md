@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-05-24T12:12:51.561Z
+date: 2021-05-25T08:09:54.596Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -270,13 +270,19 @@ To use this feature, perform the following steps:
 >![import-apii4_thumb_0_0.png](/import-apii4_thumb_0_0.png)
 
 **5.**  if the latter is the case, click **Browse**. Then select a folder or project and click **OK**.
+**6.** In the Import API screen, do **not** click **Finish**. Instead, click **Next**. On the Change Swagger name screen, enter a logical, unique name for the Swagger file. The default pregenerated name tends to be too long and include random characters.
+**7.** The TIBCO Cloud Mesh service descriptor files (including the API files) are displayed in the **Project Explorer** section.
+**8.** Drag and drop the mesh service from the **Project Explorer** to the application's **Process** window and select **Create Reference** from the resulting drop-down menu.
+The service icon is added to the application project window.
 
+> All reference bindings that use TIBCO Cloud Mesh are preconfigured to use a single, special HTTP client resource, called **TIBCOCloudMeshServices**. This resource cannot be changed in the reference binding.
+{.is-info}
 
+> The **Default Host** field is automatically populated with the default value: **INTERCOM_HOST**. This value is a constant and cannot be changed.
+{.is-info}
 
-
-
-
-
+> To run the client application in Studio Debugger, ensure that in the **Advanced** tab, the **Enable TIBCO Cloud Mesh Services Consumer** check box is selected.
+{.is-info}
 
 
 
