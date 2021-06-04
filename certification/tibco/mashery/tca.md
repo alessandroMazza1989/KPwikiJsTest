@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T13:33:21.423Z
+date: 2021-06-04T13:39:27.873Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -204,6 +204,14 @@ A. Reports Dashboard
 B. **Developer Portal**
 C. Configuration Manager
 D. Control Center
+
+## For cloud-hosted Developer Portals what is the default URL is based on?
+
+A. The protocol of the published endpoint
+B. Your own domain
+C. **The area domain of the account**
+D. The path of the endpoint
+
 
 
 
