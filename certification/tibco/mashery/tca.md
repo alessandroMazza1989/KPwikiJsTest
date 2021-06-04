@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T14:01:18.964Z
+date: 2021-06-04T14:02:57.363Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -276,9 +276,9 @@ D. protocol
 
 ## What is a unique combination of paths, protocols, rules, and accessible methods?
 
-A. **path**
-B. hostname
-C. query parameter
-D. protocol
+A. API Domains
+B. **Endpoints**
+C. API Definitions
+D. HTTP Headers
 
 
