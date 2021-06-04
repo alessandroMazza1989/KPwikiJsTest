@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T13:44:25.446Z
+date: 2021-06-04T13:47:23.630Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -223,6 +223,20 @@ D. Configuration Manager
 
 A. true
 B. **false**
+
+## What protocol do web service APIs use?
+
+A. SSH
+B. SFTP
+C. SMS
+D. **HTTP**
+
+## What indicates the ordinal numbers of the portions of the URL path?
+
+A. **Method Location Identifier**
+B. API Key Location
+C. API Call Request
+D. Method Location
 
 
 
