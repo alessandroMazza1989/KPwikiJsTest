@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T13:54:31.145Z
+date: 2021-06-04T14:01:18.964Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -221,8 +221,8 @@ D. Configuration Manager
 
 ## TIBCO Cloud Mashery Developer Portal is always cloud-hosted.
 
-A. true
-B. **false**
+A. **true**
+B. false
 
 ## What protocol do web service APIs use?
 
@@ -256,5 +256,29 @@ D. **Use interactive documentation (I/O Docs) in the Developer Portal**
 A. There are no zones in a cluster
 B. **Multiple**
 C. One
+
+## Administrators are automatically logged in to the Developer Portal.
+
+A. **true**
+B. false
+
+## Administrators can customize the Developer Portal.
+
+A. **true**
+B. false
+
+## What is a unique name that identifies the API?
+
+A. **path**
+B. hostname
+C. query parameter
+D. protocol
+
+## What is a unique combination of paths, protocols, rules, and accessible methods?
+
+A. **path**
+B. hostname
+C. query parameter
+D. protocol
 
 
