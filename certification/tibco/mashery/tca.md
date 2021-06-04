@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T12:33:44.945Z
+date: 2021-06-04T12:35:26.095Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -16,4 +16,11 @@ A. Cloud computing
 B. **APIs**
 C. JSON
 D. HTTP Methods
+
+## In TIBCO Cloud Mashery, where can you create and manage APIs?
+
+A. Configuration Manager
+B. Reports dashboard
+C. Developer Portal
+D. **Control Center**
 
