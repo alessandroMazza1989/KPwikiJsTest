@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T12:51:00.895Z
+date: 2021-06-04T12:55:09.724Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -53,13 +53,6 @@ B. HTTP Headers
 C. API Domains
 D. **API Definitions**
 
-## What is a set of configurable properties that specifies how Mashery routes request traffic?
-
-A. Endpoints
-B. HTTP Headers
-C. API Domains
-D. **API Definitions**
-
 ## What is a container object with information about how developers can use an API?
 
 A. A package
@@ -79,6 +72,15 @@ A. A package
 B. A package key
 C. **A plan**
 D. An Application
+
+## Why would you configure the Traffic Manager to accept API calls that do not have keys?
+
+A. **For testing purposes**
+B. To whitelist your internal domains
+C. To ensure that the Package and Plan are linked to your API Definition
+D. To control access to the API
+
+
 
 
 
