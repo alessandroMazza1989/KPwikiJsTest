@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T12:35:26.095Z
+date: 2021-06-04T12:39:44.438Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -23,4 +23,19 @@ A. Configuration Manager
 B. Reports dashboard
 C. Developer Portal
 D. **Control Center**
+
+## What typically contains information about the user agent, the end user, and session information?
+
+A. Query parameters
+B. **HTTP Request Headers**
+C. Hostnames
+D. Endpoints
+
+## Select the 2 different versions of TIBCO Mashery that is available
+Choose 2 answers
+
+A. **TIBCO Mashery Local**
+B. **TIBCO Cloud Mashery**
+C. TIBCO Mashery On-premise
+D. TIBCO Mashery API
 
