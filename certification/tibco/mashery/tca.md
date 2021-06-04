@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T14:06:56.468Z
+date: 2021-06-04T14:09:58.269Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -295,5 +295,12 @@ A. **24 characters**
 B. 48 characters
 C. 36 characters
 D. 12 characters
+
+## What must you do with a domain name that you use in an endpoint before you create the endpoint?
+
+A. Rename the endpoint
+B. **Whitelist the domain**
+C. Renaim the domain name
+D. Test the endpoint
 
 
