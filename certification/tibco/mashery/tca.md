@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T14:02:57.363Z
+date: 2021-06-04T14:04:16.828Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -280,5 +280,13 @@ A. API Domains
 B. **Endpoints**
 C. API Definitions
 D. HTTP Headers
+
+## Select 2 places where package keys can be generated from.
+Choose 2 answers
+
+A. **Control Center**
+B. Reports dashboard
+C. Configuration Manager
+D. **Developer Portal**
 
 
