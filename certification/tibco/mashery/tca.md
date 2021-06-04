@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T13:03:52.347Z
+date: 2021-06-04T13:14:05.991Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -113,8 +113,34 @@ B. Failsafe Timeout Count
 C. Zone QPS Limit
 D. **Area ID**
 
+## Which component can administrators use to access the Configuration Manager and Developer Portal of a zone?
 
+A. Docker container
+B. Traffic Manager
+C. Registry
+D. **Cluster Manager**
 
+## What is a Mashery Local installation with all the necessary Mashery Local components?
+
+A. A zone
+B. **A cluster**
+C. An untethered development mode
+D. A hybeid development mode
+
+## What 2 deployment modes can you use with TIBCO Mashery Local?
+Choose 2 answers
+
+A. Cloud
+B. **Hybrid**
+C. On-premises
+D. **Untethered**
+
+## In Mashery Local, what is a browser-based configuration utility similar to Cloud Mashery's Control Center?
+
+A. Reports dashboard
+B. **Configuration Manager**
+C. Portal Configuration
+D. Developer Portal
 
 
 
