@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T14:44:13.971Z
+date: 2021-06-04T14:46:05.045Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -309,5 +309,10 @@ A. **API Control Center**
 B. API Program Domains
 C. API Definitions
 D. API Marketplace
+
+## When you define the primary key settings of an endpoint in TIBCO Cloud Mashery, the default value is noapikey.
+
+A. true
+B. **false**
 
 
