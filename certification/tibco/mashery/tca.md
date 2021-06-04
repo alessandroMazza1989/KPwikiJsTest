@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T13:39:27.873Z
+date: 2021-06-04T13:44:25.446Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -211,6 +211,18 @@ A. The protocol of the published endpoint
 B. Your own domain
 C. **The area domain of the account**
 D. The path of the endpoint
+
+## In TIBCO Mashery, where can you manage your community of API consumers?
+
+A. **Control Center**
+B. Reports dashboard
+C. Developer Portal
+D. Configuration Manager
+
+## TIBCO Cloud Mashery Developer Portal is always cloud-hosted.
+
+A. true
+B. **false**
 
 
 
