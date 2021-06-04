@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T12:47:11.521Z
+date: 2021-06-04T12:51:00.895Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -59,6 +59,27 @@ A. Endpoints
 B. HTTP Headers
 C. API Domains
 D. **API Definitions**
+
+## What is a container object with information about how developers can use an API?
+
+A. A package
+B. A package key
+C. A plan
+D. **An application**
+
+## In TIBCO Mashery, how do you restrict access to an API?
+
+A. Specify access in the HTTP Header
+B. **Link a Method to a Plan in the Plan Designer**
+C. Restrict access in Method Location
+
+## What defines the level of access that developers have to an API?
+
+A. A package
+B. A package key
+C. **A plan**
+D. An Application
+
 
 
 
