@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T14:04:16.828Z
+date: 2021-06-04T14:06:56.468Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -288,5 +288,12 @@ A. **Control Center**
 B. Reports dashboard
 C. Configuration Manager
 D. **Developer Portal**
+
+## What is the default length of the Key Length that is used when Mashery generates keys for an API.
+
+A. **24 characters**
+B. 48 characters
+C. 36 characters
+D. 12 characters
 
 
