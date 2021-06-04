@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T13:51:31.696Z
+date: 2021-06-04T13:54:31.145Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -250,5 +250,11 @@ A. **Create a client application**
 B. Create an API definition
 C. Remove the key from the endpoint URL and test in a browser.
 D. **Use interactive documentation (I/O Docs) in the Developer Portal**
+
+## How many zones can a cluster have?
+
+A. There are no zones in a cluster
+B. **Multiple**
+C. One
 
 
