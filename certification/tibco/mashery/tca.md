@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T13:14:05.991Z
+date: 2021-06-04T13:24:13.482Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -141,6 +141,43 @@ A. Reports dashboard
 B. **Configuration Manager**
 C. Portal Configuration
 D. Developer Portal
+
+## What does Area UUID represent?
+
+A. **Area Unversally Unique Identifier**
+B. Area User to User Identifier
+C. Area Unix User Identifier
+D. Area Universal User Identifier
+
+## Select 3 items that a Mashery Local component consists of.
+Choose 3 answers
+
+A. Docker client
+B. **Docker container image**
+C. **One or more managed processes that are started by the Docker container agent**
+D. **Docker container agent**
+
+## To switch between deployment modes in TIBCO Mashery Local, you must first redeploy a mode.
+
+A. false
+B. **true**
+
+## What acts as a common service for all Mashery Local components to store information about the topology of a cluster?
+
+A. Log service
+B. Cache
+C. SQL database
+D. **Registry**
+
+## Select 3 components of a Mashery Local installation.
+Choose 3 answers
+
+A. **Cluster Manager**
+B. **Traffic Manager**
+C. Docker container image
+D. **NoSQL database**
+
+
 
 
 
