@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T13:47:23.630Z
+date: 2021-06-04T13:51:31.696Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -238,8 +238,17 @@ B. API Key Location
 C. API Call Request
 D. Method Location
 
+## An automatically generated API key cannot be disabled.
 
+A. true
+B. **false**
 
+## Select 2 ways that you can test an API key.
+Choose 2 answers
 
+A. **Create a client application**
+B. Create an API definition
+C. Remove the key from the endpoint URL and test in a browser.
+D. **Use interactive documentation (I/O Docs) in the Developer Portal**
 
 
