@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T12:58:37.790Z
+date: 2021-06-04T13:03:52.347Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -93,6 +93,26 @@ A. 24 characters
 B. 12 characters
 C. **10 characters**
 D. 40 characters
+
+## Why would you specify a value 0 in the Number of Keys allowed until Moderation field, when you are setting key properties?
+
+A. To limit the number of keys generated
+B. To automatically enable the key
+C. **To require Administrator approval for every key that a developer generates**
+
+## You can test an application without an API Key. True or False
+
+A. false
+B. **true**
+
+## In TIBCO Mashery Local, the zone settings display 2 values that are required when publishing an endpoint to Mashery using TIBCO Cloud Integration. Select 2 required values.
+Choose 2 answers
+
+A. **Area UUID**
+B. Failsafe Timeout Count
+C. Zone QPS Limit
+D. **Area ID**
+
 
 
 
