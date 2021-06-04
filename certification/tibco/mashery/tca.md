@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T12:55:09.724Z
+date: 2021-06-04T12:58:37.790Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -80,7 +80,19 @@ B. To whitelist your internal domains
 C. To ensure that the Package and Plan are linked to your API Definition
 D. To control access to the API
 
+## What can you enable to allow developers to generate keys for themselves on the Developer Portal?
 
+A. **Self-service Key Provisioning**
+B. Generate Shared Secret
+C. Key Length
+D. Admin Key Provisioning
+
+## Mashery can generate a password that only developers know, called a Shared Secret. What is the default length of a Shared Secret?
+
+A. 24 characters
+B. 12 characters
+C. **10 characters**
+D. 40 characters
 
 
 
