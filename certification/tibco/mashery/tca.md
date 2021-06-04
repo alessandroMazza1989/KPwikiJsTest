@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T13:24:13.482Z
+date: 2021-06-04T13:33:21.423Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -176,6 +176,34 @@ A. **Cluster Manager**
 B. **Traffic Manager**
 C. Docker container image
 D. **NoSQL database**
+
+## When you save an I/O Docs definition what 2 validations occur?
+Choose 2 answers
+
+A. API validation
+B. XML validation
+C. **JSON schema validation**
+D. **JSON validation**
+
+## What can you do to make your API visible in the Developer Portal?
+
+A. **Assign access role**
+B. Create I/O docs
+C. Enable the package key
+D. Register an Application that calls your API
+
+## What does I/O Docs represent?
+
+A. **Interactive documentation**
+B. Input/Output documentation
+C. Internet Only documentation
+
+## Where can developers access I/O Docs?
+
+A. Reports Dashboard
+B. **Developer Portal**
+C. Configuration Manager
+D. Control Center
 
 
 
