@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T14:43:41.485Z
+date: 2021-06-04T14:44:13.971Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -300,7 +300,7 @@ D. 12 characters
 
 A. Rename the endpoint
 B. **Whitelist the domain**
-C. Renaim the domain name
+C. Rename the domain name
 D. Test the endpoint
 
 ## What is the administrative dashboard for Mashery's Saas-based API Management Platform?
