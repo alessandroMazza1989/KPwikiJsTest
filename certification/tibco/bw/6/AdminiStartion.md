@@ -2,7 +2,7 @@
 title: Administration
 description: 
 published: true
-date: 2021-06-07T12:39:44.993Z
+date: 2021-06-07T12:43:53.750Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T10:51:33.802Z
@@ -281,3 +281,97 @@ a. **config.ini**
 b. bwagent.ini
 c. bwappnode.log
 d. bwappnode.tra
+
+Engine
+
+## Which is a true statement about the responsabilities of a BusinessWorks 6.x engine?
+
+a. **It runs an application in an appnode**
+b. It is responsible for synchronizing datastore with the local file system
+c. It performs administration commands
+d. It is responsible for communication with TEA
+
+# Upload / Deploy / Ear
+## Appspace con app1 deployata, quale di questi casi è vero?
+Risposta: se crei un altro nodo l'applicazione viene deployata automaticamente + se crei un altro nodo aumenti la capacità.
+## Which two statements are true about applications deployed to an AppSpace? (choose two)
+
+Adding more appnodes will not affect capacity.
+Adding appnodes after an application is deployed does not scale the application.
+**Adding more appnodes will increase capacity.**
+**A deployed application scales dynamically across all the appspace.**
+A deployed application scales dynamically across all the appnode.
+
+## Come si possono creare gli EAR?
+Risposta: business Studio e bwdesign
+bwdesign utility provides a command line interface for creating, validating, importing or exporting resources stored in a workspace.
+bwdesign legge le cose dentro un workspace --> allora per farlo partire faccio:
+bwdesign -data C:\myWorkspace.
+bwdesign> export -e App.application C:/<path>/outputFolder
+## Con quale tool è possibile creare un ear su BW6? scegli 2 risposte
+
+**TIBCO Business Studio**
+**bwdesigner**
+bwinstall
+bwadmin
+## Con quale tool è possibile eseguire i deploy degli ear? scegli 2 risposte
+
+**TIBCO Business Studio**
+bwdesigner
+bwinstall
+**bwadmin**
+
+## Which three components can be used to deploy applications in Businessworks 6.x? (Choose three)
+
+a. **bwadmin command line tool**
+b. bwagent.ini configuration file
+c. bwdesign command line tool
+d. **TIBCO Business Studio**
+e. **TIBCO Enterprise Administrator**
+## Hai un’applicazione che deve funzionare sia su sistema Windows che su sistema Linux dovendo considerare una path legata ai file system. Quale metodo bisogna usare?
+Risposta: Profile application
+## A Tibco AM BW application will be deployed on both Windows And Linux Servers; the application uses a property named Path that uses the appropriate operating system syntax to point the files in the file system. How can you specify different configuration of the variables that the application uses?
+by using a variable insted of a Property
+**by creating different Application Profiles**
+by defining the path property ad a Process Property
+by creating different Application Module Profiles
+## Cosa serve in una configurazione Simple Server Configuration?
+Risposta: Almeno un bwagent con role server
+Simple High Availability Configuration: è quella con piu di un server (che gestiscono il datastore)
+High Availability Configuration with Remote Clients: Come prima ma permette ma the TCP connection mesh can be avoided by setting the bwagent
+
+## Domanda riferita a Simple Server Configuration simile alla domanda precedente
+Risposta: Almeno un Role Server
+
+## What is the appropriate command line option to use when uploading Tibco BusinessWorks Application to a non- …archive location named QA
+
+bwadmin  upload archive/QA application.ear –d MyDomain
+bwadmin  upload –d MyDomain archive/QA application.ear
+bwadmin  upload –path archives/QA application.ear –d MyDomain
+**bwadmin  upload –d MyDomain –path /QA application.ear**
+ 
+## Which three TIBCO AM BW artifacts can be designed using TIBCO Business Studio? (Choose Three)
+
+bwagent network
+**applications**
+AppNode
+**application module**
+**shared module**
+domain
+## Quando un’applicazione mostra lo stato "impaired" durante lo startup?
+
+An application having an impaired status means that it is not ready to run.
+
+## Why does an application show "impaired" state during startup?
+
+a. Multiple applications are trying to startup at the same time
+b. **All dependencies are not available**
+c. bwagent is not available
+d. Connection with TEA is not available
+## What are the three minimum requirements for deploying  TIBCO Active Matrix BusinessWorks Applications across multiple machines? (Choose three)
+Set up a domain with an AppSpace and an AppNode
+Set up the deployment mode to enterprise by using the bwagent utility
+**Set up a domain with at least one AppSpace and two AppNodes**
+**Set up the deployment mode mode to enterprise by using the bwadmin utility**
+**Set up the persistence store and communication transport layer for domain configuration data**
+Set up a domain with deployment mode set to file system
