@@ -2,7 +2,7 @@
 title: Administration
 description: 
 published: true
-date: 2021-06-07T12:24:23.733Z
+date: 2021-06-07T12:28:48.828Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T10:51:33.802Z
@@ -123,4 +123,45 @@ a. to synch data directly between a machine and local files managed by AppSpaces
 b. to synch data directly between a machine without a third component
 c. **to synch data directly between a machine and a datastore managed by AppSpaces**
 d. to synch data directly between machines in separate admin domains
+
+# Bwadmin
+
+## Comando bwadmin per upload di un archivio su uno specifico path all'interno di un dominio.
+Risposta: bwadmin upload -d myDomain -path <relative_path> application.ear
+bwadmin upload -d myDomain C:/<path>/application.ear (-replace se esiste gia) in questo modo l'ear viene caricato sulla directory di default BW_HOME/domains/domain_name/archives
+## In modalità local chi gestisce le entità a runtime?
+Risposta: bwadmin
+## Quale entità runtime viene utilizzata per creare runtime entity in ambiente enterprise?
+Risposta: bwadmin
+## How do you create runtime entities with the deployment mode set to local?
+Create the runtime entities while installing the product.
+Local mode uses default runtime entities created by the bwagent.
+Use TIBCO Enterprise Administrator to create runtime entities.
+**Use BwAdmin to create runtime entities**
+## You have configured your bwagent to run in enterprise mode. What are the two different utilities that you can use to deploy your application? (chose two)
+TIBCO Administrator
+bwdesign
+bwinstall
+**TIBCO Enterprise Administrator**
+**bwadmin**
+## You have two machines configured in an agent network. A domain and AppSpace span across both machines. Each machine had a single AppNode, which is part of the same AppSpace. Which utility allows you to deploy an application to the AppSpace so that it runs on each AppNode?
+bwinstall
+bwdesign
+bwdesign
+**bwadmin**
+## Which three statements are true about bwadmin backup and restore commands in an enterprise mode? (choose three) 
+**The backup command exports the current state of the environment to a command file.**
+The bwadmin backup command and the bwadmin restore command are complementary.
+**The restore command restores the file system of a bwagent to the state of the persistent datastore.**
+**The bwadmin backup command and the bwadmin restore commad are not complementary.**
+The backup command exports the current state of the environment to a datastore.
+The restore command restores the file system of a bwagent to the least checkpoint state of a datastore.
+
+## Which three tasks can be performed using bwadmin tool? (Choose three)
+
+a. Validating the workspace
+b. **Deployng and managing applications**
+c. Generating EAR file
+d. **Creating runtime entities**
+e. **Addressing different bwagent networks**
 
