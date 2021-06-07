@@ -2,7 +2,7 @@
 title: Administration
 description: 
 published: true
-date: 2021-06-07T12:43:53.750Z
+date: 2021-06-07T12:48:50.203Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T10:51:33.802Z
@@ -375,3 +375,116 @@ Set up the deployment mode to enterprise by using the bwagent utility
 **Set up the deployment mode mode to enterprise by using the bwadmin utility**
 **Set up the persistence store and communication transport layer for domain configuration data**
 Set up a domain with deployment mode set to file system
+
+# Persistence modes
+
+## What are the three options available to define the engine persistence mode at an AppSpace level? (Choose three.)
+Risposta: memory, datastore, group
+## What are the three options available to define the engine persistence mode at an AppSpace level? (Choose three.)
+ 
+**memory**
+cache
+**datastore**
+file
+**group**
+exclusive
+## Quali sono le tre opzioni per settare la persistenza dell'engine
+Risposta: group, datastore e memory
+## Cosa è obbligatorio nel caso in cui la persistence mode property è impostata su group?
+Risposta: ems as group provider technology
+## Se la modalità è group che vuole dire?
+Risposta: Appspace è configurato in modalità managed fault tollerance
+## La differenza tra managed e non-managed fault tollerance
+Risposta: nella managed gli appnode sono a conoscenza uno dell'altro e un appnode può recuperare il lavoro di un altro appnode caduto.
+https://docs.tibco.com/pub/activematrix_businessworks/6.2.2/doc/html/GUID-8361DA81-4AA8-45EA-A98A-1624FEC6BF54.html
+Uno lo setto con persistence=group e l’altro con datastore. Entrambe gestiscono checkpoint.
+## Your company requests that you set up managed fault tolerance for applications deployed on AppSpace A1. How should you configure the engine persistence modes and requirements in order to fulfill the request?
+Risposta: Engine persistence mode must be set to group + EMS + Database
+## Your company requests that you set up managed fault tolerance for applications deployed on AppSpace A1. How should you configure the engine persistence modes and requirements in order to fulfill the request?
+Risposta: Engine persistence mode must be set to group, TIBCO Enterprise Message Service must be configured to let AppNodes communicate between them, and a database is required for persistence.
+
+## Your company requests that you set up managed fault tolerance for applications deployed on AppSpace A1. How should you configure the engine persistence modes and requirements in order to fulfill the request?
+ 
+A.Engine persistence mode must be set to memory, and TIBCO Enterprise Message Service must be configured to let AppNodes communicate between them.
+B.Engine persistence mode must be set to datastore, and TIBCO ActiveSpaces must be configured to let AppNodes communicate between them.
+C.**Engine persistence mode must be set to group, TIBCO Enterprise Message Service must be configured to let AppNodes communicate between them, and a database is required for persistence.**
+D.Engine persistence mode must be set to TIBCO ActiveSpaces, TIBCO Enterprise Message Service must be configured to let AppNodes communicate between them, and a database is required for persistence.
+## Fault tolerance (3 o 4 domande): Differenze tra managed e non managed.come impostare la persistence mode nei due casi. 4 scenari in cui era richiesto quale delle due modalità scegliere.
+Risposta: Appnode sanno o no della presenza di altri appnode
+## Which two engine persistence modes allow the use of checkpoints? (Choose two)
+Risposta: Datastore e Group
+## Which two engine persistence modes allow the use of checkpoints? (Choose two)
+
+a. Filesystem**
+b. **Datastore
+c. **Group**
+d. Memory
+R: b,c
+## Quando la persistence mode property è impostata su group, quale di queste risposte è corretta?
+database connection deve essere specificata solo a livello di appspace
+## Which to statements are true about a bw.engine.persistenceMode that is set to group? (Choose 2 answers)
+The non-managed fault tolerance feature requires this properties
+The database connection configuration must be specified only at the AppNode level
+The engine does not require a database to be configured
+**The engine required a group provider such as Tibco Enterprise Message Service to be configured**
+**The group mode supports the Checkpoint activity and other persistence features**
+
+## What is indicated if the engine persistence mode (bw.engine.persistenceMode) is set to type group?
+**ActiveMatrix BusinessWorks Environment is in managed fault tolerance mode**
+The engines are unaware of the existence of each other
+Each AppNode in a AppSpace has a unique database specified at the AppNode level
+ActiveMatrix BusinessWorks Environment is in non-managed fault tolerance mode
+
+## Quale definizione è corretta per managed fault tollerance e non-managed fault tollerance? (scegliere due )
+Risposta: studiare bene Fault Tollerance – vengono mostrati vari casi
+## You have a TIBCO ActiveMatrix BW application running on multiple AppNodes, which are part of the same AppSpace. You want to read or update the module shared variable state. Which option should you select?
+bw.engine.persistenceMode = “AppSpace”
+**bw.engine.persistenceMode = “group”**
+bw.engine.persistenceMode = “datastore”
+bw.engine.persistenceMode = “true”
+
+## The TIBCO AM BW architect requests the application developer to desgin applications that allow high availability. Which three configuration properties should be set so that managed fault tollerance is implemented? (Choose three)
+bw.engine.persistenceMode=datastore
+a minimum of two AppNodes across two AppSpaces
+**Process Activation In Business Studio**
+**bw.engine.persistenceMode=group**
+Process Mode in Business Studio
+**a minimum of two AppNodes in an AppSpace**
+
+## Which two statements are true about the fault tolerance feature of TIBCO AM BW applications? (Choose two)
+
+Managed fault tolerance requires persistence mode to be set memory, while non-managed fault tolerance requires persistence mode to be set to group.
+Managed fault tolerance requires activation mode to be set to Single AppNode, while non-managed fault tolerance requires activation mode to be set to Multiple AppNode.
+**In Managed fault tolerance, AppNode are aware of other AppNodes in the AppSpace, while in non-managed fault tolerance, AppNodes are unaware of other AppNodes in the AppSpace.**
+**Managed fault tolerance requires persitance mode to be set to group, while non-managed fault tolerance requires persistence mode to be set to datastore.**
+Managed fault tolerance supports checkpointing, while non-managed fault tolerance does not support checkpointing.
+
+## Domande sulla fault tolerance (managed fault tolerance / non -managed fault tolerance) : differenze tra i due tipi di fault tolerance gestiti, quali sono gli engine persistence mode che vanno settati per le diverse tolerance gestite, esempi di environment con descrizioni di configurazioni, e domande di cosa succede alle applicazioni se una macchina va giù...
+
+➢	Managed Fault Tolerance
+
+In managed fault tolerance, when an AppNode fails, the application on another AppNode takes over automatically. The AppNodes in an AppSpace are aware of each other’s existence and the engines collaborate to provide fault tolerance.The managed fault tolerance requires:
+
+○	 The engine persistence mode (bw.engine.persistenceMode) to be set to type group. The persistence mode of type group requires both database and group provider configurations. See Engine Persistence Modes for details.(Memory,Datastore,Group)
+○	  A minimum of two AppNodes in an AppSpace.
+Sorgente: https://docs.tibco.com/pub/activematrix_businessworks/6.2.2/doc/html/GUID-8361DA81-4AA8-45EA-A98A-1624FEC6BF54.html
+
+➢	Non-managed Fault Tolerance
+
+In non-managed fault tolerance, the AppNodes in an AppSpace are not aware of each other's existence and there is no collaboration between the engines. Consequently, if an AppNode fails, then another AppNode in the AppSpace will not take over automatically.The non-managed fault tolerance requires:
+○	The engine persistence mode (bw.engine.persistenceMode) to be set to type datastore. The persistence mode of type datastore requires database configurations. See Engine Persistence Modes for details.
+○	 If there are multiple AppNodes in the AppSpace, then each AppNode must be configured with a unique database configuration. An AppNode specific database configuration is stated through the AppNode config.ini file.
+
+## A company has a requirement that during failover, new jobs and all check-pointed jobs should be processed. Why is managed fault tolerance the best configuration option?
+Because it is easier to configure then non-managed fault tolerance and requires no design time setup.
+**Because the appnode are aware of each other, and the engines collaborate to provide fault tolerance.**
+Because it requires only one AppNode to be deployed for engines to collaborate and provide fault tolerance.
+Because each AppNode must be configured with a unique database configuration and collaboration between engines.
+
+## Which action provide environment fault tolerance?
+
+a. Setting activation mode to Multiple AppNodes
+b. Setting engine persistence mode as memory
+c. **Configuring multiple bwagents as server in the network**
+d. Setting activation mode to Single Node
+
