@@ -2,13 +2,13 @@
 title: Administration
 description: 
 published: true
-date: 2021-06-07T10:51:33.802Z
+date: 2021-06-07T10:52:01.034Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T10:51:33.802Z
 ---
 
-# Bwagent 
+# Bwagent
 ## Quali sono le opzioni al comando bwagent. (Choose 3)
 Risposta: stop, apiserver, startagent
 ## Due applicazioni deployate su due macchine M1, M2 sullo stesso appspace.App1 è configurata con activation mode in single node e l'App2 è configurata in multiple appnode. Se casca l'agent2 che succede alle applicazioni?
