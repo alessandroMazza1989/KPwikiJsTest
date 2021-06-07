@@ -2,7 +2,7 @@
 title: Administration
 description: 
 published: true
-date: 2021-06-07T12:31:36.026Z
+date: 2021-06-07T12:39:44.993Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T10:51:33.802Z
@@ -173,3 +173,111 @@ a. **Validate modules**
 b. **Import ZIP file into workspace**
 c. Upload an archive to a domain
 d. Deploy an application
+
+# Appspace / Appnode / Domain / Server
+## Cosa è un'appsapce
+Risposta: non è un contenitore fisico
+AppNodes. An AppNode is a JVM process that hosts applications created in TIBCO Business Studio. An AppNode can belong to only one AppSpace. Each application that is deployed into a AppSpace runs on all of its AppNodes. AppNodes allow vertical and horizontal scaling.
+E’ un’entità che può avere al proprio interno più contenitori che hostano applicazioni
+
+https://docs.tibco.com/pub/activematrix_businessworks/6.1.0/doc/html/GUID-1E3DEBDB-0D60-4290-A284-09E7329F804B.html
+
+## Quale di queste definizioni è corretta nel caso di Appspace?
+Risposta: E’ un’entità che può avere al proprio interno più contenitori che hostano applicazioni
+## Due appnode sulla stessa macchina, come configuro rest doc dedicato ad ogni nodo
+Risposta: Modifico la property BWRest.docApi nel config.ini del bwappnode
+## What does degraded state indicate for an AppSpace?
+Risposta: The AppSpace does not have the minimum specified AppNodes.
+## What does degraded state indicate for an AppSpace? 
+
+The config file for the AppSpace has incorrect values.
+**The AppSpace does not have the minimum specified AppNodes.**
+The AppSpace is opened in an earlier version of TIBCO ActiveMatrix BusinessWorks.
+The domain was moved from local to enterprise mode.
+## Scegliere le affermazioni corrette nel caso di AppNodes (2 scelte)
+
+## Si hanno due Macchine con due Appnode presenti su un Appspace e con attivazione su Single Node. Hai impostato la managed Fault Tollerance. Per errore l’operatore stoppa l’applicazione. Cosa succede?
+
+## An application you have created with activation set to Single AppNode is deployed into an AppSpace consisting of two AppNodes (A1 and A2). One of the administrators accidentally stops AppNode A1. What is the expected behavior of your application?
+The application will be activated on A2, but no requests are processed.
+The application is standby on A2, and no requests are processed.
+The application will be activated on A2, and requests are processed.
+**The application is stopped on A2, and no requests are processed.**
+## Stessa domanda (vedi precedente) senza managed fault tollerance.
+
+## How do you generate the config file for an AppSpace?
+**Run the command: bwadmin config -d myDomain -a myAppspace -cf <temporaryLocation>/config.ini**
+Run the command: bwinstall config -d myDomain -a myAppspace -cf <temporaryLocation>/config.ini
+Run the command: bwdesign config -d myDomain -a myAppspace -cf <temporaryLocation>/config.ini
+Copy the config file from the samples directory
+
+## Cosa indica lo stato out-of-sync sull’appspace?
+Risposta da doc: The AppSpace is out of synchronization. The out-of-sync state may occur when:
+○	a bwagent is not reachable due to network failure, or
+○	the bwagent configuration may not have been applied remotely.
+https://docs.tibco.com/pub/activematrix_businessworks/6.5.1/doc/html/GUID-671998A0-FF69-4C1C-9A10-02F1B21AFFE1.html
+## What does an out-of-sync status mean after deployng an application to an AppSpace? (Choose Two)
+
+A bwagent configuration failed to start.
+**A bwagent is not reachable due to network failure.**
+**A bwagent configuration may not have been applied remotely.**
+A bwagent is not reachable because the AppNode is stopped.
+A bwagent is stopped.
+
+## You need to activate your process on a different AppNode, but only if the existing AppNode fails. Which Activation setting should you use to achive this goal?
+Fallover AppNodes
+Multiple AppNodes
+Elastic AppNodes
+**Single AppNode**
+## TIBCO Enterprise Administrator cannot find a domain. Whats is the problem? (Da rivedere, Nicola porta in local mode)
+The domain was created in local mode.
+The domain was created in enterprise mode.
+The TIBCO Enterprise Administrator cannot access the local file system.
+The TIBCO Enterprise Administrator cannot connect to the database.
+
+## Configurazione single appnode cosa bisogna configurare?
+persistent mode group
+process activaction
+
+## Which three data elements are included in the TRA file for AppNode? (Choose three)
+
+a. **Path of the JVM**
+b. **Classpath**
+c. Configuration for data persistence
+d. Logging configurations
+e. **Memory settings**
+
+## Which property is available only in the config file for appnode?
+
+a. Hawk microagent configuration
+b. Swagger configuration
+c. Palette properties
+d. **Engine settings**
+
+## Which two statements are true about BusinessWorks runtime components? (Choose two)
+
+a. A domain contains exactly one appspace
+b. An application can be deployed to a specific appnode in an appspace
+c. **When an application is deployed to an appspace, it is deployed to all appnodes in that appspace**
+d. **An application is always deployed to an appspace**
+
+## Which three statements are true BusinessWorks 6.x runtime components? (Choose three)
+
+a. **An AppSpace is a logical boundary which contains a collection of AppNodes**
+b. **An AppNode is a JVM that runs application as OSGi bundle**
+c. An AppNode can run only one application
+d. **A Domain is a collection of AppSpaces**
+
+## Which two are choices for creating a domain in Enterprise mode? (Choose two)
+
+a. **TIBCO Enterprise Administrator Web User Interface**
+b. Register the bwagent on TEA
+c. TIBCO ActiveSpaces
+d. **bwadmin command line tool**
+
+## Which file is used to enable HMA for an AppNode?
+
+a. **config.ini**
+b. bwagent.ini
+c. bwappnode.log
+d. bwappnode.tra
