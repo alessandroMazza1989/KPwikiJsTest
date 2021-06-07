@@ -2,7 +2,7 @@
 title: Administration
 description: 
 published: true
-date: 2021-06-07T12:48:50.203Z
+date: 2021-06-07T12:51:51.572Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T10:51:33.802Z
@@ -487,4 +487,65 @@ a. Setting activation mode to Multiple AppNodes
 b. Setting engine persistence mode as memory
 c. **Configuring multiple bwagents as server in the network**
 d. Setting activation mode to Single Node
+
+# Drivers / Installation
+
+## Qual è la procedura per installare in un ambiente di runtime i driver Oracle JDBC?
+Risposta: Copiare il file nella cartella di terze parti JDBC + utilizzare bwinstall oracle-driver
+## Which two actions must be performed for an Oracle driver to be used inside BusinessWorks environment? (Choose two.)
+
+**Use the bwinstall utility**
+Copy the JDBC jar file to any folder in the RunTime Classpath
+**Copy the JDBC jar file to the Tibco third-party JDBC Driver folder**
+Use the bwadmin utility
+Copy the JDBC jar file in the bwagent lib folder
+## Quali sono i DB per cui è necessario fare l’installazione dal bwinstall?
+Risposta: ci sono gia i driver per PostgreSQL e Microsoft SQL Server, gli altri bisogna fare la procedura.
+## Quali driver JDBC non sono installati?
+Risposta: le opzioni sono 5 e sono presenti Postgres, MySQL e MicrosoftSQL
+## Which to database driver require additional configuration in other to be used with Tibco Active Matrix BW? (Choose two.)
+
+HSQLDB driver
+**MySQL Database driver**
+**Oracle Database driver**
+Microsoft SQL Server driver
+Postgress SQL driver
+
+## Driver DB supportati di default e per i quali non  vanno installati i driver sulle macchine in fase di configurazione degli agents (choose 2)
+
+Oracle
+**Microsoft SQL**
+**PostgreeSQL**
+MySQL
+
+## Which statement is true about BusinessWorks 6.x installation?
+
+a. TEA must be installed on all the machines where BW is running
+b. BusinessWorks 5 and 6 cannot co-exist in the same TIBCO HOME
+c. **There is no dependency between BW and TEA for order installation**
+d. TIBCO Enteprise Administrator must be installed after BusinessWorks
+
+# Remote client
+
+## Requisiti minimi per configurare remote client su appspace (activespace)
+Risposta: Nel bwagent.ini bisogna settare i seguenti parametri: role=server, remote-discoveryURL e remoteListenURL
+## RemoteCLientConfiguration
+
+Risposta: bw.agent.technology.as.remoteListenURL e bw.agent.technology.as.remoteDiscoveryURL
+Nel bwagent.ini bisogna settare i seguenti parametri: role=server, remote-discoveryURL e remoteListenURL
+
+## M1 M2 M3 con M3 remote client
+Risposte: settare
+M1 role=server remoteListenURL=tcp://Machine1:5060 remotediscoveryURL=tcp://Machine1:5050;Machine2:5050 to
+M2 role=server remoteListenURL=tcp://Machine2:5060 remoteDiscoveryURL=tcp://Machine1:5060;Machine2:5060
+M3 role=remoteclient remoteDiscoveryURL=tcp://Machine1:5060;Machine2:5060 (remoteListenURL M1;M2)
+## Scenario: sulla macchina M1 e M2 sono configurati con role=server i 2 bwagent, su M3 è configurato il bwagent con client. Qual è la corretta configurazione per gestire M3 come remote client?
+Risposta: impostare il remoteListenUrl su M1 e M2 e il remoteDiscoveryURL su M3=remoteListenURL M1;M2    
+## TIBCO ActiveMatrix BusinessWorks agents on machines M1, M2, and M3 are configurated with TIBCO ActiveSpaces as the persistence and transport technology. M1 and M2 are configured ad servers. Assume all agentes are started on port 5060. For M3 to act as a remote client, which property should you set on all agents so that M3 would remain unaffected if mahine M1 goes down?
+
+remoteListenURL on M1 and M3; remoteDiscoveryURL on M2
+remoteDiscoveryURL on M1 and M3; remoteListenURL on M2
+remoteDiscoveryURL on M1 and M2; remoteListenURL on M3
+**remoteListenURL on M1 and M2; remoteDiscoveryURL on M3**
+ in aggiunta M3 role=remoteclient remoteDiscoveryURL=tcp://Machine1:5060;Machine2:5060 (remoteListenURL M1;M2) ….M3 discoveryUrl
 
