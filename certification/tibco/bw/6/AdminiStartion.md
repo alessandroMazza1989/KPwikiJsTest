@@ -2,7 +2,7 @@
 title: Administration
 description: 
 published: true
-date: 2021-06-07T12:53:43.331Z
+date: 2021-06-07T12:57:13.319Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T10:51:33.802Z
@@ -595,3 +595,76 @@ b. **It provides web-based GUI and command-based shell interface**
 c. It provides peer-to-peer administration
 d. **It is based on agent-based architecture**
 
+# Backup / Restore
+## Quali affermazioni sono vere su backup e restore :
+-The backup command backs up a specified runtime entity to a command file
+-The bwadmin backup command and the bwadmin restore command are not complimentary.
+-The restore command restores the file system to the state of the datastore
+ https://docs.tibco.com/pub/activematrix_businessworks/6.5.1/doc/html/GUID-53B1D995-BF8D-4B38-A28D-E3A17A7E2A60.html
+
+
+# Seeder
+## Il seederCount è 16. A quanto deve essere impostato il QuorumSize?
+Risposta: 16.
+## You have a multi-agent, multi-machine environment with a seeder count of 16. What should the quorum size be in this configuration?
+18
+8
+**16** (correct answer)
+32
+
+# OSGi
+## TIBCO ActiveMatrix BusinessWorks 6.x runtime is based on:
+
+a. In-Memory Data Grid
+b. **OSGi**
+c. Open API
+d. Eclipse
+
+## How does OSGi treat multiple versions of a jar file?
+
+a. The JVM classpath sets the jar file versioning
+b. The bundles resolve jar file discrepancies by running the highest version jar file
+c. The machine's classpath sets the jar file versioning
+d. **Each bundle runs its own version of the jar file** (not sure)
+
+
+## Qualcosa in cui si dovevano scegliere due tra OSGI-Java applications, C application, C++ application, TIBCO BusinessConnect Application.
+
+## Which two TIBCO AM BW project resource can be configured in TIBCO BuisnessStudio? (choose two)
+**TIBCO BusinessConnect Applications**
+**OSGI-based Java Applications**
+C Applications
+C++ Applications
+Process-Driven Application
+
+## TIBCO ActiveMatrix BusinessWorks 6.x runtime is based on:
+
+a. In-Memory Data Grid
+b. **OSGi**
+c. Open API
+d. Eclipse
+
+## Which three things can be viewed using OSGi console? (Choose three)
+
+a. Appspaces
+b. Domains
+c. **Module relationships**
+d. **Engine details**
+e. **Processes for all applications**
+
+## Which utility is used for creating OSGi bundle for external JDBC Drivers?
+
+a. tea
+b. **bwinstall**
+c. bwadmin
+d. bwagent
+
+# Basic Authentication
+## Basic Authentication, in general The General section has the following fields (è composta da tutti e tre):
+Package
+Name
+Description
+## Domande sulla basic authentication provider (cosa bisogna settare per configurarla)The Service Provider Details section has the following fields(è composta da tutti e tre):
+Select Authentication Type
+LDAP Resource
+XML File Resource
