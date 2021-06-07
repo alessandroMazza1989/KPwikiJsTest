@@ -2,7 +2,7 @@
 title: Administration
 description: 
 published: true
-date: 2021-06-07T10:52:01.034Z
+date: 2021-06-07T12:24:23.733Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T10:51:33.802Z
@@ -123,3 +123,4 @@ a. to synch data directly between a machine and local files managed by AppSpaces
 b. to synch data directly between a machine without a third component
 c. **to synch data directly between a machine and a datastore managed by AppSpaces**
 d. to synch data directly between machines in separate admin domains
+
