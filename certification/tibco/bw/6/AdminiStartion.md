@@ -2,7 +2,7 @@
 title: Administration
 description: 
 published: true
-date: 2021-06-07T12:28:48.828Z
+date: 2021-06-07T12:31:36.026Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T10:51:33.802Z
@@ -165,3 +165,11 @@ c. Generating EAR file
 d. **Creating runtime entities**
 e. **Addressing different bwagent networks**
 
+# Bwdesign
+
+## Which two functions can be performed using the bwdesign tool? (Choose two)
+
+a. **Validate modules**
+b. **Import ZIP file into workspace**
+c. Upload an archive to a domain
+d. Deploy an application
