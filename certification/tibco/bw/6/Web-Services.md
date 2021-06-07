@@ -2,7 +2,7 @@
 title: Web-Service
 description: 
 published: true
-date: 2021-06-07T13:07:06.114Z
+date: 2021-06-07T13:12:11.158Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T12:59:19.651Z
@@ -129,3 +129,64 @@ a. **Invokes RESTful web services**
 b. **Sends synchronous request and receives response from service provider**
 c. Provides RESTful web services
 d. Sends asynchronous request and receives response from service provider
+
+# SOAP
+## Come esporre lo stesso servizio soap contemporaneamente "soap over jms" e "e over http"
+Risposta: doppio binding sulla stessa operation
+## Come gestire il retry di chiamata soap quando il servizio non è attivo (tre volte)
+Risposta: Repeat on error
+## Mandare un attachment bitmap in un servizio soap. (ce n’era una simile)
+
+## Inviare attachment su servizi SOAP
+Risposta: Service Binding Request Context + palette SetContext
+## You are developing a process that needs to invoke a SOAP service. During development, the endpoint that hosts the service is located at http://development.example.org. During production, the endpoint that hosts the service is located at http://production.example.org. How do you ensure that the endpoint you are accessing is configurable?
+Risposta: Associate an HTTP Client with the transport configuration in the component bindings, and set the endpoint in the HTTP Client.
+## You are developing a process that needs to invoke a SOAP service. During development, the endpoint that hosts the service is located at http://development.example.org. During production, the endpoint that hosts the service is located at http://production.example.org. How do you ensure that the endpoint you are accessing is configurable?
+ 
+Use the SetEPR activity in the process and have a module property that references the endpoint.
+**Associate an HTTP Client with the transport configuration in the component bindings, and set the endpoint in the HTTP Client.**
+Set the endpoint in the advanced section of the Invoke activity, and use a module property that references the endpoint.
+Create a module property called soapServiceEndpoint., and use that to set the correct endpoint.
+
+## Which three Shared Resources does this process use? (Choose three.)
+ 
+**JDBC Connection**
+ODBC Connection
+**JMS Connection**
+**HTTP Connector**
+HTTP Client
+RESTFul Connector
+
+## Come impostare la Basic Authentication su SOAP?
+
+## You Have to create a SOAP Service that receives a JPEG image as an attachment.
+How must you create the WSDL for this service in other to achieve this goal?
+
+-A part of the input of the WSDL message must be of type xs:BLOB and configured as an attachment. In a concrete WSDL, the attachment is described as a mime part of the multipart message.
+**-A part of the input of the WSDL message must be of type base64binary and configured as an attachment. In a concrete WSDL, the attachment is described as a mime part of the multipart message**
+-A part of the input of the WSDL message must be of type BLOB. In a concrete WSDL, the attachment is describes as a mime part of the singlepart message
+-A part of the input of the WSDL message must be of type base64binary and configured a part of message. In a concrete WSDL, the attachment is describes as a mime part of the singlepart message
+
+## You are required to create a SOAP HTTP Service. In the service implementation, you also need the transport context. Which steps are required to be performed in the process?
+
+-Create a schema for the HTTP Transport Context, and use the Set Context activity in the process
+-Create a Context Resource for the HTTP Transport context, and use the Get Context activity in the process
+-Create a Context Resource for the HTTP Transport context, and use the Set Context activity in the process
+**-Create a schema for the HTTP Transport Context, and use the Get Context activity in the process**
+
+## Soap con attachment ma il cliente non vuole che venga inviato l’allegato, bensì solo il contenuto dello stesso. (Studiare)
+
+## ... a SOAP service by using JMS as transport. One part of the message is an attachment. The architect of your ….requests for you to forward the message to a JMS Queue; however, you may only forward a reference to the…. And not the attachment itself.
+
+-…process implementation, write the attachment to file, and use the output of the Write File acrivity to obtain a reference to the file containing the attachment
+-… process implementation, write the attachment to file, and use the Get Context activity to obtain a reference to the file containing the attachment
+**-…SOAP Service Binding, set the persistence file, and use the Get Context activity to obtain a reference to the file containing the attachment**
+-…SOAP Service Binding, set the persistence file, and use Read File activity to obtain a reference to the file containing the attachment
+
+## You create a SOAP service by using JMS as transport. One part of message is an attachment. The architect of your company requests for you to forward the message to a JMS Queue; however, you may only forward a reference to the attachment and not the attachment itself. What are the required steps to meet this request?
+
+**In the SOAP Service Binding, set the persistence to file, and use the Get Context activity to obtain a reference to the file containing the attachment**
+In the process implementation, write the attachment to file, and use the Get Context activity to obtain a reference to the file containing the attachment
+In the SOAP Service Binding, set the persistence to file, and use the Read File activity to obtain a reference  to the file containing the attachment
+In the process implementation, write the attachment to file, and use the output of the Write File activity  to obtain a reference  to the file containing the attachment
+
