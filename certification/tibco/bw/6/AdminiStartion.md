@@ -2,7 +2,7 @@
 title: Administration
 description: 
 published: true
-date: 2021-06-07T12:51:51.572Z
+date: 2021-06-07T12:53:43.331Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T10:51:33.802Z
@@ -548,4 +548,50 @@ remoteDiscoveryURL on M1 and M3; remoteListenURL on M2
 remoteDiscoveryURL on M1 and M2; remoteListenURL on M3
 **remoteListenURL on M1 and M2; remoteDiscoveryURL on M3**
  in aggiunta M3 role=remoteclient remoteDiscoveryURL=tcp://Machine1:5060;Machine2:5060 (remoteListenURL M1;M2) ….M3 discoveryUrl
+
+# TEA
+## Quale feature usi per modificare un puntamento a ems/jdbc da TEA a runtime:
+Risposta: Module properties
+## Cosa utilizzi per modificare un’impostazione sul TEA durante il running di un’applicazione?
+Risposta: Module Properties
+## Cosa utilizzi per modificare un’impostazione sul TEA durante il running di un’applicazione?
+
+Risposta: Application Properties
+
+## A Tibco ActiveMatrix BusinessWorks application connects to a database and the Tibco EMS instance. On deployment, a system administrator has to replace the connection parameters to the production database and EMS instance. Which type of properties can be used from the Tibco Enterprise Administrator solution to modify this connection’s parameters?
+Module Properties
+**Application Properties**
+Process Properties
+Global Variable
+## Come comunica il TEA con il bwagent
+Risposta: REST API
+## Come comunica il TEA bwagent TEA agent port.
+
+9091 
+sorgente:
+https://docs.tibco.com/pub/activematrix_businessworks/6.1.1/doc/html/GUID-153131AE-741F-44BC-A959-60573CF17F29.html
+
+## TEA communicates with bwagent through which port?
+
+a. 5555
+b. 8079
+c. 8777
+d. **9091**
+## Come comunica il tea con i sistemi esterni? Non trovata sulle domanda a disposizione
+ redezvous
+ ems
+
+## Which two attributes are provided to TEA by prouct agent? (Choose two)
+
+a. Load balancing feature
+b. **Display details**
+c. Fault tolerance feature
+d. **All product data**
+
+## Which three statements are true for TIBCO Enterprise Administrator? (Choose three)
+
+a. **It manages Domains/AppSpaces/AppNodes across the machines**
+b. **It provides web-based GUI and command-based shell interface**
+c. It provides peer-to-peer administration
+d. **It is based on agent-based architecture**
 
