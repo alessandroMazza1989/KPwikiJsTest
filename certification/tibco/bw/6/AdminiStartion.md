@@ -2,7 +2,7 @@
 title: Administration
 description: 
 published: true
-date: 2021-06-07T12:57:13.319Z
+date: 2021-06-08T15:34:35.226Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T10:51:33.802Z
@@ -415,11 +415,11 @@ Risposta: Appnode sanno o no della presenza di altri appnode
 Risposta: Datastore e Group
 ## Which two engine persistence modes allow the use of checkpoints? (Choose two)
 
-a. Filesystem**
-b. **Datastore
+a. Filesystem
+b. **Datastore**
 c. **Group**
 d. Memory
-R: b,c
+
 ## Quando la persistence mode property è impostata su group, quale di queste risposte è corretta?
 database connection deve essere specificata solo a livello di appspace
 ## Which to statements are true about a bw.engine.persistenceMode that is set to group? (Choose 2 answers)
