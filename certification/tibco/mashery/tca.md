@@ -2,12 +2,13 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-04T14:46:05.045Z
+date: 2021-06-08T13:03:01.897Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
 ---
 
+### <span style="color:red">**Attenzione: Le risposte potrebbero non essere corrette, vi chiediamo di segnalarci o modificare autonomamente se notate degli errori**</span>
 # Mashery - TCA Certification
 
 ## What is a  piece of software used for request-and-response interactions between two systems?
