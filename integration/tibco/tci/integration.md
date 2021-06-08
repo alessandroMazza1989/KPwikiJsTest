@@ -2,7 +2,7 @@
 title: Integration
 description: BusinessWorks Integration App
 published: true
-date: 2021-06-08T13:32:30.995Z
+date: 2021-06-08T13:32:54.886Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-17T07:46:56.625Z
@@ -184,7 +184,7 @@ This section is about how to view the endpoint(s) of an app on TCI.
 > Example of Public Endpoint type: **/CloudApplicationID**/your_endpoint
 >>***/jzq1w3ekvl4qpoiuqbyfxwctdqw7rt7q**/api/pi/psi/...*
 >
-> Where the **CloudApplicationID** (or **AppID**) Is a unique alphanumeric string for each application of each organization or child organization automatically and randomly generated during the deployment of the app itself.
+> Where the **CloudApplicationID** (or **appId**) Is a unique alphanumeric string for each application of each organization or child organization automatically and randomly generated during the deployment of the app itself.
 >
 > Example of TIBCO Mesh Endpoint type: **/extercom/gsbc/CloudOrganizazionID**/public_endpoint
 >>**/extercom/gsbc/02RG4GY1G4KCAPP95W3VFUYC88/tci**/jzq1w3ekvl4qpoiuqbyfxwctdqw7rt7q/api/pi/psi/etl/wrappertalend/v1/tasks/executions 
