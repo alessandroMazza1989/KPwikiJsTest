@@ -2,7 +2,7 @@
 title: Other Questions
 description: 
 published: true
-date: 2021-06-07T13:27:51.932Z
+date: 2021-06-08T15:49:19.370Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T13:23:22.670Z
@@ -27,7 +27,7 @@ b. DELETE HTTP method
 c. PUT HTTP method
 d. POST HTTP method
 
-## Which software is required to work with EMS server using scripts? [mi puzza: TSS?]
+## Which software is required to work with EMS server using scripts? [TSS?]
 
 a. **Python**
 b. ActiveSpaces
