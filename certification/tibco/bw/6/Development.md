@@ -2,7 +2,7 @@
 title: Development - Questions
 description: 
 published: true
-date: 2021-06-07T10:39:20.487Z
+date: 2021-06-08T13:45:49.225Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T10:39:20.487Z
@@ -45,10 +45,6 @@ shared variables
 context variables
 
 # Mapper
-
-## You are using a Mapper activity in your process design. Which three can be used as inputs in the Mapper Input tab? (Choose three.)
-
-Risposta: **Primitive Datatype**, **Inline Schema**, **Complex Datatype**
 
 ## You are using a Mapper activity in your process design. Which three can be used as inputs in the Mapper Input tab? (Choose three.)
 
