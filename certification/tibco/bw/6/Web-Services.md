@@ -2,7 +2,7 @@
 title: Web-Service
 description: 
 published: true
-date: 2021-06-07T13:12:11.158Z
+date: 2021-06-08T15:44:57.758Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T12:59:19.651Z
@@ -47,7 +47,7 @@ Risposta: il resource path deve contenere la keyword "fields" come query paramet
 Posso metterlo anche con "Add query parameters" nel binding. 
 Esempio:/banca/fields{nome,cognome,idconto
 ## You need to create a RESTful service in TIBCO ActiveMatrix BusinessWorks for an employee resource that has the following fields: ID, FirstName, LastName, Salary. How should you configure the Resource Service Path for a service that returns the employee resource by ID?
-Risposta: /employee/{id}
+Risposta: **/employee/{id}**
 ## You need to create a RESTful service in TIBCO ActiveMatrix BusinessWorks for an employee resource that has the following fields: ID, FirstName, LastName, Salary. How should you configure the Resource Service Path for a service that returns the employee resource by ID?
  
 /employee/[id]
