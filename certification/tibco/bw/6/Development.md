@@ -2,7 +2,7 @@
 title: Development - Questions
 description: 
 published: true
-date: 2021-06-08T13:45:49.225Z
+date: 2021-06-08T14:48:09.511Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T10:39:20.487Z
@@ -451,9 +451,9 @@ d. A module property can reference an activity configuration property
 ## Which two statements are true about properties? (Choose two)
 
 a. An application property can reference a process property
-b. A process property can reference an application property
+b. **A process property can reference an application property**
 c. **A module property can be injected into a process activity**
-d. **A module property can reference an application property**
+d. A module property can reference an application property
 
 # Coercion
 ## In quale caso si usa la Coercion? (Studiare)
