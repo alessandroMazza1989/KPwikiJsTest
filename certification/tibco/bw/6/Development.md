@@ -2,7 +2,7 @@
 title: Development - Questions
 description: 
 published: true
-date: 2021-06-08T14:48:09.511Z
+date: 2021-06-08T15:09:16.933Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T10:39:20.487Z
@@ -591,7 +591,7 @@ Activation mode for a process defines the way in which processes are activated a
 Wait for JMS Request
 JMS receive message
 Get JMS queue message
-**JMS Request Reply **
+**JMS Request Reply**
 
 # Checkpoints
 ## Domanda su checkpoint e job
