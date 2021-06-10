@@ -2,7 +2,7 @@
 title: Development - Questions
 description: 
 published: true
-date: 2021-06-08T15:09:16.933Z
+date: 2021-06-10T11:25:38.565Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-07T10:39:20.487Z
@@ -408,9 +408,9 @@ The right one is SMTP
 ## While designing applications, if you wish to use the same JMS Connections Resource in multiple application modules, where should you configure it?
 
 Plug-in
-Shared modules
+**Shared modules**
 Application
-**Application modules**
+Application modules
 
 # Variables / Properties
 
