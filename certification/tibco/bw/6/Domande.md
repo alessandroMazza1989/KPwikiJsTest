@@ -2,7 +2,7 @@
 title: Lista-Domande
 description: 
 published: true
-date: 2021-06-17T16:12:49.236Z
+date: 2021-06-17T16:20:57.871Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-17T13:13:09.808Z
@@ -785,4 +785,58 @@ io ho messo **1**
   
 > Sorgente https://docs.tibco.com/pub/activematrix_businessworks/6.3.2/doc/html/GUID-5CAACF67-908A-463F-8A6A-CFC5D5C0404A.html?_ga=2.21727931.1623349715.1570990546-1830716476.1569947710
 {.is-info}
+
+## Driver DB supportati di default e per i quali non  vanno installati i driver sulle macchine in fase di configurazione degli agents (choose 2)
+  
+Oracle 
+**Microsoft SQL**
+**PostgreeSQL** 
+MySQL
+  
+## Quale Activity viene utilizzata se un provider ti fornisce un XSLT per formattare il proprio msg RISP?
+  
+**XML Activities Palette🡪 XML Transform**
+  
+## Quale gruppo ti consente di elaborare tutti i membri estratti da una query
+Risposta: **Iterate**
+  
+## Activation mode delle application
+  
+sorgente https://docs.tibco.com/pub/activematrix_businessworks/6.2.1/doc/html/GUID-996BD718-B56D-461F-89EF-7D93D0F088AC.html
+  
+## Da uno scope come sovrascrivere una shared Variable
+  
+ho risposto utilizzando Set Shared Variable, nel caso di process variable dovrebbe essere assign)
+  
+## Come è possibile passare in input ad un RESTful service un contenuto binario
+  
+XML 
+**JSON**
+BINARY
+CUSTOM
+
+## Come abilitare l'Authentication per la REST API di un bwagent. Quale file viene modificato e quali formati di password sono utilizzate.
+  
+Risposta mia: **bwagent.tra e OBF, MD5 or CRYPT**
+  
+## RemoteCLientConfiguration
+  
+**bw.agent.technology.as.remoteListenURL**
+**bw.agent.technology.as.remoteDiscoveryURL**
+  
+> Nel bwagent.ini bisogna settare i seguenti parametri: role=server, remote-discoveryURL e remoteListenURL
+{.is-info}
+
+
+## Come comunica il tea con i sistemi esterni? Non trovata sulle domanda a disposizione, simile alla 17 e 75
+  
+**redezvous**
+**ems**
+
+## Process Activation. Activation mode for a process defines the way in which processes are activated at runtime.
+**i.	Multiple AppNodes:** At runtime, the application is distributed and activated on all the AppNodes in the AppSpace. In the event of a failure on one of the AppNodes, the application continues to run with fewer AppNodes.
+**ii.	Single AppNode:** At runtime, the application is activated on only one AppNode in the AppSpace. In the event of a failure, another AppNode will be activated and any check pointed data can be recovered.
+## su una transaction with condition quando passava il flusso
+  
+**quando l'espressione dell'xpath è true**
 
