@@ -2,7 +2,7 @@
 title: Lista-Domande
 description: 
 published: true
-date: 2021-06-17T13:42:20.208Z
+date: 2021-06-17T13:52:32.325Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-17T13:13:09.808Z
@@ -462,4 +462,92 @@ domain
 **1**
 5 
 3
+
+
+## TIBCO ActiveMatrix BusinessWorks agents on machines M1, M2, and M3 are configurated with TIBCO ActiveSpaces as the persistence and transport technology. M1 and M2 are configured ad servers. Assume all agentes are started on port 5060. For M3 to act as a remote client, which property should you set on all agents so that M3 would remain unaffected if mahine M1 goes down? 
+
+remoteListenURL on M1 and M3; remoteDiscoveryURL on M2
+remoteDiscoveryURL on M1 and M3; remoteListenURL on M2
+remoteDiscoveryURL on M1 and M2; remoteListenURL on M3
+**remoteListenURL on M1 and M2; remoteDiscoveryURL on M3**
+  
+* in aggiunta M3 role=remoteclient remoteDiscoveryURL=tcp://Machine1:5060;Machine2:5060 (remoteListenURL M1;M2) ….M3 discoveryUrl*
+
+## Which two shared module functionalities are exported to the application and other shared modules? (Choose two)
+
+**Shared Resources**
+Private processes
+Service Bindings
+**public processes**
+reference bindings
+
+
+## TIBCO Enterprise Administrator cannot find a domain. Whats is the problem? Da rivedere, Nicola porta in local mode
+
+**The domain was created in local mode.**
+The domain was created in enterprise mode.
+The TIBCO Enterprise Administrator cannot access the local file system.
+The TIBCO Enterprise Administrator cannot connect to the database.
+
+
+## Which three statements are true about bwadmin backup and restore commands in an enterprise mode? (choose three)
+
+**The backup command exports the current state of the environment to a command file.**
+The bwadmin backup command and the bwadmin restore command are complementary.
+**The restore command restores the file system of a bwagent to the state of the persistent datastore.**
+**The bwadmin backup command and the bwadmin restore commad are not complementary.**
+The backup command exports the current state of the environment to a datastore.
+The restore command restores the file system of a bwagent to the least checkpoint state of a datastore.
+
+## You deploy a Rest application to an AppSpace with two AppNodes on the same machine.
+Where should you set the swagger doc properties so that every AppNode can host the swagger docs independently?
+
+**AppNode**
+Domain
+bwagent
+AppSpace
+
+## What is the default setting for the log level of an AppNode log file?
+  
+**ERROR**
+INFO
+WARN
+DEBUG
+
+
+## The TIBCO AM BW architect requests the application developer to desgin applications that allow high availability. Which three configuration properties should be set so that managed fault tollerance is implemented? (Choose three)
+  
+bw.engine.persistenceMode=datastore
+a minimum of two AppNodes across two AppSpaces
+**Process Activation In Business Studio**
+**bw.engine.persistenceMode=group**
+Process Mode in Business Studio
+**a minimum of two AppNodes in an AppSpace**
+
+
+## At a minimum, which two properties of a bwagent must be configured for a multi-agent., multi-machine environment that uses TIBCO ActiveSpaces for persistence and transport? (Choose three)
+
+bw.agent.technology.as.remoteDiscoveryURL
+bw.agent.technology.as.clientURL
+**bw.agent.technology.as.discoveryURL**
+**bw.agent.technology.as.listenURL**
+bw.agent.technology.as.server
+**bw.agent.technology.as.role**
+    
+
+## An application you have created with activation set to Single AppNode is deployed into an AppSpace consisting of two AppNodes (A1 and A2). One of the administrators accidentally stops AppNode A1. What is the expected behavior of your application?
+
+The application will be activated on A2, but no requests are processed.
+The application is standby on A2, and no requests are processed.
+The application will be activated on A2, and requests are processed.
+**The application is stopped on A2, and no requests are processed.**
+
+## Which two statements are true about the fault tolerance feature of TIBCO AM BW applications?
+(Choose two) 
+
+Managed fault tolerance requires persistence mode to be set memory, while non-managed fault tolerance requires persistence mode to be set to group.
+Managed fault tolerance requires activation mode to be set to Single AppNode, while non-managed fault tolerance requires activation mode to be set to Multiple AppNode.
+**In Managed fault tolerance, AppNode are aware of other AppNodes in the AppSpace, while in non-managed fault tolerance, AppNodes are unaware of other AppNodes in the AppSpace.**
+**Managed fault tolerance requires persitance mode to be set to group, while non-managed fault tolerance requires persistence mode to be set to datastore.**
+Managed fault tolerance supports checkpointing, while non-managed fault tolerance does not support checkpointing.
 
