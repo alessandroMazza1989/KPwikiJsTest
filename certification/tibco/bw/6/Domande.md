@@ -2,7 +2,7 @@
 title: Lista-Domande
 description: 
 published: true
-date: 2021-06-17T16:04:25.037Z
+date: 2021-06-17T16:12:49.236Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-17T13:13:09.808Z
@@ -718,3 +718,71 @@ Set up a domain with deployment mode set to file system
 A ‘for each group’ loop with a ‘choice’ nested underneath 
 A ‘choice’ loop with an ‘if’ loop nested underneath
 An ‘if’ loop with ‘duplicates’ nested underneath
+
+
+## While designing applications, if you wish to use the same JMS Connections Resource in multiple application modules, where should you configure it
+  
+Plug-in 
+Shared modules 
+Application 
+**Application modules**
+
+## What is the minimum requirement for mapping the output of a preceding activity to the input of a mapper?
+  
+Define a data element in the input tab of the preceding and Mapper activity 
+**Define a data element in the input tab in the Mapper activity**
+Define an output data element  of the Mapper activity
+Define a data element for the input of a preceding activity
+
+## A company has a requirement that during failover, new jobs and all check-pointed jobs should be processed.
+Why is managed fault tolerance the best configuration option? OK
+Because it is easier to configure then non-managed fault tolerance and requires no design time setup.
+**Because the appnode are aware of each other, and the engines collaborate to provide fault tolerance.**
+Because it requires only one AppNode to be deployed for engines to collaborate and provide fault tolerance.
+Because each AppNode must be configured with a unique database configuration and collaboration between engines.
+
+## You have a multi-agent, multi-machine environment with a seeder count of 16. What should the quorum size be in this configuration?
+  
+18
+8
+**16**
+32
+
+## What kind of expression is used to build the condition? 
+  
+**It's an XPATH expression.**
+**Transition with condition**
+  
+## Con quale tool è possibile eseguire i deploy degli ear? scegli 2 risposte
+  
+**TIBCO Business Studio**
+bwdesigner
+bwinstall
+**bwadmin**
+  
+## Con quale tool è possibile creare un ear su BW6? scegli 2 risposte
+  
+**TIBCO Business Studio**
+**bwdesigner**
+bwinstall
+bwadmin
+  
+## One question was to associate the shared resource from a dropdown menu to each statement, with 4 option in the dropdown.
+  
+For instance :
+
+1)Send a mail,  Options(from a dropdown) : SMTP,HTTP CLIENT,JNDI Conf,JDBC Conn . **The right one is SMTP**
+
+2)Update a db table, Options : SMTP,HTTP CLIENT,JNDI Conf,JDBC Conn . **The right one is JDBC**
+
+## There were different questions with this dropdown menu and I think each option has to be selected once.
+  
+For instance in a similar question on shared variables, there were 4 options in the drop down menu but 3 options were
+Sequenza rispsota (**module shared variable**,**module shared variable**,**module shared variable**, **job shared variable**).
+
+## Numero minimo di agent settati come server :
+io ho messo **1**
+  
+> Sorgente https://docs.tibco.com/pub/activematrix_businessworks/6.3.2/doc/html/GUID-5CAACF67-908A-463F-8A6A-CFC5D5C0404A.html?_ga=2.21727931.1623349715.1570990546-1830716476.1569947710
+{.is-info}
+
