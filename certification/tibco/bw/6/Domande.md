@@ -2,7 +2,7 @@
 title: Lista-Domande
 description: 
 published: true
-date: 2021-06-17T13:36:10.738Z
+date: 2021-06-17T13:42:20.208Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-17T13:13:09.808Z
@@ -379,4 +379,87 @@ dialogues
 shared variables
 **conversations**
 context variables
+
+
+
+## In which scope would you place a Rethrow activity?
+  
+**Fault Handler**
+Compensation Handler
+Transaction Scope
+Event Handler
+
+
+## A TIBCO AM BW application has to post a transaction by calling an external Web Service. The business Requirment is to attempt the call to web service at least three times if the service is not available. Which group type can be used for this scenario?
+
+ForEach
+Iterate
+Repeat
+**RepeatOnError**
+
+
+## What should you configure in order to define Startup Process tasks for a given application?
+
+Startup Process
+Main Process
+Initiator Process
+**Activator Process**
+
+
+## Select the appropriate shared resource to associate with the task: 
+
+Transfers email messages between servers SMTP Resource **[STMP Resource]**
+Contains the specification for parsing or rendering a text string **[Data Format]**
+Represents an outgoing HTTP connection with a SOAP binding  **[HTTP Client]**
+Provides a way to configure the JNDI provider for a JMS Connection **[JNDI Configuration]**
+
+## You need to define an Event Handler for asynchronous processing for a given process.
+At which levels can you create an event handler?
+
+Scope Level and Activity Level
+**Scope Level and Process Level**
+Module Level and Process Level
+Activity Level and Process Level
+
+
+## You have a scope variable within a scope, and you want to override a process variable. Which activity allows you to override the process variable?
+
+Mapper Activity
+**Set Shared Variable Activity** *(Possibile Risposta se Scope Variable)*
+**Assign Activity** *(Possibile Risposta se Process Variable)*
+Get Shared Variable Activity
+
+
+## You need to cancel an online order and ensure the money is returned to the customer. Which method in TIBCO AM BW allows you to most effectively manage, execute, or revert a Unit Of Work so that you can achieve this goal?
+
+Define an error handler in a scope.
+**Define a conversation.**
+Define an error transition.
+Define a repeat on error activity
+
+
+## A Custom xPath function has been created in a TIBCO AM BW Project. How can the function be made available (at design time) to other project? (Choose two)
+
+**by installing it into host repository deployable plug-ins and fragments.**
+**by exporting the deployable plug-ins and fragments.**
+by exporting the custom xpath function resource
+by installing the Custom xpath function into TIBCO AM BW target project
+by adding the custom Xpath function to a target project
+
+
+
+## Which three TIBCO AM BW artifacts can be designed using TIBCO Business Studio? (Choose Three)
+bwagent network 
+**applications**
+AppNode
+**application module**
+**shared module**
+domain
+
+
+## If there are five agents in an agent network, and they have to be managed through a TIBCO Enterprise Administrator Server, how many of them must be registered?
+2
+**1**
+5 
+3
 
