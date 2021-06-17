@@ -2,7 +2,7 @@
 title: Lista-Domande
 description: 
 published: true
-date: 2021-06-17T14:06:07.955Z
+date: 2021-06-17T16:04:25.037Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-17T13:13:09.808Z
@@ -712,9 +712,9 @@ Set up the deployment mode to enterprise by using the bwagent utility
 **Set up the persistence store and communication transport layer for domain configuration data**
 Set up a domain with deployment mode set to file system
 
-90) You are designing a transformation process, and your incoming data consists of a multiple repeating nodes of customer records. You need to filter and select customers belonging to a particular Region, which is representing by an element in the Customer Node Which configuration will carry out the filtering?
+## You are designing a transformation process, and your incoming data consists of a multiple repeating nodes of customer records. You need to filter and select customers belonging to a particular Region, which is representing by an element in the Customer Node Which configuration will carry out the filtering?
   
-**A ‘for each’ loop with an ‘if’ loop nested underneath **
+**A ‘for each’ loop with an ‘if’ loop nested underneath**
 A ‘for each group’ loop with a ‘choice’ nested underneath 
 A ‘choice’ loop with an ‘if’ loop nested underneath
 An ‘if’ loop with ‘duplicates’ nested underneath
