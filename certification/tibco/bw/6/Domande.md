@@ -2,7 +2,7 @@
 title: Lista-Domande
 description: 
 published: true
-date: 2021-06-17T13:13:09.808Z
+date: 2021-06-17T13:17:53.736Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-17T13:13:09.808Z
@@ -116,3 +116,58 @@ after selecting an activity in completed jobs only
 a Process Definition that implements the operations of the service
 after selecting a completed job
 after selecting the job data view
+
+## You deploy a REST application to an AppSpace with two AppNodes on the same machine. Where should you set the swagger doc properties so that every AppNode can host the swagger docs independent… 
+	
+**AppNode**
+AppSpace
+Domain
+Bwagent
+
+## You are using machines in multiple environments. They have Tibco Active Matrix Business Works installed and are in the same IP subnet. You need to ensure that the machines from one environment are not able to connect to another environment. You must achieve this goal without using additional network technology. 
+
+Ensure that all agents that belong to an environment have the same agent name
+Ensure that all machines that belong to an environment have the same machine name
+**Ensure that all agents that belong to an environment have the same network name**
+Ensure that all machines that belong to an environment have the same network name
+
+> *	*Tutti gli agent dello stesso ambiente devono avere la stessa bw agent network. Crei due bw agent network, uno per ogni ambiente.*
+{.is-info}
+
+  
+16)	Which Statement is true when setting up a multi-agent, multi-machine environment using Tibco Active Matrix technology type for a simple server configuration ? OK
+There as to be at least one server in the bwagent network
+There as to be at least one server and a remote client
+There as to be at least two clients in the bwagent network
+There as to be at least two server in the bwagent network
+
+
+17)	Which to database driver require additional configuration in other to be used with Tibco Active Matrix BW?
+(Choose two.) OK
+HSQLDB driver
+MySQL Database driver
+Oracle Database driver
+Microsoft SQL Server driver
+Postgress SQL driver
+
+18)	While testing a RESTful service in Tibco BusinessStudio, the parameter com.tibco.bw.binding…
+response to be sent in the console.
+In which file should you set this parameters? OK
+	config.xml
+	config.ini
+	logback.ini
+	logback.xml
+
+19)	You Have to create a SOAP Service that receives a JPEG image as an attachment.
+How must you create the WSDL for this service in other to achieve this goal? OK
+	-A part of the input of the WSDL message must be of type xs:BLOB and configured as an attachment.
+In a concrete WSDL, the attachment is described as a mime part of the multipart message.
+-A part of the input of the WSDL message must be of type base64binary and configured as an attachment. In a concrete WSDL, the attachment is described as a mime part of the multipart message
+-A part of the input of the WSDL message must be of type BLOB. In a concrete WSDL, the attachment is describes as a mime part of the singlepart message
+-A part of the input of the WSDL message must be of type base64binary and configured a part of message. In a concrete WSDL, the attachment is describes as a mime part of the singlepart message
+
+20)	You are required to create a SOAP HTTP Service. In the service implementation, you also need the transport context. Which steps are required to be performed in the process?
+Create a schema for the HTTP Transport Context, and use the Set Context activity in the process
+Create a Context Resource for the HTTP Transport context, and use the Get Context activity in the process
+Create a Context Resource for the HTTP Transport context, and use the Set Context activity in the process
+Create a schema for the HTTP Transport Context, and use the Get Context activity in the process
