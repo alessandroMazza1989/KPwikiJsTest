@@ -2,7 +2,7 @@
 title: Lista-Domande
 description: 
 published: true
-date: 2021-06-17T13:58:21.740Z
+date: 2021-06-17T14:06:07.955Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-17T13:13:09.808Z
@@ -632,3 +632,89 @@ Create a schema for the HTTP Transport Context, and use the Set Context activity
 Create a Context Resource for the HTTP Transport context, and use the Get Context activity in the process
 Create a Context Resource for the HTTP Transport context, and use the Set Context activity in the process
 **Create a schema for the HTTP Transport Context, and use the Get Context activity in the process**
+
+
+## You need to create a single REST service that has a Get Operation for an Employee resource. The resource has various fields, including FirstName, LastName, Age. Which resource service path should you provide to develop a single RESTful service that can use the partial response feature provided by Tibco ActiveMatrix BusinessWorks?
+  
+/employees?{field
+/employees/{field?{ResponseType
+/employees/{field
+**/employees/field?{FirstName&{LastName&{Age**
+ 
+## You want to test the sub-process in Tibco Business Studio. Which view allows you accomplish this?
+  
+BusinessWorks Jobs
+Process view
+**Process Launcher**
+Console
+ 
+## A Tibco ActiveMatrix BusinessWorks process encounters an exception and transitions into the exception handler routine. You need to implement processing in that routine and send the original exception to the higher scope?
+  
+**Rethrow**
+Elevate
+Repeat on Error
+Throw
+
+> Se invece il comportamento della gestione dell'errore tra processi padre/figlio (come lanciare l'errore)  
+> Risposta: Throw
+{.is-info}
+
+ 
+## Which view of the Debug perspective in Tibco BusinessStudio displays the incoming and outgoing messages of an activity?
+  
+Variables
+**Job Data**
+Properties
+BusinessWorks Jobs
+ 
+## What are two methods for implementing the activity level error handling in Tibco ActiveMatrix BusinessWorks? (Choose 2 answers)  
+
+Event Handlers
+onError Activity
+Conditional Transitions
+**Error Transitions**
+**Fault Handlers**
+ 
+## By default, all projects that are open in Tibco BusinessStudio will be deployed when starting the debugger.
+  
+In the debug configuration, go to the Advanced tab, and deselect projects you do not want a debug
+In the debug configuration, go to the Arguments tab, and add the argument –project
+**In the debug configuration, go to the Applications tab, and deselect projects you do not want to debug**
+In the debug configuration, go to the Enviroment tab, and deselect projects you do not want to debug
+ 
+
+
+## There are two fault handlers. One Fault handler acts at the Scope Level, while the other fault handler is at the process level. What happens if the File Read activity throws a FileNotFoundException? ![capture.png](/certifications/bw6/capture.png)
+
+**The Fault Handler surrounding the Read File Activity will be executed, and the Log Activity will be excecuted.**
+Sono presenti due Fault Handler, uno Process Level e l’altro Scope Level. Nel caso in cui vada in errore il ReadFile, cosa viene eseguito?
+Risposta: Anche se non è esposto nello screen e vengano nominati dei log non presenti, in primo luogo viene eseguito il fault handler dello Scope, dopo di ché se l’errore non viene gestito, va in esecuzione il Fault Handler del Process Level.
+
+> (Sempre in riferimento allo screen) Cosa accade nel caso di errore del ReadFile2? (domanda molto simile con riferimento ad una activity non presente)
+> Risposta: per quanto bisogni usare la fantasia, tra le risposte si fa riferimento ad un throw presente nel fault handler.
+{.is-info}
+
+
+## Which two statements are true about applications deployed to an AppSpace? (choose two)
+
+Adding more appnodes will not affect capacity.
+Adding appnodes after an application is deployed does not scale the application.
+**Adding more appnodes will increase capacity.**
+**A deployed application scales dynamically across all the appspace.**
+A deployed application scales dynamically across all the appnode.
+
+## What are the three minimum requirements for deploying  TIBCO Active Matrix BusinessWorks Applications across multiple machines? (Choose three)
+  
+Set up a domain with an AppSpace and an AppNode
+Set up the deployment mode to enterprise by using the bwagent utility
+**Set up a domain with at least one AppSpace and two AppNodes**
+**Set up the deployment mode mode to enterprise by using the bwadmin utility**
+**Set up the persistence store and communication transport layer for domain configuration data**
+Set up a domain with deployment mode set to file system
+
+90) You are designing a transformation process, and your incoming data consists of a multiple repeating nodes of customer records. You need to filter and select customers belonging to a particular Region, which is representing by an element in the Customer Node Which configuration will carry out the filtering?
+  
+**A ‘for each’ loop with an ‘if’ loop nested underneath **
+A ‘for each group’ loop with a ‘choice’ nested underneath 
+A ‘choice’ loop with an ‘if’ loop nested underneath
+An ‘if’ loop with ‘duplicates’ nested underneath
