@@ -2,7 +2,7 @@
 title: Lista-Domande
 description: 
 published: true
-date: 2021-06-17T13:52:32.325Z
+date: 2021-06-17T13:58:21.740Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-17T13:13:09.808Z
@@ -551,3 +551,84 @@ Managed fault tolerance requires activation mode to be set to Single AppNode, wh
 **Managed fault tolerance requires persitance mode to be set to group, while non-managed fault tolerance requires persistence mode to be set to datastore.**
 Managed fault tolerance supports checkpointing, while non-managed fault tolerance does not support checkpointing.
 
+
+## Which statement is true when setting up a multi-agent, multi-machine enviroment using TIBCO AS as the technology type for a simple server configuration?
+
+There has to be at leats two clients in the bwagent network.
+There has to be at least one server and a remote client.
+**There has to be at least one server in the bwagent network.**
+There has to be at least two servers in the bwagent network.
+  
+## The Tibco Enterprise Administrator as multiple components, such as the server, the agent, and the server UI. Which communication mechanism do the server and the agent component use to talk to each other?
+  
+Shared file system
+Tibco Enterprise Message Service
+Tibco Rendezvous
+**Rest API**
+
+
+## A Tibco ActiveMatrix BusinessWorks application connects to a database and the Tibco EMS instance. On deployment, a system administrator has to replace the connection parameters to the production database and EMS instance. Which type of properties can be used from the Tibco Enterprise Administrator solution to modify this connection’s parameters? 
+  
+Module Properties
+**Application Properties**
+Process Properties
+Global Variable
+ 
+## What is indicated if the engine persistence mode (bw.engine.persistenceMode) is set to type group? 
+  
+**ActiveMatrix BusinessWorks Environment is in managed fault tolerance mode**
+The engines are unaware of the existence of each other
+Each AppNode in a AppSpace has a unique database specified at the AppNode level
+ActiveMatrix BusinessWorks Environment is in non-managed fault tolerance mode
+ 
+## Which to statements are true about a bw.engine.persistenceMode that is set to group? (Choose 2 answers)
+  
+The non-managed fault tolerance feature requires this properties
+The database connection configuration must be specified only at the AppNode level
+The engine does not require a database to be configured
+**The engine required a group provider such as Tibco Enterprise Message Service to be configured**
+**The group mode supports the Checkpoint activity and other persistence features**
+ 
+## If you need the loop through every User record in a database, which scope should you use?
+  
+**Iterate**
+PichFirst
+If
+RepeatOnError
+ 
+## Which OSGi command returns an overview of both the REST and SOAP HTTP endpoints?
+  
+showendpoints
+lrestdoc
+listendpoints
+**lendpoints**
+ 
+
+## You need to create a RESTful service with support for Basic Authentication. Which two steps are necessary in order to implement the solution? (Choose 2 answers)
+  
+Check the Authentication checkbox on the Identity Shared Resource
+Check the Authenticated checkbox on the REST Service Binding Configuration 
+**Check the Authentication checkbox on the HTTP Client Shared Resource**
+Check the Authentication checkbox on the HTTP Connector Shared Resource
+**Check the Authentication checkbox on the HTTP Proxy Shared Resource**
+ 
+
+## A company wants to implement basic authentication in their BusinessWorks 6 REST service. What does a developer have to do to achieve this goal?
+  
+**Enable authentication on the HTTP Connector Resource, specify an Identity Provider, and enable Authentication in the Component Configurations**
+Enable authentication on the HTTP Connector Resource, specify an SSL Server Configuration, and enable Authentication in the Component Configurations
+Enable Confidentiality on the HTTP Connector Resource, specify an SSL Server Configuration, and enable Authentication in the Component Configurations
+Enable authentication on the HTTP Connector Resource, specify an LDAP shared resource, and enable Authentication in the Component Configurations
+ 
+## You create a SOAP service by using JMS as transport. One part of message is an attachment. The architect of your company requests for you to forward the message to a JMS Queue; however, you may only forward a reference to the attachment and not the attachment itself. What are the required steps to meet this request?
+  
+**In the SOAP Service Binding, set the persistence to file, and use the Get Context activity to obtain a reference to the file containing the attachment**
+In the process implementation, write the attachment to file, and use the Get Context activity to obtain a reference to the file containing the attachment
+In the SOAP Service Binding, set the persistence to file, and use the Read File activity to obtain a reference  to the file containing the attachment
+In the process implementation, write the attachment to file, and use the output of the Write File activity  to obtain a reference  to the file containing the attachment
+ 
+## You are required to create a SOAP HTTP Service. In the service implementation, you also need the transport context. Which steps are required to be performed in the process?
+Create a schema for the HTTP Transport Context, and use the Set Context activity in the process
+Create a Context Resource for the HTTP Transport context, and use the Get Context activity in the process
+Create a Context Resource for the HTTP Transport context, and use the Set Context activity in the process
+**Create a schema for the HTTP Transport Context, and use the Get Context activity in the process**
