@@ -2,7 +2,7 @@
 title: Lista-Domande
 description: 
 published: true
-date: 2021-06-17T13:29:04.403Z
+date: 2021-06-17T13:32:59.563Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-17T13:13:09.808Z
@@ -230,3 +230,71 @@ Invoke API activity
 **Invoke activity**
 HTTP Request/Response activity
 SOAP Request/Reply activity
+
+## 	Which statement is true when setting up a multi-machine environment us……technology type for a simple server configuration?
+**There has to be at least one server in the bwagent network**
+There has to be at least one server and the remote client
+There has to be at least two clients in the bwagent network
+There has to be at least two servers in the bwagent network
+
+## …a SOAP service by using JMS as transport. One part of the message is an attachment. The architect of your ….requests for you to forward the message to a JMS Queue; however, you may only forward a reference to the…. And not the attachment itself.
+… process implementation, write the attachment to file, and use the output of the Write File acrivity to obtain a reference to the file containing the attachment
+… process implementation, write the attachment to file, and use the Get Context activity to obtain a reference to the file containing the attachment
+**…SOAP Service Binding, set the persistence file, and use the Get Context activity to obtain a reference to the file containing the attachment**
+…SOAP Service Binding, set the persistence file, and use Read File activity to obtain a reference to the file containing the attachment
+
+## As a network administrator, you are told to create an agent network and provide access via REST for managing the TIBCO AM BW applications, AppNodes, and AppSpaces. This URL should be accesible from other machines. How will you configure the bwagent?
+
+Start the bwagent with the apiserver option, and configure the hostname in bwagent.xml
+**Start the bwagent with the apiserver option, and configure the hostname in bwagent.ini**
+Start the bwagent with the apiserver option, and configure the hostname in bwagent.tra
+Start the bwagent with the apiserver option, and configure the hostname in config.ini
+
+## You have a TIBCO ActiveMatrix BW application running on multiple AppNodes, which are part of the same AppSpace. You want to read or update the module shared variable state. Which option should you select?
+
+bw.engine.persistenceMode = “AppSpace”
+**bw.engine.persistenceMode = “group”**
+bw.engine.persistenceMode = “datastore”
+bw.engine.persistenceMode = “true”
+
+## How do you create runtime entities with the deployment mode set to local?
+Create the runtime entities while installing the product.
+Local mode uses default runtime entities created by the bwagent.
+Use TIBCO Enterprise Administrator to create runtime entities.
+**Use BwAdmin to create runtime entities.**
+
+## You have configured your bwagent to run in enterprise mode. What are the two different utilities that you can use to deploy your application? (chose two)
+TIBCO Administrator
+bwdesign
+bwinstall
+**TIBCO Enterprise Administrator**
+**bwadmin**
+
+## How do you generate the config file for an AppSpace?
+**Run the command: bwadmin config -d myDomain -a myAppspace -cf <temporaryLocation>/config.ini**
+Run the command: bwinstall config -d myDomain -a myAppspace -cf <temporaryLocation>/config.ini
+Run the command: bwdesign config -d myDomain -a myAppspace -cf <temporaryLocation>/config.ini
+Copy the config file from the samples directory
+
+
+## You need to perform a Remote Deployment from BuisnessStudio by using the Deployment Servers view. Which utility do you need to have running in order to archive this? 
+
+bwadmin
+bwinstall
+**bwagent**
+bwdesgin
+
+## You have two machines configured in an agent network. A domain and AppSpace span across both machines. Each machine had a single AppNode, which is part of the same AppSpace. Which utility allows you to deploy an application to the AppSpace so that it runs on each AppNode? 
+
+bwinstall
+bwdesign
+bwdesign
+**bwadmin**
+
+
+## A Tibco AM BW application will be deployed on both Windows And Linux Servers; the application uses a property named Path that uses the appropriate operating system syntax to point the files in the file system. How can you specify different configuration of the variables that the application uses?
+
+by using a variable insted of a Property
+**by creating different Application Profiles**
+by defining the path property ad a Process Property
+by creating different Application Module Profiles
