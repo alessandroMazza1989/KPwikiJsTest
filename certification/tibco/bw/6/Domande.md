@@ -2,7 +2,7 @@
 title: Lista-Domande
 description: 
 published: true
-date: 2021-06-17T16:34:58.598Z
+date: 2021-06-17T16:39:45.845Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-17T13:13:09.808Z
@@ -937,3 +937,49 @@ HTTP Receiver
 JMS Queue Subscriber 
 **WSDL **
 SOAP Retrieve Resource.
+
+
+## Un cliente chiede di poter chiamare un web service in un processo: quale soluzione gli consigli?
+Risposta: **Invoke palette**
+
+## Domande sulla fault tolerance (managed fault tolerance / non -managed fault tolerance) : differenze tra i due tipi di fault tolerance gestiti, quali sono gli engine persistence mode che vanno settati per le diverse tolerance gestite, esempi di environment con descrizioni di configurazioni, e domande di cosa succede alle applicazioni se una macchina va giù...
+
+## In managed fault tolerance, when an AppNode fails, the application on another AppNode takes over automatically. The AppNodes in an AppSpace are aware of each other’s existence and the engines collaborate to provide fault tolerance.The managed fault tolerance requires:
+  
+**i. The engine persistence mode (bw.engine.persistenceMode) to be set to type group. The persistence mode of type group requires both database and group provider configurations. See Engine Persistence Modes for details.(Memory,Datastore,Group)**
+ii.	A minimum of two AppNodes in an AppSpace.
+> Sorgente: https://docs.tibco.com/pub/activematrix_businessworks/6.2.2/doc/html/GUID-8361DA81-4AA8-45EA-A98A-1624FEC6BF54.html
+{.is-info}
+
+**In non-managed fault tolerance, the AppNodes in an AppSpace are not aware of each other's existence and there is no collaboration between the engines. Consequently, if an AppNode fails, then another AppNode in the AppSpace will not take over automatically.The non-managed fault tolerance requires:**
+**i.	The engine persistence mode (bw.engine.persistenceMode) to be set to type datastore. The persistence mode of type datastore requires database configurations. See Engine Persistence Modes for details.**
+ii.	If there are multiple AppNodes in the AppSpace, then each AppNode must be configured with a unique database configuration. An AppNode specific database configuration is stated through the AppNode config.ini file.
+  
+## domande sulla basic authentication provider (cosa bisogna settare per configurarla)The Service Provider Details section has the following fields(è composta da tutti e tre):
+  
+**Select Authentication Type**
+**LDAP Resource**
+**XML File Resource**
+  
+## Basic Authentication, in general The General section has the following fields(è composta da tutti e tre):
+  
+**Package**
+**Name**
+**Description**
+  
+## Situazione con una Critical Section.
+Risposta: tra le risposte è presente **Shared Lock Variable**
+  
+## Which two types of activities have transactional capabilities in ActiveMatrix BusinessWorks? (Choose two). 
+  
+Java activities 
+**JMS activities**
+Rendezvous activities 
+**SOAP activities**
+JDBC activities
+  
+## configurazione single appnode cosa bisogna configurare: 
+**persistent mode group**
+**process activaction**
+
+
