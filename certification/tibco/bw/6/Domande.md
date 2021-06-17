@@ -2,7 +2,7 @@
 title: Lista-Domande
 description: 
 published: true
-date: 2021-06-17T16:29:32.561Z
+date: 2021-06-17T16:34:58.598Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-17T13:13:09.808Z
@@ -886,3 +886,54 @@ Modifico la **property BWRest.docApi** nel config.ini del bwappnode
 ## Se la modalità è group che vuole dire?
   
 Appspace è configurato in modalità **managed fault tollerance**
+
+
+## Da un form web si vuole convertire l'informazione per invocare un servizio rest. La domanda era più o meno quale standard utilizzare?
+  
+Risposta: Tra le risposte c'era utilizzare **JSON**
+  
+## Quando hai una transaction with condition cosa viene soddisfatto?
+  
+**XPATH expression**
+  
+## Qual è la condizione minima per poter utilizzare in input ad un Mapper l'output di un'activity precedente?
+  
+impostare uno schema nell’ input tab del mapper
+  
+## Due applicazioni deployate su due macchine M1, M2 sullo stesso appspace. App1 è configurata con activation mode in single node e l'App2 è configurata in multiple appnode. Se casca l'agent2 che succede alle applicazioni?
+  
+**Stopped su tutte i due nodi** perchè non viene mensionato che le applications erano running.
+
+## Cosa è un appspace
+  
+Risposta: **non è un contenitore fisico**
+  
+> **AppNodes.** An AppNode is a JVM process that hosts applications created in TIBCO Business Studio. An AppNode can belong to only one AppSpace. Each application that is deployed into a AppSpace runs on all of its AppNodes. AppNodes allow vertical and horizontal scaling.
+> E’ un’entità che può avere al proprio interno più contenitori che hostano applicazioni
+https://docs.tibco.com/pub/activematrix_businessworks/6.1.0/doc/html/GUID-1E3DEBDB-0D60-4290-A284-09E7329F804B.html
+{.is-info}
+
+## La differenza tra managed e non-managed fault tollerance
+Risposta: nella managed gli appnode sono a conoscenza uno dell'altro e un appnode può recuperare il lavoro di un altro appnode caduto.
+https://docs.tibco.com/pub/activematrix_businessworks/6.2.2/doc/html/GUID-8361DA81-4AA8-45EA-A98A-1624FEC6BF54.html
+Uno lo setto con persistence=group e l’altro con datastore. Entrambe gestiscono checkpoint.
+  
+## Which two engine persistence modes allow the use of checkpoints? (Choose two)
+Risposta: **Datastore e Group**
+  
+## come mandi un attachmenti a un servizio REST.
+Risposta: Request type settato a Custom e setto Content-Type con il tipo di attachment
+
+## Configurare tutte le applicazioni in modo che possano usare il REST SERVER con un’unica documentation URL. Dove va impostato?
+Risposta: **Appspace**
+
+## Di cosa ha bisogno un process service per esporre le operazioni?
+Risposta: **WSDL**
+
+## With which two sources can TIBCO Designer create web services? (Choose two.) 
+  
+**Process Defnition **
+HTTP Receiver 
+JMS Queue Subscriber 
+**WSDL **
+SOAP Retrieve Resource.
