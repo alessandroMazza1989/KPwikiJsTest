@@ -2,7 +2,7 @@
 title: Lista-Domande
 description: 
 published: true
-date: 2021-06-17T13:32:59.563Z
+date: 2021-06-17T13:36:10.738Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-17T13:13:09.808Z
@@ -298,3 +298,85 @@ by using a variable insted of a Property
 **by creating different Application Profiles**
 by defining the path property ad a Process Property
 by creating different Application Module Profiles
+
+## You need to activate your process on a different AppNode, but only if the existing AppNode fails. Which Activation setting should you use to achive this goal?
+
+Fallover AppNodes
+Multiple AppNodes
+Elastic AppNodes
+**Single AppNode**
+
+## What does an out-of-sync status mean after deployng an application to an AppSpace? (Choose Two) 
+
+A bwagent configuration failed to start.
+**A bwagent is not reachable due to network failure.**
+**A bwagent configuration may not have been applied remotely.**
+A bwagent is not reachable because the AppNode is stopped.
+A bwagent is stopped.
+
+
+## Which two TIBCO AM BW project resource can be configured in TIBCO BuisnessStudio? (choose two) 
+
+**TIBCO BusinessConnect Applications**
+**OSGI-based Java Applications**
+C Applications
+C++ Applications
+Process-Driven Application
+
+
+## While configuring a JDBC Query activity, the JDBC Connection does not show up in the resource list. What is the issue?
+
+The JDBC Connection was configured in JAVA Module.
+The JDBC Connection was configured in the current Application Module.
+The JDBC Connection was configured in a different Shared Application Module.
+**The JDBC Connection was configured in a different Application Module.**
+
+## You are given a WSDL has two distinct operations in a single Port Type. You need to implement this WSDL by using TIBCO AM BW. What should you do?
+
+Create a single process, and use a recive activity for both operations.
+Create two applications that implement both operations, and set the activation mode to single.
+**Create a single process, and use a constructor for both operarions.**
+Create two processes, and remove one operation in both processes.
+
+
+
+## You need to synchronize multiple Critical Section groups that can be part of different process instances.
+What should you do to accomplish this goal?
+
+Increase the Timeout of the Critical Section to allow for all the different process instance to synchronize.
+**Create a Shared Lock in your Critical Section with a Module Shared Variable as Shared Variable Type.**
+Change the Group Type from Critical Section to Local Transaction.
+Create a Shared Lock in your Critical Section with a Job Shared Variable as Shared Variable Type.
+
+
+## You have a situation in which an external source supplies an XSLT file to perform the trasformation, and you want to leverage the file. Which activity helps you accomplish this goal?
+
+Mapper
+**Transform XML**
+Invoke XSLT
+Render XML
+
+
+## In which of the following cases shoud you use Coercion in a Mapper Activity?
+
+**When the input data type is unknown, and the output data type is know.**
+When the input data is repeating, and the output data is not.
+When the input data is not repeating, and the output data is repeating.
+When the input data type is known, and the output data type is unknown.
+
+
+## Which configuration is required to implement a switch case in a mapper activity within a process flow?
+
+Repeatitive Group
+Surround With Scope
+**Surround with Choice**
+Non-Repeatitive Group
+
+
+## You need to design a TIBCO AM BW Process so that you maintain the context from previous processes istance.Which feature should you use?
+
+dialogues
+shared variables
+**conversations**
+context variables
+
