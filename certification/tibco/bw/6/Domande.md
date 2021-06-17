@@ -2,7 +2,7 @@
 title: Lista-Domande
 description: 
 published: true
-date: 2021-06-17T13:23:35.221Z
+date: 2021-06-17T13:29:04.403Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-17T13:13:09.808Z
@@ -166,3 +166,67 @@ Create a schema for the HTTP Transport Context, and use the Set Context activity
 Create a Context Resource for the HTTP Transport context, and use the Get Context activity in the process
 Create a Context Resource for the HTTP Transport context, and use the Set Context activity in the process
 **Create a schema for the HTTP Transport Context, and use the Get Context activity in the process**
+
+
+## Which two actions must be performed for an Oracle driver to be used inside BusinessWorks environment? (Choose two.)
+
+**Use the bwinstall utility**
+Copy the JDBC jar file to any folder in the RunTime Classpath
+**Copy the JDBC jar file to the Tibco third-party JDBC Driver folder**
+Use the bwadmin utility
+Copy the JDBC jar file in the bwagent lib folder
+
+## As a network administrator, you want to create an agent network so that bwagents can communicate with across multiple computers. What are the two technology types that allow to achieve this goal? (Choose two.)
+Database with Tibco Rendezvous
+Apache Cassandra with TIBCO Enterprise Message Service 
+Database with TIBCO FTL
+**TIBCO ActiveSpaces**
+**Database with TIBCO Enterprise Message Service**
+
+
+
+## What is the appropriate command line option to use when uploading Tibco BusinessWorks Application to a non- …archive location named QA 
+bwadmin  upload archive/QA application.ear –d MyDomain
+bwadmin  upload –d MyDomain archive/QA application.ear
+bwadmin  upload –path archives/QA application.ear –d MyDomain
+**bwadmin  upload –d MyDomain –path /QA application.ear **
+	
+## Which runtime entity is required to run in an enterprise mode using the default domain data storage? 
+DataBase Server
+**bwagent**
+bwdesign
+Tibco Enterprise Message Service
+Seconda Domanda. Quale entità runtime viene utilizzata per creare runtime entity in ambiente enterprise?
+Risposta: bwadmin
+
+## Which two Adapter Palette activities are Process Starters? (Choose two.)
+Receive Adapter Request 
+**Adapter Request-Response Server**
+**Adapter Subscriber**
+Send Adapter Response
+Wait for Adapter Request
+
+## A custom XPath function associated with mapper activities in Active Matrix BusinessWorks processes ..deprecated. How can the custom XPath function be removed from the mapper?
+
+Uninstall the custom XPath function from the application module
+Uninstall the custom XPath function plug-in from the application project
+**Uninstall a custom XPath function by using Help > About Tibco ActiveMatrix BusinessWorks Menu**
+Uninstall a custom XPath function by using File > Tibco ActiveMatrix BusinessWorks Menu
+
+## You are defining a process that uses the JMS Send Message activity to send a message to a backend application. this application replies asynchronously and does not maintain the other of messages. Which activity should you use if you need to correlate the replies from this application back in your original process?
+Wait for JMS Request
+JMS receive message
+Get JMS queue message
+**JMS Request Reply**
+
+## Which type of activity is require to implement an asynchronous event in a running process and the ….executing the process instance when an appropriate event is received?
+Event handler activity
+Process Starter activity
+Regular activity
+**Signal-in activity**
+
+## During development, one of your peers asks you for help on how to call an external ….. Which activity should you recommend that they use?
+Invoke API activity
+**Invoke activity**
+HTTP Request/Response activity
+SOAP Request/Reply activity
