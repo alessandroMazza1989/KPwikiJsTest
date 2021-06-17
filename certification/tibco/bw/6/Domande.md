@@ -2,7 +2,7 @@
 title: Lista-Domande
 description: 
 published: true
-date: 2021-06-17T16:20:57.871Z
+date: 2021-06-17T16:29:32.561Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-17T13:13:09.808Z
@@ -828,7 +828,7 @@ Risposta mia: **bwagent.tra e OBF, MD5 or CRYPT**
 {.is-info}
 
 
-## Come comunica il tea con i sistemi esterni? Non trovata sulle domanda a disposizione, simile alla 17 e 75
+## Come comunica il tea con i sistemi esterni? Non trovata sulle domanda a disposizione
   
 **redezvous**
 **ems**
@@ -840,3 +840,49 @@ Risposta mia: **bwagent.tra e OBF, MD5 or CRYPT**
   
 **quando l'espressione dell'xpath è true**
 
+
+## Quando posso mappare il processContext in un mapper	
+  
+nel mapper è sempre possibile mapparlo oppure Nessuna impostazione di default il mapper ti consente di farlo
+  
+## Come comunica il TEA bwagent TEA agent port.
+**9091** 
+  
+> sorgente: https://docs.tibco.com/pub/activematrix_businessworks/6.1.1/doc/html/GUID-153131AE-741F-44BC-A959-60573CF17F29.html
+{.is-info}
+
+## Quando un’applicazione mostra lo stato "impaired" durante lo startup?
+  
+An application having an impaired status means that it is not ready to run.
+  
+## Domande sulla basic authentication provider (cosa bisogna settare per configurarla)The Service Provider Details section has the following fields(è composta da tutti e tre):
+  
+**Select Authentication Type**
+**LDAP Resource**
+**XML File Resource**
+  
+## Basic Authentication, in general The General section has the following fields(è composta da tutti e tre):
+  
+**Package**
+**Name**
+**Description**
+
+## Quali sono le opzioni al comando bwagent. (Choose 3)
+  
+Risposta: **stop, apiserver, startagent**
+  
+## Come esporre lo stesso servizio soap contemporaneamente "soap over jms" e "e over http"
+  
+Risposta: **doppio binding sulla stessa operation**
+  
+## Come gestire l'errore da una activity senza far scattare l'error handler.
+  
+Risposta: **Con la transaction on "Error"**
+  
+## Due appnode sulla stessa macchina, come configuro rest doc dedicato ad ogni nodo
+  
+Modifico la **property BWRest.docApi** nel config.ini del bwappnode
+  
+## Se la modalità è group che vuole dire?
+  
+Appspace è configurato in modalità **managed fault tollerance**
