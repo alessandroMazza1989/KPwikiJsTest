@@ -2,7 +2,7 @@
 title: Lista-Domande
 description: 
 published: true
-date: 2021-06-17T16:39:45.845Z
+date: 2021-06-23T10:54:51.213Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-17T13:13:09.808Z
@@ -141,7 +141,7 @@ There as to be at least two clients in the bwagent network
 There as to be at least two server in the bwagent network
 
 
-## Which to database driver require additional configuration in other to be used with Tibco Active Matrix BW? (Choose two.)
+## Which two database driver require additional configuration in other to be used with Tibco Active Matrix BW? (Choose two.)
 HSQLDB driver
 **MySQL Database driver**
 **Oracle Database driver**
