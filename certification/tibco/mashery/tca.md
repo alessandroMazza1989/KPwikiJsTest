@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-23T07:52:20.222Z
+date: 2021-06-23T09:11:15.687Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -354,3 +354,36 @@ A. Key location
 B. Request body
 C. HTTP header
 D. Parameters
+
+## You can connect Software as a Service (SaaS) apps, integrate back-end and on-premises apps, and develop lightweight apps directly using the browser all in the cloud.
+
+A. false
+B. **true**
+
+## How is a process implemented?
+
+A. Only as a service
+B. Only as a refernce to the existing service
+C. As a service and/or reference the existing services
+D. None of the above
+
+## Select 2 schemas that TIBCO Mashery methods are based on. Choose 2 answers
+
+A. **JSON**
+B. SOAP
+C. WSDL
+D. **XML**
+
+## What contains a unique combination of paths, protocols, rules, and accessible methods?
+
+A. API Domains
+B. **Endpoints**
+C. HTTP Headers
+D. API Definitions
+
+## Select the 2 default options when you define an API key in TIBCO Cloud Mashery. Choose 2 answers
+
+A. Key location
+B. **Request body**
+C. HTTP header
+D. **Parameters**
