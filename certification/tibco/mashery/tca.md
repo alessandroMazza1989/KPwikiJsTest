@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-23T09:11:15.687Z
+date: 2021-06-23T09:13:37.977Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -387,3 +387,10 @@ A. Key location
 B. **Request body**
 C. HTTP header
 D. **Parameters**
+
+## In Mashery Local, what is is a browser-based configuration utility similar to
+Cloud Mashery’s Control Center?
+A. Portal Configuration
+B. Reports dashboard
+C. Developer Portal
+D. **Configuration Manager**
