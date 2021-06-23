@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-23T09:15:22.931Z
+date: 2021-06-23T10:44:42.548Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -322,38 +322,6 @@ A. Create an endpoint
 B. **Create an API Definition**
 C. Create an API Domain
 D. Specify the HTTP Method
-
-## In TIBCO Mashery Local, where can you create and manage APIs?
-
-A. Developer Portal
-B. Report dashboard
-C. Configuration Manager
-D. Control Center
-
-## Select 2 schemas that TIBCO Mashery methods are based on. Choose 2 answers
-
-A. JSON
-B. SOAP
-C. WSDL
-D. XML
-
-## An API Definition can have more than one endpoint.
-A. false
-B. true
-
-## What contains a unique combination of paths, protocols, rules, and accessible methods?
-
-A. API Domains
-B. Endpoints
-C. HTTP Headers
-D. API Definitions
-
-## Select the 2 default options when you define an API key in TIBCO Cloud Mashery. Choose 2 answers
-
-A. Key location
-B. Request body
-C. HTTP header
-D. Parameters
 
 ## You can connect Software as a Service (SaaS) apps, integrate back-end and on-premises apps, and develop lightweight apps directly using the browser all in the cloud.
 
