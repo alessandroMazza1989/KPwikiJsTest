@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-23T09:13:37.977Z
+date: 2021-06-23T09:15:22.931Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -359,13 +359,6 @@ D. Parameters
 
 A. false
 B. **true**
-
-## How is a process implemented?
-
-A. Only as a service
-B. Only as a refernce to the existing service
-C. As a service and/or reference the existing services
-D. None of the above
 
 ## Select 2 schemas that TIBCO Mashery methods are based on. Choose 2 answers
 
