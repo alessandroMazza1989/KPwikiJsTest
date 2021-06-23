@@ -2,7 +2,7 @@
 title: Lista-Domande
 description: 
 published: true
-date: 2021-06-23T10:54:51.213Z
+date: 2021-06-23T11:54:20.607Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-17T13:13:09.808Z
@@ -723,9 +723,9 @@ An ‘if’ loop with ‘duplicates’ nested underneath
 ## While designing applications, if you wish to use the same JMS Connections Resource in multiple application modules, where should you configure it
   
 Plug-in 
-Shared modules 
+**Shared modules**
 Application 
-**Application modules**
+Application modules
 
 ## What is the minimum requirement for mapping the output of a preceding activity to the input of a mapper?
   
