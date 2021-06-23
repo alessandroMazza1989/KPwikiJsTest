@@ -2,7 +2,7 @@
 title: TCA - Mashery
 description: Questions regarding the Mashery TAC Certification
 published: true
-date: 2021-06-08T13:03:01.897Z
+date: 2021-06-23T07:05:16.311Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-04T12:33:08.274Z
@@ -316,4 +316,9 @@ D. API Marketplace
 A. true
 B. **false**
 
+## In TIBCO Mashery, what is the first step to configuring an API?
 
+A. Create an endpoint
+B. **Create an API Definition**
+C. Create an API Domain
+D. Specify the HTTP Method
